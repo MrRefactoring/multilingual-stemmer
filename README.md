@@ -32,7 +32,7 @@ npm i multilingual-stemmer
 # Usage
 
 ```typescript
-import { Stemmer, Languages } from 'stemmers';
+import { Stemmer, Languages } from 'multilingual-stemmer';
 
 // Create a stemmer for the english language
 const stemmer = new Stemmer(Languages.English);
