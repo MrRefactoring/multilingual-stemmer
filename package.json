@@ -1,0 +1,29 @@
+{
+  "name": "stemmers",
+  "version": "1.0.0",
+  "description": "A nodejs implementation of some popular snowball stemming algorithms",
+  "author": "Vladislav Tupikin <MrRefactoring@yandex.ru>",
+  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "compile": "wasm-pack build ./rust-stemmers --out-dir ../dist --release --target nodejs --out-name index",
+    "prepublishOnly": "npm run compile && node prepare.js && npm run optimize",
+    "optimize": "wasm-opt ./dist/index_bg.wasm -o ./dist/index_bg.wasm",
+    "test": "node test/index.js"
+  },
+  "keywords": [
+    "stemmer",
+    "stemmers",
+    "stemming",
+    "porter",
+    "snowball",
+    "webasembly"
+  ],
+  "devDependencies": {
+    "wasm-opt": "^1.0.3"
+  }
+}
