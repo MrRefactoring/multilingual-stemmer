@@ -1,6 +1,6 @@
 {
-  "name": "stemmers",
-  "version": "1.0.1",
+  "name": "multilingual-stemmer",
+  "version": "1.0.0",
   "description": "A nodejs implementation of some popular snowball stemming algorithms",
   "author": "Vladislav Tupikin <MrRefactoring@yandex.ru>",
   "license": "MIT",
@@ -16,6 +16,7 @@
     "test": "node test/index.js"
   },
   "keywords": [
+    "multilingual",
     "stemmer",
     "stemmers",
     "stemming",
@@ -25,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrRefactoring/stemmers.git"
+    "url": "git+https://github.com/MrRefactoring/multilingual-stemmer.git"
   },
   "devDependencies": {
     "wasm-opt": "^1.0.3"
