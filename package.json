@@ -1,6 +1,6 @@
 {
   "name": "multilingual-stemmer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A nodejs implementation of some popular snowball stemming algorithms",
   "author": "Vladislav Tupikin <MrRefactoring@yandex.ru>",
   "license": "MIT",

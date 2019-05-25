@@ -1,4 +1,4 @@
-# Stemmers
+# Multilingual stemmer
 
 This package implements some stemmer algorithms found in the [snowball project](http://snowballstem.org/).
 
@@ -26,7 +26,7 @@ Under the hood is used `rust`, compiled by `webassembly` to work in `node.js`
 # Installation
 
 ```
-npm i stemmers
+npm i multilingual-stemmer
 ```
 
 # Usage
