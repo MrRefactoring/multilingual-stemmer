@@ -1,5 +1,5 @@
 //! This file was generated automatically by the Snowball to Rust compiler
-//! http://snowballstem.org/
+//! https://snowballstem.org/
 
 #![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
@@ -1146,12 +1146,11 @@ static G_v2: &'static [u8; 4] = &[81, 65, 0, 1];
 
 #[derive(Clone)]
 struct Context {
-    S_s: String,
     b_test1: bool,
 }
 
 fn r_has_min_length(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 110
+    // (, line 108
     if !((env.current.chars().count() as i32) >= 3){
         return false;
     }
@@ -1160,168 +1159,168 @@ fn r_has_min_length(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_tolower(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 114
-    // repeat, line 115
+    // (, line 112
+    // repeat, line 113
     'replab0: loop{
         let v_1 = env.limit - env.cursor;
         'lab1: for _ in 0..1 {
-            // (, line 115
-            // [, line 116
+            // (, line 113
+            // [, line 114
             env.ket = env.cursor;
-            // substring, line 116
+            // substring, line 114
             among_var = env.find_among_b(A_0, context);
             if among_var == 0 {
                 break 'lab1;
             }
-            // ], line 116
+            // ], line 114
             env.bra = env.cursor;
             if among_var == 1 {
-                // (, line 117
-                // <-, line 117
+                // (, line 115
+                // <-, line 115
                 if !env.slice_from("\u{03B1}") {
                     return false;
                 }
             } else if among_var == 2 {
-                // (, line 118
-                // <-, line 118
+                // (, line 116
+                // <-, line 116
                 if !env.slice_from("\u{03B2}") {
                     return false;
                 }
             } else if among_var == 3 {
-                // (, line 119
-                // <-, line 119
+                // (, line 117
+                // <-, line 117
                 if !env.slice_from("\u{03B3}") {
                     return false;
                 }
             } else if among_var == 4 {
-                // (, line 120
-                // <-, line 120
+                // (, line 118
+                // <-, line 118
                 if !env.slice_from("\u{03B4}") {
                     return false;
                 }
             } else if among_var == 5 {
-                // (, line 121
-                // <-, line 121
+                // (, line 119
+                // <-, line 119
                 if !env.slice_from("\u{03B5}") {
                     return false;
                 }
             } else if among_var == 6 {
-                // (, line 122
-                // <-, line 122
+                // (, line 120
+                // <-, line 120
                 if !env.slice_from("\u{03B6}") {
                     return false;
                 }
             } else if among_var == 7 {
-                // (, line 123
-                // <-, line 123
+                // (, line 121
+                // <-, line 121
                 if !env.slice_from("\u{03B7}") {
                     return false;
                 }
             } else if among_var == 8 {
-                // (, line 124
-                // <-, line 124
+                // (, line 122
+                // <-, line 122
                 if !env.slice_from("\u{03B8}") {
                     return false;
                 }
             } else if among_var == 9 {
-                // (, line 125
-                // <-, line 125
+                // (, line 123
+                // <-, line 123
                 if !env.slice_from("\u{03B9}") {
                     return false;
                 }
             } else if among_var == 10 {
-                // (, line 126
-                // <-, line 126
+                // (, line 124
+                // <-, line 124
                 if !env.slice_from("\u{03BA}") {
                     return false;
                 }
             } else if among_var == 11 {
-                // (, line 127
-                // <-, line 127
+                // (, line 125
+                // <-, line 125
                 if !env.slice_from("\u{03BB}") {
                     return false;
                 }
             } else if among_var == 12 {
-                // (, line 128
-                // <-, line 128
+                // (, line 126
+                // <-, line 126
                 if !env.slice_from("\u{03BC}") {
                     return false;
                 }
             } else if among_var == 13 {
-                // (, line 129
-                // <-, line 129
+                // (, line 127
+                // <-, line 127
                 if !env.slice_from("\u{03BD}") {
                     return false;
                 }
             } else if among_var == 14 {
-                // (, line 130
-                // <-, line 130
+                // (, line 128
+                // <-, line 128
                 if !env.slice_from("\u{03BE}") {
                     return false;
                 }
             } else if among_var == 15 {
-                // (, line 131
-                // <-, line 131
+                // (, line 129
+                // <-, line 129
                 if !env.slice_from("\u{03BF}") {
                     return false;
                 }
             } else if among_var == 16 {
-                // (, line 132
-                // <-, line 132
+                // (, line 130
+                // <-, line 130
                 if !env.slice_from("\u{03C0}") {
                     return false;
                 }
             } else if among_var == 17 {
-                // (, line 133
-                // <-, line 133
+                // (, line 131
+                // <-, line 131
                 if !env.slice_from("\u{03C1}") {
                     return false;
                 }
             } else if among_var == 18 {
-                // (, line 134
-                // <-, line 134
+                // (, line 132
+                // <-, line 132
                 if !env.slice_from("\u{03C3}") {
                     return false;
                 }
             } else if among_var == 19 {
-                // (, line 135
-                // <-, line 135
+                // (, line 133
+                // <-, line 133
                 if !env.slice_from("\u{03C4}") {
                     return false;
                 }
             } else if among_var == 20 {
-                // (, line 136
-                // <-, line 136
+                // (, line 134
+                // <-, line 134
                 if !env.slice_from("\u{03C5}") {
                     return false;
                 }
             } else if among_var == 21 {
-                // (, line 137
-                // <-, line 137
+                // (, line 135
+                // <-, line 135
                 if !env.slice_from("\u{03C6}") {
                     return false;
                 }
             } else if among_var == 22 {
-                // (, line 138
-                // <-, line 138
+                // (, line 136
+                // <-, line 136
                 if !env.slice_from("\u{03C7}") {
                     return false;
                 }
             } else if among_var == 23 {
-                // (, line 139
-                // <-, line 139
+                // (, line 137
+                // <-, line 137
                 if !env.slice_from("\u{03C8}") {
                     return false;
                 }
             } else if among_var == 24 {
-                // (, line 140
-                // <-, line 140
+                // (, line 138
+                // <-, line 138
                 if !env.slice_from("\u{03C9}") {
                     return false;
                 }
             } else if among_var == 25 {
-                // (, line 162
-                // next, line 162
+                // (, line 160
+                // next, line 160
                 if env.cursor <= env.limit_backward {
                     break 'lab1;
                 }
@@ -1337,251 +1336,221 @@ fn r_tolower(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_step1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 167
-    // [, line 168
+    // (, line 165
+    // [, line 166
     env.ket = env.cursor;
-    // substring, line 168
+    // substring, line 166
     among_var = env.find_among_b(A_1, context);
     if among_var == 0 {
         return false;
     }
-    // ], line 168
+    // ], line 166
     env.bra = env.cursor;
     if among_var == 1 {
-        // (, line 169
-        // <-, line 169
+        // (, line 167
+        // <-, line 167
         if !env.slice_from("\u{03C6}\u{03B1}") {
             return false;
         }
     } else if among_var == 2 {
-        // (, line 170
-        // <-, line 170
+        // (, line 168
+        // <-, line 168
         if !env.slice_from("\u{03C3}\u{03BA}\u{03B1}") {
             return false;
         }
     } else if among_var == 3 {
-        // (, line 171
-        // <-, line 171
+        // (, line 169
+        // <-, line 169
         if !env.slice_from("\u{03BF}\u{03BB}\u{03BF}") {
             return false;
         }
     } else if among_var == 4 {
-        // (, line 172
-        // <-, line 172
+        // (, line 170
+        // <-, line 170
         if !env.slice_from("\u{03C3}\u{03BF}") {
             return false;
         }
     } else if among_var == 5 {
-        // (, line 173
-        // <-, line 173
+        // (, line 171
+        // <-, line 171
         if !env.slice_from("\u{03C4}\u{03B1}\u{03C4}\u{03BF}") {
             return false;
         }
     } else if among_var == 6 {
-        // (, line 174
-        // <-, line 174
+        // (, line 172
+        // <-, line 172
         if !env.slice_from("\u{03BA}\u{03C1}\u{03B5}") {
             return false;
         }
     } else if among_var == 7 {
-        // (, line 175
-        // <-, line 175
+        // (, line 173
+        // <-, line 173
         if !env.slice_from("\u{03C0}\u{03B5}\u{03C1}") {
             return false;
         }
     } else if among_var == 8 {
-        // (, line 176
-        // <-, line 176
+        // (, line 174
+        // <-, line 174
         if !env.slice_from("\u{03C4}\u{03B5}\u{03C1}") {
             return false;
         }
     } else if among_var == 9 {
-        // (, line 177
-        // <-, line 177
+        // (, line 175
+        // <-, line 175
         if !env.slice_from("\u{03C6}\u{03C9}") {
             return false;
         }
     } else if among_var == 10 {
-        // (, line 178
-        // <-, line 178
+        // (, line 176
+        // <-, line 176
         if !env.slice_from("\u{03BA}\u{03B1}\u{03B8}\u{03B5}\u{03C3}\u{03C4}") {
             return false;
         }
     } else if among_var == 11 {
-        // (, line 179
-        // <-, line 179
+        // (, line 177
+        // <-, line 177
         if !env.slice_from("\u{03B3}\u{03B5}\u{03B3}\u{03BF}\u{03BD}") {
             return false;
         }
     }
-    // unset test1, line 181
+    // unset test1, line 179
     context.b_test1 = false;
     return true;
 }
 
 fn r_steps1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 184
-    // [, line 185
+    // (, line 182
+    // [, line 183
     env.ket = env.cursor;
-    // substring, line 185
+    // substring, line 183
     if env.find_among_b(A_4, context) == 0 {
         return false;
     }
-    // ], line 185
+    // ], line 183
     env.bra = env.cursor;
-    // (, line 187
-    // delete, line 188
+    // (, line 185
+    // delete, line 186
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 189
+    // unset test1, line 187
     context.b_test1 = false;
-    // or, line 193
+    // or, line 191
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 190
-            // [, line 190
+            // (, line 188
+            // [, line 188
             env.ket = env.cursor;
-            // substring, line 190
+            // ], line 188
+            env.bra = env.cursor;
+            // substring, line 188
             if env.find_among_b(A_2, context) == 0 {
                 break 'lab1;
             }
-            // ], line 190
-            env.bra = env.cursor;
-            // atlimit, line 190
+            // atlimit, line 188
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // (, line 192
-            // -> s, line 192
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 192
+            // (, line 190
+            // <-, line 190
             if !env.slice_from("\u{03B9}") {
                 return false;
             }
-            // <+ s, line 192
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 194
-        // [, line 194
+        // (, line 192
+        // [, line 192
         env.ket = env.cursor;
-        // substring, line 194
+        // ], line 192
+        env.bra = env.cursor;
+        // substring, line 192
         if env.find_among_b(A_3, context) == 0 {
             return false;
         }
-        // ], line 194
-        env.bra = env.cursor;
-        // atlimit, line 194
+        // atlimit, line 192
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 198
-        // -> s, line 198
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 198
+        // (, line 196
+        // <-, line 196
         if !env.slice_from("\u{03B9}\u{03B6}") {
             return false;
         }
-        // <+ s, line 198
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
 }
 
 fn r_steps2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 204
-    // [, line 205
+    // (, line 202
+    // [, line 203
     env.ket = env.cursor;
-    // substring, line 205
+    // substring, line 203
     if env.find_among_b(A_6, context) == 0 {
         return false;
     }
-    // ], line 205
+    // ], line 203
     env.bra = env.cursor;
-    // (, line 206
-    // delete, line 207
+    // (, line 204
+    // delete, line 205
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 208
+    // unset test1, line 206
     context.b_test1 = false;
-    // [, line 209
+    // [, line 207
     env.ket = env.cursor;
-    // substring, line 209
+    // ], line 207
+    env.bra = env.cursor;
+    // substring, line 207
     if env.find_among_b(A_5, context) == 0 {
         return false;
     }
-    // ], line 209
-    env.bra = env.cursor;
-    // atlimit, line 209
+    // atlimit, line 207
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 210
-    // -> s, line 210
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 210
+    // (, line 208
+    // <-, line 208
     if !env.slice_from("\u{03C9}\u{03BD}") {
         return false;
     }
-    // <+ s, line 210
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_steps3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 216
-    // [, line 217
+    // (, line 214
+    // [, line 215
     env.ket = env.cursor;
-    // substring, line 217
+    // substring, line 215
     if env.find_among_b(A_9, context) == 0 {
         return false;
     }
-    // ], line 217
+    // ], line 215
     env.bra = env.cursor;
-    // (, line 218
-    // delete, line 219
+    // (, line 216
+    // delete, line 217
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 220
+    // unset test1, line 218
     context.b_test1 = false;
-    // or, line 221
+    // or, line 219
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 221
-            // literal, line 221
+            // (, line 219
+            // literal, line 219
             if !env.eq_s_b(&"\u{03B9}\u{03C3}\u{03B1}") {
                 break 'lab1;
             }
-            // atlimit, line 221
+            // atlimit, line 219
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // <-, line 221
+            // <-, line 219
             if !env.slice_from("\u{03B9}\u{03C3}") {
                 return false;
             }
@@ -1589,197 +1558,147 @@ fn r_steps3(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab2: loop {
-            // (, line 222
-            // [, line 222
+            // (, line 220
+            // [, line 220
             env.ket = env.cursor;
-            // substring, line 222
+            // ], line 220
+            env.bra = env.cursor;
+            // substring, line 220
             if env.find_among_b(A_7, context) == 0 {
                 break 'lab2;
             }
-            // ], line 222
-            env.bra = env.cursor;
-            // atlimit, line 222
+            // atlimit, line 220
             if env.cursor > env.limit_backward {
                 break 'lab2;
             }
-            // (, line 226
-            // -> s, line 226
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 226
+            // (, line 224
+            // <-, line 224
             if !env.slice_from("\u{03B9}") {
                 return false;
             }
-            // <+ s, line 226
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 228
-        // [, line 228
+        // (, line 226
+        // [, line 226
         env.ket = env.cursor;
-        // substring, line 228
+        // ], line 226
+        env.bra = env.cursor;
+        // substring, line 226
         if env.find_among_b(A_8, context) == 0 {
             return false;
         }
-        // ], line 228
-        env.bra = env.cursor;
-        // atlimit, line 228
+        // atlimit, line 226
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 231
-        // -> s, line 231
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 231
+        // (, line 229
+        // <-, line 229
         if !env.slice_from("\u{03B9}\u{03C3}") {
             return false;
         }
-        // <+ s, line 231
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
 }
 
 fn r_steps4(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 237
-    // [, line 238
+    // (, line 235
+    // [, line 236
     env.ket = env.cursor;
-    // substring, line 238
+    // substring, line 236
     if env.find_among_b(A_11, context) == 0 {
         return false;
     }
-    // ], line 238
+    // ], line 236
     env.bra = env.cursor;
-    // (, line 239
-    // delete, line 240
+    // (, line 237
+    // delete, line 238
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 241
+    // unset test1, line 239
     context.b_test1 = false;
-    // [, line 242
+    // [, line 240
     env.ket = env.cursor;
-    // substring, line 242
+    // ], line 240
+    env.bra = env.cursor;
+    // substring, line 240
     if env.find_among_b(A_10, context) == 0 {
         return false;
     }
-    // ], line 242
-    env.bra = env.cursor;
-    // atlimit, line 242
+    // atlimit, line 240
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 246
-    // -> s, line 246
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 246
+    // (, line 244
+    // <-, line 244
     if !env.slice_from("\u{03B9}") {
         return false;
     }
-    // <+ s, line 246
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_steps5(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 252
-    // [, line 253
+    // (, line 250
+    // [, line 251
     env.ket = env.cursor;
-    // substring, line 253
+    // substring, line 251
     if env.find_among_b(A_14, context) == 0 {
         return false;
     }
-    // ], line 253
+    // ], line 251
     env.bra = env.cursor;
-    // (, line 255
-    // delete, line 256
+    // (, line 253
+    // delete, line 254
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 257
+    // unset test1, line 255
     context.b_test1 = false;
-    // or, line 261
+    // or, line 259
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 258
-            // [, line 258
+            // (, line 256
+            // [, line 256
             env.ket = env.cursor;
-            // substring, line 258
+            // ], line 256
+            env.bra = env.cursor;
+            // substring, line 256
             if env.find_among_b(A_12, context) == 0 {
                 break 'lab1;
             }
-            // ], line 258
-            env.bra = env.cursor;
-            // atlimit, line 258
+            // atlimit, line 256
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // (, line 260
-            // -> s, line 260
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 260
+            // (, line 258
+            // <-, line 258
             if !env.slice_from("\u{03B9}") {
                 return false;
             }
-            // <+ s, line 260
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 262
-        // [, line 262
+        // (, line 260
+        // [, line 260
         env.ket = env.cursor;
-        // substring, line 262
+        // ], line 260
+        env.bra = env.cursor;
+        // substring, line 260
         if env.find_among_b(A_13, context) == 0 {
             return false;
         }
-        // ], line 262
-        env.bra = env.cursor;
-        // atlimit, line 262
+        // atlimit, line 260
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 266
-        // -> s, line 266
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 266
+        // (, line 264
+        // <-, line 264
         if !env.slice_from("\u{03B9}\u{03C3}\u{03C4}") {
             return false;
         }
-        // <+ s, line 266
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
@@ -1787,156 +1706,136 @@ fn r_steps5(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_steps6(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 272
-    // [, line 273
+    // (, line 270
+    // [, line 271
     env.ket = env.cursor;
-    // substring, line 273
+    // substring, line 271
     if env.find_among_b(A_18, context) == 0 {
         return false;
     }
-    // ], line 273
+    // ], line 271
     env.bra = env.cursor;
-    // (, line 274
-    // delete, line 275
+    // (, line 272
+    // delete, line 273
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 276
+    // unset test1, line 274
     context.b_test1 = false;
-    // or, line 280
+    // or, line 278
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 277
-            // [, line 277
+            // (, line 275
+            // [, line 275
             env.ket = env.cursor;
-            // substring, line 277
+            // ], line 275
+            env.bra = env.cursor;
+            // substring, line 275
             if env.find_among_b(A_15, context) == 0 {
                 break 'lab1;
             }
-            // ], line 277
-            env.bra = env.cursor;
-            // atlimit, line 277
+            // atlimit, line 275
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // (, line 279
-            // -> s, line 279
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 279
+            // (, line 277
+            // <-, line 277
             if !env.slice_from("\u{03B9}\u{03C3}\u{03BC}") {
                 return false;
             }
-            // <+ s, line 279
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
         'lab2: loop {
-            // (, line 281
-            // [, line 281
+            // (, line 279
+            // [, line 279
             env.ket = env.cursor;
-            // substring, line 281
+            // ], line 279
+            env.bra = env.cursor;
+            // substring, line 279
             if env.find_among_b(A_16, context) == 0 {
                 break 'lab2;
             }
-            // ], line 281
-            env.bra = env.cursor;
-            // atlimit, line 281
+            // atlimit, line 279
             if env.cursor > env.limit_backward {
                 break 'lab2;
             }
-            // (, line 283
-            // -> s, line 283
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 283
+            // (, line 281
+            // <-, line 281
             if !env.slice_from("\u{03B9}") {
                 return false;
             }
-            // <+ s, line 283
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 285
-        // [, line 285
+        // (, line 283
+        // [, line 283
         env.ket = env.cursor;
-        // substring, line 285
+        // substring, line 283
         among_var = env.find_among_b(A_17, context);
         if among_var == 0 {
             return false;
         }
-        // ], line 285
+        // ], line 283
         env.bra = env.cursor;
         if among_var == 1 {
-            // (, line 286
-            // <-, line 286
+            // (, line 284
+            // <-, line 284
             if !env.slice_from("\u{03B1}\u{03B3}\u{03BD}\u{03C9}\u{03C3}\u{03C4}") {
                 return false;
             }
         } else if among_var == 2 {
-            // (, line 287
-            // <-, line 287
+            // (, line 285
+            // <-, line 285
             if !env.slice_from("\u{03B1}\u{03C4}\u{03BF}\u{03BC}") {
                 return false;
             }
         } else if among_var == 3 {
-            // (, line 288
-            // <-, line 288
+            // (, line 286
+            // <-, line 286
             if !env.slice_from("\u{03B3}\u{03BD}\u{03C9}\u{03C3}\u{03C4}") {
                 return false;
             }
         } else if among_var == 4 {
-            // (, line 289
-            // <-, line 289
+            // (, line 287
+            // <-, line 287
             if !env.slice_from("\u{03B5}\u{03B8}\u{03BD}") {
                 return false;
             }
         } else if among_var == 5 {
-            // (, line 290
-            // <-, line 290
+            // (, line 288
+            // <-, line 288
             if !env.slice_from("\u{03B5}\u{03BA}\u{03BB}\u{03B5}\u{03BA}\u{03C4}") {
                 return false;
             }
         } else if among_var == 6 {
-            // (, line 291
-            // <-, line 291
+            // (, line 289
+            // <-, line 289
             if !env.slice_from("\u{03C3}\u{03BA}\u{03B5}\u{03C0}\u{03C4}") {
                 return false;
             }
         } else if among_var == 7 {
-            // (, line 292
-            // <-, line 292
+            // (, line 290
+            // <-, line 290
             if !env.slice_from("\u{03C4}\u{03BF}\u{03C0}") {
                 return false;
             }
         } else if among_var == 8 {
-            // (, line 293
-            // <-, line 293
+            // (, line 291
+            // <-, line 291
             if !env.slice_from("\u{03B1}\u{03BB}\u{03B5}\u{03BE}\u{03B1}\u{03BD}\u{03B4}\u{03C1}") {
                 return false;
             }
         } else if among_var == 9 {
-            // (, line 294
-            // <-, line 294
+            // (, line 292
+            // <-, line 292
             if !env.slice_from("\u{03B2}\u{03C5}\u{03B6}\u{03B1}\u{03BD}\u{03C4}") {
                 return false;
             }
         } else if among_var == 10 {
-            // (, line 295
-            // <-, line 295
+            // (, line 293
+            // <-, line 293
             if !env.slice_from("\u{03B8}\u{03B5}\u{03B1}\u{03C4}\u{03C1}") {
                 return false;
             }
@@ -1947,323 +1846,253 @@ fn r_steps6(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_steps7(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 301
-    // [, line 302
+    // (, line 299
+    // [, line 300
     env.ket = env.cursor;
-    // substring, line 302
+    // substring, line 300
     if env.find_among_b(A_20, context) == 0 {
         return false;
     }
-    // ], line 302
+    // ], line 300
     env.bra = env.cursor;
-    // (, line 303
-    // delete, line 304
+    // (, line 301
+    // delete, line 302
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 305
+    // unset test1, line 303
     context.b_test1 = false;
-    // [, line 306
+    // [, line 304
     env.ket = env.cursor;
-    // substring, line 306
+    // ], line 304
+    env.bra = env.cursor;
+    // substring, line 304
     if env.find_among_b(A_19, context) == 0 {
         return false;
     }
-    // ], line 306
-    env.bra = env.cursor;
-    // atlimit, line 306
+    // atlimit, line 304
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 308
-    // -> s, line 308
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 308
+    // (, line 306
+    // <-, line 306
     if !env.slice_from("\u{03B1}\u{03C1}\u{03B1}\u{03BA}") {
         return false;
     }
-    // <+ s, line 308
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_steps8(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 314
-    // [, line 315
+    // (, line 312
+    // [, line 313
     env.ket = env.cursor;
-    // substring, line 315
+    // substring, line 313
     if env.find_among_b(A_23, context) == 0 {
         return false;
     }
-    // ], line 315
+    // ], line 313
     env.bra = env.cursor;
-    // (, line 316
-    // delete, line 317
+    // (, line 314
+    // delete, line 315
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 318
+    // unset test1, line 316
     context.b_test1 = false;
-    // or, line 325
+    // or, line 323
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 319
-            // [, line 319
+            // (, line 317
+            // [, line 317
             env.ket = env.cursor;
-            // substring, line 319
+            // ], line 317
+            env.bra = env.cursor;
+            // substring, line 317
             if env.find_among_b(A_21, context) == 0 {
                 break 'lab1;
             }
-            // ], line 319
-            env.bra = env.cursor;
-            // atlimit, line 319
+            // atlimit, line 317
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // (, line 324
-            // -> s, line 324
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 324
+            // (, line 322
+            // <-, line 322
             if !env.slice_from("\u{03B1}\u{03BA}") {
                 return false;
             }
-            // <+ s, line 324
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
         'lab2: loop {
-            // (, line 326
-            // [, line 326
+            // (, line 324
+            // [, line 324
             env.ket = env.cursor;
-            // substring, line 326
+            // ], line 324
+            env.bra = env.cursor;
+            // substring, line 324
             if env.find_among_b(A_22, context) == 0 {
                 break 'lab2;
             }
-            // ], line 326
-            env.bra = env.cursor;
-            // atlimit, line 326
+            // atlimit, line 324
             if env.cursor > env.limit_backward {
                 break 'lab2;
             }
-            // (, line 329
-            // -> s, line 329
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 329
+            // (, line 327
+            // <-, line 327
             if !env.slice_from("\u{03B9}\u{03C4}\u{03C3}") {
                 return false;
             }
-            // <+ s, line 329
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 331
-        // [, line 331
+        // (, line 329
+        // [, line 329
         env.ket = env.cursor;
-        // literal, line 331
+        // ], line 329
+        env.bra = env.cursor;
+        // literal, line 329
         if !env.eq_s_b(&"\u{03BA}\u{03BF}\u{03C1}") {
             return false;
         }
-        // ], line 331
-        env.bra = env.cursor;
-        // -> s, line 331
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 331
+        // <-, line 329
         if !env.slice_from("\u{03B9}\u{03C4}\u{03C3}") {
             return false;
         }
-        // <+ s, line 331
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
 }
 
 fn r_steps9(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 336
-    // [, line 337
+    // (, line 334
+    // [, line 335
     env.ket = env.cursor;
-    // substring, line 337
+    // substring, line 335
     if env.find_among_b(A_26, context) == 0 {
         return false;
     }
-    // ], line 337
+    // ], line 335
     env.bra = env.cursor;
-    // (, line 338
-    // delete, line 339
+    // (, line 336
+    // delete, line 337
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 340
+    // unset test1, line 338
     context.b_test1 = false;
-    // or, line 343
+    // or, line 341
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 341
-            // [, line 341
+            // (, line 339
+            // [, line 339
             env.ket = env.cursor;
-            // substring, line 341
+            // ], line 339
+            env.bra = env.cursor;
+            // substring, line 339
             if env.find_among_b(A_24, context) == 0 {
                 break 'lab1;
             }
-            // ], line 341
-            env.bra = env.cursor;
-            // atlimit, line 341
+            // atlimit, line 339
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // (, line 342
-            // -> s, line 342
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 342
+            // (, line 340
+            // <-, line 340
             if !env.slice_from("\u{03B9}\u{03B4}") {
                 return false;
             }
-            // <+ s, line 342
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 344
-        // [, line 344
+        // (, line 342
+        // [, line 342
         env.ket = env.cursor;
-        // substring, line 344
+        // ], line 342
+        env.bra = env.cursor;
+        // substring, line 342
         if env.find_among_b(A_25, context) == 0 {
             return false;
         }
-        // ], line 344
-        env.bra = env.cursor;
-        // (, line 345
-        // -> s, line 345
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 345
+        // (, line 343
+        // <-, line 343
         if !env.slice_from("\u{03B9}\u{03B4}") {
             return false;
         }
-        // <+ s, line 345
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
 }
 
 fn r_steps10(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 351
-    // [, line 352
+    // (, line 349
+    // [, line 350
     env.ket = env.cursor;
-    // substring, line 352
+    // substring, line 350
     if env.find_among_b(A_28, context) == 0 {
         return false;
     }
-    // ], line 352
+    // ], line 350
     env.bra = env.cursor;
-    // (, line 353
-    // delete, line 354
+    // (, line 351
+    // delete, line 352
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 355
+    // unset test1, line 353
     context.b_test1 = false;
-    // [, line 356
+    // [, line 354
     env.ket = env.cursor;
-    // substring, line 356
+    // ], line 354
+    env.bra = env.cursor;
+    // substring, line 354
     if env.find_among_b(A_27, context) == 0 {
         return false;
     }
-    // ], line 356
-    env.bra = env.cursor;
-    // atlimit, line 356
+    // atlimit, line 354
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 358
-    // -> s, line 358
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 358
+    // (, line 356
+    // <-, line 356
     if !env.slice_from("\u{03B9}\u{03C3}\u{03BA}") {
         return false;
     }
-    // <+ s, line 358
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 364
-    // [, line 365
+    // (, line 362
+    // [, line 363
     env.ket = env.cursor;
-    // substring, line 365
+    // substring, line 363
     if env.find_among_b(A_29, context) == 0 {
         return false;
     }
-    // ], line 365
+    // ], line 363
     env.bra = env.cursor;
-    // (, line 366
-    // delete, line 366
+    // (, line 364
+    // delete, line 364
     if !env.slice_del() {
         return false;
     }
-    // not, line 368
+    // not, line 366
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 368
-        // [, line 368
+        // (, line 366
+        // [, line 366
         env.ket = env.cursor;
-        // substring, line 368
+        // substring, line 366
         if env.find_among_b(A_30, context) == 0 {
             break 'lab0;
         }
-        // ], line 368
+        // ], line 366
         env.bra = env.cursor;
         return false;
     }
     env.cursor = env.limit - v_1;
-    // <+, line 371
+    // <+, line 369
     let c = env.cursor;
     let (bra, ket) = (env.cursor, env.cursor);
     env.insert(bra, ket, "\u{03B1}\u{03B4}");
@@ -2272,1120 +2101,870 @@ fn r_step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 374
-    // [, line 375
+    // (, line 372
+    // [, line 373
     env.ket = env.cursor;
-    // substring, line 375
+    // substring, line 373
     if env.find_among_b(A_31, context) == 0 {
         return false;
     }
-    // ], line 375
+    // ], line 373
     env.bra = env.cursor;
-    // (, line 376
-    // delete, line 376
+    // (, line 374
+    // delete, line 374
     if !env.slice_del() {
         return false;
     }
-    // [, line 378
+    // [, line 376
     env.ket = env.cursor;
-    // substring, line 378
+    // ], line 376
+    env.bra = env.cursor;
+    // substring, line 376
     if env.find_among_b(A_32, context) == 0 {
         return false;
     }
-    // ], line 378
-    env.bra = env.cursor;
-    // (, line 379
-    // -> s, line 379
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 379
+    // (, line 377
+    // <-, line 377
     if !env.slice_from("\u{03B5}\u{03B4}") {
         return false;
     }
-    // <+ s, line 379
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step2c(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 383
-    // [, line 384
+    // (, line 381
+    // [, line 382
     env.ket = env.cursor;
-    // substring, line 384
+    // substring, line 382
     if env.find_among_b(A_33, context) == 0 {
         return false;
     }
-    // ], line 384
+    // ], line 382
     env.bra = env.cursor;
-    // (, line 385
-    // delete, line 385
+    // (, line 383
+    // delete, line 383
     if !env.slice_del() {
         return false;
     }
-    // [, line 387
+    // [, line 385
     env.ket = env.cursor;
-    // substring, line 387
+    // ], line 385
+    env.bra = env.cursor;
+    // substring, line 385
     if env.find_among_b(A_34, context) == 0 {
         return false;
     }
-    // ], line 387
-    env.bra = env.cursor;
-    // (, line 389
-    // -> s, line 389
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 389
+    // (, line 387
+    // <-, line 387
     if !env.slice_from("\u{03BF}\u{03C5}\u{03B4}") {
         return false;
     }
-    // <+ s, line 389
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step2d(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 393
-    // [, line 394
+    // (, line 391
+    // [, line 392
     env.ket = env.cursor;
-    // substring, line 394
+    // substring, line 392
     if env.find_among_b(A_35, context) == 0 {
         return false;
     }
-    // ], line 394
+    // ], line 392
     env.bra = env.cursor;
-    // (, line 395
-    // delete, line 395
+    // (, line 393
+    // delete, line 393
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 395
+    // unset test1, line 393
     context.b_test1 = false;
-    // [, line 397
+    // [, line 395
     env.ket = env.cursor;
-    // substring, line 397
+    // ], line 395
+    env.bra = env.cursor;
+    // substring, line 395
     if env.find_among_b(A_36, context) == 0 {
         return false;
     }
-    // ], line 397
-    env.bra = env.cursor;
-    // atlimit, line 397
+    // atlimit, line 395
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 398
-    // -> s, line 398
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 398
+    // (, line 396
+    // <-, line 396
     if !env.slice_from("\u{03B5}") {
         return false;
     }
-    // <+ s, line 398
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 402
-    // [, line 403
+    // (, line 400
+    // [, line 401
     env.ket = env.cursor;
-    // substring, line 403
+    // substring, line 401
     if env.find_among_b(A_37, context) == 0 {
         return false;
     }
-    // ], line 403
+    // ], line 401
     env.bra = env.cursor;
-    // (, line 404
-    // delete, line 404
+    // (, line 402
+    // delete, line 402
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 404
+    // unset test1, line 402
     context.b_test1 = false;
-    // (, line 406
-    // [, line 406
+    // (, line 404
+    // [, line 404
     env.ket = env.cursor;
+    // ], line 404
+    env.bra = env.cursor;
     if !env.in_grouping_b(G_v, 945, 969) {
         return false;
     }
-    // ], line 406
-    env.bra = env.cursor;
-    // -> s, line 406
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 406
+    // <-, line 404
     if !env.slice_from("\u{03B9}") {
         return false;
     }
-    // <+ s, line 406
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step4(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 409
-    // [, line 410
+    // (, line 407
+    // [, line 408
     env.ket = env.cursor;
-    // substring, line 410
+    // substring, line 408
     if env.find_among_b(A_38, context) == 0 {
         return false;
     }
-    // ], line 410
+    // ], line 408
     env.bra = env.cursor;
-    // (, line 411
-    // delete, line 411
+    // (, line 409
+    // delete, line 409
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 411
+    // unset test1, line 409
     context.b_test1 = false;
-    // or, line 413
+    // or, line 411
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 413
-            // [, line 413
+            // (, line 411
+            // [, line 411
             env.ket = env.cursor;
+            // ], line 411
+            env.bra = env.cursor;
             if !env.in_grouping_b(G_v, 945, 969) {
                 break 'lab1;
             }
-            // ], line 413
-            env.bra = env.cursor;
-            // -> s, line 413
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 413
+            // <-, line 411
             if !env.slice_from("\u{03B9}\u{03BA}") {
                 return false;
             }
-            // <+ s, line 413
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // [, line 414
+        // [, line 412
         env.ket = env.cursor;
         break 'lab0;
     }
-    // substring, line 414
+    // ], line 412
+    env.bra = env.cursor;
+    // substring, line 412
     if env.find_among_b(A_39, context) == 0 {
         return false;
     }
-    // ], line 414
-    env.bra = env.cursor;
-    // atlimit, line 414
+    // atlimit, line 412
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 419
-    // -> s, line 419
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 419
+    // (, line 417
+    // <-, line 417
     if !env.slice_from("\u{03B9}\u{03BA}") {
         return false;
     }
-    // <+ s, line 419
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5a(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 423
-    // do, line 424
+    // (, line 421
+    // do, line 422
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 424
-        // literal, line 424
+        // (, line 422
+        // literal, line 422
         if !env.eq_s_b(&"\u{03B1}\u{03B3}\u{03B1}\u{03BC}\u{03B5}") {
             break 'lab0;
         }
-        // atlimit, line 424
+        // atlimit, line 422
         if env.cursor > env.limit_backward {
             break 'lab0;
         }
-        // <-, line 424
+        // <-, line 422
         if !env.slice_from("\u{03B1}\u{03B3}\u{03B1}\u{03BC}") {
             return false;
         }
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // do, line 425
+    // do, line 423
     let v_2 = env.limit - env.cursor;
     'lab1: loop {
-        // (, line 425
-        // [, line 426
+        // (, line 423
+        // [, line 424
         env.ket = env.cursor;
-        // substring, line 426
+        // substring, line 424
         if env.find_among_b(A_40, context) == 0 {
             break 'lab1;
         }
-        // ], line 426
+        // ], line 424
         env.bra = env.cursor;
-        // (, line 427
-        // delete, line 427
+        // (, line 425
+        // delete, line 425
         if !env.slice_del() {
             return false;
         }
-        // unset test1, line 427
+        // unset test1, line 425
         context.b_test1 = false;
         break 'lab1;
     }
     env.cursor = env.limit - v_2;
-    // [, line 430
+    // [, line 428
     env.ket = env.cursor;
-    // literal, line 430
+    // literal, line 428
     if !env.eq_s_b(&"\u{03B1}\u{03BC}\u{03B5}") {
         return false;
     }
-    // ], line 430
+    // ], line 428
     env.bra = env.cursor;
-    // delete, line 431
+    // delete, line 429
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 432
+    // unset test1, line 430
     context.b_test1 = false;
-    // [, line 433
+    // [, line 431
     env.ket = env.cursor;
-    // substring, line 433
+    // ], line 431
+    env.bra = env.cursor;
+    // substring, line 431
     if env.find_among_b(A_41, context) == 0 {
         return false;
     }
-    // ], line 433
-    env.bra = env.cursor;
-    // atlimit, line 433
+    // atlimit, line 431
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 435
-    // -> s, line 435
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 435
+    // (, line 433
+    // <-, line 433
     if !env.slice_from("\u{03B1}\u{03BC}") {
         return false;
     }
-    // <+ s, line 435
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5b(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 439
-    // do, line 440
+    // (, line 437
+    // do, line 438
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 440
-        // [, line 441
+        // (, line 438
+        // [, line 439
         env.ket = env.cursor;
-        // substring, line 441
+        // substring, line 439
         if env.find_among_b(A_43, context) == 0 {
             break 'lab0;
         }
-        // ], line 441
+        // ], line 439
         env.bra = env.cursor;
-        // (, line 443
-        // delete, line 444
+        // (, line 441
+        // delete, line 442
         if !env.slice_del() {
             return false;
         }
-        // unset test1, line 445
+        // unset test1, line 443
         context.b_test1 = false;
-        // [, line 446
+        // [, line 444
         env.ket = env.cursor;
-        // substring, line 446
+        // ], line 444
+        env.bra = env.cursor;
+        // substring, line 444
         if env.find_among_b(A_42, context) == 0 {
             break 'lab0;
         }
-        // ], line 446
-        env.bra = env.cursor;
-        // atlimit, line 446
+        // atlimit, line 444
         if env.cursor > env.limit_backward {
             break 'lab0;
         }
-        // (, line 447
-        // -> s, line 447
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 447
+        // (, line 445
+        // <-, line 445
         if !env.slice_from("\u{03B1}\u{03B3}\u{03B1}\u{03BD}") {
             return false;
         }
-        // <+ s, line 447
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // [, line 452
+    // [, line 450
     env.ket = env.cursor;
-    // literal, line 452
+    // literal, line 450
     if !env.eq_s_b(&"\u{03B1}\u{03BD}\u{03B5}") {
         return false;
     }
-    // ], line 452
+    // ], line 450
     env.bra = env.cursor;
-    // delete, line 453
+    // delete, line 451
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 454
+    // unset test1, line 452
     context.b_test1 = false;
-    // or, line 455
+    // or, line 453
     'lab1: loop {
         let v_2 = env.limit - env.cursor;
         'lab2: loop {
-            // (, line 455
-            // [, line 455
+            // (, line 453
+            // [, line 453
             env.ket = env.cursor;
+            // ], line 453
+            env.bra = env.cursor;
             if !env.in_grouping_b(G_v2, 945, 969) {
                 break 'lab2;
             }
-            // ], line 455
-            env.bra = env.cursor;
-            // -> s, line 455
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 455
+            // <-, line 453
             if !env.slice_from("\u{03B1}\u{03BD}") {
                 return false;
             }
-            // <+ s, line 455
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab1;
         }
         env.cursor = env.limit - v_2;
-        // [, line 456
+        // [, line 454
         env.ket = env.cursor;
         break 'lab1;
     }
-    // substring, line 456
+    // ], line 454
+    env.bra = env.cursor;
+    // substring, line 454
     if env.find_among_b(A_44, context) == 0 {
         return false;
     }
-    // ], line 456
-    env.bra = env.cursor;
-    // atlimit, line 456
+    // atlimit, line 454
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 473
-    // -> s, line 473
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 473
+    // (, line 471
+    // <-, line 471
     if !env.slice_from("\u{03B1}\u{03BD}") {
         return false;
     }
-    // <+ s, line 473
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5c(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 477
-    // do, line 478
+    // (, line 475
+    // do, line 476
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 478
-        // [, line 479
+        // (, line 476
+        // [, line 477
         env.ket = env.cursor;
-        // substring, line 479
+        // substring, line 477
         if env.find_among_b(A_45, context) == 0 {
             break 'lab0;
         }
-        // ], line 479
+        // ], line 477
         env.bra = env.cursor;
-        // (, line 480
-        // delete, line 480
+        // (, line 478
+        // delete, line 478
         if !env.slice_del() {
             return false;
         }
-        // unset test1, line 480
+        // unset test1, line 478
         context.b_test1 = false;
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // [, line 483
+    // [, line 481
     env.ket = env.cursor;
-    // literal, line 483
+    // literal, line 481
     if !env.eq_s_b(&"\u{03B5}\u{03C4}\u{03B5}") {
         return false;
     }
-    // ], line 483
+    // ], line 481
     env.bra = env.cursor;
-    // delete, line 484
+    // delete, line 482
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 485
+    // unset test1, line 483
     context.b_test1 = false;
-    // or, line 486
+    // or, line 484
     'lab1: loop {
         let v_2 = env.limit - env.cursor;
         'lab2: loop {
-            // (, line 486
-            // [, line 486
+            // (, line 484
+            // [, line 484
             env.ket = env.cursor;
+            // ], line 484
+            env.bra = env.cursor;
             if !env.in_grouping_b(G_v2, 945, 969) {
                 break 'lab2;
             }
-            // ], line 486
-            env.bra = env.cursor;
-            // -> s, line 486
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 486
+            // <-, line 484
             if !env.slice_from("\u{03B5}\u{03C4}") {
                 return false;
             }
-            // <+ s, line 486
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab1;
         }
         env.cursor = env.limit - v_2;
         'lab3: loop {
-            // (, line 487
-            // [, line 487
+            // (, line 485
+            // [, line 485
             env.ket = env.cursor;
-            // substring, line 487
+            // ], line 485
+            env.bra = env.cursor;
+            // substring, line 485
             if env.find_among_b(A_46, context) == 0 {
                 break 'lab3;
             }
-            // ], line 487
-            env.bra = env.cursor;
-            // (, line 491
-            // -> s, line 491
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 491
+            // (, line 489
+            // <-, line 489
             if !env.slice_from("\u{03B5}\u{03C4}") {
                 return false;
             }
-            // <+ s, line 491
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab1;
         }
         env.cursor = env.limit - v_2;
-        // [, line 493
+        // [, line 491
         env.ket = env.cursor;
         break 'lab1;
     }
-    // substring, line 493
+    // ], line 491
+    env.bra = env.cursor;
+    // substring, line 491
     if env.find_among_b(A_47, context) == 0 {
         return false;
     }
-    // ], line 493
-    env.bra = env.cursor;
-    // atlimit, line 493
+    // atlimit, line 491
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 497
-    // -> s, line 497
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 497
+    // (, line 495
+    // <-, line 495
     if !env.slice_from("\u{03B5}\u{03C4}") {
         return false;
     }
-    // <+ s, line 497
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5d(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 501
-    // [, line 502
+    // (, line 499
+    // [, line 500
     env.ket = env.cursor;
-    // substring, line 502
+    // substring, line 500
     if env.find_among_b(A_48, context) == 0 {
         return false;
     }
-    // ], line 502
+    // ], line 500
     env.bra = env.cursor;
-    // (, line 503
-    // delete, line 504
+    // (, line 501
+    // delete, line 502
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 505
+    // unset test1, line 503
     context.b_test1 = false;
-    // or, line 506
+    // or, line 504
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 506
-            // [, line 506
+            // (, line 504
+            // [, line 504
             env.ket = env.cursor;
-            // literal, line 506
+            // ], line 504
+            env.bra = env.cursor;
+            // literal, line 504
             if !env.eq_s_b(&"\u{03B1}\u{03C1}\u{03C7}") {
                 break 'lab1;
             }
-            // ], line 506
-            env.bra = env.cursor;
-            // atlimit, line 506
+            // atlimit, line 504
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // -> s, line 506
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 506
+            // <-, line 504
             if !env.slice_from("\u{03BF}\u{03BD}\u{03C4}") {
                 return false;
             }
-            // <+ s, line 506
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 507
-        // [, line 507
+        // (, line 505
+        // [, line 505
         env.ket = env.cursor;
-        // literal, line 507
+        // ], line 505
+        env.bra = env.cursor;
+        // literal, line 505
         if !env.eq_s_b(&"\u{03BA}\u{03C1}\u{03B5}") {
             return false;
         }
-        // ], line 507
-        env.bra = env.cursor;
-        // -> s, line 507
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 507
+        // <-, line 505
         if !env.slice_from("\u{03C9}\u{03BD}\u{03C4}") {
             return false;
         }
-        // <+ s, line 507
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
 }
 
 fn r_step5e(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 512
-    // [, line 513
+    // (, line 510
+    // [, line 511
     env.ket = env.cursor;
-    // substring, line 513
+    // substring, line 511
     if env.find_among_b(A_49, context) == 0 {
         return false;
     }
-    // ], line 513
+    // ], line 511
     env.bra = env.cursor;
-    // (, line 514
-    // delete, line 515
+    // (, line 512
+    // delete, line 513
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 516
+    // unset test1, line 514
     context.b_test1 = false;
-    // (, line 517
-    // [, line 517
+    // (, line 515
+    // [, line 515
     env.ket = env.cursor;
-    // literal, line 517
+    // ], line 515
+    env.bra = env.cursor;
+    // literal, line 515
     if !env.eq_s_b(&"\u{03BF}\u{03BD}") {
         return false;
     }
-    // ], line 517
-    env.bra = env.cursor;
-    // atlimit, line 517
+    // atlimit, line 515
     if env.cursor > env.limit_backward {
         return false;
     }
-    // -> s, line 517
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 517
+    // <-, line 515
     if !env.slice_from("\u{03BF}\u{03BC}\u{03B1}\u{03C3}\u{03C4}") {
         return false;
     }
-    // <+ s, line 517
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5f(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 522
-    // do, line 523
+    // (, line 520
+    // do, line 521
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 523
-        // [, line 524
+        // (, line 521
+        // [, line 522
         env.ket = env.cursor;
-        // literal, line 524
+        // literal, line 522
         if !env.eq_s_b(&"\u{03B9}\u{03B5}\u{03C3}\u{03C4}\u{03B5}") {
             break 'lab0;
         }
-        // ], line 524
+        // ], line 522
         env.bra = env.cursor;
-        // delete, line 525
+        // delete, line 523
         if !env.slice_del() {
             return false;
         }
-        // unset test1, line 526
+        // unset test1, line 524
         context.b_test1 = false;
-        // [, line 527
+        // [, line 525
         env.ket = env.cursor;
-        // substring, line 527
+        // ], line 525
+        env.bra = env.cursor;
+        // substring, line 525
         if env.find_among_b(A_50, context) == 0 {
             break 'lab0;
         }
-        // ], line 527
-        env.bra = env.cursor;
-        // atlimit, line 527
+        // atlimit, line 525
         if env.cursor > env.limit_backward {
             break 'lab0;
         }
-        // (, line 528
-        // -> s, line 528
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 528
+        // (, line 526
+        // <-, line 526
         if !env.slice_from("\u{03B9}\u{03B5}\u{03C3}\u{03C4}") {
             return false;
         }
-        // <+ s, line 528
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // [, line 531
+    // [, line 529
     env.ket = env.cursor;
-    // literal, line 531
+    // literal, line 529
     if !env.eq_s_b(&"\u{03B5}\u{03C3}\u{03C4}\u{03B5}") {
         return false;
     }
-    // ], line 531
+    // ], line 529
     env.bra = env.cursor;
-    // delete, line 532
+    // delete, line 530
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 533
+    // unset test1, line 531
     context.b_test1 = false;
-    // [, line 534
+    // [, line 532
     env.ket = env.cursor;
-    // substring, line 534
+    // ], line 532
+    env.bra = env.cursor;
+    // substring, line 532
     if env.find_among_b(A_51, context) == 0 {
         return false;
     }
-    // ], line 534
-    env.bra = env.cursor;
-    // atlimit, line 534
+    // atlimit, line 532
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 536
-    // -> s, line 536
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 536
+    // (, line 534
+    // <-, line 534
     if !env.slice_from("\u{03B9}\u{03B5}\u{03C3}\u{03C4}") {
         return false;
     }
-    // <+ s, line 536
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5g(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 540
-    // do, line 541
+    // (, line 538
+    // do, line 539
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 541
-        // [, line 542
+        // (, line 539
+        // [, line 540
         env.ket = env.cursor;
-        // substring, line 542
+        // substring, line 540
         if env.find_among_b(A_52, context) == 0 {
             break 'lab0;
         }
-        // ], line 542
+        // ], line 540
         env.bra = env.cursor;
-        // (, line 543
-        // delete, line 543
+        // (, line 541
+        // delete, line 541
         if !env.slice_del() {
             return false;
         }
-        // unset test1, line 543
+        // unset test1, line 541
         context.b_test1 = false;
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // [, line 546
+    // [, line 544
     env.ket = env.cursor;
-    // substring, line 546
+    // substring, line 544
     if env.find_among_b(A_55, context) == 0 {
         return false;
     }
-    // ], line 546
+    // ], line 544
     env.bra = env.cursor;
-    // (, line 547
-    // delete, line 548
+    // (, line 545
+    // delete, line 546
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 549
+    // unset test1, line 547
     context.b_test1 = false;
-    // or, line 552
+    // or, line 550
     'lab1: loop {
         let v_2 = env.limit - env.cursor;
         'lab2: loop {
-            // (, line 550
-            // [, line 550
+            // (, line 548
+            // [, line 548
             env.ket = env.cursor;
-            // substring, line 550
+            // ], line 548
+            env.bra = env.cursor;
+            // substring, line 548
             if env.find_among_b(A_53, context) == 0 {
                 break 'lab2;
             }
-            // ], line 550
-            env.bra = env.cursor;
-            // (, line 551
-            // -> s, line 551
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 551
+            // (, line 549
+            // <-, line 549
             if !env.slice_from("\u{03B7}\u{03BA}") {
                 return false;
             }
-            // <+ s, line 551
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab1;
         }
         env.cursor = env.limit - v_2;
-        // (, line 553
-        // [, line 553
+        // (, line 551
+        // [, line 551
         env.ket = env.cursor;
-        // substring, line 553
+        // ], line 551
+        env.bra = env.cursor;
+        // substring, line 551
         if env.find_among_b(A_54, context) == 0 {
             return false;
         }
-        // ], line 553
-        env.bra = env.cursor;
-        // atlimit, line 553
+        // atlimit, line 551
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 554
-        // -> s, line 554
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 554
+        // (, line 552
+        // <-, line 552
         if !env.slice_from("\u{03B7}\u{03BA}") {
             return false;
         }
-        // <+ s, line 554
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab1;
     }
     return true;
 }
 
 fn r_step5h(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 560
-    // [, line 561
+    // (, line 558
+    // [, line 559
     env.ket = env.cursor;
-    // substring, line 561
+    // substring, line 559
     if env.find_among_b(A_58, context) == 0 {
         return false;
     }
-    // ], line 561
+    // ], line 559
     env.bra = env.cursor;
-    // (, line 562
-    // delete, line 563
+    // (, line 560
+    // delete, line 561
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 564
+    // unset test1, line 562
     context.b_test1 = false;
-    // or, line 569
+    // or, line 567
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 565
-            // [, line 565
+            // (, line 563
+            // [, line 563
             env.ket = env.cursor;
-            // substring, line 565
+            // ], line 563
+            env.bra = env.cursor;
+            // substring, line 563
             if env.find_among_b(A_56, context) == 0 {
                 break 'lab1;
             }
-            // ], line 565
-            env.bra = env.cursor;
-            // (, line 567
-            // -> s, line 567
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 567
+            // (, line 565
+            // <-, line 565
             if !env.slice_from("\u{03BF}\u{03C5}\u{03C3}") {
                 return false;
             }
-            // <+ s, line 567
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 570
-        // [, line 570
+        // (, line 568
+        // [, line 568
         env.ket = env.cursor;
-        // substring, line 570
+        // ], line 568
+        env.bra = env.cursor;
+        // substring, line 568
         if env.find_among_b(A_57, context) == 0 {
             return false;
         }
-        // ], line 570
-        env.bra = env.cursor;
-        // atlimit, line 570
+        // atlimit, line 568
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 574
-        // -> s, line 574
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 574
+        // (, line 572
+        // <-, line 572
         if !env.slice_from("\u{03BF}\u{03C5}\u{03C3}") {
             return false;
         }
-        // <+ s, line 574
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
         break 'lab0;
     }
     return true;
 }
 
 fn r_step5i(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 580
-    // [, line 581
+    // (, line 578
+    // [, line 579
     env.ket = env.cursor;
-    // substring, line 581
+    // substring, line 579
     if env.find_among_b(A_62, context) == 0 {
         return false;
     }
-    // ], line 581
+    // ], line 579
     env.bra = env.cursor;
-    // (, line 582
-    // delete, line 583
+    // (, line 580
+    // delete, line 581
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 584
+    // unset test1, line 582
     context.b_test1 = false;
-    // or, line 585
+    // or, line 583
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 585
-            // [, line 585
+            // (, line 583
+            // [, line 583
             env.ket = env.cursor;
-            // literal, line 585
+            // ], line 583
+            env.bra = env.cursor;
+            // literal, line 583
             if !env.eq_s_b(&"\u{03BA}\u{03BF}\u{03BB}\u{03BB}") {
                 break 'lab1;
             }
-            // ], line 585
-            env.bra = env.cursor;
-            // -> s, line 585
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 585
+            // <-, line 583
             if !env.slice_from("\u{03B1}\u{03B3}") {
                 return false;
             }
-            // <+ s, line 585
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 585
-        // not, line 586
+        // (, line 583
+        // not, line 584
         let v_2 = env.limit - env.cursor;
         'lab2: loop {
-            // (, line 586
-            // [, line 586
+            // (, line 584
+            // [, line 584
             env.ket = env.cursor;
-            // substring, line 586
+            // substring, line 584
             if env.find_among_b(A_59, context) == 0 {
                 break 'lab2;
             }
-            // ], line 586
+            // ], line 584
             env.bra = env.cursor;
             return false;
         }
         env.cursor = env.limit - v_2;
-        // or, line 590
+        // or, line 588
         'lab3: loop {
             let v_3 = env.limit - env.cursor;
             'lab4: loop {
-                // (, line 587
-                // [, line 587
+                // (, line 585
+                // [, line 585
                 env.ket = env.cursor;
-                // substring, line 587
+                // ], line 585
+                env.bra = env.cursor;
+                // substring, line 585
                 if env.find_among_b(A_60, context) == 0 {
                     break 'lab4;
                 }
-                // ], line 587
-                env.bra = env.cursor;
-                // (, line 589
-                // -> s, line 589
-                context.S_s = env.slice_to();
-                if context.S_s.is_empty() {
-                    return false;
-                }
-                // <-, line 589
+                // (, line 587
+                // <-, line 587
                 if !env.slice_from("\u{03B1}\u{03B3}") {
                     return false;
                 }
-                // <+ s, line 589
-                let c = env.cursor;
-                let (bra, ket) = (env.cursor, env.cursor);
-                env.insert(bra, ket, &context.S_s);
-                env.cursor = c;
                 break 'lab3;
             }
             env.cursor = env.limit - v_3;
-            // (, line 591
-            // [, line 591
+            // (, line 589
+            // [, line 589
             env.ket = env.cursor;
-            // substring, line 591
+            // ], line 589
+            env.bra = env.cursor;
+            // substring, line 589
             if env.find_among_b(A_61, context) == 0 {
                 return false;
             }
-            // ], line 591
-            env.bra = env.cursor;
-            // atlimit, line 591
+            // atlimit, line 589
             if env.cursor > env.limit_backward {
                 return false;
             }
-            // (, line 597
-            // -> s, line 597
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 597
+            // (, line 595
+            // <-, line 595
             if !env.slice_from("\u{03B1}\u{03B3}") {
                 return false;
             }
-            // <+ s, line 597
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab3;
         }
         break 'lab0;
@@ -3394,229 +2973,189 @@ fn r_step5i(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_step5j(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 604
-    // [, line 605
+    // (, line 602
+    // [, line 603
     env.ket = env.cursor;
-    // substring, line 605
+    // substring, line 603
     if env.find_among_b(A_63, context) == 0 {
         return false;
     }
-    // ], line 605
+    // ], line 603
     env.bra = env.cursor;
-    // (, line 606
-    // delete, line 606
+    // (, line 604
+    // delete, line 604
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 606
+    // unset test1, line 604
     context.b_test1 = false;
-    // [, line 608
+    // [, line 606
     env.ket = env.cursor;
-    // substring, line 608
+    // ], line 606
+    env.bra = env.cursor;
+    // substring, line 606
     if env.find_among_b(A_64, context) == 0 {
         return false;
     }
-    // ], line 608
-    env.bra = env.cursor;
-    // atlimit, line 608
+    // atlimit, line 606
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 609
-    // -> s, line 609
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 609
+    // (, line 607
+    // <-, line 607
     if !env.slice_from("\u{03B7}\u{03C3}") {
         return false;
     }
-    // <+ s, line 609
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5k(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 613
-    // [, line 614
+    // (, line 611
+    // [, line 612
     env.ket = env.cursor;
-    // substring, line 614
+    // substring, line 612
     if env.find_among_b(A_65, context) == 0 {
         return false;
     }
-    // ], line 614
+    // ], line 612
     env.bra = env.cursor;
-    // (, line 615
-    // delete, line 615
+    // (, line 613
+    // delete, line 613
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 615
+    // unset test1, line 613
     context.b_test1 = false;
-    // [, line 617
+    // [, line 615
     env.ket = env.cursor;
-    // substring, line 617
+    // ], line 615
+    env.bra = env.cursor;
+    // substring, line 615
     if env.find_among_b(A_66, context) == 0 {
         return false;
     }
-    // ], line 617
-    env.bra = env.cursor;
-    // atlimit, line 617
+    // atlimit, line 615
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 619
-    // -> s, line 619
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 619
+    // (, line 617
+    // <-, line 617
     if !env.slice_from("\u{03B7}\u{03C3}\u{03C4}") {
         return false;
     }
-    // <+ s, line 619
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5l(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 623
-    // [, line 624
+    // (, line 621
+    // [, line 622
     env.ket = env.cursor;
-    // substring, line 624
+    // substring, line 622
     if env.find_among_b(A_67, context) == 0 {
         return false;
     }
-    // ], line 624
+    // ], line 622
     env.bra = env.cursor;
-    // (, line 625
-    // delete, line 625
+    // (, line 623
+    // delete, line 623
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 625
+    // unset test1, line 623
     context.b_test1 = false;
-    // [, line 627
+    // [, line 625
     env.ket = env.cursor;
-    // substring, line 627
+    // ], line 625
+    env.bra = env.cursor;
+    // substring, line 625
     if env.find_among_b(A_68, context) == 0 {
         return false;
     }
-    // ], line 627
-    env.bra = env.cursor;
-    // atlimit, line 627
+    // atlimit, line 625
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 628
-    // -> s, line 628
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 628
+    // (, line 626
+    // <-, line 626
     if !env.slice_from("\u{03BF}\u{03C5}\u{03BD}") {
         return false;
     }
-    // <+ s, line 628
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step5m(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 632
-    // [, line 633
+    // (, line 630
+    // [, line 631
     env.ket = env.cursor;
-    // substring, line 633
+    // substring, line 631
     if env.find_among_b(A_69, context) == 0 {
         return false;
     }
-    // ], line 633
+    // ], line 631
     env.bra = env.cursor;
-    // (, line 634
-    // delete, line 634
+    // (, line 632
+    // delete, line 632
     if !env.slice_del() {
         return false;
     }
-    // unset test1, line 634
+    // unset test1, line 632
     context.b_test1 = false;
-    // [, line 636
+    // [, line 634
     env.ket = env.cursor;
-    // substring, line 636
+    // ], line 634
+    env.bra = env.cursor;
+    // substring, line 634
     if env.find_among_b(A_70, context) == 0 {
         return false;
     }
-    // ], line 636
-    env.bra = env.cursor;
-    // atlimit, line 636
+    // atlimit, line 634
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 638
-    // -> s, line 638
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 638
+    // (, line 636
+    // <-, line 636
     if !env.slice_from("\u{03BF}\u{03C5}\u{03BC}") {
         return false;
     }
-    // <+ s, line 638
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
     return true;
 }
 
 fn r_step6(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 642
-    // do, line 643
+    // (, line 640
+    // do, line 641
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 643
-        // [, line 644
+        // (, line 641
+        // [, line 642
         env.ket = env.cursor;
-        // substring, line 644
+        // substring, line 642
         if env.find_among_b(A_71, context) == 0 {
             break 'lab0;
         }
-        // ], line 644
+        // ], line 642
         env.bra = env.cursor;
-        // (, line 645
-        // <-, line 645
+        // (, line 643
+        // <-, line 643
         if !env.slice_from("\u{03BC}\u{03B1}") {
             return false;
         }
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // Boolean test test1, line 648
+    // Boolean test test1, line 646
     if !context.b_test1 {
         return false;
     }
-    // [, line 649
+    // [, line 647
     env.ket = env.cursor;
-    // substring, line 649
+    // substring, line 647
     if env.find_among_b(A_72, context) == 0 {
         return false;
     }
-    // ], line 649
+    // ], line 647
     env.bra = env.cursor;
-    // (, line 659
-    // delete, line 659
+    // (, line 657
+    // delete, line 657
     if !env.slice_del() {
         return false;
     }
@@ -3624,17 +3163,17 @@ fn r_step6(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_step7(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 663
-    // [, line 664
+    // (, line 661
+    // [, line 662
     env.ket = env.cursor;
-    // substring, line 664
+    // substring, line 662
     if env.find_among_b(A_73, context) == 0 {
         return false;
     }
-    // ], line 664
+    // ], line 662
     env.bra = env.cursor;
-    // (, line 665
-    // delete, line 665
+    // (, line 663
+    // delete, line 663
     if !env.slice_del() {
         return false;
     }
@@ -3643,349 +3182,183 @@ fn r_step7(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        S_s: String::new(),
         b_test1: false,
     };
-    // (, line 670
-    // backwards, line 671
+    // (, line 668
+    // backwards, line 669
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 671
-    // do, line 672
+    // (, line 669
+    // do, line 670
     let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // call tolower, line 672
-        if !r_tolower(env, context) {
-            break 'lab0;
-        }
-        break 'lab0;
-    }
+    // call tolower, line 670
+    r_tolower(env, context);
     env.cursor = env.limit - v_1;
-    // call has_min_length, line 673
+    // call has_min_length, line 671
     if !r_has_min_length(env, context) {
         return false;
     }
-    // set test1, line 674
+    // set test1, line 672
     context.b_test1 = true;
-    // do, line 675
+    // do, line 673
     let v_2 = env.limit - env.cursor;
-    'lab1: loop {
-        // call step1, line 675
-        if !r_step1(env, context) {
-            break 'lab1;
-        }
-        break 'lab1;
-    }
+    // call step1, line 673
+    r_step1(env, context);
     env.cursor = env.limit - v_2;
-    // do, line 676
+    // do, line 674
     let v_3 = env.limit - env.cursor;
-    'lab2: loop {
-        // call steps1, line 676
-        if !r_steps1(env, context) {
-            break 'lab2;
-        }
-        break 'lab2;
-    }
+    // call steps1, line 674
+    r_steps1(env, context);
     env.cursor = env.limit - v_3;
-    // do, line 677
+    // do, line 675
     let v_4 = env.limit - env.cursor;
-    'lab3: loop {
-        // call steps2, line 677
-        if !r_steps2(env, context) {
-            break 'lab3;
-        }
-        break 'lab3;
-    }
+    // call steps2, line 675
+    r_steps2(env, context);
     env.cursor = env.limit - v_4;
-    // do, line 678
+    // do, line 676
     let v_5 = env.limit - env.cursor;
-    'lab4: loop {
-        // call steps3, line 678
-        if !r_steps3(env, context) {
-            break 'lab4;
-        }
-        break 'lab4;
-    }
+    // call steps3, line 676
+    r_steps3(env, context);
     env.cursor = env.limit - v_5;
-    // do, line 679
+    // do, line 677
     let v_6 = env.limit - env.cursor;
-    'lab5: loop {
-        // call steps4, line 679
-        if !r_steps4(env, context) {
-            break 'lab5;
-        }
-        break 'lab5;
-    }
+    // call steps4, line 677
+    r_steps4(env, context);
     env.cursor = env.limit - v_6;
-    // do, line 680
+    // do, line 678
     let v_7 = env.limit - env.cursor;
-    'lab6: loop {
-        // call steps5, line 680
-        if !r_steps5(env, context) {
-            break 'lab6;
-        }
-        break 'lab6;
-    }
+    // call steps5, line 678
+    r_steps5(env, context);
     env.cursor = env.limit - v_7;
-    // do, line 681
+    // do, line 679
     let v_8 = env.limit - env.cursor;
-    'lab7: loop {
-        // call steps6, line 681
-        if !r_steps6(env, context) {
-            break 'lab7;
-        }
-        break 'lab7;
-    }
+    // call steps6, line 679
+    r_steps6(env, context);
     env.cursor = env.limit - v_8;
-    // do, line 682
+    // do, line 680
     let v_9 = env.limit - env.cursor;
-    'lab8: loop {
-        // call steps7, line 682
-        if !r_steps7(env, context) {
-            break 'lab8;
-        }
-        break 'lab8;
-    }
+    // call steps7, line 680
+    r_steps7(env, context);
     env.cursor = env.limit - v_9;
-    // do, line 683
+    // do, line 681
     let v_10 = env.limit - env.cursor;
-    'lab9: loop {
-        // call steps8, line 683
-        if !r_steps8(env, context) {
-            break 'lab9;
-        }
-        break 'lab9;
-    }
+    // call steps8, line 681
+    r_steps8(env, context);
     env.cursor = env.limit - v_10;
-    // do, line 684
+    // do, line 682
     let v_11 = env.limit - env.cursor;
-    'lab10: loop {
-        // call steps9, line 684
-        if !r_steps9(env, context) {
-            break 'lab10;
-        }
-        break 'lab10;
-    }
+    // call steps9, line 682
+    r_steps9(env, context);
     env.cursor = env.limit - v_11;
-    // do, line 685
+    // do, line 683
     let v_12 = env.limit - env.cursor;
-    'lab11: loop {
-        // call steps10, line 685
-        if !r_steps10(env, context) {
-            break 'lab11;
-        }
-        break 'lab11;
-    }
+    // call steps10, line 683
+    r_steps10(env, context);
     env.cursor = env.limit - v_12;
-    // do, line 686
+    // do, line 684
     let v_13 = env.limit - env.cursor;
-    'lab12: loop {
-        // call step2a, line 686
-        if !r_step2a(env, context) {
-            break 'lab12;
-        }
-        break 'lab12;
-    }
+    // call step2a, line 684
+    r_step2a(env, context);
     env.cursor = env.limit - v_13;
-    // do, line 687
+    // do, line 685
     let v_14 = env.limit - env.cursor;
-    'lab13: loop {
-        // call step2b, line 687
-        if !r_step2b(env, context) {
-            break 'lab13;
-        }
-        break 'lab13;
-    }
+    // call step2b, line 685
+    r_step2b(env, context);
     env.cursor = env.limit - v_14;
-    // do, line 688
+    // do, line 686
     let v_15 = env.limit - env.cursor;
-    'lab14: loop {
-        // call step2c, line 688
-        if !r_step2c(env, context) {
-            break 'lab14;
-        }
-        break 'lab14;
-    }
+    // call step2c, line 686
+    r_step2c(env, context);
     env.cursor = env.limit - v_15;
-    // do, line 689
+    // do, line 687
     let v_16 = env.limit - env.cursor;
-    'lab15: loop {
-        // call step2d, line 689
-        if !r_step2d(env, context) {
-            break 'lab15;
-        }
-        break 'lab15;
-    }
+    // call step2d, line 687
+    r_step2d(env, context);
     env.cursor = env.limit - v_16;
-    // do, line 690
+    // do, line 688
     let v_17 = env.limit - env.cursor;
-    'lab16: loop {
-        // call step3, line 690
-        if !r_step3(env, context) {
-            break 'lab16;
-        }
-        break 'lab16;
-    }
+    // call step3, line 688
+    r_step3(env, context);
     env.cursor = env.limit - v_17;
-    // do, line 691
+    // do, line 689
     let v_18 = env.limit - env.cursor;
-    'lab17: loop {
-        // call step4, line 691
-        if !r_step4(env, context) {
-            break 'lab17;
-        }
-        break 'lab17;
-    }
+    // call step4, line 689
+    r_step4(env, context);
     env.cursor = env.limit - v_18;
-    // do, line 692
+    // do, line 690
     let v_19 = env.limit - env.cursor;
-    'lab18: loop {
-        // call step5a, line 692
-        if !r_step5a(env, context) {
-            break 'lab18;
-        }
-        break 'lab18;
-    }
+    // call step5a, line 690
+    r_step5a(env, context);
     env.cursor = env.limit - v_19;
-    // do, line 693
+    // do, line 691
     let v_20 = env.limit - env.cursor;
-    'lab19: loop {
-        // call step5b, line 693
-        if !r_step5b(env, context) {
-            break 'lab19;
-        }
-        break 'lab19;
-    }
+    // call step5b, line 691
+    r_step5b(env, context);
     env.cursor = env.limit - v_20;
-    // do, line 694
+    // do, line 692
     let v_21 = env.limit - env.cursor;
-    'lab20: loop {
-        // call step5c, line 694
-        if !r_step5c(env, context) {
-            break 'lab20;
-        }
-        break 'lab20;
-    }
+    // call step5c, line 692
+    r_step5c(env, context);
     env.cursor = env.limit - v_21;
-    // do, line 695
+    // do, line 693
     let v_22 = env.limit - env.cursor;
-    'lab21: loop {
-        // call step5d, line 695
-        if !r_step5d(env, context) {
-            break 'lab21;
-        }
-        break 'lab21;
-    }
+    // call step5d, line 693
+    r_step5d(env, context);
     env.cursor = env.limit - v_22;
-    // do, line 696
+    // do, line 694
     let v_23 = env.limit - env.cursor;
-    'lab22: loop {
-        // call step5e, line 696
-        if !r_step5e(env, context) {
-            break 'lab22;
-        }
-        break 'lab22;
-    }
+    // call step5e, line 694
+    r_step5e(env, context);
     env.cursor = env.limit - v_23;
-    // do, line 697
+    // do, line 695
     let v_24 = env.limit - env.cursor;
-    'lab23: loop {
-        // call step5f, line 697
-        if !r_step5f(env, context) {
-            break 'lab23;
-        }
-        break 'lab23;
-    }
+    // call step5f, line 695
+    r_step5f(env, context);
     env.cursor = env.limit - v_24;
-    // do, line 698
+    // do, line 696
     let v_25 = env.limit - env.cursor;
-    'lab24: loop {
-        // call step5g, line 698
-        if !r_step5g(env, context) {
-            break 'lab24;
-        }
-        break 'lab24;
-    }
+    // call step5g, line 696
+    r_step5g(env, context);
     env.cursor = env.limit - v_25;
-    // do, line 699
+    // do, line 697
     let v_26 = env.limit - env.cursor;
-    'lab25: loop {
-        // call step5h, line 699
-        if !r_step5h(env, context) {
-            break 'lab25;
-        }
-        break 'lab25;
-    }
+    // call step5h, line 697
+    r_step5h(env, context);
     env.cursor = env.limit - v_26;
-    // do, line 700
+    // do, line 698
     let v_27 = env.limit - env.cursor;
-    'lab26: loop {
-        // call step5j, line 700
-        if !r_step5j(env, context) {
-            break 'lab26;
-        }
-        break 'lab26;
-    }
+    // call step5j, line 698
+    r_step5j(env, context);
     env.cursor = env.limit - v_27;
-    // do, line 701
+    // do, line 699
     let v_28 = env.limit - env.cursor;
-    'lab27: loop {
-        // call step5i, line 701
-        if !r_step5i(env, context) {
-            break 'lab27;
-        }
-        break 'lab27;
-    }
+    // call step5i, line 699
+    r_step5i(env, context);
     env.cursor = env.limit - v_28;
-    // do, line 702
+    // do, line 700
     let v_29 = env.limit - env.cursor;
-    'lab28: loop {
-        // call step5k, line 702
-        if !r_step5k(env, context) {
-            break 'lab28;
-        }
-        break 'lab28;
-    }
+    // call step5k, line 700
+    r_step5k(env, context);
     env.cursor = env.limit - v_29;
-    // do, line 703
+    // do, line 701
     let v_30 = env.limit - env.cursor;
-    'lab29: loop {
-        // call step5l, line 703
-        if !r_step5l(env, context) {
-            break 'lab29;
-        }
-        break 'lab29;
-    }
+    // call step5l, line 701
+    r_step5l(env, context);
     env.cursor = env.limit - v_30;
-    // do, line 704
+    // do, line 702
     let v_31 = env.limit - env.cursor;
-    'lab30: loop {
-        // call step5m, line 704
-        if !r_step5m(env, context) {
-            break 'lab30;
-        }
-        break 'lab30;
-    }
+    // call step5m, line 702
+    r_step5m(env, context);
     env.cursor = env.limit - v_31;
-    // do, line 705
+    // do, line 703
     let v_32 = env.limit - env.cursor;
-    'lab31: loop {
-        // call step6, line 705
-        if !r_step6(env, context) {
-            break 'lab31;
-        }
-        break 'lab31;
-    }
+    // call step6, line 703
+    r_step6(env, context);
     env.cursor = env.limit - v_32;
-    // do, line 706
+    // do, line 704
     let v_33 = env.limit - env.cursor;
-    'lab32: loop {
-        // call step7, line 706
-        if !r_step7(env, context) {
-            break 'lab32;
-        }
-        break 'lab32;
-    }
+    // call step7, line 704
+    r_step7(env, context);
     env.cursor = env.limit - v_33;
     env.cursor = env.limit_backward;
     return true;

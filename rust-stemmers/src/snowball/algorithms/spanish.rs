@@ -1,5 +1,5 @@
 //! This file was generated automatically by the Snowball to Rust compiler
-//! http://snowballstem.org/
+//! https://snowballstem.org/
 
 #![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
@@ -440,9 +440,7 @@ fn r_postlude(env: &mut SnowballEnv, context: &mut Context) -> bool {
             }
             // ], line 50
             env.ket = env.cursor;
-            if among_var == 0 {
-                break 'lab1;
-            } else if among_var == 1 {
+            if among_var == 1 {
                 // (, line 51
                 // <-, line 51
                 if !env.slice_from("a") {
@@ -529,9 +527,7 @@ fn r_attached_pronoun(env: &mut SnowballEnv, context: &mut Context) -> bool {
     if !r_RV(env, context) {
         return false;
     }
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
+    if among_var == 1 {
         // (, line 73
         // ], line 73
         env.bra = env.cursor;
@@ -603,9 +599,7 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
     }
     // ], line 87
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
+    if among_var == 1 {
         // (, line 98
         // call R2, line 99
         if !r_R2(env, context) {
@@ -712,10 +706,7 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             if !env.slice_del() {
                 return false;
             }
-            if among_var == 0 {
-                env.cursor = env.limit - v_2;
-                break 'lab1;
-            } else if among_var == 1 {
+            if among_var == 1 {
                 // (, line 126
                 // [, line 126
                 env.ket = env.cursor;
@@ -755,27 +746,21 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             // [, line 137
             env.ket = env.cursor;
             // substring, line 137
-            among_var = env.find_among_b(A_4, context);
-            if among_var == 0 {
+            if env.find_among_b(A_4, context) == 0 {
                 env.cursor = env.limit - v_3;
                 break 'lab2;
             }
             // ], line 137
             env.bra = env.cursor;
-            if among_var == 0 {
+            // (, line 140
+            // call R2, line 140
+            if !r_R2(env, context) {
                 env.cursor = env.limit - v_3;
                 break 'lab2;
-            } else if among_var == 1 {
-                // (, line 140
-                // call R2, line 140
-                if !r_R2(env, context) {
-                    env.cursor = env.limit - v_3;
-                    break 'lab2;
-                }
-                // delete, line 140
-                if !env.slice_del() {
-                    return false;
-                }
+            }
+            // delete, line 140
+            if !env.slice_del() {
+                return false;
             }
             break 'lab2;
         }
@@ -796,27 +781,21 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             // [, line 149
             env.ket = env.cursor;
             // substring, line 149
-            among_var = env.find_among_b(A_5, context);
-            if among_var == 0 {
+            if env.find_among_b(A_5, context) == 0 {
                 env.cursor = env.limit - v_4;
                 break 'lab3;
             }
             // ], line 149
             env.bra = env.cursor;
-            if among_var == 0 {
+            // (, line 152
+            // call R2, line 152
+            if !r_R2(env, context) {
                 env.cursor = env.limit - v_4;
                 break 'lab3;
-            } else if among_var == 1 {
-                // (, line 152
-                // call R2, line 152
-                if !r_R2(env, context) {
-                    env.cursor = env.limit - v_4;
-                    break 'lab3;
-                }
-                // delete, line 152
-                if !env.slice_del() {
-                    return false;
-                }
+            }
+            // delete, line 152
+            if !env.slice_del() {
+                return false;
             }
             break 'lab3;
         }
@@ -859,42 +838,32 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_y_verb_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
     // (, line 167
     // setlimit, line 168
-    let v_1 = env.limit - env.cursor;
-    // tomark, line 168
     if env.cursor < context.i_pV {
         return false;
     }
-    env.cursor = context.i_pV;
     let v_2 = env.limit_backward;
-    env.limit_backward = env.cursor;
-    env.cursor = env.limit - v_1;
+    env.limit_backward = context.i_pV;
     // (, line 168
     // [, line 168
     env.ket = env.cursor;
     // substring, line 168
-    among_var = env.find_among_b(A_7, context);
-    if among_var == 0 {
+    if env.find_among_b(A_7, context) == 0 {
         env.limit_backward = v_2;
         return false;
     }
     // ], line 168
     env.bra = env.cursor;
     env.limit_backward = v_2;
-    if among_var == 0 {
+    // (, line 171
+    // literal, line 171
+    if !env.eq_s_b(&"u") {
         return false;
-    } else if among_var == 1 {
-        // (, line 171
-        // literal, line 171
-        if !env.eq_s_b(&"u") {
-            return false;
-        }
-        // delete, line 171
-        if !env.slice_del() {
-            return false;
-        }
+    }
+    // delete, line 171
+    if !env.slice_del() {
+        return false;
     }
     return true;
 }
@@ -903,15 +872,11 @@ fn r_verb_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
     // (, line 175
     // setlimit, line 176
-    let v_1 = env.limit - env.cursor;
-    // tomark, line 176
     if env.cursor < context.i_pV {
         return false;
     }
-    env.cursor = context.i_pV;
     let v_2 = env.limit_backward;
-    env.limit_backward = env.cursor;
-    env.cursor = env.limit - v_1;
+    env.limit_backward = context.i_pV;
     // (, line 176
     // [, line 176
     env.ket = env.cursor;
@@ -924,9 +889,7 @@ fn r_verb_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
     // ], line 176
     env.bra = env.cursor;
     env.limit_backward = v_2;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
+    if among_var == 1 {
         // (, line 179
         // try, line 179
         let v_3 = env.limit - env.cursor;
@@ -975,9 +938,7 @@ fn r_residual_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
     }
     // ], line 205
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
+    if among_var == 1 {
         // (, line 208
         // call RV, line 208
         if !r_RV(env, context) {
@@ -1041,81 +1002,59 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
     };
     // (, line 215
     // do, line 216
-    let v_1 = env.cursor;
-    'lab0: loop {
-        // call mark_regions, line 216
-        if !r_mark_regions(env, context) {
-            break 'lab0;
-        }
-        break 'lab0;
-    }
-    env.cursor = v_1;
+    // call mark_regions, line 216
+    r_mark_regions(env, context);
     // backwards, line 217
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
     // (, line 217
     // do, line 218
     let v_2 = env.limit - env.cursor;
-    'lab1: loop {
-        // call attached_pronoun, line 218
-        if !r_attached_pronoun(env, context) {
-            break 'lab1;
-        }
-        break 'lab1;
-    }
+    // call attached_pronoun, line 218
+    r_attached_pronoun(env, context);
     env.cursor = env.limit - v_2;
     // do, line 219
     let v_3 = env.limit - env.cursor;
-    'lab2: loop {
+    'lab0: loop {
         // (, line 219
         // or, line 219
-        'lab3: loop {
+        'lab1: loop {
             let v_4 = env.limit - env.cursor;
-            'lab4: loop {
+            'lab2: loop {
                 // call standard_suffix, line 219
                 if !r_standard_suffix(env, context) {
-                    break 'lab4;
+                    break 'lab2;
                 }
-                break 'lab3;
+                break 'lab1;
             }
             env.cursor = env.limit - v_4;
-            'lab5: loop {
+            'lab3: loop {
                 // call y_verb_suffix, line 220
                 if !r_y_verb_suffix(env, context) {
-                    break 'lab5;
+                    break 'lab3;
                 }
-                break 'lab3;
+                break 'lab1;
             }
             env.cursor = env.limit - v_4;
             // call verb_suffix, line 221
             if !r_verb_suffix(env, context) {
-                break 'lab2;
+                break 'lab0;
             }
-            break 'lab3;
+            break 'lab1;
         }
-        break 'lab2;
+        break 'lab0;
     }
     env.cursor = env.limit - v_3;
     // do, line 223
     let v_5 = env.limit - env.cursor;
-    'lab6: loop {
-        // call residual_suffix, line 223
-        if !r_residual_suffix(env, context) {
-            break 'lab6;
-        }
-        break 'lab6;
-    }
+    // call residual_suffix, line 223
+    r_residual_suffix(env, context);
     env.cursor = env.limit - v_5;
     env.cursor = env.limit_backward;
     // do, line 225
     let v_6 = env.cursor;
-    'lab7: loop {
-        // call postlude, line 225
-        if !r_postlude(env, context) {
-            break 'lab7;
-        }
-        break 'lab7;
-    }
+    // call postlude, line 225
+    r_postlude(env, context);
     env.cursor = v_6;
     return true;
 }

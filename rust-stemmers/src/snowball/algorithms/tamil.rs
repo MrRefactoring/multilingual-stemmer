@@ -1,5 +1,5 @@
 //! This file was generated automatically by the Snowball to Rust compiler
-//! http://snowballstem.org/
+//! https://snowballstem.org/
 
 #![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
@@ -254,34 +254,31 @@ static A_25: &'static [Among<Context>; 6] = &[
 
 #[derive(Clone)]
 struct Context {
-    i_length: usize,
-    b_found_wrong_ending: bool,
     b_found_vetrumai_urupu: bool,
     b_found_a_match: bool,
 }
 
 fn r_has_min_length(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 104
-    context.i_length = env.current.chars().count();
-    if !(context.i_length > 4){
+    // (, line 99
+    if !((env.current.chars().count() as i32) > 4){
         return false;
     }
     return true;
 }
 
 fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 109
-    // or, line 110
+    // (, line 103
+    // or, line 104
     'lab0: loop {
         let v_1 = env.cursor;
         'lab1: loop {
-            // (, line 110
-            // and, line 110
+            // (, line 104
+            // and, line 104
             let v_2 = env.cursor;
-            // try, line 110
+            // try, line 104
             let v_3 = env.cursor;
             'lab2: loop {
-                // literal, line 110
+                // literal, line 104
                 if !env.eq_s(&"\u{0BB5}\u{0BCB}") {
                     env.cursor = v_3;
                     break 'lab2;
@@ -289,15 +286,15 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
                 break 'lab2;
             }
             env.cursor = v_2;
-            // [, line 110
+            // [, line 104
             env.bra = env.cursor;
-            // literal, line 110
+            // literal, line 104
             if !env.eq_s(&"\u{0BB5}\u{0BCB}") {
                 break 'lab1;
             }
-            // ], line 110
+            // ], line 104
             env.ket = env.cursor;
-            // <-, line 110
+            // <-, line 104
             if !env.slice_from("\u{0B93}") {
                 return false;
             }
@@ -305,13 +302,13 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = v_1;
         'lab3: loop {
-            // (, line 111
-            // and, line 111
+            // (, line 105
+            // and, line 105
             let v_4 = env.cursor;
-            // try, line 111
+            // try, line 105
             let v_5 = env.cursor;
             'lab4: loop {
-                // literal, line 111
+                // literal, line 105
                 if !env.eq_s(&"\u{0BB5}\u{0BCA}") {
                     env.cursor = v_5;
                     break 'lab4;
@@ -319,15 +316,15 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
                 break 'lab4;
             }
             env.cursor = v_4;
-            // [, line 111
+            // [, line 105
             env.bra = env.cursor;
-            // literal, line 111
+            // literal, line 105
             if !env.eq_s(&"\u{0BB5}\u{0BCA}") {
                 break 'lab3;
             }
-            // ], line 111
+            // ], line 105
             env.ket = env.cursor;
-            // <-, line 111
+            // <-, line 105
             if !env.slice_from("\u{0B92}") {
                 return false;
             }
@@ -335,13 +332,13 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = v_1;
         'lab5: loop {
-            // (, line 112
-            // and, line 112
+            // (, line 106
+            // and, line 106
             let v_6 = env.cursor;
-            // try, line 112
+            // try, line 106
             let v_7 = env.cursor;
             'lab6: loop {
-                // literal, line 112
+                // literal, line 106
                 if !env.eq_s(&"\u{0BB5}\u{0BC1}") {
                     env.cursor = v_7;
                     break 'lab6;
@@ -349,28 +346,28 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
                 break 'lab6;
             }
             env.cursor = v_6;
-            // [, line 112
+            // [, line 106
             env.bra = env.cursor;
-            // literal, line 112
+            // literal, line 106
             if !env.eq_s(&"\u{0BB5}\u{0BC1}") {
                 break 'lab5;
             }
-            // ], line 112
+            // ], line 106
             env.ket = env.cursor;
-            // <-, line 112
+            // <-, line 106
             if !env.slice_from("\u{0B89}") {
                 return false;
             }
             break 'lab0;
         }
         env.cursor = v_1;
-        // (, line 113
-        // and, line 113
+        // (, line 107
+        // and, line 107
         let v_8 = env.cursor;
-        // try, line 113
+        // try, line 107
         let v_9 = env.cursor;
         'lab7: loop {
-            // literal, line 113
+            // literal, line 107
             if !env.eq_s(&"\u{0BB5}\u{0BC2}") {
                 env.cursor = v_9;
                 break 'lab7;
@@ -378,15 +375,15 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
             break 'lab7;
         }
         env.cursor = v_8;
-        // [, line 113
+        // [, line 107
         env.bra = env.cursor;
-        // literal, line 113
+        // literal, line 107
         if !env.eq_s(&"\u{0BB5}\u{0BC2}") {
             return false;
         }
-        // ], line 113
+        // ], line 107
         env.ket = env.cursor;
-        // <-, line 113
+        // <-, line 107
         if !env.slice_from("\u{0B8A}") {
             return false;
         }
@@ -396,66 +393,22 @@ fn r_fix_va_start(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_fix_endings(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 116
-    // set found_wrong_ending, line 117
-    context.b_found_wrong_ending = true;
-    // repeat, line 118
-    'replab0: loop{
-        let v_1 = env.cursor;
-        'lab1: for _ in 0..1 {
-            // (, line 118
-            // Boolean test found_wrong_ending, line 118
-            if !context.b_found_wrong_ending {
-                break 'lab1;
-            }
-            // (, line 118
-            // do, line 118
+    // (, line 110
+    // do, line 111
+    let v_1 = env.cursor;
+    'lab0: loop {
+        // repeat, line 111
+        'replab1: loop{
             let v_2 = env.cursor;
-            'lab2: loop {
-                // call fix_ending, line 118
+            'lab2: for _ in 0..1 {
+                // call fix_ending, line 111
                 if !r_fix_ending(env, context) {
                     break 'lab2;
                 }
-                break 'lab2;
+                continue 'replab1;
             }
             env.cursor = v_2;
-            continue 'replab0;
-        }
-        env.cursor = v_1;
-        break 'replab0;
-    }
-    return true;
-}
-
-fn r_remove_question_prefixes(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 121
-    // [, line 122
-    env.bra = env.cursor;
-    // (, line 122
-    // literal, line 122
-    if !env.eq_s(&"\u{0B8E}") {
-        return false;
-    }
-    // among, line 122
-    if env.find_among(A_0, context) == 0 {
-        return false;
-    }
-    // literal, line 122
-    if !env.eq_s(&"\u{0BCD}") {
-        return false;
-    }
-    // ], line 122
-    env.ket = env.cursor;
-    // delete, line 122
-    if !env.slice_del() {
-        return false;
-    }
-    // do, line 123
-    let v_1 = env.cursor;
-    'lab0: loop {
-        // call fix_va_start, line 123
-        if !r_fix_va_start(env, context) {
-            break 'lab0;
+            break 'replab1;
         }
         break 'lab0;
     }
@@ -463,32 +416,60 @@ fn r_remove_question_prefixes(env: &mut SnowballEnv, context: &mut Context) -> b
     return true;
 }
 
-fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 126
-    // unset found_wrong_ending, line 127
-    context.b_found_wrong_ending = false;
-    context.i_length = env.current.chars().count();
-    if !(context.i_length > 3){
+fn r_remove_question_prefixes(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    // (, line 114
+    // [, line 115
+    env.bra = env.cursor;
+    // (, line 115
+    // literal, line 115
+    if !env.eq_s(&"\u{0B8E}") {
         return false;
     }
-    // backwards, line 130
+    // among, line 115
+    if env.find_among(A_0, context) == 0 {
+        return false;
+    }
+    // literal, line 115
+    if !env.eq_s(&"\u{0BCD}") {
+        return false;
+    }
+    // ], line 115
+    env.ket = env.cursor;
+    // delete, line 115
+    if !env.slice_del() {
+        return false;
+    }
+    // do, line 116
+    let v_1 = env.cursor;
+    // call fix_va_start, line 116
+    r_fix_va_start(env, context);
+    env.cursor = v_1;
+    return true;
+}
+
+fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    // (, line 120
+    if !((env.current.chars().count() as i32) > 3){
+        return false;
+    }
+    // backwards, line 122
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 130
-    // or, line 132
+    // (, line 122
+    // or, line 124
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 131
-            // [, line 131
+            // (, line 123
+            // [, line 123
             env.ket = env.cursor;
-            // among, line 131
+            // among, line 123
             if env.find_among_b(A_1, context) == 0 {
                 break 'lab1;
             }
-            // ], line 131
+            // ], line 123
             env.bra = env.cursor;
-            // delete, line 131
+            // delete, line 123
             if !env.slice_del() {
                 return false;
             }
@@ -496,23 +477,23 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab2: loop {
-            // (, line 133
-            // [, line 133
+            // (, line 125
+            // [, line 125
             env.ket = env.cursor;
-            // literal, line 133
+            // literal, line 125
             if !env.eq_s_b(&"\u{0BAF}\u{0BCD}") {
                 break 'lab2;
             }
-            // test, line 133
+            // test, line 125
             let v_2 = env.limit - env.cursor;
-            // among, line 133
+            // among, line 125
             if env.find_among_b(A_2, context) == 0 {
                 break 'lab2;
             }
             env.cursor = env.limit - v_2;
-            // ], line 133
+            // ], line 125
             env.bra = env.cursor;
-            // delete, line 133
+            // delete, line 125
             if !env.slice_del() {
                 return false;
             }
@@ -520,29 +501,29 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab3: loop {
-            // (, line 135
-            // [, line 135
+            // (, line 127
+            // [, line 127
             env.ket = env.cursor;
-            // or, line 135
+            // or, line 127
             'lab4: loop {
                 let v_3 = env.limit - env.cursor;
                 'lab5: loop {
-                    // literal, line 135
+                    // literal, line 127
                     if !env.eq_s_b(&"\u{0B9F}\u{0BCD}\u{0BAA}\u{0BCD}") {
                         break 'lab5;
                     }
                     break 'lab4;
                 }
                 env.cursor = env.limit - v_3;
-                // literal, line 135
+                // literal, line 127
                 if !env.eq_s_b(&"\u{0B9F}\u{0BCD}\u{0B95}\u{0BCD}") {
                     break 'lab3;
                 }
                 break 'lab4;
             }
-            // ], line 135
+            // ], line 127
             env.bra = env.cursor;
-            // <-, line 135
+            // <-, line 127
             if !env.slice_from("\u{0BB3}\u{0BCD}") {
                 return false;
             }
@@ -550,16 +531,16 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab6: loop {
-            // (, line 137
-            // [, line 137
+            // (, line 129
+            // [, line 129
             env.ket = env.cursor;
-            // literal, line 137
+            // literal, line 129
             if !env.eq_s_b(&"\u{0BA9}\u{0BCD}\u{0BB1}\u{0BCD}") {
                 break 'lab6;
             }
-            // ], line 137
+            // ], line 129
             env.bra = env.cursor;
-            // <-, line 137
+            // <-, line 129
             if !env.slice_from("\u{0BB2}\u{0BCD}") {
                 return false;
             }
@@ -567,16 +548,16 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab7: loop {
-            // (, line 140
-            // [, line 140
+            // (, line 132
+            // [, line 132
             env.ket = env.cursor;
-            // literal, line 140
+            // literal, line 132
             if !env.eq_s_b(&"\u{0BB1}\u{0BCD}\u{0B95}\u{0BCD}") {
                 break 'lab7;
             }
-            // ], line 140
+            // ], line 132
             env.bra = env.cursor;
-            // <-, line 140
+            // <-, line 132
             if !env.slice_from("\u{0BB2}\u{0BCD}") {
                 return false;
             }
@@ -584,16 +565,16 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab8: loop {
-            // (, line 142
-            // [, line 142
+            // (, line 134
+            // [, line 134
             env.ket = env.cursor;
-            // literal, line 142
+            // literal, line 134
             if !env.eq_s_b(&"\u{0B9F}\u{0BCD}\u{0B9F}\u{0BCD}") {
                 break 'lab8;
             }
-            // ], line 142
+            // ], line 134
             env.bra = env.cursor;
-            // <-, line 142
+            // <-, line 134
             if !env.slice_from("\u{0B9F}\u{0BC1}") {
                 return false;
             }
@@ -601,24 +582,24 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab9: loop {
-            // (, line 144
-            // Boolean test found_vetrumai_urupu, line 144
+            // (, line 136
+            // Boolean test found_vetrumai_urupu, line 136
             if !context.b_found_vetrumai_urupu {
                 break 'lab9;
             }
-            // [, line 144
+            // [, line 136
             env.ket = env.cursor;
-            // literal, line 144
+            // literal, line 136
             if !env.eq_s_b(&"\u{0BA4}\u{0BCD}\u{0BA4}\u{0BCD}") {
                 break 'lab9;
             }
-            // (, line 144
-            // test, line 144
+            // (, line 136
+            // test, line 136
             let v_4 = env.limit - env.cursor;
-            // not, line 144
+            // not, line 136
             let v_5 = env.limit - env.cursor;
             'lab10: loop {
-                // literal, line 144
+                // literal, line 136
                 if !env.eq_s_b(&"\u{0BC8}") {
                     break 'lab10;
                 }
@@ -626,37 +607,143 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
             }
             env.cursor = env.limit - v_5;
             env.cursor = env.limit - v_4;
-            // ], line 144
+            // ], line 136
             env.bra = env.cursor;
-            // <-, line 144
+            // <-, line 136
             if !env.slice_from("\u{0BAE}\u{0BCD}") {
                 return false;
             }
-            // ], line 144
+            // ], line 136
             env.bra = env.cursor;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
         'lab11: loop {
-            // (, line 146
-            // [, line 146
+            // (, line 138
+            // [, line 138
             env.ket = env.cursor;
-            // or, line 146
+            // or, line 138
             'lab12: loop {
                 let v_6 = env.limit - env.cursor;
                 'lab13: loop {
-                    // literal, line 146
+                    // literal, line 138
                     if !env.eq_s_b(&"\u{0BC1}\u{0B95}\u{0BCD}") {
                         break 'lab13;
                     }
                     break 'lab12;
                 }
                 env.cursor = env.limit - v_6;
-                // literal, line 146
+                // literal, line 138
                 if !env.eq_s_b(&"\u{0BC1}\u{0B95}\u{0BCD}\u{0B95}\u{0BCD}") {
                     break 'lab11;
                 }
                 break 'lab12;
+            }
+            // ], line 138
+            env.bra = env.cursor;
+            // <-, line 138
+            if !env.slice_from("\u{0BCD}") {
+                return false;
+            }
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        'lab14: loop {
+            // (, line 140
+            // [, line 140
+            env.ket = env.cursor;
+            // literal, line 140
+            if !env.eq_s_b(&"\u{0BCD}") {
+                break 'lab14;
+            }
+            // among, line 140
+            if env.find_among_b(A_3, context) == 0 {
+                break 'lab14;
+            }
+            // literal, line 140
+            if !env.eq_s_b(&"\u{0BCD}") {
+                break 'lab14;
+            }
+            // among, line 140
+            if env.find_among_b(A_4, context) == 0 {
+                break 'lab14;
+            }
+            // ], line 140
+            env.bra = env.cursor;
+            // delete, line 140
+            if !env.slice_del() {
+                return false;
+            }
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        'lab15: loop {
+            // (, line 142
+            // [, line 142
+            env.ket = env.cursor;
+            // literal, line 142
+            if !env.eq_s_b(&"\u{0BC1}\u{0B95}\u{0BCD}") {
+                break 'lab15;
+            }
+            // ], line 142
+            env.bra = env.cursor;
+            // <-, line 142
+            if !env.slice_from("\u{0BCD}") {
+                return false;
+            }
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        'lab16: loop {
+            // (, line 144
+            // [, line 144
+            env.ket = env.cursor;
+            // literal, line 144
+            if !env.eq_s_b(&"\u{0BCD}") {
+                break 'lab16;
+            }
+            // among, line 144
+            if env.find_among_b(A_5, context) == 0 {
+                break 'lab16;
+            }
+            // ], line 144
+            env.bra = env.cursor;
+            // delete, line 144
+            if !env.slice_del() {
+                return false;
+            }
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        'lab17: loop {
+            // (, line 146
+            // [, line 146
+            env.ket = env.cursor;
+            // literal, line 146
+            if !env.eq_s_b(&"\u{0BCD}") {
+                break 'lab17;
+            }
+            // (, line 146
+            // or, line 146
+            'lab18: loop {
+                let v_7 = env.limit - env.cursor;
+                'lab19: loop {
+                    // among, line 146
+                    if env.find_among_b(A_6, context) == 0 {
+                        break 'lab19;
+                    }
+                    break 'lab18;
+                }
+                env.cursor = env.limit - v_7;
+                // among, line 146
+                if env.find_among_b(A_7, context) == 0 {
+                    break 'lab17;
+                }
+                break 'lab18;
+            }
+            // literal, line 146
+            if !env.eq_s_b(&"\u{0BCD}") {
+                break 'lab17;
             }
             // ], line 146
             env.bra = env.cursor;
@@ -667,25 +754,13 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        'lab14: loop {
+        'lab20: loop {
             // (, line 148
             // [, line 148
             env.ket = env.cursor;
-            // literal, line 148
-            if !env.eq_s_b(&"\u{0BCD}") {
-                break 'lab14;
-            }
             // among, line 148
-            if env.find_among_b(A_3, context) == 0 {
-                break 'lab14;
-            }
-            // literal, line 148
-            if !env.eq_s_b(&"\u{0BCD}") {
-                break 'lab14;
-            }
-            // among, line 148
-            if env.find_among_b(A_4, context) == 0 {
-                break 'lab14;
+            if env.find_among_b(A_8, context) == 0 {
+                break 'lab20;
             }
             // ], line 148
             env.bra = env.cursor;
@@ -696,115 +771,21 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        'lab15: loop {
+        'lab21: loop {
             // (, line 150
             // [, line 150
             env.ket = env.cursor;
             // literal, line 150
-            if !env.eq_s_b(&"\u{0BC1}\u{0B95}\u{0BCD}") {
-                break 'lab15;
-            }
-            // ], line 150
-            env.bra = env.cursor;
-            // <-, line 150
-            if !env.slice_from("\u{0BCD}") {
-                return false;
-            }
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        'lab16: loop {
-            // (, line 152
-            // [, line 152
-            env.ket = env.cursor;
-            // literal, line 152
-            if !env.eq_s_b(&"\u{0BCD}") {
-                break 'lab16;
-            }
-            // among, line 152
-            if env.find_among_b(A_5, context) == 0 {
-                break 'lab16;
-            }
-            // ], line 152
-            env.bra = env.cursor;
-            // delete, line 152
-            if !env.slice_del() {
-                return false;
-            }
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        'lab17: loop {
-            // (, line 154
-            // [, line 154
-            env.ket = env.cursor;
-            // literal, line 154
-            if !env.eq_s_b(&"\u{0BCD}") {
-                break 'lab17;
-            }
-            // (, line 154
-            // or, line 154
-            'lab18: loop {
-                let v_7 = env.limit - env.cursor;
-                'lab19: loop {
-                    // among, line 154
-                    if env.find_among_b(A_6, context) == 0 {
-                        break 'lab19;
-                    }
-                    break 'lab18;
-                }
-                env.cursor = env.limit - v_7;
-                // among, line 154
-                if env.find_among_b(A_7, context) == 0 {
-                    break 'lab17;
-                }
-                break 'lab18;
-            }
-            // literal, line 154
-            if !env.eq_s_b(&"\u{0BCD}") {
-                break 'lab17;
-            }
-            // ], line 154
-            env.bra = env.cursor;
-            // <-, line 154
-            if !env.slice_from("\u{0BCD}") {
-                return false;
-            }
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        'lab20: loop {
-            // (, line 156
-            // [, line 156
-            env.ket = env.cursor;
-            // among, line 156
-            if env.find_among_b(A_8, context) == 0 {
-                break 'lab20;
-            }
-            // ], line 156
-            env.bra = env.cursor;
-            // delete, line 156
-            if !env.slice_del() {
-                return false;
-            }
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        'lab21: loop {
-            // (, line 158
-            // [, line 158
-            env.ket = env.cursor;
-            // literal, line 158
             if !env.eq_s_b(&"\u{0BA9}\u{0BC1}") {
                 break 'lab21;
             }
-            // (, line 158
-            // test, line 158
+            // (, line 150
+            // test, line 150
             let v_8 = env.limit - env.cursor;
-            // not, line 158
+            // not, line 150
             let v_9 = env.limit - env.cursor;
             'lab22: loop {
-                // among, line 158
+                // among, line 150
                 if env.find_among_b(A_9, context) == 0 {
                     break 'lab22;
                 }
@@ -812,9 +793,9 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
             }
             env.cursor = env.limit - v_9;
             env.cursor = env.limit - v_8;
-            // ], line 158
+            // ], line 150
             env.bra = env.cursor;
-            // delete, line 158
+            // delete, line 150
             if !env.slice_del() {
                 return false;
             }
@@ -822,20 +803,20 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab23: loop {
-            // (, line 160
-            // [, line 160
+            // (, line 152
+            // [, line 152
             env.ket = env.cursor;
-            // literal, line 160
+            // literal, line 152
             if !env.eq_s_b(&"\u{0B99}\u{0BCD}") {
                 break 'lab23;
             }
-            // (, line 160
-            // test, line 160
+            // (, line 152
+            // test, line 152
             let v_10 = env.limit - env.cursor;
-            // not, line 160
+            // not, line 152
             let v_11 = env.limit - env.cursor;
             'lab24: loop {
-                // literal, line 160
+                // literal, line 152
                 if !env.eq_s_b(&"\u{0BC8}") {
                     break 'lab24;
                 }
@@ -843,9 +824,9 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
             }
             env.cursor = env.limit - v_11;
             env.cursor = env.limit - v_10;
-            // ], line 160
+            // ], line 152
             env.bra = env.cursor;
-            // <-, line 160
+            // <-, line 152
             if !env.slice_from("\u{0BAE}\u{0BCD}") {
                 return false;
             }
@@ -853,131 +834,124 @@ fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.cursor = env.limit - v_1;
         'lab25: loop {
-            // (, line 162
-            // [, line 162
+            // (, line 154
+            // [, line 154
             env.ket = env.cursor;
-            // literal, line 162
+            // literal, line 154
             if !env.eq_s_b(&"\u{0B99}\u{0BCD}") {
                 break 'lab25;
             }
-            // ], line 162
+            // ], line 154
             env.bra = env.cursor;
-            // delete, line 162
+            // delete, line 154
             if !env.slice_del() {
                 return false;
             }
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 164
-        // [, line 164
+        // (, line 156
+        // [, line 156
         env.ket = env.cursor;
-        // literal, line 164
+        // literal, line 156
         if !env.eq_s_b(&"\u{0BCD}") {
             return false;
         }
-        // (, line 164
-        // test, line 164
+        // (, line 156
+        // test, line 156
         let v_12 = env.limit - env.cursor;
-        // (, line 164
-        // or, line 164
+        // (, line 156
+        // or, line 156
         'lab26: loop {
             let v_13 = env.limit - env.cursor;
             'lab27: loop {
-                // among, line 164
+                // among, line 156
                 if env.find_among_b(A_10, context) == 0 {
                     break 'lab27;
                 }
                 break 'lab26;
             }
             env.cursor = env.limit - v_13;
-            // literal, line 164
+            // literal, line 156
             if !env.eq_s_b(&"\u{0BCD}") {
                 return false;
             }
             break 'lab26;
         }
         env.cursor = env.limit - v_12;
-        // ], line 164
+        // ], line 156
         env.bra = env.cursor;
-        // delete, line 164
+        // delete, line 156
         if !env.slice_del() {
             return false;
         }
         break 'lab0;
     }
     env.cursor = env.limit_backward;
-    // set found_wrong_ending, line 167
-    context.b_found_wrong_ending = true;
     return true;
 }
 
 fn r_remove_pronoun_prefixes(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 170
-    // unset found_a_match, line 171
+    // (, line 160
+    // unset found_a_match, line 161
     context.b_found_a_match = false;
-    // [, line 172
+    // [, line 162
     env.bra = env.cursor;
-    // among, line 172
+    // among, line 162
     if env.find_among(A_11, context) == 0 {
         return false;
     }
-    // among, line 172
+    // among, line 162
     if env.find_among(A_12, context) == 0 {
         return false;
     }
-    // literal, line 172
+    // literal, line 162
     if !env.eq_s(&"\u{0BCD}") {
         return false;
     }
-    // ], line 172
+    // ], line 162
     env.ket = env.cursor;
-    // delete, line 172
+    // delete, line 162
     if !env.slice_del() {
         return false;
     }
-    // (, line 173
-    // set found_a_match, line 173
+    // (, line 163
+    // set found_a_match, line 163
     context.b_found_a_match = true;
-    // do, line 174
+    // do, line 164
     let v_1 = env.cursor;
-    'lab0: loop {
-        // call fix_va_start, line 174
-        if !r_fix_va_start(env, context) {
-            break 'lab0;
-        }
-        break 'lab0;
-    }
+    // call fix_va_start, line 164
+    r_fix_va_start(env, context);
     env.cursor = v_1;
     return true;
 }
 
 fn r_remove_plural_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 177
-    // unset found_a_match, line 178
+    // (, line 167
+    // unset found_a_match, line 168
     context.b_found_a_match = false;
-    // backwards, line 179
+    // backwards, line 169
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 179
-    // or, line 180
+    // (, line 169
+    // or, line 170
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 180
-            // [, line 180
+            // (, line 170
+            // [, line 170
             env.ket = env.cursor;
-            // literal, line 180
+            // literal, line 170
             if !env.eq_s_b(&"\u{0BC1}\u{0B99}\u{0BCD}\u{0B95}\u{0BB3}\u{0BCD}") {
                 break 'lab1;
             }
-            // (, line 180
-            // test, line 180
+            // (, line 170
+            // test, line 170
             let v_2 = env.limit - env.cursor;
-            // not, line 180
+            // not, line 170
             let v_3 = env.limit - env.cursor;
             'lab2: loop {
-                // among, line 180
+                // among, line 170
                 if env.find_among_b(A_13, context) == 0 {
                     break 'lab2;
                 }
@@ -985,9 +959,9 @@ fn r_remove_plural_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool 
             }
             env.cursor = env.limit - v_3;
             env.cursor = env.limit - v_2;
-            // ], line 180
+            // ], line 170
             env.bra = env.cursor;
-            // <-, line 180
+            // <-, line 170
             if !env.slice_from("\u{0BCD}") {
                 return false;
             }
@@ -995,16 +969,16 @@ fn r_remove_plural_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool 
         }
         env.cursor = env.limit - v_1;
         'lab3: loop {
-            // (, line 181
-            // [, line 181
+            // (, line 171
+            // [, line 171
             env.ket = env.cursor;
-            // literal, line 181
+            // literal, line 171
             if !env.eq_s_b(&"\u{0BB1}\u{0BCD}\u{0B95}\u{0BB3}\u{0BCD}") {
                 break 'lab3;
             }
-            // ], line 181
+            // ], line 171
             env.bra = env.cursor;
-            // <-, line 181
+            // <-, line 171
             if !env.slice_from("\u{0BB2}\u{0BCD}") {
                 return false;
             }
@@ -1012,190 +986,178 @@ fn r_remove_plural_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool 
         }
         env.cursor = env.limit - v_1;
         'lab4: loop {
-            // (, line 182
-            // [, line 182
+            // (, line 172
+            // [, line 172
             env.ket = env.cursor;
-            // literal, line 182
+            // literal, line 172
             if !env.eq_s_b(&"\u{0B9F}\u{0BCD}\u{0B95}\u{0BB3}\u{0BCD}") {
                 break 'lab4;
             }
-            // ], line 182
+            // ], line 172
             env.bra = env.cursor;
-            // <-, line 182
+            // <-, line 172
             if !env.slice_from("\u{0BB3}\u{0BCD}") {
                 return false;
             }
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 183
-        // [, line 183
+        // (, line 173
+        // [, line 173
         env.ket = env.cursor;
-        // literal, line 183
+        // literal, line 173
         if !env.eq_s_b(&"\u{0B95}\u{0BB3}\u{0BCD}") {
             return false;
         }
-        // ], line 183
+        // ], line 173
         env.bra = env.cursor;
-        // delete, line 183
+        // delete, line 173
         if !env.slice_del() {
             return false;
         }
         break 'lab0;
     }
-    // (, line 184
-    // set found_a_match, line 184
+    // (, line 174
+    // set found_a_match, line 174
     context.b_found_a_match = true;
     env.cursor = env.limit_backward;
     return true;
 }
 
 fn r_remove_question_suffixes(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 188
-    // call has_min_length, line 189
+    // (, line 178
+    // call has_min_length, line 179
     if !r_has_min_length(env, context) {
         return false;
     }
-    // unset found_a_match, line 190
+    // unset found_a_match, line 180
     context.b_found_a_match = false;
-    // backwards, line 191
+    // backwards, line 181
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 191
-    // do, line 192
+    // (, line 181
+    // do, line 182
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 192
-        // [, line 193
+        // (, line 182
+        // [, line 183
         env.ket = env.cursor;
-        // among, line 193
+        // among, line 183
         if env.find_among_b(A_14, context) == 0 {
             break 'lab0;
         }
-        // ], line 193
+        // ], line 183
         env.bra = env.cursor;
-        // <-, line 193
+        // <-, line 183
         if !env.slice_from("\u{0BCD}") {
             return false;
         }
-        // (, line 194
-        // set found_a_match, line 194
+        // (, line 184
+        // set found_a_match, line 184
         context.b_found_a_match = true;
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
     env.cursor = env.limit_backward;
-    // do, line 197
-    let v_2 = env.cursor;
-    'lab1: loop {
-        // call fix_endings, line 197
-        if !r_fix_endings(env, context) {
-            break 'lab1;
-        }
-        break 'lab1;
-    }
-    env.cursor = v_2;
+    // do, line 187
+    // call fix_endings, line 187
+    r_fix_endings(env, context);
     return true;
 }
 
 fn r_remove_command_suffixes(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 200
-    // call has_min_length, line 201
+    // (, line 190
+    // call has_min_length, line 191
     if !r_has_min_length(env, context) {
         return false;
     }
-    // unset found_a_match, line 202
+    // unset found_a_match, line 192
     context.b_found_a_match = false;
-    // backwards, line 203
+    // backwards, line 193
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 203
-    // [, line 204
+    // (, line 193
+    // [, line 194
     env.ket = env.cursor;
-    // among, line 204
+    // among, line 194
     if env.find_among_b(A_15, context) == 0 {
         return false;
     }
-    // ], line 204
+    // ], line 194
     env.bra = env.cursor;
-    // delete, line 204
+    // delete, line 194
     if !env.slice_del() {
         return false;
     }
-    // (, line 205
-    // set found_a_match, line 205
+    // (, line 195
+    // set found_a_match, line 195
     context.b_found_a_match = true;
     env.cursor = env.limit_backward;
     return true;
 }
 
 fn r_remove_um(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 209
-    // unset found_a_match, line 210
+    // (, line 199
+    // unset found_a_match, line 200
     context.b_found_a_match = false;
-    // call has_min_length, line 211
+    // call has_min_length, line 201
     if !r_has_min_length(env, context) {
         return false;
     }
-    // backwards, line 212
+    // backwards, line 202
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 212
-    // [, line 212
+    // (, line 202
+    // [, line 202
     env.ket = env.cursor;
-    // literal, line 212
+    // literal, line 202
     if !env.eq_s_b(&"\u{0BC1}\u{0BAE}\u{0BCD}") {
         return false;
     }
-    // ], line 212
+    // ], line 202
     env.bra = env.cursor;
-    // <-, line 212
+    // <-, line 202
     if !env.slice_from("\u{0BCD}") {
         return false;
     }
-    // (, line 213
-    // set found_a_match, line 213
+    // (, line 203
+    // set found_a_match, line 203
     context.b_found_a_match = true;
     env.cursor = env.limit_backward;
-    // do, line 215
+    // do, line 205
     let v_1 = env.cursor;
-    'lab0: loop {
-        // call fix_ending, line 215
-        if !r_fix_ending(env, context) {
-            break 'lab0;
-        }
-        break 'lab0;
-    }
+    // call fix_ending, line 205
+    r_fix_ending(env, context);
     env.cursor = v_1;
     return true;
 }
 
 fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 218
-    // unset found_a_match, line 222
+    // (, line 208
+    // unset found_a_match, line 212
     context.b_found_a_match = false;
-    // call has_min_length, line 223
+    // call has_min_length, line 213
     if !r_has_min_length(env, context) {
         return false;
     }
-    // backwards, line 224
+    // backwards, line 214
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 224
-    // or, line 241
+    // (, line 214
+    // or, line 231
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // test, line 225
+            // test, line 215
             let v_2 = env.limit - env.cursor;
-            // (, line 225
-            // [, line 225
+            // (, line 215
+            // [, line 215
             env.ket = env.cursor;
-            // or, line 225
+            // or, line 215
             'lab2: loop {
                 let v_3 = env.limit - env.cursor;
                 'lab3: loop {
-                    // literal, line 225
+                    // literal, line 215
                     if !env.eq_s_b(&"\u{0BC1}\u{0B9F}\u{0BA9}\u{0BCD}") {
                         break 'lab3;
                     }
@@ -1203,7 +1165,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab4: loop {
-                    // literal, line 226
+                    // literal, line 216
                     if !env.eq_s_b(&"\u{0BBF}\u{0BB2}\u{0BCD}\u{0BB2}\u{0BC8}") {
                         break 'lab4;
                     }
@@ -1211,7 +1173,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab5: loop {
-                    // literal, line 227
+                    // literal, line 217
                     if !env.eq_s_b(&"\u{0BBF}\u{0B9F}\u{0BAE}\u{0BCD}") {
                         break 'lab5;
                     }
@@ -1219,7 +1181,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab6: loop {
-                    // literal, line 228
+                    // literal, line 218
                     if !env.eq_s_b(&"\u{0BBF}\u{0BA9}\u{0BCD}\u{0BB1}\u{0BBF}") {
                         break 'lab6;
                     }
@@ -1227,7 +1189,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab7: loop {
-                    // literal, line 229
+                    // literal, line 219
                     if !env.eq_s_b(&"\u{0BBE}\u{0B95}\u{0BBF}") {
                         break 'lab7;
                     }
@@ -1235,7 +1197,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab8: loop {
-                    // literal, line 230
+                    // literal, line 220
                     if !env.eq_s_b(&"\u{0BBE}\u{0B95}\u{0BBF}\u{0BAF}") {
                         break 'lab8;
                     }
@@ -1243,7 +1205,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab9: loop {
-                    // literal, line 231
+                    // literal, line 221
                     if !env.eq_s_b(&"\u{0BC6}\u{0BA9}\u{0BCD}\u{0BB1}\u{0BC1}") {
                         break 'lab9;
                     }
@@ -1251,7 +1213,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab10: loop {
-                    // literal, line 232
+                    // literal, line 222
                     if !env.eq_s_b(&"\u{0BC1}\u{0BB3}\u{0BCD}\u{0BB3}") {
                         break 'lab10;
                     }
@@ -1259,7 +1221,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab11: loop {
-                    // literal, line 233
+                    // literal, line 223
                     if !env.eq_s_b(&"\u{0BC1}\u{0B9F}\u{0BC8}\u{0BAF}") {
                         break 'lab11;
                     }
@@ -1267,7 +1229,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab12: loop {
-                    // literal, line 234
+                    // literal, line 224
                     if !env.eq_s_b(&"\u{0BC1}\u{0B9F}\u{0BC8}") {
                         break 'lab12;
                     }
@@ -1275,7 +1237,7 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab13: loop {
-                    // literal, line 235
+                    // literal, line 225
                     if !env.eq_s_b(&"\u{0BC6}\u{0BA9}\u{0BC1}\u{0BAE}\u{0BCD}") {
                         break 'lab13;
                     }
@@ -1283,18 +1245,18 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab14: loop {
-                    // (, line 236
-                    // literal, line 236
+                    // (, line 226
+                    // literal, line 226
                     if !env.eq_s_b(&"\u{0BB2}\u{0BCD}\u{0BB2}") {
                         break 'lab14;
                     }
-                    // test, line 236
+                    // test, line 226
                     let v_4 = env.limit - env.cursor;
-                    // (, line 236
-                    // not, line 236
+                    // (, line 226
+                    // not, line 226
                     let v_5 = env.limit - env.cursor;
                     'lab15: loop {
-                        // among, line 236
+                        // among, line 226
                         if env.find_among_b(A_16, context) == 0 {
                             break 'lab15;
                         }
@@ -1306,98 +1268,91 @@ fn r_remove_common_word_endings(env: &mut SnowballEnv, context: &mut Context) ->
                 }
                 env.cursor = env.limit - v_3;
                 'lab16: loop {
-                    // literal, line 237
+                    // literal, line 227
                     if !env.eq_s_b(&"\u{0BC6}\u{0BA9}") {
                         break 'lab16;
                     }
                     break 'lab2;
                 }
                 env.cursor = env.limit - v_3;
-                // literal, line 238
+                // literal, line 228
                 if !env.eq_s_b(&"\u{0BBE}\u{0B95}\u{0BBF}") {
                     break 'lab1;
                 }
                 break 'lab2;
             }
-            // ], line 238
+            // ], line 228
             env.bra = env.cursor;
-            // <-, line 238
+            // <-, line 228
             if !env.slice_from("\u{0BCD}") {
                 return false;
             }
-            // (, line 239
-            // set found_a_match, line 239
+            // (, line 229
+            // set found_a_match, line 229
             context.b_found_a_match = true;
             env.cursor = env.limit - v_2;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // test, line 242
+        // test, line 232
         let v_6 = env.limit - env.cursor;
-        // (, line 242
-        // [, line 242
+        // (, line 232
+        // [, line 232
         env.ket = env.cursor;
-        // among, line 242
+        // among, line 232
         if env.find_among_b(A_17, context) == 0 {
             return false;
         }
-        // ], line 255
+        // ], line 245
         env.bra = env.cursor;
-        // delete, line 255
+        // delete, line 245
         if !env.slice_del() {
             return false;
         }
-        // (, line 256
-        // set found_a_match, line 256
+        // (, line 246
+        // set found_a_match, line 246
         context.b_found_a_match = true;
         env.cursor = env.limit - v_6;
         break 'lab0;
     }
     env.cursor = env.limit_backward;
-    // do, line 259
-    let v_7 = env.cursor;
-    'lab17: loop {
-        // call fix_endings, line 259
-        if !r_fix_endings(env, context) {
-            break 'lab17;
-        }
-        break 'lab17;
-    }
-    env.cursor = v_7;
+    // do, line 249
+    // call fix_endings, line 249
+    r_fix_endings(env, context);
     return true;
 }
 
 fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 262
-    // unset found_a_match, line 263
+    // (, line 252
+    // unset found_a_match, line 253
     context.b_found_a_match = false;
-    // unset found_vetrumai_urupu, line 264
+    // unset found_vetrumai_urupu, line 254
     context.b_found_vetrumai_urupu = false;
-    // call has_min_length, line 265
+    // call has_min_length, line 255
     if !r_has_min_length(env, context) {
         return false;
     }
-    // backwards, line 266
+    // backwards, line 256
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 266
-    // (, line 267
-    // or, line 269
+    // (, line 256
+    // (, line 257
+    // or, line 259
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // test, line 268
+            // test, line 258
             let v_2 = env.limit - env.cursor;
-            // (, line 268
-            // [, line 268
+            // (, line 258
+            // [, line 258
             env.ket = env.cursor;
-            // literal, line 268
+            // literal, line 258
             if !env.eq_s_b(&"\u{0BA9}\u{0BC8}") {
                 break 'lab1;
             }
-            // ], line 268
+            // ], line 258
             env.bra = env.cursor;
-            // delete, line 268
+            // delete, line 258
             if !env.slice_del() {
                 return false;
             }
@@ -1406,40 +1361,40 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
         }
         env.cursor = env.limit - v_1;
         'lab2: loop {
-            // test, line 270
+            // test, line 260
             let v_3 = env.limit - env.cursor;
-            // (, line 270
-            // [, line 270
+            // (, line 260
+            // [, line 260
             env.ket = env.cursor;
-            // or, line 271
+            // or, line 261
             'lab3: loop {
                 let v_4 = env.limit - env.cursor;
                 'lab4: loop {
-                    // (, line 270
-                    // or, line 270
+                    // (, line 260
+                    // or, line 260
                     'lab5: loop {
                         let v_5 = env.limit - env.cursor;
                         'lab6: loop {
-                            // literal, line 270
+                            // literal, line 260
                             if !env.eq_s_b(&"\u{0BBF}\u{0BA9}\u{0BC8}") {
                                 break 'lab6;
                             }
                             break 'lab5;
                         }
                         env.cursor = env.limit - v_5;
-                        // literal, line 271
+                        // literal, line 261
                         if !env.eq_s_b(&"\u{0BC8}") {
                             break 'lab4;
                         }
                         break 'lab5;
                     }
-                    // (, line 271
-                    // test, line 271
+                    // (, line 261
+                    // test, line 261
                     let v_6 = env.limit - env.cursor;
-                    // not, line 271
+                    // not, line 261
                     let v_7 = env.limit - env.cursor;
                     'lab7: loop {
-                        // among, line 271
+                        // among, line 261
                         if env.find_among_b(A_18, context) == 0 {
                             break 'lab7;
                         }
@@ -1450,29 +1405,29 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                     break 'lab3;
                 }
                 env.cursor = env.limit - v_4;
-                // (, line 272
-                // literal, line 272
+                // (, line 262
+                // literal, line 262
                 if !env.eq_s_b(&"\u{0BC8}") {
                     break 'lab2;
                 }
-                // (, line 272
-                // test, line 272
+                // (, line 262
+                // test, line 262
                 let v_8 = env.limit - env.cursor;
-                // (, line 272
-                // among, line 272
+                // (, line 262
+                // among, line 262
                 if env.find_among_b(A_19, context) == 0 {
                     break 'lab2;
                 }
-                // literal, line 272
+                // literal, line 262
                 if !env.eq_s_b(&"\u{0BCD}") {
                     break 'lab2;
                 }
                 env.cursor = env.limit - v_8;
                 break 'lab3;
             }
-            // ], line 273
+            // ], line 263
             env.bra = env.cursor;
-            // <-, line 273
+            // <-, line 263
             if !env.slice_from("\u{0BCD}") {
                 return false;
             }
@@ -1481,16 +1436,16 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
         }
         env.cursor = env.limit - v_1;
         'lab8: loop {
-            // test, line 276
+            // test, line 266
             let v_9 = env.limit - env.cursor;
-            // (, line 276
-            // [, line 276
+            // (, line 266
+            // [, line 266
             env.ket = env.cursor;
-            // or, line 277
+            // or, line 267
             'lab9: loop {
                 let v_10 = env.limit - env.cursor;
                 'lab10: loop {
-                    // literal, line 277
+                    // literal, line 267
                     if !env.eq_s_b(&"\u{0BCA}\u{0B9F}\u{0BC1}") {
                         break 'lab10;
                     }
@@ -1498,7 +1453,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab11: loop {
-                    // literal, line 278
+                    // literal, line 268
                     if !env.eq_s_b(&"\u{0BCB}\u{0B9F}\u{0BC1}") {
                         break 'lab11;
                     }
@@ -1506,7 +1461,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab12: loop {
-                    // literal, line 279
+                    // literal, line 269
                     if !env.eq_s_b(&"\u{0BBF}\u{0BB2}\u{0BCD}") {
                         break 'lab12;
                     }
@@ -1514,7 +1469,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab13: loop {
-                    // literal, line 280
+                    // literal, line 270
                     if !env.eq_s_b(&"\u{0BBF}\u{0BB1}\u{0BCD}") {
                         break 'lab13;
                     }
@@ -1522,18 +1477,18 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab14: loop {
-                    // (, line 281
-                    // literal, line 281
+                    // (, line 271
+                    // literal, line 271
                     if !env.eq_s_b(&"\u{0BBF}\u{0BA9}\u{0BCD}") {
                         break 'lab14;
                     }
-                    // (, line 281
-                    // test, line 281
+                    // (, line 271
+                    // test, line 271
                     let v_11 = env.limit - env.cursor;
-                    // not, line 281
+                    // not, line 271
                     let v_12 = env.limit - env.cursor;
                     'lab15: loop {
-                        // literal, line 281
+                        // literal, line 271
                         if !env.eq_s_b(&"\u{0BAE}") {
                             break 'lab15;
                         }
@@ -1545,7 +1500,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab16: loop {
-                    // literal, line 282
+                    // literal, line 272
                     if !env.eq_s_b(&"\u{0BBF}\u{0BA9}\u{0BCD}\u{0BB1}\u{0BC1}") {
                         break 'lab16;
                     }
@@ -1553,7 +1508,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab17: loop {
-                    // literal, line 283
+                    // literal, line 273
                     if !env.eq_s_b(&"\u{0BBF}\u{0BB0}\u{0BC1}\u{0BA8}\u{0BCD}\u{0BA4}\u{0BC1}") {
                         break 'lab17;
                     }
@@ -1561,7 +1516,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab18: loop {
-                    // literal, line 284
+                    // literal, line 274
                     if !env.eq_s_b(&"\u{0BB5}\u{0BBF}\u{0B9F}") {
                         break 'lab18;
                     }
@@ -1569,11 +1524,11 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab19: loop {
-                    // (, line 285
-                    if !(context.i_length >= 7){
+                    // (, line 275
+                    if !((env.current.chars().count() as i32) >= 7){
                         break 'lab19;
                     }
-                    // literal, line 285
+                    // literal, line 275
                     if !env.eq_s_b(&"\u{0BBF}\u{0B9F}\u{0BAE}\u{0BCD}") {
                         break 'lab19;
                     }
@@ -1581,7 +1536,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab20: loop {
-                    // literal, line 286
+                    // literal, line 276
                     if !env.eq_s_b(&"\u{0BBE}\u{0BB2}\u{0BCD}") {
                         break 'lab20;
                     }
@@ -1589,7 +1544,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab21: loop {
-                    // literal, line 287
+                    // literal, line 277
                     if !env.eq_s_b(&"\u{0BC1}\u{0B9F}\u{0BC8}") {
                         break 'lab21;
                     }
@@ -1597,7 +1552,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab22: loop {
-                    // literal, line 288
+                    // literal, line 278
                     if !env.eq_s_b(&"\u{0BBE}\u{0BAE}\u{0BB2}\u{0BCD}") {
                         break 'lab22;
                     }
@@ -1605,18 +1560,18 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_10;
                 'lab23: loop {
-                    // (, line 289
-                    // literal, line 289
+                    // (, line 279
+                    // literal, line 279
                     if !env.eq_s_b(&"\u{0BB2}\u{0BCD}") {
                         break 'lab23;
                     }
-                    // (, line 289
-                    // test, line 289
+                    // (, line 279
+                    // test, line 279
                     let v_13 = env.limit - env.cursor;
-                    // not, line 289
+                    // not, line 279
                     let v_14 = env.limit - env.cursor;
                     'lab24: loop {
-                        // among, line 289
+                        // among, line 279
                         if env.find_among_b(A_20, context) == 0 {
                             break 'lab24;
                         }
@@ -1627,15 +1582,15 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                     break 'lab9;
                 }
                 env.cursor = env.limit - v_10;
-                // literal, line 290
+                // literal, line 280
                 if !env.eq_s_b(&"\u{0BC1}\u{0BB3}\u{0BCD}") {
                     break 'lab8;
                 }
                 break 'lab9;
             }
-            // ], line 291
+            // ], line 281
             env.bra = env.cursor;
-            // <-, line 291
+            // <-, line 281
             if !env.slice_from("\u{0BCD}") {
                 return false;
             }
@@ -1644,16 +1599,16 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
         }
         env.cursor = env.limit - v_1;
         'lab25: loop {
-            // test, line 294
+            // test, line 284
             let v_15 = env.limit - env.cursor;
-            // (, line 294
-            // [, line 294
+            // (, line 284
+            // [, line 284
             env.ket = env.cursor;
-            // or, line 295
+            // or, line 285
             'lab26: loop {
                 let v_16 = env.limit - env.cursor;
                 'lab27: loop {
-                    // literal, line 295
+                    // literal, line 285
                     if !env.eq_s_b(&"\u{0B95}\u{0BA3}\u{0BCD}") {
                         break 'lab27;
                     }
@@ -1661,7 +1616,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_16;
                 'lab28: loop {
-                    // literal, line 296
+                    // literal, line 286
                     if !env.eq_s_b(&"\u{0BAE}\u{0BC1}\u{0BA9}\u{0BCD}") {
                         break 'lab28;
                     }
@@ -1669,7 +1624,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_16;
                 'lab29: loop {
-                    // literal, line 297
+                    // literal, line 287
                     if !env.eq_s_b(&"\u{0BAE}\u{0BC7}\u{0BB2}\u{0BCD}") {
                         break 'lab29;
                     }
@@ -1677,7 +1632,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_16;
                 'lab30: loop {
-                    // literal, line 298
+                    // literal, line 288
                     if !env.eq_s_b(&"\u{0BAE}\u{0BC7}\u{0BB1}\u{0BCD}") {
                         break 'lab30;
                     }
@@ -1685,7 +1640,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_16;
                 'lab31: loop {
-                    // literal, line 299
+                    // literal, line 289
                     if !env.eq_s_b(&"\u{0B95}\u{0BC0}\u{0BB4}\u{0BCD}") {
                         break 'lab31;
                     }
@@ -1693,25 +1648,25 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 }
                 env.cursor = env.limit - v_16;
                 'lab32: loop {
-                    // literal, line 300
+                    // literal, line 290
                     if !env.eq_s_b(&"\u{0BAA}\u{0BBF}\u{0BA9}\u{0BCD}") {
                         break 'lab32;
                     }
                     break 'lab26;
                 }
                 env.cursor = env.limit - v_16;
-                // (, line 301
-                // literal, line 301
+                // (, line 291
+                // literal, line 291
                 if !env.eq_s_b(&"\u{0BA4}\u{0BC1}") {
                     break 'lab25;
                 }
-                // (, line 301
-                // test, line 301
+                // (, line 291
+                // test, line 291
                 let v_17 = env.limit - env.cursor;
-                // not, line 301
+                // not, line 291
                 let v_18 = env.limit - env.cursor;
                 'lab33: loop {
-                    // among, line 301
+                    // among, line 291
                     if env.find_among_b(A_21, context) == 0 {
                         break 'lab33;
                     }
@@ -1721,9 +1676,9 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                 env.cursor = env.limit - v_17;
                 break 'lab26;
             }
-            // ], line 302
+            // ], line 292
             env.bra = env.cursor;
-            // delete, line 302
+            // delete, line 292
             if !env.slice_del() {
                 return false;
             }
@@ -1731,43 +1686,43 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // test, line 305
+        // test, line 295
         let v_19 = env.limit - env.cursor;
-        // (, line 305
-        // [, line 305
+        // (, line 295
+        // [, line 295
         env.ket = env.cursor;
-        // literal, line 305
+        // literal, line 295
         if !env.eq_s_b(&"\u{0BC0}") {
             return false;
         }
-        // ], line 305
+        // ], line 295
         env.bra = env.cursor;
-        // <-, line 305
+        // <-, line 295
         if !env.slice_from("\u{0BBF}") {
             return false;
         }
         env.cursor = env.limit - v_19;
         break 'lab0;
     }
-    // (, line 307
-    // set found_a_match, line 307
+    // (, line 297
+    // set found_a_match, line 297
     context.b_found_a_match = true;
-    // (, line 308
-    // set found_vetrumai_urupu, line 308
+    // (, line 298
+    // set found_vetrumai_urupu, line 298
     context.b_found_vetrumai_urupu = true;
-    // do, line 309
+    // do, line 299
     let v_20 = env.limit - env.cursor;
     'lab34: loop {
-        // (, line 309
-        // [, line 309
+        // (, line 299
+        // [, line 299
         env.ket = env.cursor;
-        // literal, line 309
+        // literal, line 299
         if !env.eq_s_b(&"\u{0BBF}\u{0BA9}\u{0BCD}") {
             break 'lab34;
         }
-        // ], line 309
+        // ], line 299
         env.bra = env.cursor;
-        // <-, line 309
+        // <-, line 299
         if !env.slice_from("\u{0BCD}") {
             return false;
         }
@@ -1775,42 +1730,30 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
     }
     env.cursor = env.limit - v_20;
     env.cursor = env.limit_backward;
-    // do, line 311
-    let v_21 = env.cursor;
-    'lab35: loop {
-        // call fix_endings, line 311
-        if !r_fix_endings(env, context) {
-            break 'lab35;
-        }
-        break 'lab35;
-    }
-    env.cursor = v_21;
+    // do, line 301
+    // call fix_endings, line 301
+    r_fix_endings(env, context);
     return true;
 }
 
 fn r_remove_tense_suffixes(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 314
-    // set found_a_match, line 315
+    // (, line 304
+    // set found_a_match, line 305
     context.b_found_a_match = true;
-    // repeat, line 316
+    // repeat, line 306
     'replab0: loop{
         let v_1 = env.cursor;
         'lab1: for _ in 0..1 {
-            // (, line 316
-            // Boolean test found_a_match, line 316
+            // (, line 306
+            // Boolean test found_a_match, line 306
             if !context.b_found_a_match {
                 break 'lab1;
             }
-            // (, line 316
-            // do, line 316
+            // (, line 306
+            // do, line 306
             let v_2 = env.cursor;
-            'lab2: loop {
-                // call remove_tense_suffix, line 316
-                if !r_remove_tense_suffix(env, context) {
-                    break 'lab2;
-                }
-                break 'lab2;
-            }
+            // call remove_tense_suffix, line 306
+            r_remove_tense_suffix(env, context);
             env.cursor = v_2;
             continue 'replab0;
         }
@@ -1821,58 +1764,58 @@ fn r_remove_tense_suffixes(env: &mut SnowballEnv, context: &mut Context) -> bool
 }
 
 fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 319
-    // unset found_a_match, line 320
+    // (, line 309
+    // unset found_a_match, line 310
     context.b_found_a_match = false;
-    // call has_min_length, line 321
+    // call has_min_length, line 311
     if !r_has_min_length(env, context) {
         return false;
     }
-    // backwards, line 322
+    // backwards, line 312
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 322
-    // do, line 323
+    // (, line 312
+    // do, line 313
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 323
-        // or, line 330
+        // (, line 313
+        // or, line 320
         'lab1: loop {
             let v_2 = env.limit - env.cursor;
             'lab2: loop {
-                // test, line 324
+                // test, line 314
                 let v_3 = env.limit - env.cursor;
-                // (, line 324
-                // [, line 324
+                // (, line 314
+                // [, line 314
                 env.ket = env.cursor;
-                // among, line 324
+                // among, line 314
                 if env.find_among_b(A_22, context) == 0 {
                     break 'lab2;
                 }
-                // ], line 327
+                // ], line 317
                 env.bra = env.cursor;
-                // delete, line 327
+                // delete, line 317
                 if !env.slice_del() {
                     return false;
                 }
-                // (, line 328
-                // set found_a_match, line 328
+                // (, line 318
+                // set found_a_match, line 318
                 context.b_found_a_match = true;
                 env.cursor = env.limit - v_3;
                 break 'lab1;
             }
             env.cursor = env.limit - v_2;
             'lab3: loop {
-                // test, line 331
+                // test, line 321
                 let v_4 = env.limit - env.cursor;
-                // (, line 331
-                // [, line 331
+                // (, line 321
+                // [, line 321
                 env.ket = env.cursor;
-                // or, line 332
+                // or, line 322
                 'lab4: loop {
                     let v_5 = env.limit - env.cursor;
                     'lab5: loop {
-                        // literal, line 332
+                        // literal, line 322
                         if !env.eq_s_b(&"\u{0BAE}\u{0BBE}\u{0BB0}\u{0BCD}") {
                             break 'lab5;
                         }
@@ -1880,7 +1823,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab6: loop {
-                        // literal, line 333
+                        // literal, line 323
                         if !env.eq_s_b(&"\u{0BAE}\u{0BBF}\u{0BA9}\u{0BCD}") {
                             break 'lab6;
                         }
@@ -1888,7 +1831,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab7: loop {
-                        // literal, line 334
+                        // literal, line 324
                         if !env.eq_s_b(&"\u{0BA9}\u{0BA9}\u{0BCD}") {
                             break 'lab7;
                         }
@@ -1896,7 +1839,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab8: loop {
-                        // literal, line 335
+                        // literal, line 325
                         if !env.eq_s_b(&"\u{0BA9}\u{0BBE}\u{0BA9}\u{0BCD}") {
                             break 'lab8;
                         }
@@ -1904,7 +1847,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab9: loop {
-                        // literal, line 336
+                        // literal, line 326
                         if !env.eq_s_b(&"\u{0BA9}\u{0BBE}\u{0BB3}\u{0BCD}") {
                             break 'lab9;
                         }
@@ -1912,7 +1855,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab10: loop {
-                        // literal, line 337
+                        // literal, line 327
                         if !env.eq_s_b(&"\u{0BA9}\u{0BBE}\u{0BB0}\u{0BCD}") {
                             break 'lab10;
                         }
@@ -1920,18 +1863,18 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab11: loop {
-                        // (, line 338
-                        // literal, line 338
+                        // (, line 328
+                        // literal, line 328
                         if !env.eq_s_b(&"\u{0BB5}\u{0BA9}\u{0BCD}") {
                             break 'lab11;
                         }
-                        // test, line 338
+                        // test, line 328
                         let v_6 = env.limit - env.cursor;
-                        // (, line 338
-                        // not, line 338
+                        // (, line 328
+                        // not, line 328
                         let v_7 = env.limit - env.cursor;
                         'lab12: loop {
-                            // among, line 338
+                            // among, line 328
                             if env.find_among_b(A_23, context) == 0 {
                                 break 'lab12;
                             }
@@ -1943,7 +1886,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab13: loop {
-                        // literal, line 339
+                        // literal, line 329
                         if !env.eq_s_b(&"\u{0BA9}\u{0BB3}\u{0BCD}") {
                             break 'lab13;
                         }
@@ -1951,7 +1894,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab14: loop {
-                        // literal, line 340
+                        // literal, line 330
                         if !env.eq_s_b(&"\u{0BB5}\u{0BB3}\u{0BCD}") {
                             break 'lab14;
                         }
@@ -1959,7 +1902,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab15: loop {
-                        // literal, line 341
+                        // literal, line 331
                         if !env.eq_s_b(&"\u{0BA9}\u{0BB0}\u{0BCD}") {
                             break 'lab15;
                         }
@@ -1967,7 +1910,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab16: loop {
-                        // literal, line 342
+                        // literal, line 332
                         if !env.eq_s_b(&"\u{0BB5}\u{0BB0}\u{0BCD}") {
                             break 'lab16;
                         }
@@ -1975,7 +1918,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab17: loop {
-                        // literal, line 343
+                        // literal, line 333
                         if !env.eq_s_b(&"\u{0BA9}") {
                             break 'lab17;
                         }
@@ -1983,7 +1926,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab18: loop {
-                        // literal, line 343
+                        // literal, line 333
                         if !env.eq_s_b(&"\u{0BAA}") {
                             break 'lab18;
                         }
@@ -1991,7 +1934,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab19: loop {
-                        // literal, line 343
+                        // literal, line 333
                         if !env.eq_s_b(&"\u{0B95}") {
                             break 'lab19;
                         }
@@ -1999,7 +1942,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab20: loop {
-                        // literal, line 343
+                        // literal, line 333
                         if !env.eq_s_b(&"\u{0BA4}") {
                             break 'lab20;
                         }
@@ -2007,7 +1950,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab21: loop {
-                        // literal, line 343
+                        // literal, line 333
                         if !env.eq_s_b(&"\u{0BAF}") {
                             break 'lab21;
                         }
@@ -2015,7 +1958,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab22: loop {
-                        // literal, line 344
+                        // literal, line 334
                         if !env.eq_s_b(&"\u{0BAA}\u{0BA9}\u{0BCD}") {
                             break 'lab22;
                         }
@@ -2023,7 +1966,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab23: loop {
-                        // literal, line 345
+                        // literal, line 335
                         if !env.eq_s_b(&"\u{0BAA}\u{0BB3}\u{0BCD}") {
                             break 'lab23;
                         }
@@ -2031,7 +1974,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab24: loop {
-                        // literal, line 346
+                        // literal, line 336
                         if !env.eq_s_b(&"\u{0BAA}\u{0BB0}\u{0BCD}") {
                             break 'lab24;
                         }
@@ -2039,18 +1982,18 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab25: loop {
-                        // (, line 347
-                        // literal, line 347
+                        // (, line 337
+                        // literal, line 337
                         if !env.eq_s_b(&"\u{0BA4}\u{0BC1}") {
                             break 'lab25;
                         }
-                        // (, line 347
-                        // test, line 347
+                        // (, line 337
+                        // test, line 337
                         let v_8 = env.limit - env.cursor;
-                        // not, line 347
+                        // not, line 337
                         let v_9 = env.limit - env.cursor;
                         'lab26: loop {
-                            // among, line 347
+                            // among, line 337
                             if env.find_among_b(A_24, context) == 0 {
                                 break 'lab26;
                             }
@@ -2062,7 +2005,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab27: loop {
-                        // literal, line 348
+                        // literal, line 338
                         if !env.eq_s_b(&"\u{0BBF}\u{0BB1}\u{0BCD}\u{0BB1}\u{0BC1}") {
                             break 'lab27;
                         }
@@ -2070,7 +2013,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab28: loop {
-                        // literal, line 349
+                        // literal, line 339
                         if !env.eq_s_b(&"\u{0BAA}\u{0BAE}\u{0BCD}") {
                             break 'lab28;
                         }
@@ -2078,7 +2021,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab29: loop {
-                        // literal, line 350
+                        // literal, line 340
                         if !env.eq_s_b(&"\u{0BA9}\u{0BAE}\u{0BCD}") {
                             break 'lab29;
                         }
@@ -2086,7 +2029,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab30: loop {
-                        // literal, line 351
+                        // literal, line 341
                         if !env.eq_s_b(&"\u{0BA4}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab30;
                         }
@@ -2094,7 +2037,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab31: loop {
-                        // literal, line 352
+                        // literal, line 342
                         if !env.eq_s_b(&"\u{0BB1}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab31;
                         }
@@ -2102,7 +2045,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab32: loop {
-                        // literal, line 353
+                        // literal, line 343
                         if !env.eq_s_b(&"\u{0B95}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab32;
                         }
@@ -2110,7 +2053,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab33: loop {
-                        // literal, line 354
+                        // literal, line 344
                         if !env.eq_s_b(&"\u{0BA9}\u{0BC6}\u{0BA9}\u{0BCD}") {
                             break 'lab33;
                         }
@@ -2118,54 +2061,54 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_5;
                     'lab34: loop {
-                        // literal, line 355
+                        // literal, line 345
                         if !env.eq_s_b(&"\u{0BA9}\u{0BC8}") {
                             break 'lab34;
                         }
                         break 'lab4;
                     }
                     env.cursor = env.limit - v_5;
-                    // literal, line 356
+                    // literal, line 346
                     if !env.eq_s_b(&"\u{0BB5}\u{0BC8}") {
                         break 'lab3;
                     }
                     break 'lab4;
                 }
-                // ], line 357
+                // ], line 347
                 env.bra = env.cursor;
-                // delete, line 357
+                // delete, line 347
                 if !env.slice_del() {
                     return false;
                 }
-                // (, line 358
-                // set found_a_match, line 358
+                // (, line 348
+                // set found_a_match, line 348
                 context.b_found_a_match = true;
                 env.cursor = env.limit - v_4;
                 break 'lab1;
             }
             env.cursor = env.limit - v_2;
             'lab35: loop {
-                // test, line 361
+                // test, line 351
                 let v_10 = env.limit - env.cursor;
-                // (, line 361
-                // [, line 361
+                // (, line 351
+                // [, line 351
                 env.ket = env.cursor;
-                // or, line 362
+                // or, line 352
                 'lab36: loop {
                     let v_11 = env.limit - env.cursor;
                     'lab37: loop {
-                        // (, line 362
-                        // literal, line 362
+                        // (, line 352
+                        // literal, line 352
                         if !env.eq_s_b(&"\u{0BBE}\u{0BA9}\u{0BCD}") {
                             break 'lab37;
                         }
-                        // test, line 362
+                        // test, line 352
                         let v_12 = env.limit - env.cursor;
-                        // (, line 362
-                        // not, line 362
+                        // (, line 352
+                        // not, line 352
                         let v_13 = env.limit - env.cursor;
                         'lab38: loop {
-                            // literal, line 362
+                            // literal, line 352
                             if !env.eq_s_b(&"\u{0B9A}") {
                                 break 'lab38;
                             }
@@ -2177,7 +2120,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab39: loop {
-                        // literal, line 363
+                        // literal, line 353
                         if !env.eq_s_b(&"\u{0BBE}\u{0BB3}\u{0BCD}") {
                             break 'lab39;
                         }
@@ -2185,7 +2128,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab40: loop {
-                        // literal, line 364
+                        // literal, line 354
                         if !env.eq_s_b(&"\u{0BBE}\u{0BB0}\u{0BCD}") {
                             break 'lab40;
                         }
@@ -2193,7 +2136,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab41: loop {
-                        // literal, line 365
+                        // literal, line 355
                         if !env.eq_s_b(&"\u{0BC7}\u{0BA9}\u{0BCD}") {
                             break 'lab41;
                         }
@@ -2201,7 +2144,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab42: loop {
-                        // literal, line 366
+                        // literal, line 356
                         if !env.eq_s_b(&"\u{0BBE}") {
                             break 'lab42;
                         }
@@ -2209,7 +2152,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab43: loop {
-                        // literal, line 367
+                        // literal, line 357
                         if !env.eq_s_b(&"\u{0BBE}\u{0BAE}\u{0BCD}") {
                             break 'lab43;
                         }
@@ -2217,7 +2160,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab44: loop {
-                        // literal, line 368
+                        // literal, line 358
                         if !env.eq_s_b(&"\u{0BC6}\u{0BAE}\u{0BCD}") {
                             break 'lab44;
                         }
@@ -2225,7 +2168,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab45: loop {
-                        // literal, line 369
+                        // literal, line 359
                         if !env.eq_s_b(&"\u{0BC7}\u{0BAE}\u{0BCD}") {
                             break 'lab45;
                         }
@@ -2233,7 +2176,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab46: loop {
-                        // literal, line 370
+                        // literal, line 360
                         if !env.eq_s_b(&"\u{0BCB}\u{0BAE}\u{0BCD}") {
                             break 'lab46;
                         }
@@ -2241,7 +2184,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab47: loop {
-                        // literal, line 371
+                        // literal, line 361
                         if !env.eq_s_b(&"\u{0B95}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab47;
                         }
@@ -2249,7 +2192,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab48: loop {
-                        // literal, line 372
+                        // literal, line 362
                         if !env.eq_s_b(&"\u{0BA4}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab48;
                         }
@@ -2257,7 +2200,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab49: loop {
-                        // literal, line 373
+                        // literal, line 363
                         if !env.eq_s_b(&"\u{0B9F}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab49;
                         }
@@ -2265,7 +2208,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab50: loop {
-                        // literal, line 374
+                        // literal, line 364
                         if !env.eq_s_b(&"\u{0BB1}\u{0BC1}\u{0BAE}\u{0BCD}") {
                             break 'lab50;
                         }
@@ -2273,7 +2216,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab51: loop {
-                        // literal, line 375
+                        // literal, line 365
                         if !env.eq_s_b(&"\u{0BBE}\u{0BAF}\u{0BCD}") {
                             break 'lab51;
                         }
@@ -2281,7 +2224,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab52: loop {
-                        // literal, line 376
+                        // literal, line 366
                         if !env.eq_s_b(&"\u{0BA9}\u{0BC6}\u{0BA9}\u{0BCD}") {
                             break 'lab52;
                         }
@@ -2289,7 +2232,7 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab53: loop {
-                        // literal, line 377
+                        // literal, line 367
                         if !env.eq_s_b(&"\u{0BA9}\u{0BBF}\u{0BB0}\u{0BCD}") {
                             break 'lab53;
                         }
@@ -2297,71 +2240,71 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     }
                     env.cursor = env.limit - v_11;
                     'lab54: loop {
-                        // literal, line 378
+                        // literal, line 368
                         if !env.eq_s_b(&"\u{0BC0}\u{0BB0}\u{0BCD}") {
                             break 'lab54;
                         }
                         break 'lab36;
                     }
                     env.cursor = env.limit - v_11;
-                    // literal, line 379
+                    // literal, line 369
                     if !env.eq_s_b(&"\u{0BC0}\u{0BAF}\u{0BB0}\u{0BCD}") {
                         break 'lab35;
                     }
                     break 'lab36;
                 }
-                // ], line 380
+                // ], line 370
                 env.bra = env.cursor;
-                // <-, line 380
+                // <-, line 370
                 if !env.slice_from("\u{0BCD}") {
                     return false;
                 }
-                // (, line 381
-                // set found_a_match, line 381
+                // (, line 371
+                // set found_a_match, line 371
                 context.b_found_a_match = true;
                 env.cursor = env.limit - v_10;
                 break 'lab1;
             }
             env.cursor = env.limit - v_2;
-            // test, line 384
+            // test, line 374
             let v_14 = env.limit - env.cursor;
-            // (, line 384
-            // (, line 384
-            // [, line 384
+            // (, line 374
+            // (, line 374
+            // [, line 374
             env.ket = env.cursor;
-            // or, line 384
+            // or, line 374
             'lab55: loop {
                 let v_15 = env.limit - env.cursor;
                 'lab56: loop {
-                    // literal, line 384
+                    // literal, line 374
                     if !env.eq_s_b(&"\u{0B95}\u{0BC1}") {
                         break 'lab56;
                     }
                     break 'lab55;
                 }
                 env.cursor = env.limit - v_15;
-                // literal, line 384
+                // literal, line 374
                 if !env.eq_s_b(&"\u{0BA4}\u{0BC1}") {
                     break 'lab0;
                 }
                 break 'lab55;
             }
-            // (, line 384
-            // test, line 384
+            // (, line 374
+            // test, line 374
             let v_16 = env.limit - env.cursor;
-            // literal, line 384
+            // literal, line 374
             if !env.eq_s_b(&"\u{0BCD}") {
                 break 'lab0;
             }
             env.cursor = env.limit - v_16;
-            // ], line 384
+            // ], line 374
             env.bra = env.cursor;
-            // delete, line 384
+            // delete, line 374
             if !env.slice_del() {
                 return false;
             }
-            // (, line 385
-            // set found_a_match, line 385
+            // (, line 375
+            // set found_a_match, line 375
             context.b_found_a_match = true;
             env.cursor = env.limit - v_14;
             break 'lab1;
@@ -2369,155 +2312,96 @@ fn r_remove_tense_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // do, line 388
+    // do, line 378
     let v_17 = env.limit - env.cursor;
     'lab57: loop {
-        // (, line 388
-        // [, line 388
+        // (, line 378
+        // [, line 378
         env.ket = env.cursor;
-        // among, line 388
+        // among, line 378
         if env.find_among_b(A_25, context) == 0 {
             break 'lab57;
         }
-        // ], line 395
+        // ], line 385
         env.bra = env.cursor;
-        // delete, line 395
+        // delete, line 385
         if !env.slice_del() {
             return false;
         }
-        // (, line 396
-        // set found_a_match, line 396
+        // (, line 386
+        // set found_a_match, line 386
         context.b_found_a_match = true;
         break 'lab57;
     }
     env.cursor = env.limit - v_17;
     env.cursor = env.limit_backward;
-    // do, line 399
-    let v_18 = env.cursor;
-    'lab58: loop {
-        // call fix_endings, line 399
-        if !r_fix_endings(env, context) {
-            break 'lab58;
-        }
-        break 'lab58;
-    }
-    env.cursor = v_18;
+    // do, line 389
+    // call fix_endings, line 389
+    r_fix_endings(env, context);
     return true;
 }
 
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        i_length: 0,
-        b_found_wrong_ending: false,
         b_found_vetrumai_urupu: false,
         b_found_a_match: false,
     };
-    // (, line 402
-    // unset found_vetrumai_urupu, line 403
+    // (, line 392
+    // unset found_vetrumai_urupu, line 393
     context.b_found_vetrumai_urupu = false;
-    // do, line 404
+    // do, line 394
     let v_1 = env.cursor;
-    'lab0: loop {
-        // call fix_ending, line 404
-        if !r_fix_ending(env, context) {
-            break 'lab0;
-        }
-        break 'lab0;
-    }
+    // call fix_ending, line 394
+    r_fix_ending(env, context);
     env.cursor = v_1;
-    // call has_min_length, line 405
+    // call has_min_length, line 395
     if !r_has_min_length(env, context) {
         return false;
     }
-    // do, line 406
+    // do, line 396
     let v_2 = env.cursor;
-    'lab1: loop {
-        // call remove_question_prefixes, line 406
-        if !r_remove_question_prefixes(env, context) {
-            break 'lab1;
-        }
-        break 'lab1;
-    }
+    // call remove_question_prefixes, line 396
+    r_remove_question_prefixes(env, context);
     env.cursor = v_2;
-    // do, line 407
+    // do, line 397
     let v_3 = env.cursor;
-    'lab2: loop {
-        // call remove_pronoun_prefixes, line 407
-        if !r_remove_pronoun_prefixes(env, context) {
-            break 'lab2;
-        }
-        break 'lab2;
-    }
+    // call remove_pronoun_prefixes, line 397
+    r_remove_pronoun_prefixes(env, context);
     env.cursor = v_3;
-    // do, line 408
+    // do, line 398
     let v_4 = env.cursor;
-    'lab3: loop {
-        // call remove_question_suffixes, line 408
-        if !r_remove_question_suffixes(env, context) {
-            break 'lab3;
-        }
-        break 'lab3;
-    }
+    // call remove_question_suffixes, line 398
+    r_remove_question_suffixes(env, context);
     env.cursor = v_4;
-    // do, line 409
+    // do, line 399
     let v_5 = env.cursor;
-    'lab4: loop {
-        // call remove_um, line 409
-        if !r_remove_um(env, context) {
-            break 'lab4;
-        }
-        break 'lab4;
-    }
+    // call remove_um, line 399
+    r_remove_um(env, context);
     env.cursor = v_5;
-    // do, line 410
+    // do, line 400
     let v_6 = env.cursor;
-    'lab5: loop {
-        // call remove_common_word_endings, line 410
-        if !r_remove_common_word_endings(env, context) {
-            break 'lab5;
-        }
-        break 'lab5;
-    }
+    // call remove_common_word_endings, line 400
+    r_remove_common_word_endings(env, context);
     env.cursor = v_6;
-    // do, line 411
+    // do, line 401
     let v_7 = env.cursor;
-    'lab6: loop {
-        // call remove_vetrumai_urupukal, line 411
-        if !r_remove_vetrumai_urupukal(env, context) {
-            break 'lab6;
-        }
-        break 'lab6;
-    }
+    // call remove_vetrumai_urupukal, line 401
+    r_remove_vetrumai_urupukal(env, context);
     env.cursor = v_7;
-    // do, line 412
+    // do, line 402
     let v_8 = env.cursor;
-    'lab7: loop {
-        // call remove_plural_suffix, line 412
-        if !r_remove_plural_suffix(env, context) {
-            break 'lab7;
-        }
-        break 'lab7;
-    }
+    // call remove_plural_suffix, line 402
+    r_remove_plural_suffix(env, context);
     env.cursor = v_8;
-    // do, line 413
+    // do, line 403
     let v_9 = env.cursor;
-    'lab8: loop {
-        // call remove_command_suffixes, line 413
-        if !r_remove_command_suffixes(env, context) {
-            break 'lab8;
-        }
-        break 'lab8;
-    }
+    // call remove_command_suffixes, line 403
+    r_remove_command_suffixes(env, context);
     env.cursor = v_9;
-    // do, line 414
+    // do, line 404
     let v_10 = env.cursor;
-    'lab9: loop {
-        // call remove_tense_suffixes, line 414
-        if !r_remove_tense_suffixes(env, context) {
-            break 'lab9;
-        }
-        break 'lab9;
-    }
+    // call remove_tense_suffixes, line 404
+    r_remove_tense_suffixes(env, context);
     env.cursor = v_10;
     return true;
 }

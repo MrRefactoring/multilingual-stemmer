@@ -8,67 +8,60 @@
 use snowball::SnowballEnv;
 use snowball::Among;
 
-static A_0: &'static [Among<Context>; 37] = &[
+static A_0: &'static [Among<Context>; 29] = &[
     Among("a", -1, 1, None),
-    Among("arna", 0, 1, None),
-    Among("erna", 0, 1, None),
-    Among("heterna", 2, 1, None),
-    Among("orna", 0, 1, None),
-    Among("ad", -1, 1, None),
     Among("e", -1, 1, None),
-    Among("ade", 6, 1, None),
-    Among("ande", 6, 1, None),
-    Among("arne", 6, 1, None),
-    Among("are", 6, 1, None),
-    Among("aste", 6, 1, None),
+    Among("ede", 1, 1, None),
+    Among("ande", 1, 1, None),
+    Among("ende", 1, 1, None),
+    Among("ane", 1, 1, None),
+    Among("ene", 1, 1, None),
+    Among("hetene", 6, 1, None),
+    Among("erte", 1, 3, None),
     Among("en", -1, 1, None),
-    Among("anden", 12, 1, None),
-    Among("aren", 12, 1, None),
-    Among("heten", 12, 1, None),
-    Among("ern", -1, 1, None),
+    Among("heten", 9, 1, None),
     Among("ar", -1, 1, None),
     Among("er", -1, 1, None),
-    Among("heter", 18, 1, None),
-    Among("or", -1, 1, None),
+    Among("heter", 12, 1, None),
     Among("s", -1, 2, None),
-    Among("as", 21, 1, None),
-    Among("arnas", 22, 1, None),
-    Among("ernas", 22, 1, None),
-    Among("ornas", 22, 1, None),
-    Among("es", 21, 1, None),
-    Among("ades", 26, 1, None),
-    Among("andes", 26, 1, None),
-    Among("ens", 21, 1, None),
-    Among("arens", 29, 1, None),
-    Among("hetens", 29, 1, None),
-    Among("erns", 21, 1, None),
-    Among("at", -1, 1, None),
-    Among("andet", -1, 1, None),
-    Among("het", -1, 1, None),
+    Among("as", 14, 1, None),
+    Among("es", 14, 1, None),
+    Among("edes", 16, 1, None),
+    Among("endes", 16, 1, None),
+    Among("enes", 16, 1, None),
+    Among("hetenes", 19, 1, None),
+    Among("ens", 14, 1, None),
+    Among("hetens", 21, 1, None),
+    Among("ers", 14, 1, None),
+    Among("ets", 14, 1, None),
+    Among("et", -1, 1, None),
+    Among("het", 25, 1, None),
+    Among("ert", -1, 3, None),
     Among("ast", -1, 1, None),
 ];
 
-static A_1: &'static [Among<Context>; 7] = &[
-    Among("dd", -1, -1, None),
-    Among("gd", -1, -1, None),
-    Among("nn", -1, -1, None),
+static A_1: &'static [Among<Context>; 2] = &[
     Among("dt", -1, -1, None),
-    Among("gt", -1, -1, None),
-    Among("kt", -1, -1, None),
-    Among("tt", -1, -1, None),
+    Among("vt", -1, -1, None),
 ];
 
-static A_2: &'static [Among<Context>; 5] = &[
+static A_2: &'static [Among<Context>; 11] = &[
+    Among("leg", -1, 1, None),
+    Among("eleg", 0, 1, None),
     Among("ig", -1, 1, None),
-    Among("lig", 0, 1, None),
+    Among("eig", 2, 1, None),
+    Among("lig", 2, 1, None),
+    Among("elig", 4, 1, None),
     Among("els", -1, 1, None),
-    Among("fullt", -1, 3, None),
-    Among("l\u{00F6}st", -1, 2, None),
+    Among("lov", -1, 1, None),
+    Among("elov", 7, 1, None),
+    Among("slov", 7, 1, None),
+    Among("hetslov", 9, 1, None),
 ];
 
-static G_v: &'static [u8; 19] = &[17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 32];
+static G_v: &'static [u8; 19] = &[17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 48, 0, 128];
 
-static G_s_ending: &'static [u8; 3] = &[119, 127, 149];
+static G_s_ending: &'static [u8; 4] = &[119, 125, 149, 1];
 
 #[derive(Clone)]
 struct Context {
@@ -79,23 +72,23 @@ struct Context {
 fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     // (, line 26
     context.i_p1 = env.limit;
-    // test, line 29
+    // test, line 30
     let v_1 = env.cursor;
-    // (, line 29
-    // hop, line 29
+    // (, line 30
+    // hop, line 30
     let c = env.byte_index_for_hop(3);
     if 0 as i32 > c || c > env.limit as i32 {
         return false;
     }
     env.cursor = c as usize;
-    // setmark x, line 29
+    // setmark x, line 30
     context.i_x = env.cursor;
     env.cursor = v_1;
-    // goto, line 30
+    // goto, line 31
     'golab0: loop {
         let v_2 = env.cursor;
         'lab1: loop {
-            if !env.in_grouping(G_v, 97, 246) {
+            if !env.in_grouping(G_v, 97, 248) {
                 break 'lab1;
             }
             env.cursor = v_2;
@@ -107,10 +100,10 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.next_char();
     }
-    // gopast, line 30
+    // gopast, line 31
     'golab2: loop {
         'lab3: loop {
-            if !env.out_grouping(G_v, 97, 246) {
+            if !env.out_grouping(G_v, 97, 248) {
                 break 'lab3;
             }
             break 'golab2;
@@ -120,11 +113,11 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.next_char();
     }
-    // setmark p1, line 30
+    // setmark p1, line 31
     context.i_p1 = env.cursor;
-    // try, line 31
+    // try, line 32
     'lab4: loop {
-        // (, line 31
+        // (, line 32
         if !(context.i_p1 < context.i_x){
             break 'lab4;
         }
@@ -136,23 +129,23 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_main_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 36
-    // setlimit, line 37
+    // (, line 37
+    // setlimit, line 38
     if env.cursor < context.i_p1 {
         return false;
     }
     let v_2 = env.limit_backward;
     env.limit_backward = context.i_p1;
-    // (, line 37
-    // [, line 37
+    // (, line 38
+    // [, line 38
     env.ket = env.cursor;
-    // substring, line 37
+    // substring, line 38
     among_var = env.find_among_b(A_0, context);
     if among_var == 0 {
         env.limit_backward = v_2;
         return false;
     }
-    // ], line 37
+    // ], line 38
     env.bra = env.cursor;
     env.limit_backward = v_2;
     if among_var == 1 {
@@ -163,11 +156,34 @@ fn r_main_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
     } else if among_var == 2 {
         // (, line 46
-        if !env.in_grouping_b(G_s_ending, 98, 121) {
-            return false;
+        // or, line 46
+        'lab0: loop {
+            let v_3 = env.limit - env.cursor;
+            'lab1: loop {
+                if !env.in_grouping_b(G_s_ending, 98, 122) {
+                    break 'lab1;
+                }
+                break 'lab0;
+            }
+            env.cursor = env.limit - v_3;
+            // (, line 46
+            // literal, line 46
+            if !env.eq_s_b(&"k") {
+                return false;
+            }
+            if !env.out_grouping_b(G_v, 97, 248) {
+                return false;
+            }
+            break 'lab0;
         }
         // delete, line 46
         if !env.slice_del() {
+            return false;
+        }
+    } else if among_var == 3 {
+        // (, line 48
+        // <-, line 48
+        if !env.slice_from("er") {
             return false;
         }
     }
@@ -175,79 +191,66 @@ fn r_main_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
 }
 
 fn r_consonant_pair(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // setlimit, line 50
+    // (, line 52
+    // test, line 53
+    let v_1 = env.limit - env.cursor;
+    // (, line 53
+    // setlimit, line 54
     if env.cursor < context.i_p1 {
         return false;
     }
-    let v_2 = env.limit_backward;
+    let v_3 = env.limit_backward;
     env.limit_backward = context.i_p1;
-    // (, line 50
-    // and, line 52
-    let v_3 = env.limit - env.cursor;
-    // among, line 51
+    // (, line 54
+    // [, line 54
+    env.ket = env.cursor;
+    // substring, line 54
     if env.find_among_b(A_1, context) == 0 {
-        env.limit_backward = v_2;
+        env.limit_backward = v_3;
         return false;
     }
-    env.cursor = env.limit - v_3;
-    // (, line 52
-    // [, line 52
-    env.ket = env.cursor;
-    // next, line 52
+    // ], line 54
+    env.bra = env.cursor;
+    env.limit_backward = v_3;
+    env.cursor = env.limit - v_1;
+    // next, line 59
     if env.cursor <= env.limit_backward {
-        env.limit_backward = v_2;
         return false;
     }
     env.previous_char();
-    // ], line 52
+    // ], line 59
     env.bra = env.cursor;
-    // delete, line 52
+    // delete, line 59
     if !env.slice_del() {
         return false;
     }
-    env.limit_backward = v_2;
     return true;
 }
 
 fn r_other_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    // setlimit, line 55
+    // (, line 62
+    // setlimit, line 63
     if env.cursor < context.i_p1 {
         return false;
     }
     let v_2 = env.limit_backward;
     env.limit_backward = context.i_p1;
-    // (, line 55
-    // [, line 56
+    // (, line 63
+    // [, line 63
     env.ket = env.cursor;
-    // substring, line 56
-    among_var = env.find_among_b(A_2, context);
-    if among_var == 0 {
+    // substring, line 63
+    if env.find_among_b(A_2, context) == 0 {
         env.limit_backward = v_2;
         return false;
     }
-    // ], line 56
+    // ], line 63
     env.bra = env.cursor;
-    if among_var == 1 {
-        // (, line 57
-        // delete, line 57
-        if !env.slice_del() {
-            return false;
-        }
-    } else if among_var == 2 {
-        // (, line 58
-        // <-, line 58
-        if !env.slice_from("l\u{00F6}s") {
-            return false;
-        }
-    } else if among_var == 3 {
-        // (, line 59
-        // <-, line 59
-        if !env.slice_from("full") {
-            return false;
-        }
-    }
     env.limit_backward = v_2;
+    // (, line 67
+    // delete, line 67
+    if !env.slice_del() {
+        return false;
+    }
     return true;
 }
 
@@ -256,29 +259,29 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
         i_x: 0,
         i_p1: 0,
     };
-    // (, line 64
-    // do, line 66
+    // (, line 72
+    // do, line 74
     let v_1 = env.cursor;
-    // call mark_regions, line 66
+    // call mark_regions, line 74
     r_mark_regions(env, context);
     env.cursor = v_1;
-    // backwards, line 67
+    // backwards, line 75
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 67
-    // do, line 68
+    // (, line 75
+    // do, line 76
     let v_2 = env.limit - env.cursor;
-    // call main_suffix, line 68
+    // call main_suffix, line 76
     r_main_suffix(env, context);
     env.cursor = env.limit - v_2;
-    // do, line 69
+    // do, line 77
     let v_3 = env.limit - env.cursor;
-    // call consonant_pair, line 69
+    // call consonant_pair, line 77
     r_consonant_pair(env, context);
     env.cursor = env.limit - v_3;
-    // do, line 70
+    // do, line 78
     let v_4 = env.limit - env.cursor;
-    // call other_suffix, line 70
+    // call other_suffix, line 78
     r_other_suffix(env, context);
     env.cursor = env.limit - v_4;
     env.cursor = env.limit_backward;
