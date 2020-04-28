@@ -29,7 +29,7 @@
     "url": "git+https://github.com/MrRefactoring/multilingual-stemmer.git"
   },
   "devDependencies": {
-    "wasm-opt": "^1.1.1",
+    "wasm-opt": "^1.39.1-beta.0",
     "wasm-pack": "^0.9.1"
   }
 }
