@@ -36,8 +36,6 @@ jobs:
           key: ${{ runner.os }}-cargo-${{ hashFiles('rust-stemmers/Cargo.lock') }}
 
       - uses: pnpm/action-setup@v4
-        with:
-          version: 11
 
       - uses: actions/setup-node@v4
         with:
