@@ -1,0 +1,38 @@
+import { Languages } from './wasm.browser.js';
+import { getInstance } from './stemmer.browser.js';
+
+const s = (lang: number) => (word: string): string => getInstance(lang).stem(word);
+
+export const arabic      = s(Languages.Arabic);
+export const armenian    = s(Languages.Armenian);
+export const basque      = s(Languages.Basque);
+export const catalan     = s(Languages.Catalan);
+export const czech       = s(Languages.Czech);
+export const danish      = s(Languages.Danish);
+export const dutch       = s(Languages.Dutch);
+export const english     = s(Languages.English);
+export const esperanto   = s(Languages.Esperanto);
+export const estonian    = s(Languages.Estonian);
+export const finnish     = s(Languages.Finnish);
+export const french      = s(Languages.French);
+export const german      = s(Languages.German);
+export const greek       = s(Languages.Greek);
+export const hindi       = s(Languages.Hindi);
+export const hungarian   = s(Languages.Hungarian);
+export const indonesian  = s(Languages.Indonesian);
+export const irish       = s(Languages.Irish);
+export const italian     = s(Languages.Italian);
+export const lithuanian  = s(Languages.Lithuanian);
+export const nepali      = s(Languages.Nepali);
+export const norwegian   = s(Languages.Norwegian);
+export const persian     = s(Languages.Persian);
+export const polish      = s(Languages.Polish);
+export const portuguese  = s(Languages.Portuguese);
+export const romanian    = s(Languages.Romanian);
+export const russian     = s(Languages.Russian);
+export const serbian     = s(Languages.Serbian);
+export const spanish     = s(Languages.Spanish);
+export const swedish     = s(Languages.Swedish);
+export const tamil       = s(Languages.Tamil);
+export const turkish     = s(Languages.Turkish);
+export const yiddish     = s(Languages.Yiddish);

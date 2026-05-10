@@ -1,3992 +1,2444 @@
-//! This file was generated automatically by the Snowball to Rust compiler
-//! http://snowballstem.org/
+//! Generated from greek.sbl by Snowball 3.0.0 - https://snowballstem.org/
 
-#![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
-#![allow(unused_variables)]
+#![allow(non_upper_case_globals)]
 #![allow(unused_mut)]
-use snowball::SnowballEnv;
-use snowball::Among;
+#![allow(unused_parens)]
+#![allow(unused_variables)]
+use crate::snowball::SnowballEnv;
+use crate::snowball::Among;
+
+#[derive(Clone)]
+struct Context {
+    b_test1: bool,
+}
 
 static A_0: &'static [Among<Context>; 46] = &[
     Among("", -1, 25, None),
-    Among("\u{03C2}", 0, 18, None),
-    Among("\u{0386}", 0, 1, None),
-    Among("\u{0388}", 0, 5, None),
-    Among("\u{0389}", 0, 7, None),
-    Among("\u{038A}", 0, 9, None),
-    Among("\u{03CA}", 0, 7, None),
-    Among("\u{03CB}", 0, 20, None),
-    Among("\u{038C}", 0, 15, None),
-    Among("\u{03CC}", 0, 15, None),
-    Among("\u{03CD}", 0, 20, None),
-    Among("\u{038E}", 0, 20, None),
-    Among("\u{03CE}", 0, 24, None),
-    Among("\u{038F}", 0, 24, None),
-    Among("\u{0390}", 0, 7, None),
-    Among("\u{0391}", 0, 1, None),
-    Among("\u{0392}", 0, 2, None),
-    Among("\u{0393}", 0, 3, None),
-    Among("\u{0394}", 0, 4, None),
-    Among("\u{0395}", 0, 5, None),
-    Among("\u{0396}", 0, 6, None),
-    Among("\u{0397}", 0, 7, None),
-    Among("\u{0398}", 0, 8, None),
-    Among("\u{0399}", 0, 9, None),
-    Among("\u{039A}", 0, 10, None),
-    Among("\u{039B}", 0, 11, None),
-    Among("\u{039C}", 0, 12, None),
-    Among("\u{039D}", 0, 13, None),
-    Among("\u{039E}", 0, 14, None),
-    Among("\u{039F}", 0, 15, None),
-    Among("\u{03A0}", 0, 16, None),
-    Among("\u{03A1}", 0, 17, None),
-    Among("\u{03A3}", 0, 18, None),
-    Among("\u{03A4}", 0, 19, None),
-    Among("\u{03A5}", 0, 20, None),
-    Among("\u{03A6}", 0, 21, None),
-    Among("\u{03A7}", 0, 22, None),
-    Among("\u{03A8}", 0, 23, None),
-    Among("\u{03A9}", 0, 24, None),
-    Among("\u{03AA}", 0, 9, None),
-    Among("\u{03AB}", 0, 20, None),
-    Among("\u{03AC}", 0, 1, None),
-    Among("\u{03AD}", 0, 5, None),
-    Among("\u{03AE}", 0, 7, None),
-    Among("\u{03AF}", 0, 9, None),
-    Among("\u{03B0}", 0, 20, None),
+    Among("ς", 0, 18, None),
+    Among("Ά", 0, 1, None),
+    Among("Έ", 0, 5, None),
+    Among("Ή", 0, 7, None),
+    Among("Ί", 0, 9, None),
+    Among("ϊ", 0, 7, None),
+    Among("ϋ", 0, 20, None),
+    Among("Ό", 0, 15, None),
+    Among("ό", 0, 15, None),
+    Among("ύ", 0, 20, None),
+    Among("Ύ", 0, 20, None),
+    Among("ώ", 0, 24, None),
+    Among("Ώ", 0, 24, None),
+    Among("ΐ", 0, 7, None),
+    Among("Α", 0, 1, None),
+    Among("Β", 0, 2, None),
+    Among("Γ", 0, 3, None),
+    Among("Δ", 0, 4, None),
+    Among("Ε", 0, 5, None),
+    Among("Ζ", 0, 6, None),
+    Among("Η", 0, 7, None),
+    Among("Θ", 0, 8, None),
+    Among("Ι", 0, 9, None),
+    Among("Κ", 0, 10, None),
+    Among("Λ", 0, 11, None),
+    Among("Μ", 0, 12, None),
+    Among("Ν", 0, 13, None),
+    Among("Ξ", 0, 14, None),
+    Among("Ο", 0, 15, None),
+    Among("Π", 0, 16, None),
+    Among("Ρ", 0, 17, None),
+    Among("Σ", 0, 18, None),
+    Among("Τ", 0, 19, None),
+    Among("Υ", 0, 20, None),
+    Among("Φ", 0, 21, None),
+    Among("Χ", 0, 22, None),
+    Among("Ψ", 0, 23, None),
+    Among("Ω", 0, 24, None),
+    Among("Ϊ", 0, 9, None),
+    Among("Ϋ", 0, 20, None),
+    Among("ά", 0, 1, None),
+    Among("έ", 0, 5, None),
+    Among("ή", 0, 7, None),
+    Among("ί", 0, 9, None),
+    Among("ΰ", 0, 20, None),
 ];
 
 static A_1: &'static [Among<Context>; 40] = &[
-    Among("\u{03BA}\u{03B1}\u{03B8}\u{03B5}\u{03C3}\u{03C4}\u{03C9}\u{03C3}", -1, 10, None),
-    Among("\u{03C6}\u{03C9}\u{03C3}", -1, 9, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B1}\u{03C3}", -1, 7, None),
-    Among("\u{03C4}\u{03B5}\u{03C1}\u{03B1}\u{03C3}", -1, 8, None),
-    Among("\u{03BA}\u{03C1}\u{03B5}\u{03B1}\u{03C3}", -1, 6, None),
-    Among("\u{03BA}\u{03B1}\u{03B8}\u{03B5}\u{03C3}\u{03C4}\u{03C9}\u{03C4}\u{03BF}\u{03C3}", -1, 10, None),
-    Among("\u{03C6}\u{03C9}\u{03C4}\u{03BF}\u{03C3}", -1, 9, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03BF}\u{03C3}", -1, 7, None),
-    Among("\u{03C4}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03BF}\u{03C3}", -1, 8, None),
-    Among("\u{03BA}\u{03C1}\u{03B5}\u{03B1}\u{03C4}\u{03BF}\u{03C3}", -1, 6, None),
-    Among("\u{03B3}\u{03B5}\u{03B3}\u{03BF}\u{03BD}\u{03BF}\u{03C4}\u{03BF}\u{03C3}", -1, 11, None),
-    Among("\u{03B3}\u{03B5}\u{03B3}\u{03BF}\u{03BD}\u{03BF}\u{03C3}", -1, 11, None),
-    Among("\u{03C6}\u{03B1}\u{03B3}\u{03B9}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}\u{03B1}\u{03B3}\u{03B9}\u{03BF}\u{03C5}", -1, 2, None),
-    Among("\u{03C3}\u{03BF}\u{03B3}\u{03B9}\u{03BF}\u{03C5}", -1, 4, None),
-    Among("\u{03C4}\u{03B1}\u{03C4}\u{03BF}\u{03B3}\u{03B9}\u{03BF}\u{03C5}", -1, 5, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}\u{03B3}\u{03B9}\u{03BF}\u{03C5}", -1, 3, None),
-    Among("\u{03BA}\u{03B1}\u{03B8}\u{03B5}\u{03C3}\u{03C4}\u{03C9}\u{03C4}\u{03B1}", -1, 10, None),
-    Among("\u{03C6}\u{03C9}\u{03C4}\u{03B1}", -1, 9, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03B1}", -1, 7, None),
-    Among("\u{03C4}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03B1}", -1, 8, None),
-    Among("\u{03BA}\u{03C1}\u{03B5}\u{03B1}\u{03C4}\u{03B1}", -1, 6, None),
-    Among("\u{03B3}\u{03B5}\u{03B3}\u{03BF}\u{03BD}\u{03BF}\u{03C4}\u{03B1}", -1, 11, None),
-    Among("\u{03C6}\u{03B1}\u{03B3}\u{03B9}\u{03B1}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}\u{03B1}\u{03B3}\u{03B9}\u{03B1}", -1, 2, None),
-    Among("\u{03C3}\u{03BF}\u{03B3}\u{03B9}\u{03B1}", -1, 4, None),
-    Among("\u{03C4}\u{03B1}\u{03C4}\u{03BF}\u{03B3}\u{03B9}\u{03B1}", -1, 5, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}\u{03B3}\u{03B9}\u{03B1}", -1, 3, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03B7}", -1, 7, None),
-    Among("\u{03BA}\u{03B1}\u{03B8}\u{03B5}\u{03C3}\u{03C4}\u{03C9}\u{03C4}\u{03C9}\u{03BD}", -1, 10, None),
-    Among("\u{03C6}\u{03C9}\u{03C4}\u{03C9}\u{03BD}", -1, 9, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03C9}\u{03BD}", -1, 7, None),
-    Among("\u{03C4}\u{03B5}\u{03C1}\u{03B1}\u{03C4}\u{03C9}\u{03BD}", -1, 8, None),
-    Among("\u{03BA}\u{03C1}\u{03B5}\u{03B1}\u{03C4}\u{03C9}\u{03BD}", -1, 6, None),
-    Among("\u{03B3}\u{03B5}\u{03B3}\u{03BF}\u{03BD}\u{03BF}\u{03C4}\u{03C9}\u{03BD}", -1, 11, None),
-    Among("\u{03C6}\u{03B1}\u{03B3}\u{03B9}\u{03C9}\u{03BD}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}\u{03B1}\u{03B3}\u{03B9}\u{03C9}\u{03BD}", -1, 2, None),
-    Among("\u{03C3}\u{03BF}\u{03B3}\u{03B9}\u{03C9}\u{03BD}", -1, 4, None),
-    Among("\u{03C4}\u{03B1}\u{03C4}\u{03BF}\u{03B3}\u{03B9}\u{03C9}\u{03BD}", -1, 5, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}\u{03B3}\u{03B9}\u{03C9}\u{03BD}", -1, 3, None),
+    Among("καθεστωσ", -1, 10, None),
+    Among("φωσ", -1, 9, None),
+    Among("περασ", -1, 7, None),
+    Among("τερασ", -1, 8, None),
+    Among("κρεασ", -1, 6, None),
+    Among("καθεστωτοσ", -1, 10, None),
+    Among("φωτοσ", -1, 9, None),
+    Among("περατοσ", -1, 7, None),
+    Among("τερατοσ", -1, 8, None),
+    Among("κρεατοσ", -1, 6, None),
+    Among("γεγονοτοσ", -1, 11, None),
+    Among("γεγονοσ", -1, 11, None),
+    Among("φαγιου", -1, 1, None),
+    Among("σκαγιου", -1, 2, None),
+    Among("σογιου", -1, 4, None),
+    Among("τατογιου", -1, 5, None),
+    Among("ολογιου", -1, 3, None),
+    Among("καθεστωτα", -1, 10, None),
+    Among("φωτα", -1, 9, None),
+    Among("περατα", -1, 7, None),
+    Among("τερατα", -1, 8, None),
+    Among("κρεατα", -1, 6, None),
+    Among("γεγονοτα", -1, 11, None),
+    Among("φαγια", -1, 1, None),
+    Among("σκαγια", -1, 2, None),
+    Among("σογια", -1, 4, None),
+    Among("τατογια", -1, 5, None),
+    Among("ολογια", -1, 3, None),
+    Among("περατη", -1, 7, None),
+    Among("καθεστωτων", -1, 10, None),
+    Among("φωτων", -1, 9, None),
+    Among("περατων", -1, 7, None),
+    Among("τερατων", -1, 8, None),
+    Among("κρεατων", -1, 6, None),
+    Among("γεγονοτων", -1, 11, None),
+    Among("φαγιων", -1, 1, None),
+    Among("σκαγιων", -1, 2, None),
+    Among("σογιων", -1, 4, None),
+    Among("τατογιων", -1, 5, None),
+    Among("ολογιων", -1, 3, None),
 ];
 
-static A_2: &'static [Among<Context>; 9] = &[
-    Among("\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03BE}\u{03B1}\u{03BD}\u{03B1}\u{03C0}\u{03B1}", 0, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03B1}", 0, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B9}\u{03C0}\u{03B1}", 0, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B1}\u{03BC}\u{03C0}\u{03B1}", 0, 1, None),
-    Among("\u{03B5}\u{03BC}\u{03C0}\u{03B1}", 0, 1, None),
-    Among("\u{03B4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03B8}\u{03C1}\u{03BF}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B1}\u{03B8}\u{03C1}\u{03BF}", 7, 1, None),
+static A_2: &'static [Among<Context>; 31] = &[
+    Among("π", -1, 2, None),
+    Among("ιμπ", 0, 2, None),
+    Among("ρ", -1, 2, None),
+    Among("πρ", 2, 2, None),
+    Among("μπρ", 3, 2, None),
+    Among("αρρ", 2, 2, None),
+    Among("γλυκυρ", 2, 2, None),
+    Among("πολυρ", 2, 2, None),
+    Among("αμπαρ", 2, 2, None),
+    Among("μαρ", 2, 2, None),
+    Among("γκρ", 2, 2, None),
+    Among("πιπερορ", 2, 2, None),
+    Among("βολβορ", 2, 2, None),
+    Among("γλυκορ", 2, 2, None),
+    Among("λου", -1, 2, None),
+    Among("πα", -1, 1, None),
+    Among("ξαναπα", 15, 1, None),
+    Among("επα", 15, 1, None),
+    Among("περιπα", 15, 1, None),
+    Among("αναμπα", 15, 1, None),
+    Among("εμπα", 15, 1, None),
+    Among("β", -1, 2, None),
+    Among("δανε", -1, 1, None),
+    Among("βαθυρι", -1, 2, None),
+    Among("βαρκ", -1, 2, None),
+    Among("μαρκ", -1, 2, None),
+    Among("λ", -1, 2, None),
+    Among("μ", -1, 2, None),
+    Among("κορν", -1, 2, None),
+    Among("αθρο", -1, 1, None),
+    Among("συναθρο", 29, 1, None),
 ];
 
-static A_3: &'static [Among<Context>; 22] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03B9}\u{03BC}\u{03C0}", 0, 1, None),
-    Among("\u{03C1}", -1, 1, None),
-    Among("\u{03C0}\u{03C1}", 2, 1, None),
-    Among("\u{03BC}\u{03C0}\u{03C1}", 3, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03C1}", 2, 1, None),
-    Among("\u{03B3}\u{03BB}\u{03C5}\u{03BA}\u{03C5}\u{03C1}", 2, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03BB}\u{03C5}\u{03C1}", 2, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03C0}\u{03B1}\u{03C1}", 2, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03C1}", 2, 1, None),
-    Among("\u{03B3}\u{03BA}\u{03C1}", 2, 1, None),
-    Among("\u{03C0}\u{03B9}\u{03C0}\u{03B5}\u{03C1}\u{03BF}\u{03C1}", 2, 1, None),
-    Among("\u{03B2}\u{03BF}\u{03BB}\u{03B2}\u{03BF}\u{03C1}", 2, 1, None),
-    Among("\u{03B3}\u{03BB}\u{03C5}\u{03BA}\u{03BF}\u{03C1}", 2, 1, None),
-    Among("\u{03BB}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B2}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03B8}\u{03C5}\u{03C1}\u{03B9}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03C1}\u{03BA}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03C1}\u{03BA}", -1, 1, None),
-    Among("\u{03BB}", -1, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03C1}\u{03BD}", -1, 1, None),
+static A_3: &'static [Among<Context>; 14] = &[
+    Among("ιζεσ", -1, 1, None),
+    Among("ιζεισ", -1, 1, None),
+    Among("ιζω", -1, 1, None),
+    Among("ιζα", -1, 1, None),
+    Among("ιζατε", -1, 1, None),
+    Among("ιζετε", -1, 1, None),
+    Among("ιζε", -1, 1, None),
+    Among("ιζουμε", -1, 1, None),
+    Among("ιζαμε", -1, 1, None),
+    Among("ιζουνε", -1, 1, None),
+    Among("ιζανε", -1, 1, None),
+    Among("ιζει", -1, 1, None),
+    Among("ιζουν", -1, 1, None),
+    Among("ιζαν", -1, 1, None),
 ];
 
-static A_4: &'static [Among<Context>; 14] = &[
-    Among("\u{03B9}\u{03B6}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B5}\u{03B9}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03C9}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B1}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B5}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03BF}\u{03C5}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03BF}\u{03C5}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B5}\u{03B9}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03BF}\u{03C5}\u{03BD}", -1, 1, None),
-    Among("\u{03B9}\u{03B6}\u{03B1}\u{03BD}", -1, 1, None),
+static A_4: &'static [Among<Context>; 8] = &[
+    Among("σ", -1, 1, None),
+    Among("χ", -1, 1, None),
+    Among("υψ", -1, 1, None),
+    Among("ζω", -1, 1, None),
+    Among("βι", -1, 1, None),
+    Among("λι", -1, 1, None),
+    Among("αλ", -1, 1, None),
+    Among("εν", -1, 1, None),
 ];
 
-static A_5: &'static [Among<Context>; 8] = &[
-    Among("\u{03C3}", -1, 1, None),
-    Among("\u{03C7}", -1, 1, None),
-    Among("\u{03C5}\u{03C8}", -1, 1, None),
-    Among("\u{03B6}\u{03C9}", -1, 1, None),
-    Among("\u{03B2}\u{03B9}", -1, 1, None),
-    Among("\u{03BB}\u{03B9}", -1, 1, None),
-    Among("\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B5}\u{03BD}", -1, 1, None),
+static A_5: &'static [Among<Context>; 7] = &[
+    Among("ωθηκεσ", -1, 1, None),
+    Among("ωθηκα", -1, 1, None),
+    Among("ωθηκατε", -1, 1, None),
+    Among("ωθηκε", -1, 1, None),
+    Among("ωθηκαμε", -1, 1, None),
+    Among("ωθηκανε", -1, 1, None),
+    Among("ωθηκαν", -1, 1, None),
 ];
 
-static A_6: &'static [Among<Context>; 7] = &[
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B1}", -1, 1, None),
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B5}", -1, 1, None),
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03C9}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03BD}", -1, 1, None),
+static A_6: &'static [Among<Context>; 32] = &[
+    Among("π", -1, 2, None),
+    Among("λαρ", -1, 2, None),
+    Among("δημοκρατ", -1, 2, None),
+    Among("αφ", -1, 2, None),
+    Among("γιγαντοαφ", 3, 2, None),
+    Among("ξαναπα", -1, 1, None),
+    Among("επα", -1, 1, None),
+    Among("περιπα", -1, 1, None),
+    Among("αναμπα", -1, 1, None),
+    Among("εμπα", -1, 1, None),
+    Among("χαρτοπα", -1, 1, None),
+    Among("εξαρχα", -1, 1, None),
+    Among("πε", -1, 1, None),
+    Among("επε", 12, 1, None),
+    Among("μετεπε", 13, 1, None),
+    Among("εσε", -1, 1, None),
+    Among("γε", -1, 2, None),
+    Among("γκε", -1, 2, None),
+    Among("κλε", -1, 1, None),
+    Among("εσωκλε", 18, 1, None),
+    Among("εκλε", 18, 1, None),
+    Among("απεκλε", 20, 1, None),
+    Among("αποκλε", 18, 1, None),
+    Among("δανε", -1, 1, None),
+    Among("γκ", -1, 2, None),
+    Among("μ", -1, 2, None),
+    Among("πουκαμ", 25, 2, None),
+    Among("κομ", 25, 2, None),
+    Among("αν", -1, 2, None),
+    Among("αθρο", -1, 1, None),
+    Among("συναθρο", 29, 1, None),
+    Among("ολο", -1, 2, None),
 ];
 
-static A_7: &'static [Among<Context>; 19] = &[
-    Among("\u{03BE}\u{03B1}\u{03BD}\u{03B1}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B9}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B1}\u{03BC}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B5}\u{03BC}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03C7}\u{03B1}\u{03C1}\u{03C4}\u{03BF}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B5}\u{03BE}\u{03B1}\u{03C1}\u{03C7}\u{03B1}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}", -1, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03B5}", 7, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03C4}\u{03B5}\u{03C0}\u{03B5}", 8, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03B5}", -1, 1, None),
-    Among("\u{03BA}\u{03BB}\u{03B5}", -1, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03C9}\u{03BA}\u{03BB}\u{03B5}", 11, 1, None),
-    Among("\u{03B5}\u{03BA}\u{03BB}\u{03B5}", 11, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03B5}\u{03BA}\u{03BB}\u{03B5}", 13, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03BA}\u{03BB}\u{03B5}", 11, 1, None),
-    Among("\u{03B4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03B8}\u{03C1}\u{03BF}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B1}\u{03B8}\u{03C1}\u{03BF}", 17, 1, None),
+static A_7: &'static [Among<Context>; 7] = &[
+    Among("ισεσ", -1, 1, None),
+    Among("ισα", -1, 1, None),
+    Among("ισε", -1, 1, None),
+    Among("ισατε", -1, 1, None),
+    Among("ισαμε", -1, 1, None),
+    Among("ισανε", -1, 1, None),
+    Among("ισαν", -1, 1, None),
 ];
 
-static A_8: &'static [Among<Context>; 13] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03BB}\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03B4}\u{03B7}\u{03BC}\u{03BF}\u{03BA}\u{03C1}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03B1}\u{03C6}", -1, 1, None),
-    Among("\u{03B3}\u{03B9}\u{03B3}\u{03B1}\u{03BD}\u{03C4}\u{03BF}\u{03B1}\u{03C6}", 3, 1, None),
-    Among("\u{03B3}\u{03B5}", -1, 1, None),
-    Among("\u{03B3}\u{03BA}\u{03B5}", -1, 1, None),
-    Among("\u{03B3}\u{03BA}", -1, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03C5}\u{03BA}\u{03B1}\u{03BC}", 8, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03BC}", 8, 1, None),
-    Among("\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}", -1, 1, None),
+static A_8: &'static [Among<Context>; 19] = &[
+    Among("ξαναπα", -1, 1, None),
+    Among("επα", -1, 1, None),
+    Among("περιπα", -1, 1, None),
+    Among("αναμπα", -1, 1, None),
+    Among("εμπα", -1, 1, None),
+    Among("χαρτοπα", -1, 1, None),
+    Among("εξαρχα", -1, 1, None),
+    Among("πε", -1, 1, None),
+    Among("επε", 7, 1, None),
+    Among("μετεπε", 8, 1, None),
+    Among("εσε", -1, 1, None),
+    Among("κλε", -1, 1, None),
+    Among("εσωκλε", 11, 1, None),
+    Among("εκλε", 11, 1, None),
+    Among("απεκλε", 13, 1, None),
+    Among("αποκλε", 11, 1, None),
+    Among("δανε", -1, 1, None),
+    Among("αθρο", -1, 1, None),
+    Among("συναθρο", 17, 1, None),
 ];
 
 static A_9: &'static [Among<Context>; 7] = &[
-    Among("\u{03B9}\u{03C3}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B1}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B1}\u{03BD}", -1, 1, None),
+    Among("ισεισ", -1, 1, None),
+    Among("ισω", -1, 1, None),
+    Among("ισετε", -1, 1, None),
+    Among("ισουμε", -1, 1, None),
+    Among("ισουνε", -1, 1, None),
+    Among("ισει", -1, 1, None),
+    Among("ισουν", -1, 1, None),
 ];
 
-static A_10: &'static [Among<Context>; 19] = &[
-    Among("\u{03BE}\u{03B1}\u{03BD}\u{03B1}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B9}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B1}\u{03BC}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B5}\u{03BC}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03C7}\u{03B1}\u{03C1}\u{03C4}\u{03BF}\u{03C0}\u{03B1}", -1, 1, None),
-    Among("\u{03B5}\u{03BE}\u{03B1}\u{03C1}\u{03C7}\u{03B1}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}", -1, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03B5}", 7, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03C4}\u{03B5}\u{03C0}\u{03B5}", 8, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03B5}", -1, 1, None),
-    Among("\u{03BA}\u{03BB}\u{03B5}", -1, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03C9}\u{03BA}\u{03BB}\u{03B5}", 11, 1, None),
-    Among("\u{03B5}\u{03BA}\u{03BB}\u{03B5}", 11, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03B5}\u{03BA}\u{03BB}\u{03B5}", 13, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03BA}\u{03BB}\u{03B5}", 11, 1, None),
-    Among("\u{03B4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03B8}\u{03C1}\u{03BF}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B1}\u{03B8}\u{03C1}\u{03BF}", 17, 1, None),
+static A_10: &'static [Among<Context>; 40] = &[
+    Among("π", -1, 2, None),
+    Among("ευπ", 0, 2, None),
+    Among("απ", 0, 2, None),
+    Among("εμπ", 0, 2, None),
+    Among("γυρ", -1, 2, None),
+    Among("χρ", -1, 2, None),
+    Among("χωρ", -1, 2, None),
+    Among("αρ", -1, 2, None),
+    Among("αορ", -1, 2, None),
+    Among("χτ", -1, 2, None),
+    Among("αχτ", 9, 2, None),
+    Among("κτ", -1, 2, None),
+    Among("ακτ", 11, 2, None),
+    Among("σχ", -1, 2, None),
+    Among("ασχ", 13, 2, None),
+    Among("ταχ", -1, 2, None),
+    Among("υψ", -1, 2, None),
+    Among("ατα", -1, 2, None),
+    Among("φα", -1, 2, None),
+    Among("ηφα", 18, 2, None),
+    Among("λυγ", -1, 2, None),
+    Among("μεγ", -1, 2, None),
+    Among("ηδ", -1, 2, None),
+    Among("σε", -1, 1, None),
+    Among("ασε", 23, 1, None),
+    Among("πλε", -1, 1, None),
+    Among("κλε", -1, 1, None),
+    Among("εσωκλε", 26, 1, None),
+    Among("δανε", -1, 1, None),
+    Among("εχθ", -1, 2, None),
+    Among("καθ", -1, 2, None),
+    Among("σκ", -1, 2, None),
+    Among("κακ", -1, 2, None),
+    Among("μακ", -1, 2, None),
+    Among("κυλ", -1, 2, None),
+    Among("φιλ", -1, 2, None),
+    Among("μ", -1, 2, None),
+    Among("γεμ", 36, 2, None),
+    Among("αχν", -1, 2, None),
+    Among("συναθρο", -1, 1, None),
 ];
 
-static A_11: &'static [Among<Context>; 7] = &[
-    Among("\u{03B9}\u{03C3}\u{03B5}\u{03B9}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C9}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B5}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BF}\u{03C5}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BF}\u{03C5}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03B5}\u{03B9}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BF}\u{03C5}\u{03BD}", -1, 1, None),
+static A_11: &'static [Among<Context>; 11] = &[
+    Among("ιστουσ", -1, 1, None),
+    Among("ιστεσ", -1, 1, None),
+    Among("ιστησ", -1, 1, None),
+    Among("ιστοσ", -1, 1, None),
+    Among("ιστου", -1, 1, None),
+    Among("ιστα", -1, 1, None),
+    Among("ιστε", -1, 1, None),
+    Among("ιστη", -1, 1, None),
+    Among("ιστοι", -1, 1, None),
+    Among("ιστων", -1, 1, None),
+    Among("ιστο", -1, 1, None),
 ];
 
 static A_12: &'static [Among<Context>; 7] = &[
-    Among("\u{03C3}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03B5}", 0, 1, None),
-    Among("\u{03C0}\u{03BB}\u{03B5}", -1, 1, None),
-    Among("\u{03BA}\u{03BB}\u{03B5}", -1, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03C9}\u{03BA}\u{03BB}\u{03B5}", 3, 1, None),
-    Among("\u{03B4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B1}\u{03B8}\u{03C1}\u{03BF}", -1, 1, None),
+    Among("σε", -1, 1, None),
+    Among("μετασε", 0, 1, None),
+    Among("μικροσε", 0, 1, None),
+    Among("εγκλε", -1, 1, None),
+    Among("αποκλε", -1, 1, None),
+    Among("δανε", -1, 2, None),
+    Among("αντιδανε", 5, 2, None),
 ];
 
-static A_13: &'static [Among<Context>; 33] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03B5}\u{03C5}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03C0}", 0, 1, None),
-    Among("\u{03B5}\u{03BC}\u{03C0}", 0, 1, None),
-    Among("\u{03B3}\u{03C5}\u{03C1}", -1, 1, None),
-    Among("\u{03C7}\u{03C1}", -1, 1, None),
-    Among("\u{03C7}\u{03C9}\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03BF}\u{03C1}", -1, 1, None),
-    Among("\u{03C7}\u{03C4}", -1, 1, None),
-    Among("\u{03B1}\u{03C7}\u{03C4}", 9, 1, None),
-    Among("\u{03BA}\u{03C4}", -1, 1, None),
-    Among("\u{03B1}\u{03BA}\u{03C4}", 11, 1, None),
-    Among("\u{03C3}\u{03C7}", -1, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03C7}", 13, 1, None),
-    Among("\u{03C4}\u{03B1}\u{03C7}", -1, 1, None),
-    Among("\u{03C5}\u{03C8}", -1, 1, None),
-    Among("\u{03B1}\u{03C4}\u{03B1}", -1, 1, None),
-    Among("\u{03C6}\u{03B1}", -1, 1, None),
-    Among("\u{03B7}\u{03C6}\u{03B1}", 18, 1, None),
-    Among("\u{03BB}\u{03C5}\u{03B3}", -1, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03B3}", -1, 1, None),
-    Among("\u{03B7}\u{03B4}", -1, 1, None),
-    Among("\u{03B5}\u{03C7}\u{03B8}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03B8}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03BA}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03BA}", -1, 1, None),
-    Among("\u{03BA}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03C6}\u{03B9}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03B3}\u{03B5}\u{03BC}", 30, 1, None),
-    Among("\u{03B1}\u{03C7}\u{03BD}", -1, 1, None),
+static A_13: &'static [Among<Context>; 10] = &[
+    Among("τοπικ", -1, 7, None),
+    Among("σκεπτικ", -1, 6, None),
+    Among("γνωστικ", -1, 3, None),
+    Among("αγνωστικ", 2, 1, None),
+    Among("εκλεκτικ", -1, 5, None),
+    Among("ατομικ", -1, 2, None),
+    Among("εθνικ", -1, 4, None),
+    Among("θεατριν", -1, 10, None),
+    Among("αλεξανδριν", -1, 8, None),
+    Among("βυζαντιν", -1, 9, None),
 ];
 
-static A_14: &'static [Among<Context>; 11] = &[
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03BF}\u{03C5}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03B7}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03B7}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03BF}\u{03B9}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03C9}\u{03BD}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03C4}\u{03BF}", -1, 1, None),
+static A_14: &'static [Among<Context>; 6] = &[
+    Among("ισμουσ", -1, 1, None),
+    Among("ισμοσ", -1, 1, None),
+    Among("ισμου", -1, 1, None),
+    Among("ισμοι", -1, 1, None),
+    Among("ισμων", -1, 1, None),
+    Among("ισμο", -1, 1, None),
 ];
 
-static A_15: &'static [Among<Context>; 5] = &[
-    Among("\u{03C3}\u{03B5}", -1, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03C4}\u{03B1}\u{03C3}\u{03B5}", 0, 1, None),
-    Among("\u{03BC}\u{03B9}\u{03BA}\u{03C1}\u{03BF}\u{03C3}\u{03B5}", 0, 1, None),
-    Among("\u{03B5}\u{03B3}\u{03BA}\u{03BB}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03BA}\u{03BB}\u{03B5}", -1, 1, None),
+static A_15: &'static [Among<Context>; 2] = &[
+    Among("σ", -1, 1, None),
+    Among("χ", -1, 1, None),
 ];
 
-static A_16: &'static [Among<Context>; 2] = &[
-    Among("\u{03B4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03C4}\u{03B9}\u{03B4}\u{03B1}\u{03BD}\u{03B5}", 0, 1, None),
+static A_16: &'static [Among<Context>; 4] = &[
+    Among("αρακια", -1, 1, None),
+    Among("ουδακια", -1, 1, None),
+    Among("αρακι", -1, 1, None),
+    Among("ουδακι", -1, 1, None),
 ];
 
-static A_17: &'static [Among<Context>; 10] = &[
-    Among("\u{03C4}\u{03BF}\u{03C0}\u{03B9}\u{03BA}", -1, 7, None),
-    Among("\u{03C3}\u{03BA}\u{03B5}\u{03C0}\u{03C4}\u{03B9}\u{03BA}", -1, 6, None),
-    Among("\u{03B3}\u{03BD}\u{03C9}\u{03C3}\u{03C4}\u{03B9}\u{03BA}", -1, 3, None),
-    Among("\u{03B1}\u{03B3}\u{03BD}\u{03C9}\u{03C3}\u{03C4}\u{03B9}\u{03BA}", 2, 1, None),
-    Among("\u{03B5}\u{03BA}\u{03BB}\u{03B5}\u{03BA}\u{03C4}\u{03B9}\u{03BA}", -1, 5, None),
-    Among("\u{03B1}\u{03C4}\u{03BF}\u{03BC}\u{03B9}\u{03BA}", -1, 2, None),
-    Among("\u{03B5}\u{03B8}\u{03BD}\u{03B9}\u{03BA}", -1, 4, None),
-    Among("\u{03B8}\u{03B5}\u{03B1}\u{03C4}\u{03C1}\u{03B9}\u{03BD}", -1, 10, None),
-    Among("\u{03B1}\u{03BB}\u{03B5}\u{03BE}\u{03B1}\u{03BD}\u{03B4}\u{03C1}\u{03B9}\u{03BD}", -1, 8, None),
-    Among("\u{03B2}\u{03C5}\u{03B6}\u{03B1}\u{03BD}\u{03C4}\u{03B9}\u{03BD}", -1, 9, None),
+static A_17: &'static [Among<Context>; 46] = &[
+    Among("π", -1, 2, None),
+    Among("κατραπ", 0, 1, None),
+    Among("ρ", -1, 1, None),
+    Among("βρ", 2, 1, None),
+    Among("λαβρ", 3, 1, None),
+    Among("αμβρ", 3, 1, None),
+    Among("πατερ", 2, 2, None),
+    Among("μερ", 2, 1, None),
+    Among("ανθρ", 2, 1, None),
+    Among("κορ", 2, 1, None),
+    Among("σ", -1, 1, None),
+    Among("ναγκασ", 10, 1, None),
+    Among("τοσ", 10, 2, None),
+    Among("μουστ", -1, 1, None),
+    Among("ρυ", -1, 1, None),
+    Among("φ", -1, 1, None),
+    Among("σφ", 15, 1, None),
+    Among("αλισφ", 16, 1, None),
+    Among("νυφ", 15, 2, None),
+    Among("χ", -1, 1, None),
+    Among("β", -1, 2, None),
+    Among("βαμβ", 20, 1, None),
+    Among("σλοβ", 20, 1, None),
+    Among("τσεχοσλοβ", 22, 1, None),
+    Among("καρδ", -1, 2, None),
+    Among("ζ", -1, 2, None),
+    Among("τζ", 25, 1, None),
+    Among("κ", -1, 1, None),
+    Among("σκ", 27, 1, None),
+    Among("καπακ", 27, 1, None),
+    Among("σοκ", 27, 1, None),
+    Among("πλ", -1, 1, None),
+    Among("φυλ", -1, 1, None),
+    Among("λουλ", -1, 1, None),
+    Among("βαλ", -1, 2, None),
+    Among("μαλ", -1, 1, None),
+    Among("γλ", -1, 2, None),
+    Among("τριπολ", -1, 2, None),
+    Among("φαρμ", -1, 1, None),
+    Among("καιμ", -1, 1, None),
+    Among("κλιμ", -1, 1, None),
+    Among("μακρυν", -1, 2, None),
+    Among("σπαν", -1, 1, None),
+    Among("γιαν", -1, 2, None),
+    Among("ηγουμεν", -1, 2, None),
+    Among("κον", -1, 1, None),
 ];
 
-static A_18: &'static [Among<Context>; 6] = &[
-    Among("\u{03B9}\u{03C3}\u{03BC}\u{03BF}\u{03C5}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BC}\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BC}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BC}\u{03BF}\u{03B9}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BC}\u{03C9}\u{03BD}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BC}\u{03BF}", -1, 1, None),
+static A_18: &'static [Among<Context>; 8] = &[
+    Among("ιτσασ", -1, 1, None),
+    Among("ιτσεσ", -1, 1, None),
+    Among("ιτσα", -1, 1, None),
+    Among("ακια", -1, 1, None),
+    Among("αρακια", 3, 1, None),
+    Among("ακι", -1, 1, None),
+    Among("αρακι", 5, 1, None),
+    Among("ιτσων", -1, 1, None),
 ];
 
-static A_19: &'static [Among<Context>; 2] = &[
-    Among("\u{03C3}", -1, 1, None),
-    Among("\u{03C7}", -1, 1, None),
+static A_19: &'static [Among<Context>; 4] = &[
+    Among("ιρ", -1, 1, None),
+    Among("ψαλ", -1, 1, None),
+    Among("αιφν", -1, 1, None),
+    Among("ολο", -1, 1, None),
 ];
 
-static A_20: &'static [Among<Context>; 4] = &[
-    Among("\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B9}\u{03B1}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03B4}\u{03B1}\u{03BA}\u{03B9}\u{03B1}", -1, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B9}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03B4}\u{03B1}\u{03BA}\u{03B9}", -1, 1, None),
+static A_20: &'static [Among<Context>; 2] = &[
+    Among("ε", -1, 1, None),
+    Among("παιχν", -1, 1, None),
 ];
 
-static A_21: &'static [Among<Context>; 33] = &[
-    Among("\u{03BA}\u{03B1}\u{03C4}\u{03C1}\u{03B1}\u{03C0}", -1, 1, None),
-    Among("\u{03C1}", -1, 1, None),
-    Among("\u{03B2}\u{03C1}", 1, 1, None),
-    Among("\u{03BB}\u{03B1}\u{03B2}\u{03C1}", 2, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B2}\u{03C1}", 2, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03C1}", 1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B8}\u{03C1}", 1, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03C1}", 1, 1, None),
-    Among("\u{03C3}", -1, 1, None),
-    Among("\u{03BD}\u{03B1}\u{03B3}\u{03BA}\u{03B1}\u{03C3}", 8, 1, None),
-    Among("\u{03BC}\u{03BF}\u{03C5}\u{03C3}\u{03C4}", -1, 1, None),
-    Among("\u{03C1}\u{03C5}", -1, 1, None),
-    Among("\u{03C6}", -1, 1, None),
-    Among("\u{03C3}\u{03C6}", 12, 1, None),
-    Among("\u{03B1}\u{03BB}\u{03B9}\u{03C3}\u{03C6}", 13, 1, None),
-    Among("\u{03C7}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03BC}\u{03B2}", -1, 1, None),
-    Among("\u{03C3}\u{03BB}\u{03BF}\u{03B2}", -1, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03B5}\u{03C7}\u{03BF}\u{03C3}\u{03BB}\u{03BF}\u{03B2}", 17, 1, None),
-    Among("\u{03C4}\u{03B6}", -1, 1, None),
-    Among("\u{03BA}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}", 20, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C0}\u{03B1}\u{03BA}", 20, 1, None),
-    Among("\u{03C3}\u{03BF}\u{03BA}", 20, 1, None),
-    Among("\u{03C0}\u{03BB}", -1, 1, None),
-    Among("\u{03C6}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03BB}\u{03BF}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03C6}\u{03B1}\u{03C1}\u{03BC}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03B9}\u{03BC}", -1, 1, None),
-    Among("\u{03BA}\u{03BB}\u{03B9}\u{03BC}", -1, 1, None),
-    Among("\u{03C3}\u{03C0}\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03BD}", -1, 1, None),
+static A_21: &'static [Among<Context>; 3] = &[
+    Among("ιδια", -1, 1, None),
+    Among("ιδιων", -1, 1, None),
+    Among("ιδιο", -1, 1, None),
 ];
 
-static A_22: &'static [Among<Context>; 15] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C4}\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03C4}\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03BD}\u{03C5}\u{03C6}", -1, 1, None),
-    Among("\u{03B2}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C1}\u{03B4}", -1, 1, None),
-    Among("\u{03B6}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B3}\u{03BB}", -1, 1, None),
-    Among("\u{03C4}\u{03C1}\u{03B9}\u{03C0}\u{03BF}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03BA}\u{03C1}\u{03C5}\u{03BD}", -1, 1, None),
-    Among("\u{03B3}\u{03B9}\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03B7}\u{03B3}\u{03BF}\u{03C5}\u{03BC}\u{03B5}\u{03BD}", -1, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03BD}", -1, 1, None),
+static A_22: &'static [Among<Context>; 7] = &[
+    Among("ρ", -1, 1, None),
+    Among("ιβ", -1, 1, None),
+    Among("δ", -1, 1, None),
+    Among("λυκ", -1, 1, None),
+    Among("φραγκ", -1, 1, None),
+    Among("οβελ", -1, 1, None),
+    Among("μην", -1, 1, None),
 ];
 
-static A_23: &'static [Among<Context>; 8] = &[
-    Among("\u{03B9}\u{03C4}\u{03C3}\u{03B1}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C4}\u{03C3}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C4}\u{03C3}\u{03B1}", -1, 1, None),
-    Among("\u{03B1}\u{03BA}\u{03B9}\u{03B1}", -1, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B9}\u{03B1}", 3, 1, None),
-    Among("\u{03B1}\u{03BA}\u{03B9}", -1, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B9}", 5, 1, None),
-    Among("\u{03B9}\u{03C4}\u{03C3}\u{03C9}\u{03BD}", -1, 1, None),
+static A_23: &'static [Among<Context>; 4] = &[
+    Among("ισκοσ", -1, 1, None),
+    Among("ισκου", -1, 1, None),
+    Among("ισκε", -1, 1, None),
+    Among("ισκο", -1, 1, None),
 ];
 
-static A_24: &'static [Among<Context>; 4] = &[
-    Among("\u{03B9}\u{03C1}", -1, 1, None),
-    Among("\u{03C8}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B1}\u{03B9}\u{03C6}\u{03BD}", -1, 1, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}", -1, 1, None),
+static A_24: &'static [Among<Context>; 2] = &[
+    Among("αδεσ", -1, 1, None),
+    Among("αδων", -1, 1, None),
 ];
 
-static A_25: &'static [Among<Context>; 2] = &[
-    Among("\u{03B5}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03B9}\u{03C7}\u{03BD}", -1, 1, None),
+static A_25: &'static [Among<Context>; 10] = &[
+    Among("μπαμπ", -1, -1, None),
+    Among("κυρ", -1, -1, None),
+    Among("πατερ", -1, -1, None),
+    Among("πεθερ", -1, -1, None),
+    Among("νταντ", -1, -1, None),
+    Among("γιαγι", -1, -1, None),
+    Among("θει", -1, -1, None),
+    Among("οκ", -1, -1, None),
+    Among("μαμ", -1, -1, None),
+    Among("μαν", -1, -1, None),
 ];
 
-static A_26: &'static [Among<Context>; 3] = &[
-    Among("\u{03B9}\u{03B4}\u{03B9}\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03B4}\u{03B9}\u{03C9}\u{03BD}", -1, 1, None),
-    Among("\u{03B9}\u{03B4}\u{03B9}\u{03BF}", -1, 1, None),
+static A_26: &'static [Among<Context>; 2] = &[
+    Among("εδεσ", -1, 1, None),
+    Among("εδων", -1, 1, None),
 ];
 
-static A_27: &'static [Among<Context>; 7] = &[
-    Among("\u{03C1}", -1, 1, None),
-    Among("\u{03B9}\u{03B2}", -1, 1, None),
-    Among("\u{03B4}", -1, 1, None),
-    Among("\u{03BB}\u{03C5}\u{03BA}", -1, 1, None),
-    Among("\u{03C6}\u{03C1}\u{03B1}\u{03B3}\u{03BA}", -1, 1, None),
-    Among("\u{03BF}\u{03B2}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}\u{03B7}\u{03BD}", -1, 1, None),
+static A_27: &'static [Among<Context>; 8] = &[
+    Among("κρασπ", -1, 1, None),
+    Among("υπ", -1, 1, None),
+    Among("δαπ", -1, 1, None),
+    Among("γηπ", -1, 1, None),
+    Among("ιπ", -1, 1, None),
+    Among("εμπ", -1, 1, None),
+    Among("οπ", -1, 1, None),
+    Among("μιλ", -1, 1, None),
 ];
 
-static A_28: &'static [Among<Context>; 4] = &[
-    Among("\u{03B9}\u{03C3}\u{03BA}\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BA}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BA}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03C3}\u{03BA}\u{03BF}", -1, 1, None),
+static A_28: &'static [Among<Context>; 2] = &[
+    Among("ουδεσ", -1, 1, None),
+    Among("ουδων", -1, 1, None),
 ];
 
-static A_29: &'static [Among<Context>; 2] = &[
-    Among("\u{03B1}\u{03B4}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B1}\u{03B4}\u{03C9}\u{03BD}", -1, 1, None),
+static A_29: &'static [Among<Context>; 15] = &[
+    Among("σπ", -1, 1, None),
+    Among("φρ", -1, 1, None),
+    Among("σ", -1, 1, None),
+    Among("λιχ", -1, 1, None),
+    Among("τραγ", -1, 1, None),
+    Among("φε", -1, 1, None),
+    Among("αρκ", -1, 1, None),
+    Among("σκ", -1, 1, None),
+    Among("καλιακ", -1, 1, None),
+    Among("λουλ", -1, 1, None),
+    Among("φλ", -1, 1, None),
+    Among("πεταλ", -1, 1, None),
+    Among("βελ", -1, 1, None),
+    Among("χν", -1, 1, None),
+    Among("πλεξ", -1, 1, None),
 ];
 
-static A_30: &'static [Among<Context>; 10] = &[
-    Among("\u{03BC}\u{03C0}\u{03B1}\u{03BC}\u{03C0}", -1, -1, None),
-    Among("\u{03BA}\u{03C5}\u{03C1}", -1, -1, None),
-    Among("\u{03C0}\u{03B1}\u{03C4}\u{03B5}\u{03C1}", -1, -1, None),
-    Among("\u{03C0}\u{03B5}\u{03B8}\u{03B5}\u{03C1}", -1, -1, None),
-    Among("\u{03BD}\u{03C4}\u{03B1}\u{03BD}\u{03C4}", -1, -1, None),
-    Among("\u{03B3}\u{03B9}\u{03B1}\u{03B3}\u{03B9}", -1, -1, None),
-    Among("\u{03B8}\u{03B5}\u{03B9}", -1, -1, None),
-    Among("\u{03BF}\u{03BA}", -1, -1, None),
-    Among("\u{03BC}\u{03B1}\u{03BC}", -1, -1, None),
-    Among("\u{03BC}\u{03B1}\u{03BD}", -1, -1, None),
+static A_30: &'static [Among<Context>; 2] = &[
+    Among("εωσ", -1, 1, None),
+    Among("εων", -1, 1, None),
 ];
 
-static A_31: &'static [Among<Context>; 2] = &[
-    Among("\u{03B5}\u{03B4}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B5}\u{03B4}\u{03C9}\u{03BD}", -1, 1, None),
+static A_31: &'static [Among<Context>; 8] = &[
+    Among("π", -1, 1, None),
+    Among("παρ", -1, 1, None),
+    Among("δ", -1, 1, None),
+    Among("ιδ", 2, 1, None),
+    Among("θ", -1, 1, None),
+    Among("γαλ", -1, 1, None),
+    Among("ελ", -1, 1, None),
+    Among("ν", -1, 1, None),
 ];
 
-static A_32: &'static [Among<Context>; 8] = &[
-    Among("\u{03BA}\u{03C1}\u{03B1}\u{03C3}\u{03C0}", -1, 1, None),
-    Among("\u{03C5}\u{03C0}", -1, 1, None),
-    Among("\u{03B4}\u{03B1}\u{03C0}", -1, 1, None),
-    Among("\u{03B3}\u{03B7}\u{03C0}", -1, 1, None),
-    Among("\u{03B9}\u{03C0}", -1, 1, None),
-    Among("\u{03B5}\u{03BC}\u{03C0}", -1, 1, None),
-    Among("\u{03BF}\u{03C0}", -1, 1, None),
-    Among("\u{03BC}\u{03B9}\u{03BB}", -1, 1, None),
+static A_32: &'static [Among<Context>; 3] = &[
+    Among("ιου", -1, 1, None),
+    Among("ια", -1, 1, None),
+    Among("ιων", -1, 1, None),
 ];
 
-static A_33: &'static [Among<Context>; 2] = &[
-    Among("\u{03BF}\u{03C5}\u{03B4}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03B4}\u{03C9}\u{03BD}", -1, 1, None),
+static A_33: &'static [Among<Context>; 4] = &[
+    Among("ικου", -1, 1, None),
+    Among("ικα", -1, 1, None),
+    Among("ικων", -1, 1, None),
+    Among("ικο", -1, 1, None),
 ];
 
-static A_34: &'static [Among<Context>; 15] = &[
-    Among("\u{03C3}\u{03C0}", -1, 1, None),
-    Among("\u{03C6}\u{03C1}", -1, 1, None),
-    Among("\u{03C3}", -1, 1, None),
-    Among("\u{03BB}\u{03B9}\u{03C7}", -1, 1, None),
-    Among("\u{03C4}\u{03C1}\u{03B1}\u{03B3}", -1, 1, None),
-    Among("\u{03C6}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03BA}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03BB}\u{03B9}\u{03B1}\u{03BA}", -1, 1, None),
-    Among("\u{03BB}\u{03BF}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03C6}\u{03BB}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C4}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B2}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03C7}\u{03BD}", -1, 1, None),
-    Among("\u{03C0}\u{03BB}\u{03B5}\u{03BE}", -1, 1, None),
+static A_34: &'static [Among<Context>; 36] = &[
+    Among("καλπ", -1, 1, None),
+    Among("γερ", -1, 1, None),
+    Among("πλιατσ", -1, 1, None),
+    Among("πετσ", -1, 1, None),
+    Among("πιτσ", -1, 1, None),
+    Among("φυσ", -1, 1, None),
+    Among("χασ", -1, 1, None),
+    Among("μποσ", -1, 1, None),
+    Among("σερτ", -1, 1, None),
+    Among("μπαγιατ", -1, 1, None),
+    Among("νιτ", -1, 1, None),
+    Among("πικαντ", -1, 1, None),
+    Among("εξωδ", -1, 1, None),
+    Among("αδ", -1, 1, None),
+    Among("καταδ", 13, 1, None),
+    Among("συναδ", 13, 1, None),
+    Among("αντιδ", -1, 1, None),
+    Among("ενδ", -1, 1, None),
+    Among("υποδ", -1, 1, None),
+    Among("πρωτοδ", -1, 1, None),
+    Among("φυλοδ", -1, 1, None),
+    Among("ηθ", -1, 1, None),
+    Among("ανηθ", 21, 1, None),
+    Among("ξικ", -1, 1, None),
+    Among("μουλ", -1, 1, None),
+    Among("αλ", -1, 1, None),
+    Among("αμμοχαλ", 25, 1, None),
+    Among("συνομηλ", -1, 1, None),
+    Among("μπολ", -1, 1, None),
+    Among("βρωμ", -1, 1, None),
+    Among("τσαμ", -1, 1, None),
+    Among("μπαν", -1, 1, None),
+    Among("αμαν", -1, 1, None),
+    Among("καλλιν", -1, 1, None),
+    Among("ποστελν", -1, 1, None),
+    Among("φιλον", -1, 1, None),
 ];
 
-static A_35: &'static [Among<Context>; 2] = &[
-    Among("\u{03B5}\u{03C9}\u{03C3}", -1, 1, None),
-    Among("\u{03B5}\u{03C9}\u{03BD}", -1, 1, None),
+static A_35: &'static [Among<Context>; 5] = &[
+    Among("ουσαμε", -1, 1, None),
+    Among("ησαμε", -1, 1, None),
+    Among("αγαμε", -1, 1, None),
+    Among("ηκαμε", -1, 1, None),
+    Among("ηθηκαμε", 3, 1, None),
 ];
 
-static A_36: &'static [Among<Context>; 8] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03B4}", -1, 1, None),
-    Among("\u{03B9}\u{03B4}", 2, 1, None),
-    Among("\u{03B8}", -1, 1, None),
-    Among("\u{03B3}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03BD}", -1, 1, None),
+static A_36: &'static [Among<Context>; 12] = &[
+    Among("αναπ", -1, 1, None),
+    Among("πικρ", -1, 1, None),
+    Among("αποστ", -1, 1, None),
+    Among("ποτ", -1, 1, None),
+    Among("χ", -1, 1, None),
+    Among("σιχ", 4, 1, None),
+    Among("βουβ", -1, 1, None),
+    Among("πεθ", -1, 1, None),
+    Among("ξεθ", -1, 1, None),
+    Among("αποθ", -1, 1, None),
+    Among("αποκ", -1, 1, None),
+    Among("ουλ", -1, 1, None),
 ];
 
-static A_37: &'static [Among<Context>; 3] = &[
-    Among("\u{03B9}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B9}\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03C9}\u{03BD}", -1, 1, None),
+static A_37: &'static [Among<Context>; 2] = &[
+    Among("τρ", -1, 1, None),
+    Among("τσ", -1, 1, None),
 ];
 
-static A_38: &'static [Among<Context>; 4] = &[
-    Among("\u{03B9}\u{03BA}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B9}\u{03BA}\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03BA}\u{03C9}\u{03BD}", -1, 1, None),
-    Among("\u{03B9}\u{03BA}\u{03BF}", -1, 1, None),
+static A_38: &'static [Among<Context>; 11] = &[
+    Among("ουσανε", -1, 1, None),
+    Among("ησανε", -1, 1, None),
+    Among("ουντανε", -1, 1, None),
+    Among("ιουντανε", 2, 1, None),
+    Among("οντανε", -1, 1, None),
+    Among("ιοντανε", 4, 1, None),
+    Among("οτανε", -1, 1, None),
+    Among("ιοτανε", 6, 1, None),
+    Among("αγανε", -1, 1, None),
+    Among("ηκανε", -1, 1, None),
+    Among("ηθηκανε", 9, 1, None),
 ];
 
-static A_39: &'static [Among<Context>; 36] = &[
-    Among("\u{03BA}\u{03B1}\u{03BB}\u{03C0}", -1, 1, None),
-    Among("\u{03B3}\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03C0}\u{03BB}\u{03B9}\u{03B1}\u{03C4}\u{03C3}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C4}\u{03C3}", -1, 1, None),
-    Among("\u{03C0}\u{03B9}\u{03C4}\u{03C3}", -1, 1, None),
-    Among("\u{03C6}\u{03C5}\u{03C3}", -1, 1, None),
-    Among("\u{03C7}\u{03B1}\u{03C3}", -1, 1, None),
-    Among("\u{03BC}\u{03C0}\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03C3}\u{03B5}\u{03C1}\u{03C4}", -1, 1, None),
-    Among("\u{03BC}\u{03C0}\u{03B1}\u{03B3}\u{03B9}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03BD}\u{03B9}\u{03C4}", -1, 1, None),
-    Among("\u{03C0}\u{03B9}\u{03BA}\u{03B1}\u{03BD}\u{03C4}", -1, 1, None),
-    Among("\u{03B5}\u{03BE}\u{03C9}\u{03B4}", -1, 1, None),
-    Among("\u{03B1}\u{03B4}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C4}\u{03B1}\u{03B4}", 13, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B1}\u{03B4}", 13, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03C4}\u{03B9}\u{03B4}", -1, 1, None),
-    Among("\u{03B5}\u{03BD}\u{03B4}", -1, 1, None),
-    Among("\u{03C5}\u{03C0}\u{03BF}\u{03B4}", -1, 1, None),
-    Among("\u{03C0}\u{03C1}\u{03C9}\u{03C4}\u{03BF}\u{03B4}", -1, 1, None),
-    Among("\u{03C6}\u{03C5}\u{03BB}\u{03BF}\u{03B4}", -1, 1, None),
-    Among("\u{03B7}\u{03B8}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B7}\u{03B8}", 21, 1, None),
-    Among("\u{03BE}\u{03B9}\u{03BA}", -1, 1, None),
-    Among("\u{03BC}\u{03BF}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03BC}\u{03BF}\u{03C7}\u{03B1}\u{03BB}", 25, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03BF}\u{03BC}\u{03B7}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}\u{03C0}\u{03BF}\u{03BB}", -1, 1, None),
-    Among("\u{03B2}\u{03C1}\u{03C9}\u{03BC}", -1, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03B1}\u{03BC}", -1, 1, None),
-    Among("\u{03BC}\u{03C0}\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03BB}\u{03BB}\u{03B9}\u{03BD}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03C3}\u{03C4}\u{03B5}\u{03BB}\u{03BD}", -1, 1, None),
-    Among("\u{03C6}\u{03B9}\u{03BB}\u{03BF}\u{03BD}", -1, 1, None),
+static A_39: &'static [Among<Context>; 95] = &[
+    Among("π", -1, 1, None),
+    Among("σπ", 0, 1, None),
+    Among("πολυδαπ", 0, 1, None),
+    Among("αδαπ", 0, 1, None),
+    Among("χαμηλοδαπ", 0, 1, None),
+    Among("τσοπ", 0, 1, None),
+    Among("κοπ", 0, 1, None),
+    Among("υποκοπ", 6, 1, None),
+    Among("περιτρ", -1, 1, None),
+    Among("ουρ", -1, 1, None),
+    Among("ερ", -1, 1, None),
+    Among("βετερ", 10, 1, None),
+    Among("γερ", 10, 1, None),
+    Among("λουθηρ", -1, 1, None),
+    Among("κορμορ", -1, 1, None),
+    Among("σ", -1, 1, None),
+    Among("σαρακατσ", 15, 1, None),
+    Among("θυσ", 15, 1, None),
+    Among("βασ", 15, 1, None),
+    Among("πολισ", 15, 1, None),
+    Among("καστ", -1, 1, None),
+    Among("διατ", -1, 1, None),
+    Among("πλατ", -1, 1, None),
+    Among("τσαρλατ", -1, 1, None),
+    Among("τετ", -1, 1, None),
+    Among("πουριτ", -1, 1, None),
+    Among("σουλτ", -1, 1, None),
+    Among("ζωντ", -1, 1, None),
+    Among("μαιντ", -1, 1, None),
+    Among("φ", -1, 1, None),
+    Among("πενταρφ", 29, 1, None),
+    Among("κοιλαρφ", 29, 1, None),
+    Among("ορφ", 29, 1, None),
+    Among("διαφ", 29, 1, None),
+    Among("στεφ", 29, 1, None),
+    Among("φωτοστεφ", 34, 1, None),
+    Among("περηφ", 29, 1, None),
+    Among("υπερηφ", 36, 1, None),
+    Among("χ", -1, 1, None),
+    Among("πολυμηχ", 38, 1, None),
+    Among("αμηχ", 38, 1, None),
+    Among("βιομηχ", 38, 1, None),
+    Among("μικροβιομηχ", 41, 1, None),
+    Among("μεγλοβιομηχ", 41, 1, None),
+    Among("καπνοβιομηχ", 41, 1, None),
+    Among("λιχ", 38, 1, None),
+    Among("ταβ", -1, 1, None),
+    Among("νταβ", 46, 1, None),
+    Among("ψηλοταβ", 46, 1, None),
+    Among("λιβ", -1, 1, None),
+    Among("κλιβ", 49, 1, None),
+    Among("ξηροκλιβ", 50, 1, None),
+    Among("γ", -1, 1, None),
+    Among("ανοργ", 52, 1, None),
+    Among("ενοργ", 52, 1, None),
+    Among("αγ", 52, 1, None),
+    Among("τραγ", 55, 1, None),
+    Among("τσαγ", 55, 1, None),
+    Among("τσιγγ", 52, 1, None),
+    Among("ατσιγγ", 58, 1, None),
+    Among("αθιγγ", 52, 1, None),
+    Among("στεγ", 52, 1, None),
+    Among("απηγ", 52, 1, None),
+    Among("σιγ", 52, 1, None),
+    Among("καλπουζ", -1, 1, None),
+    Among("θ", -1, 1, None),
+    Among("μωαμεθ", 65, 1, None),
+    Among("πιθ", 65, 1, None),
+    Among("απιθ", 67, 1, None),
+    Among("βασκ", -1, 1, None),
+    Among("βραχυκ", -1, 1, None),
+    Among("δεκ", -1, 1, None),
+    Among("πελεκ", -1, 1, None),
+    Among("ικ", -1, 1, None),
+    Among("ανικ", 73, 1, None),
+    Among("βουλκ", -1, 1, None),
+    Among("πλ", -1, 1, None),
+    Among("διπλ", 76, 1, None),
+    Among("ψυχοπλ", 76, 1, None),
+    Among("λαοπλ", 76, 1, None),
+    Among("ουλ", -1, 1, None),
+    Among("γαλ", -1, 1, None),
+    Among("βαθυγαλ", 81, 1, None),
+    Among("καταγαλ", 81, 1, None),
+    Among("ολογαλ", 81, 1, None),
+    Among("καστελ", -1, 1, None),
+    Among("μελ", -1, 1, None),
+    Among("πορτολ", -1, 1, None),
+    Among("μ", -1, 1, None),
+    Among("δραδουμ", 88, 1, None),
+    Among("βραχμ", 88, 1, None),
+    Among("ολιγοδαμ", 88, 1, None),
+    Among("μουσουλμ", 88, 1, None),
+    Among("ν", -1, 1, None),
+    Among("αμερικαν", 93, 1, None),
 ];
 
-static A_40: &'static [Among<Context>; 5] = &[
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03BA}\u{03B1}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03BC}\u{03B5}", 3, 1, None),
+static A_40: &'static [Among<Context>; 31] = &[
+    Among("πυρ", -1, 1, None),
+    Among("ευρ", -1, 1, None),
+    Among("χωρ", -1, 1, None),
+    Among("βαρ", -1, 1, None),
+    Among("βρ", -1, 1, None),
+    Among("αιρ", -1, 1, None),
+    Among("φορ", -1, 1, None),
+    Among("νετ", -1, 1, None),
+    Among("σχ", -1, 1, None),
+    Among("συνδ", -1, 1, None),
+    Among("ενδ", -1, 1, None),
+    Among("οδ", -1, 1, None),
+    Among("υπερθ", -1, 1, None),
+    Among("σθ", -1, 1, None),
+    Among("ευθ", -1, 1, None),
+    Among("ραθ", -1, 1, None),
+    Among("ταθ", -1, 1, None),
+    Among("διαθ", -1, 1, None),
+    Among("καθ", -1, 1, None),
+    Among("τιθ", -1, 1, None),
+    Among("εκθ", -1, 1, None),
+    Among("συνθ", -1, 1, None),
+    Among("ενθ", -1, 1, None),
+    Among("ροθ", -1, 1, None),
+    Among("αρκ", -1, 1, None),
+    Among("ωφελ", -1, 1, None),
+    Among("βολ", -1, 1, None),
+    Among("συν", -1, 1, None),
+    Among("αιν", -1, 1, None),
+    Among("πον", -1, 1, None),
+    Among("ρον", -1, 1, None),
 ];
 
-static A_41: &'static [Among<Context>; 12] = &[
-    Among("\u{03B1}\u{03BD}\u{03B1}\u{03C0}", -1, 1, None),
-    Among("\u{03C0}\u{03B9}\u{03BA}\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03C3}\u{03C4}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03C4}", -1, 1, None),
-    Among("\u{03C7}", -1, 1, None),
-    Among("\u{03C3}\u{03B9}\u{03C7}", 4, 1, None),
-    Among("\u{03B2}\u{03BF}\u{03C5}\u{03B2}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03B8}", -1, 1, None),
-    Among("\u{03BE}\u{03B5}\u{03B8}", -1, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03B8}", -1, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03BA}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BB}", -1, 1, None),
+static A_41: &'static [Among<Context>; 25] = &[
+    Among("σερπ", -1, 1, None),
+    Among("κοπ", -1, 1, None),
+    Among("θαρρ", -1, 1, None),
+    Among("ντρ", -1, 1, None),
+    Among("αβαρ", -1, 1, None),
+    Among("εναρ", -1, 1, None),
+    Among("αβρ", -1, 1, None),
+    Among("μπορ", -1, 1, None),
+    Among("υ", -1, 1, None),
+    Among("συρφ", -1, 1, None),
+    Among("νιφ", -1, 1, None),
+    Among("παγ", -1, 1, None),
+    Among("δ", -1, 1, None),
+    Among("αδ", 12, 1, None),
+    Among("θ", -1, 1, None),
+    Among("αθ", 14, 1, None),
+    Among("σκ", -1, 1, None),
+    Among("τοκ", -1, 1, None),
+    Among("απλ", -1, 1, None),
+    Among("παρακαλ", -1, 1, None),
+    Among("σκελ", -1, 1, None),
+    Among("εμ", -1, 1, None),
+    Among("αν", -1, 1, None),
+    Among("βεν", -1, 1, None),
+    Among("βαρον", -1, 1, None),
 ];
 
 static A_42: &'static [Among<Context>; 2] = &[
-    Among("\u{03C4}\u{03C1}", -1, 1, None),
-    Among("\u{03C4}\u{03C3}", -1, 1, None),
+    Among("ωντασ", -1, 1, None),
+    Among("οντασ", -1, 1, None),
 ];
 
-static A_43: &'static [Among<Context>; 11] = &[
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BD}\u{03C4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C5}\u{03BD}\u{03C4}\u{03B1}\u{03BD}\u{03B5}", 2, 1, None),
-    Among("\u{03BF}\u{03BD}\u{03C4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BD}\u{03C4}\u{03B1}\u{03BD}\u{03B5}", 4, 1, None),
-    Among("\u{03BF}\u{03C4}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C4}\u{03B1}\u{03BD}\u{03B5}", 6, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03BA}\u{03B1}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03BD}\u{03B5}", 9, 1, None),
+static A_43: &'static [Among<Context>; 2] = &[
+    Among("ομαστε", -1, 1, None),
+    Among("ιομαστε", 0, 1, None),
 ];
 
-static A_44: &'static [Among<Context>; 95] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03C3}\u{03C0}", 0, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03BB}\u{03C5}\u{03B4}\u{03B1}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03B4}\u{03B1}\u{03C0}", 0, 1, None),
-    Among("\u{03C7}\u{03B1}\u{03BC}\u{03B7}\u{03BB}\u{03BF}\u{03B4}\u{03B1}\u{03C0}", 0, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03C5}\u{03C0}\u{03BF}\u{03BA}\u{03BF}\u{03C0}", 6, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B9}\u{03C4}\u{03C1}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C1}", -1, 1, None),
-    Among("\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03B2}\u{03B5}\u{03C4}\u{03B5}\u{03C1}", 10, 1, None),
-    Among("\u{03B3}\u{03B5}\u{03C1}", 10, 1, None),
-    Among("\u{03BB}\u{03BF}\u{03C5}\u{03B8}\u{03B7}\u{03C1}", -1, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03C1}\u{03BC}\u{03BF}\u{03C1}", -1, 1, None),
-    Among("\u{03C3}", -1, 1, None),
-    Among("\u{03C3}\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B1}\u{03C4}\u{03C3}", 15, 1, None),
-    Among("\u{03B8}\u{03C5}\u{03C3}", 15, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03C3}", 15, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03BB}\u{03B9}\u{03C3}", 15, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C3}\u{03C4}", -1, 1, None),
-    Among("\u{03B4}\u{03B9}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03C0}\u{03BB}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03B1}\u{03C1}\u{03BB}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03C4}\u{03B5}\u{03C4}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03C5}\u{03C1}\u{03B9}\u{03C4}", -1, 1, None),
-    Among("\u{03C3}\u{03BF}\u{03C5}\u{03BB}\u{03C4}", -1, 1, None),
-    Among("\u{03B6}\u{03C9}\u{03BD}\u{03C4}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03B9}\u{03BD}\u{03C4}", -1, 1, None),
-    Among("\u{03C6}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03BD}\u{03C4}\u{03B1}\u{03C1}\u{03C6}", 29, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03B9}\u{03BB}\u{03B1}\u{03C1}\u{03C6}", 29, 1, None),
-    Among("\u{03BF}\u{03C1}\u{03C6}", 29, 1, None),
-    Among("\u{03B4}\u{03B9}\u{03B1}\u{03C6}", 29, 1, None),
-    Among("\u{03C3}\u{03C4}\u{03B5}\u{03C6}", 29, 1, None),
-    Among("\u{03C6}\u{03C9}\u{03C4}\u{03BF}\u{03C3}\u{03C4}\u{03B5}\u{03C6}", 34, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03C1}\u{03B7}\u{03C6}", 29, 1, None),
-    Among("\u{03C5}\u{03C0}\u{03B5}\u{03C1}\u{03B7}\u{03C6}", 36, 1, None),
-    Among("\u{03C7}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03BB}\u{03C5}\u{03BC}\u{03B7}\u{03C7}", 38, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B7}\u{03C7}", 38, 1, None),
-    Among("\u{03B2}\u{03B9}\u{03BF}\u{03BC}\u{03B7}\u{03C7}", 38, 1, None),
-    Among("\u{03BC}\u{03B9}\u{03BA}\u{03C1}\u{03BF}\u{03B2}\u{03B9}\u{03BF}\u{03BC}\u{03B7}\u{03C7}", 41, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03B3}\u{03BB}\u{03BF}\u{03B2}\u{03B9}\u{03BF}\u{03BC}\u{03B7}\u{03C7}", 41, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C0}\u{03BD}\u{03BF}\u{03B2}\u{03B9}\u{03BF}\u{03BC}\u{03B7}\u{03C7}", 41, 1, None),
-    Among("\u{03BB}\u{03B9}\u{03C7}", 38, 1, None),
-    Among("\u{03C4}\u{03B1}\u{03B2}", -1, 1, None),
-    Among("\u{03BD}\u{03C4}\u{03B1}\u{03B2}", 46, 1, None),
-    Among("\u{03C8}\u{03B7}\u{03BB}\u{03BF}\u{03C4}\u{03B1}\u{03B2}", 46, 1, None),
-    Among("\u{03BB}\u{03B9}\u{03B2}", -1, 1, None),
-    Among("\u{03BA}\u{03BB}\u{03B9}\u{03B2}", 49, 1, None),
-    Among("\u{03BE}\u{03B7}\u{03C1}\u{03BF}\u{03BA}\u{03BB}\u{03B9}\u{03B2}", 50, 1, None),
-    Among("\u{03B3}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03BF}\u{03C1}\u{03B3}", 52, 1, None),
-    Among("\u{03B5}\u{03BD}\u{03BF}\u{03C1}\u{03B3}", 52, 1, None),
-    Among("\u{03B1}\u{03B3}", 52, 1, None),
-    Among("\u{03C4}\u{03C1}\u{03B1}\u{03B3}", 55, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03B1}\u{03B3}", 55, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03B9}\u{03B3}\u{03B3}", 52, 1, None),
-    Among("\u{03B1}\u{03C4}\u{03C3}\u{03B9}\u{03B3}\u{03B3}", 58, 1, None),
-    Among("\u{03B1}\u{03B8}\u{03B9}\u{03B3}\u{03B3}", 52, 1, None),
-    Among("\u{03C3}\u{03C4}\u{03B5}\u{03B3}", 52, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03B7}\u{03B3}", 52, 1, None),
-    Among("\u{03C3}\u{03B9}\u{03B3}", 52, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03BB}\u{03C0}\u{03BF}\u{03C5}\u{03B6}", -1, 1, None),
-    Among("\u{03B8}", -1, 1, None),
-    Among("\u{03BC}\u{03C9}\u{03B1}\u{03BC}\u{03B5}\u{03B8}", 65, 1, None),
-    Among("\u{03C0}\u{03B9}\u{03B8}", 65, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03B9}\u{03B8}", 67, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03C3}\u{03BA}", -1, 1, None),
-    Among("\u{03B2}\u{03C1}\u{03B1}\u{03C7}\u{03C5}\u{03BA}", -1, 1, None),
-    Among("\u{03B4}\u{03B5}\u{03BA}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03BB}\u{03B5}\u{03BA}", -1, 1, None),
-    Among("\u{03B9}\u{03BA}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B9}\u{03BA}", 73, 1, None),
-    Among("\u{03B2}\u{03BF}\u{03C5}\u{03BB}\u{03BA}", -1, 1, None),
-    Among("\u{03C0}\u{03BB}", -1, 1, None),
-    Among("\u{03B4}\u{03B9}\u{03C0}\u{03BB}", 76, 1, None),
-    Among("\u{03C8}\u{03C5}\u{03C7}\u{03BF}\u{03C0}\u{03BB}", 76, 1, None),
-    Among("\u{03BB}\u{03B1}\u{03BF}\u{03C0}\u{03BB}", 76, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03B3}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03B8}\u{03C5}\u{03B3}\u{03B1}\u{03BB}", 81, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C4}\u{03B1}\u{03B3}\u{03B1}\u{03BB}", 81, 1, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}\u{03B3}\u{03B1}\u{03BB}", 81, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03C3}\u{03C4}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03C1}\u{03C4}\u{03BF}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03B4}\u{03C1}\u{03B1}\u{03B4}\u{03BF}\u{03C5}\u{03BC}", 88, 1, None),
-    Among("\u{03B2}\u{03C1}\u{03B1}\u{03C7}\u{03BC}", 88, 1, None),
-    Among("\u{03BF}\u{03BB}\u{03B9}\u{03B3}\u{03BF}\u{03B4}\u{03B1}\u{03BC}", 88, 1, None),
-    Among("\u{03BC}\u{03BF}\u{03C5}\u{03C3}\u{03BF}\u{03C5}\u{03BB}\u{03BC}", 88, 1, None),
-    Among("\u{03BD}", -1, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B5}\u{03C1}\u{03B9}\u{03BA}\u{03B1}\u{03BD}", 93, 1, None),
+static A_44: &'static [Among<Context>; 6] = &[
+    Among("π", -1, 1, None),
+    Among("απ", 0, 1, None),
+    Among("ακαταπ", 1, 1, None),
+    Among("συμπ", 0, 1, None),
+    Among("ασυμπ", 3, 1, None),
+    Among("αμεταμφ", -1, 1, None),
 ];
 
-static A_45: &'static [Among<Context>; 1] = &[
-    Among("\u{03B7}\u{03C3}\u{03B5}\u{03C4}\u{03B5}", -1, 1, None),
+static A_45: &'static [Among<Context>; 9] = &[
+    Among("αρ", -1, 1, None),
+    Among("νισ", -1, 1, None),
+    Among("ζ", -1, 1, None),
+    Among("αλ", -1, 1, None),
+    Among("παρακαλ", 3, 1, None),
+    Among("εκτελ", -1, 1, None),
+    Among("μ", -1, 1, None),
+    Among("ξ", -1, 1, None),
+    Among("προ", -1, 1, None),
 ];
 
-static A_46: &'static [Among<Context>; 31] = &[
-    Among("\u{03C0}\u{03C5}\u{03C1}", -1, 1, None),
-    Among("\u{03B5}\u{03C5}\u{03C1}", -1, 1, None),
-    Among("\u{03C7}\u{03C9}\u{03C1}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03B2}\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03B9}\u{03C1}", -1, 1, None),
-    Among("\u{03C6}\u{03BF}\u{03C1}", -1, 1, None),
-    Among("\u{03BD}\u{03B5}\u{03C4}", -1, 1, None),
-    Among("\u{03C3}\u{03C7}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B4}", -1, 1, None),
-    Among("\u{03B5}\u{03BD}\u{03B4}", -1, 1, None),
-    Among("\u{03BF}\u{03B4}", -1, 1, None),
-    Among("\u{03C5}\u{03C0}\u{03B5}\u{03C1}\u{03B8}", -1, 1, None),
-    Among("\u{03C3}\u{03B8}", -1, 1, None),
-    Among("\u{03B5}\u{03C5}\u{03B8}", -1, 1, None),
-    Among("\u{03C1}\u{03B1}\u{03B8}", -1, 1, None),
-    Among("\u{03C4}\u{03B1}\u{03B8}", -1, 1, None),
-    Among("\u{03B4}\u{03B9}\u{03B1}\u{03B8}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03B8}", -1, 1, None),
-    Among("\u{03C4}\u{03B9}\u{03B8}", -1, 1, None),
-    Among("\u{03B5}\u{03BA}\u{03B8}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B8}", -1, 1, None),
-    Among("\u{03B5}\u{03BD}\u{03B8}", -1, 1, None),
-    Among("\u{03C1}\u{03BF}\u{03B8}", -1, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03BA}", -1, 1, None),
-    Among("\u{03C9}\u{03C6}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03B2}\u{03BF}\u{03BB}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}", -1, 1, None),
-    Among("\u{03B1}\u{03B9}\u{03BD}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03BD}", -1, 1, None),
-    Among("\u{03C1}\u{03BF}\u{03BD}", -1, 1, None),
+static A_46: &'static [Among<Context>; 3] = &[
+    Among("ηθηκεσ", -1, 1, None),
+    Among("ηθηκα", -1, 1, None),
+    Among("ηθηκε", -1, 1, None),
 ];
 
-static A_47: &'static [Among<Context>; 25] = &[
-    Among("\u{03C3}\u{03B5}\u{03C1}\u{03C0}", -1, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03C0}", -1, 1, None),
-    Among("\u{03B8}\u{03B1}\u{03C1}\u{03C1}", -1, 1, None),
-    Among("\u{03BD}\u{03C4}\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03B2}\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03B5}\u{03BD}\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03B2}\u{03C1}", -1, 1, None),
-    Among("\u{03BC}\u{03C0}\u{03BF}\u{03C1}", -1, 1, None),
-    Among("\u{03C5}", -1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03C1}\u{03C6}", -1, 1, None),
-    Among("\u{03BD}\u{03B9}\u{03C6}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03B3}", -1, 1, None),
-    Among("\u{03B4}", -1, 1, None),
-    Among("\u{03B1}\u{03B4}", 12, 1, None),
-    Among("\u{03B8}", -1, 1, None),
-    Among("\u{03B1}\u{03B8}", 14, 1, None),
-    Among("\u{03C3}\u{03BA}", -1, 1, None),
-    Among("\u{03C4}\u{03BF}\u{03BA}", -1, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BB}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03B5}\u{03BC}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03B2}\u{03B5}\u{03BD}", -1, 1, None),
-    Among("\u{03B2}\u{03B1}\u{03C1}\u{03BF}\u{03BD}", -1, 1, None),
+static A_47: &'static [Among<Context>; 6] = &[
+    Among("σφ", -1, 1, None),
+    Among("ναρθ", -1, 1, None),
+    Among("πιθ", -1, 1, None),
+    Among("οθ", -1, 1, None),
+    Among("σκουλ", -1, 1, None),
+    Among("σκωλ", -1, 1, None),
 ];
 
-static A_48: &'static [Among<Context>; 2] = &[
-    Among("\u{03C9}\u{03BD}\u{03C4}\u{03B1}\u{03C3}", -1, 1, None),
-    Among("\u{03BF}\u{03BD}\u{03C4}\u{03B1}\u{03C3}", -1, 1, None),
+static A_48: &'static [Among<Context>; 5] = &[
+    Among("θ", -1, 1, None),
+    Among("προσθ", 0, 1, None),
+    Among("παρακαταθ", 0, 1, None),
+    Among("διαθ", 0, 1, None),
+    Among("συνθ", 0, 1, None),
 ];
 
-static A_49: &'static [Among<Context>; 2] = &[
-    Among("\u{03BF}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 0, 1, None),
+static A_49: &'static [Among<Context>; 3] = &[
+    Among("ηκεσ", -1, 1, None),
+    Among("ηκα", -1, 1, None),
+    Among("ηκε", -1, 1, None),
 ];
 
-static A_50: &'static [Among<Context>; 6] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03B1}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03BA}\u{03B1}\u{03C4}\u{03B1}\u{03C0}", 1, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BC}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03C5}\u{03BC}\u{03C0}", 3, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B5}\u{03C4}\u{03B1}\u{03BC}\u{03C6}", -1, 1, None),
+static A_50: &'static [Among<Context>; 12] = &[
+    Among("βλεπ", -1, 1, None),
+    Among("ποδαρ", -1, 1, None),
+    Among("πρωτ", -1, 1, None),
+    Among("κυματ", -1, 1, None),
+    Among("πανταχ", -1, 1, None),
+    Among("λαχ", -1, 1, None),
+    Among("φαγ", -1, 1, None),
+    Among("ληγ", -1, 1, None),
+    Among("φρυδ", -1, 1, None),
+    Among("μαντιλ", -1, 1, None),
+    Among("μαλλ", -1, 1, None),
+    Among("ομ", -1, 1, None),
 ];
 
-static A_51: &'static [Among<Context>; 9] = &[
-    Among("\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03BD}\u{03B9}\u{03C3}", -1, 1, None),
-    Among("\u{03B6}", -1, 1, None),
-    Among("\u{03B1}\u{03BB}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B1}\u{03BB}", 3, 1, None),
-    Among("\u{03B5}\u{03BA}\u{03C4}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03BE}", -1, 1, None),
-    Among("\u{03C0}\u{03C1}\u{03BF}", -1, 1, None),
+static A_51: &'static [Among<Context>; 25] = &[
+    Among("εκλιπ", -1, 1, None),
+    Among("ρ", -1, 1, None),
+    Among("αναρρ", 1, 1, None),
+    Among("ενδιαφερ", 1, 1, None),
+    Among("πατ", -1, 1, None),
+    Among("καθαρευ", -1, 1, None),
+    Among("δευτερευ", -1, 1, None),
+    Among("λεχ", -1, 1, None),
+    Among("τσα", -1, 1, None),
+    Among("χαδ", -1, 1, None),
+    Among("μεδ", -1, 1, None),
+    Among("λαμπιδ", -1, 1, None),
+    Among("δε", -1, 1, None),
+    Among("πλε", -1, 1, None),
+    Among("μεσαζ", -1, 1, None),
+    Among("δεσποζ", -1, 1, None),
+    Among("αιθ", -1, 1, None),
+    Among("φαρμακ", -1, 1, None),
+    Among("αγκ", -1, 1, None),
+    Among("ανηκ", -1, 1, None),
+    Among("λ", -1, 1, None),
+    Among("μ", -1, 1, None),
+    Among("αμ", 21, 1, None),
+    Among("βρομ", 21, 1, None),
+    Among("υποτειν", -1, 1, None),
 ];
 
 static A_52: &'static [Among<Context>; 3] = &[
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B1}", -1, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B5}", -1, 1, None),
+    Among("ουσεσ", -1, 1, None),
+    Among("ουσα", -1, 1, None),
+    Among("ουσε", -1, 1, None),
 ];
 
-static A_53: &'static [Among<Context>; 6] = &[
-    Among("\u{03C3}\u{03C6}", -1, 1, None),
-    Among("\u{03BD}\u{03B1}\u{03C1}\u{03B8}", -1, 1, None),
-    Among("\u{03C0}\u{03B9}\u{03B8}", -1, 1, None),
-    Among("\u{03BF}\u{03B8}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}\u{03BF}\u{03C5}\u{03BB}", -1, 1, None),
-    Among("\u{03C3}\u{03BA}\u{03C9}\u{03BB}", -1, 1, None),
+static A_53: &'static [Among<Context>; 12] = &[
+    Among("ρπ", -1, 1, None),
+    Among("πρ", -1, 1, None),
+    Among("φρ", -1, 1, None),
+    Among("χορτ", -1, 1, None),
+    Among("σφ", -1, 1, None),
+    Among("οφ", -1, 1, None),
+    Among("ψοφ", 5, -1, None),
+    Among("λοχ", -1, 1, None),
+    Among("ναυλοχ", 7, -1, None),
+    Among("πελ", -1, 1, None),
+    Among("λλ", -1, 1, None),
+    Among("σμην", -1, 1, None),
 ];
 
-static A_54: &'static [Among<Context>; 5] = &[
-    Among("\u{03B8}", -1, 1, None),
-    Among("\u{03C0}\u{03C1}\u{03BF}\u{03C3}\u{03B8}", 0, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C1}\u{03B1}\u{03BA}\u{03B1}\u{03C4}\u{03B1}\u{03B8}", 0, 1, None),
-    Among("\u{03B4}\u{03B9}\u{03B1}\u{03B8}", 0, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03B8}", 0, 1, None),
+static A_54: &'static [Among<Context>; 44] = &[
+    Among("π", -1, 1, None),
+    Among("ασπ", 0, 1, None),
+    Among("ανυπ", 0, 1, None),
+    Among("αρτιπ", 0, 1, None),
+    Among("αειπ", 0, 1, None),
+    Among("συμπ", 0, 1, None),
+    Among("προσωποπ", 0, 1, None),
+    Among("σιδηροπ", 0, 1, None),
+    Among("δροσοπ", 0, 1, None),
+    Among("νεοπ", 0, 1, None),
+    Among("κροκαλοπ", 0, 1, None),
+    Among("ολοπ", 0, 1, None),
+    Among("ρ", -1, 1, None),
+    Among("τρ", 12, 1, None),
+    Among("ουρ", 12, 1, None),
+    Among("ασπαρ", 12, 1, None),
+    Among("χαρ", 12, 1, None),
+    Among("αχαρ", 16, 1, None),
+    Among("απερ", 12, 1, None),
+    Among("τ", -1, 1, None),
+    Among("ανυστ", 19, 1, None),
+    Among("αβαστ", 19, 1, None),
+    Among("προστ", 19, 1, None),
+    Among("αιμοστ", 19, 1, None),
+    Among("διατ", 19, 1, None),
+    Among("επιτ", 19, 1, None),
+    Among("συντ", 19, 1, None),
+    Among("υποτ", 19, 1, None),
+    Among("αποτ", 19, 1, None),
+    Among("ομοτ", 19, 1, None),
+    Among("νομοτ", 29, 1, None),
+    Among("ναυ", -1, 1, None),
+    Among("πολυφ", -1, 1, None),
+    Among("αφ", -1, 1, None),
+    Among("ξεφ", -1, 1, None),
+    Among("αδηφ", -1, 1, None),
+    Among("παμφ", -1, 1, None),
+    Among("αμαλλι", -1, 1, None),
+    Among("λ", -1, 1, None),
+    Among("αμαλ", 38, 1, None),
+    Among("μ", -1, 1, None),
+    Among("ουλαμ", 40, 1, None),
+    Among("εν", -1, 1, None),
+    Among("δερβεν", 42, 1, None),
 ];
 
 static A_55: &'static [Among<Context>; 3] = &[
-    Among("\u{03B7}\u{03BA}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B7}\u{03BA}\u{03B1}", -1, 1, None),
-    Among("\u{03B7}\u{03BA}\u{03B5}", -1, 1, None),
+    Among("αγεσ", -1, 1, None),
+    Among("αγα", -1, 1, None),
+    Among("αγε", -1, 1, None),
 ];
 
-static A_56: &'static [Among<Context>; 12] = &[
-    Among("\u{03B2}\u{03BB}\u{03B5}\u{03C0}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03B4}\u{03B1}\u{03C1}", -1, 1, None),
-    Among("\u{03C0}\u{03C1}\u{03C9}\u{03C4}", -1, 1, None),
-    Among("\u{03BA}\u{03C5}\u{03BC}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03BD}\u{03C4}\u{03B1}\u{03C7}", -1, 1, None),
-    Among("\u{03BB}\u{03B1}\u{03C7}", -1, 1, None),
-    Among("\u{03C6}\u{03B1}\u{03B3}", -1, 1, None),
-    Among("\u{03BB}\u{03B7}\u{03B3}", -1, 1, None),
-    Among("\u{03C6}\u{03C1}\u{03C5}\u{03B4}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03BD}\u{03C4}\u{03B9}\u{03BB}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03BB}\u{03BB}", -1, 1, None),
-    Among("\u{03BF}\u{03BC}", -1, 1, None),
+static A_56: &'static [Among<Context>; 3] = &[
+    Among("ησου", -1, 1, None),
+    Among("ησα", -1, 1, None),
+    Among("ησε", -1, 1, None),
 ];
 
-static A_57: &'static [Among<Context>; 25] = &[
-    Among("\u{03B5}\u{03BA}\u{03BB}\u{03B9}\u{03C0}", -1, 1, None),
-    Among("\u{03C1}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B1}\u{03C1}\u{03C1}", 1, 1, None),
-    Among("\u{03B5}\u{03BD}\u{03B4}\u{03B9}\u{03B1}\u{03C6}\u{03B5}\u{03C1}", 1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03B8}\u{03B1}\u{03C1}\u{03B5}\u{03C5}", -1, 1, None),
-    Among("\u{03B4}\u{03B5}\u{03C5}\u{03C4}\u{03B5}\u{03C1}\u{03B5}\u{03C5}", -1, 1, None),
-    Among("\u{03BB}\u{03B5}\u{03C7}", -1, 1, None),
-    Among("\u{03C4}\u{03C3}\u{03B1}", -1, 1, None),
-    Among("\u{03C7}\u{03B1}\u{03B4}", -1, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03B4}", -1, 1, None),
-    Among("\u{03BB}\u{03B1}\u{03BC}\u{03C0}\u{03B9}\u{03B4}", -1, 1, None),
-    Among("\u{03B4}\u{03B5}", -1, 1, None),
-    Among("\u{03C0}\u{03BB}\u{03B5}", -1, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03C3}\u{03B1}\u{03B6}", -1, 1, None),
-    Among("\u{03B4}\u{03B5}\u{03C3}\u{03C0}\u{03BF}\u{03B6}", -1, 1, None),
-    Among("\u{03B1}\u{03B9}\u{03B8}", -1, 1, None),
-    Among("\u{03C6}\u{03B1}\u{03C1}\u{03BC}\u{03B1}\u{03BA}", -1, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03BA}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03B7}\u{03BA}", -1, 1, None),
-    Among("\u{03BB}", -1, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03B1}\u{03BC}", 21, 1, None),
-    Among("\u{03B2}\u{03C1}\u{03BF}\u{03BC}", 21, 1, None),
-    Among("\u{03C5}\u{03C0}\u{03BF}\u{03C4}\u{03B5}\u{03B9}\u{03BD}", -1, 1, None),
+static A_57: &'static [Among<Context>; 6] = &[
+    Among("ν", -1, 1, None),
+    Among("επταν", 0, 1, None),
+    Among("δωδεκαν", 0, 1, None),
+    Among("χερσον", 0, 1, None),
+    Among("μεγαλον", 0, 1, None),
+    Among("ερημον", 0, 1, None),
 ];
 
-static A_58: &'static [Among<Context>; 3] = &[
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B1}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B5}", -1, 1, None),
+static A_58: &'static [Among<Context>; 10] = &[
+    Among("χρ", -1, 1, None),
+    Among("δυσχρ", 0, 1, None),
+    Among("ευχρ", 0, 1, None),
+    Among("αχρ", 0, 1, None),
+    Among("κοινοχρ", 0, 1, None),
+    Among("παλιμψ", -1, 1, None),
+    Among("σβ", -1, 1, None),
+    Among("ασβ", 6, 1, None),
+    Among("απλ", -1, 1, None),
+    Among("αειμν", -1, 1, None),
 ];
 
-static A_59: &'static [Among<Context>; 2] = &[
-    Among("\u{03C8}\u{03BF}\u{03C6}", -1, -1, None),
-    Among("\u{03BD}\u{03B1}\u{03C5}\u{03BB}\u{03BF}\u{03C7}", -1, -1, None),
+static A_59: &'static [Among<Context>; 3] = &[
+    Among("ουνε", -1, 1, None),
+    Among("ησουνε", 0, 1, None),
+    Among("ηθουνε", 0, 1, None),
 ];
 
-static A_60: &'static [Among<Context>; 10] = &[
-    Among("\u{03C1}\u{03C0}", -1, 1, None),
-    Among("\u{03C0}\u{03C1}", -1, 1, None),
-    Among("\u{03C6}\u{03C1}", -1, 1, None),
-    Among("\u{03C7}\u{03BF}\u{03C1}\u{03C4}", -1, 1, None),
-    Among("\u{03C3}\u{03C6}", -1, 1, None),
-    Among("\u{03BF}\u{03C6}", -1, 1, None),
-    Among("\u{03BB}\u{03BF}\u{03C7}", -1, 1, None),
-    Among("\u{03C0}\u{03B5}\u{03BB}", -1, 1, None),
-    Among("\u{03BB}\u{03BB}", -1, 1, None),
-    Among("\u{03C3}\u{03BC}\u{03B7}\u{03BD}", -1, 1, None),
+static A_60: &'static [Among<Context>; 6] = &[
+    Among("ρ", -1, 1, None),
+    Among("στραβομουτσ", -1, 1, None),
+    Among("κακομουτσ", -1, 1, None),
+    Among("σπι", -1, 1, None),
+    Among("ν", -1, 1, None),
+    Among("εξων", 4, 1, None),
 ];
 
-static A_61: &'static [Among<Context>; 44] = &[
-    Among("\u{03C0}", -1, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03C5}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03C1}\u{03C4}\u{03B9}\u{03C0}", 0, 1, None),
-    Among("\u{03B1}\u{03B5}\u{03B9}\u{03C0}", 0, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BC}\u{03C0}", 0, 1, None),
-    Among("\u{03C0}\u{03C1}\u{03BF}\u{03C3}\u{03C9}\u{03C0}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03C3}\u{03B9}\u{03B4}\u{03B7}\u{03C1}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03B4}\u{03C1}\u{03BF}\u{03C3}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03BD}\u{03B5}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03BA}\u{03C1}\u{03BF}\u{03BA}\u{03B1}\u{03BB}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03BF}\u{03BB}\u{03BF}\u{03C0}", 0, 1, None),
-    Among("\u{03C1}", -1, 1, None),
-    Among("\u{03C4}\u{03C1}", 12, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C1}", 12, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03C0}\u{03B1}\u{03C1}", 12, 1, None),
-    Among("\u{03C7}\u{03B1}\u{03C1}", 12, 1, None),
-    Among("\u{03B1}\u{03C7}\u{03B1}\u{03C1}", 16, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03B5}\u{03C1}", 12, 1, None),
-    Among("\u{03C4}", -1, 1, None),
-    Among("\u{03B1}\u{03BD}\u{03C5}\u{03C3}\u{03C4}", 19, 1, None),
-    Among("\u{03B1}\u{03B2}\u{03B1}\u{03C3}\u{03C4}", 19, 1, None),
-    Among("\u{03C0}\u{03C1}\u{03BF}\u{03C3}\u{03C4}", 19, 1, None),
-    Among("\u{03B1}\u{03B9}\u{03BC}\u{03BF}\u{03C3}\u{03C4}", 19, 1, None),
-    Among("\u{03B4}\u{03B9}\u{03B1}\u{03C4}", 19, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03B9}\u{03C4}", 19, 1, None),
-    Among("\u{03C3}\u{03C5}\u{03BD}\u{03C4}", 19, 1, None),
-    Among("\u{03C5}\u{03C0}\u{03BF}\u{03C4}", 19, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BF}\u{03C4}", 19, 1, None),
-    Among("\u{03BF}\u{03BC}\u{03BF}\u{03C4}", 19, 1, None),
-    Among("\u{03BD}\u{03BF}\u{03BC}\u{03BF}\u{03C4}", 29, 1, None),
-    Among("\u{03BD}\u{03B1}\u{03C5}", -1, 1, None),
-    Among("\u{03C0}\u{03BF}\u{03BB}\u{03C5}\u{03C6}", -1, 1, None),
-    Among("\u{03B1}\u{03C6}", -1, 1, None),
-    Among("\u{03BE}\u{03B5}\u{03C6}", -1, 1, None),
-    Among("\u{03B1}\u{03B4}\u{03B7}\u{03C6}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03BC}\u{03C6}", -1, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B1}\u{03BB}\u{03BB}\u{03B9}", -1, 1, None),
-    Among("\u{03BB}", -1, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B1}\u{03BB}", 38, 1, None),
-    Among("\u{03BC}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BB}\u{03B1}\u{03BC}", 40, 1, None),
-    Among("\u{03B5}\u{03BD}", -1, 1, None),
-    Among("\u{03B4}\u{03B5}\u{03C1}\u{03B2}\u{03B5}\u{03BD}", 42, 1, None),
+static A_61: &'static [Among<Context>; 3] = &[
+    Among("ουμε", -1, 1, None),
+    Among("ησουμε", 0, 1, None),
+    Among("ηθουμε", 0, 1, None),
 ];
 
-static A_62: &'static [Among<Context>; 3] = &[
-    Among("\u{03B1}\u{03B3}\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03B1}", -1, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03B5}", -1, 1, None),
+static A_62: &'static [Among<Context>; 7] = &[
+    Among("ασουσ", -1, 1, None),
+    Among("παρασουσ", 0, 1, None),
+    Among("αλλοσουσ", -1, 1, None),
+    Among("φ", -1, 1, None),
+    Among("χ", -1, 1, None),
+    Among("αζ", -1, 1, None),
+    Among("ωριοπλ", -1, 1, None),
 ];
 
 static A_63: &'static [Among<Context>; 3] = &[
-    Among("\u{03B7}\u{03C3}\u{03BF}\u{03C5}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B1}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B5}", -1, 1, None),
+    Among("ματοσ", -1, 1, None),
+    Among("ματα", -1, 1, None),
+    Among("ματων", -1, 1, None),
 ];
 
-static A_64: &'static [Among<Context>; 6] = &[
-    Among("\u{03BD}", -1, 1, None),
-    Among("\u{03B5}\u{03C0}\u{03C4}\u{03B1}\u{03BD}", 0, 1, None),
-    Among("\u{03B4}\u{03C9}\u{03B4}\u{03B5}\u{03BA}\u{03B1}\u{03BD}", 0, 1, None),
-    Among("\u{03C7}\u{03B5}\u{03C1}\u{03C3}\u{03BF}\u{03BD}", 0, 1, None),
-    Among("\u{03BC}\u{03B5}\u{03B3}\u{03B1}\u{03BB}\u{03BF}\u{03BD}", 0, 1, None),
-    Among("\u{03B5}\u{03C1}\u{03B7}\u{03BC}\u{03BF}\u{03BD}", 0, 1, None),
+static A_64: &'static [Among<Context>; 84] = &[
+    Among("υσ", -1, 1, None),
+    Among("ουσ", 0, 1, None),
+    Among("ασ", -1, 1, None),
+    Among("εσ", -1, 1, None),
+    Among("ησεσ", 3, 1, None),
+    Among("ηδεσ", 3, 1, None),
+    Among("ησ", -1, 1, None),
+    Among("εισ", -1, 1, None),
+    Among("ηθεισ", 7, 1, None),
+    Among("οσ", -1, 1, None),
+    Among("υ", -1, 1, None),
+    Among("ου", 10, 1, None),
+    Among("ω", -1, 1, None),
+    Among("ησω", 12, 1, None),
+    Among("αω", 12, 1, None),
+    Among("ηθω", 12, 1, None),
+    Among("α", -1, 1, None),
+    Among("ιουμα", 16, 1, None),
+    Among("οσουνα", 16, 1, None),
+    Among("ιοσουνα", 18, 1, None),
+    Among("ομουνα", 16, 1, None),
+    Among("ιομουνα", 20, 1, None),
+    Among("ε", -1, 1, None),
+    Among("ιεσαστε", 22, 1, None),
+    Among("οσαστε", 22, 1, None),
+    Among("ιοσαστε", 24, 1, None),
+    Among("ουμαστε", 22, 1, None),
+    Among("ιουμαστε", 26, 1, None),
+    Among("ιεμαστε", 22, 1, None),
+    Among("ουσατε", 22, 1, None),
+    Among("ησατε", 22, 1, None),
+    Among("αγατε", 22, 1, None),
+    Among("ηκατε", 22, 1, None),
+    Among("ηθηκατε", 32, 1, None),
+    Among("ειτε", 22, 1, None),
+    Among("ηθειτε", 34, 1, None),
+    Among("η", -1, 1, None),
+    Among("ι", -1, 1, None),
+    Among("ασαι", 37, 1, None),
+    Among("εσαι", 37, 1, None),
+    Among("ιεσαι", 39, 1, None),
+    Among("αται", 37, 1, None),
+    Among("εται", 37, 1, None),
+    Among("ιεται", 42, 1, None),
+    Among("ουνται", 37, 1, None),
+    Among("ιουνται", 44, 1, None),
+    Among("ονται", 37, 1, None),
+    Among("ουμαι", 37, 1, None),
+    Among("αμαι", 37, 1, None),
+    Among("ιεμαι", 37, 1, None),
+    Among("ομαι", 37, 1, None),
+    Among("ει", 37, 1, None),
+    Among("ησει", 51, 1, None),
+    Among("αει", 51, 1, None),
+    Among("ηθει", 51, 1, None),
+    Among("οι", 37, 1, None),
+    Among("ουν", -1, 1, None),
+    Among("ησουν", 56, 1, None),
+    Among("οσουν", 56, 1, None),
+    Among("ιοσουν", 58, 1, None),
+    Among("ηθουν", 56, 1, None),
+    Among("ομουν", 56, 1, None),
+    Among("ιομουν", 61, 1, None),
+    Among("ων", -1, 1, None),
+    Among("ηδων", 63, 1, None),
+    Among("αν", -1, 1, None),
+    Among("ουσαν", 65, 1, None),
+    Among("οντουσαν", 66, 1, None),
+    Among("ιοντουσαν", 67, 1, None),
+    Among("ησαν", 65, 1, None),
+    Among("οσασταν", 65, 1, None),
+    Among("ιοσασταν", 70, 1, None),
+    Among("ομασταν", 65, 1, None),
+    Among("ιομασταν", 72, 1, None),
+    Among("ουνταν", 65, 1, None),
+    Among("ιουνταν", 74, 1, None),
+    Among("ονταν", 65, 1, None),
+    Among("ιονταν", 76, 1, None),
+    Among("οταν", 65, 1, None),
+    Among("ιοταν", 78, 1, None),
+    Among("αγαν", 65, 1, None),
+    Among("ηκαν", 65, 1, None),
+    Among("ηθηκαν", 81, 1, None),
+    Among("ο", -1, 1, None),
 ];
 
-static A_65: &'static [Among<Context>; 1] = &[
-    Among("\u{03B7}\u{03C3}\u{03C4}\u{03B5}", -1, 1, None),
-];
-
-static A_66: &'static [Among<Context>; 10] = &[
-    Among("\u{03C7}\u{03C1}", -1, 1, None),
-    Among("\u{03B4}\u{03C5}\u{03C3}\u{03C7}\u{03C1}", 0, 1, None),
-    Among("\u{03B5}\u{03C5}\u{03C7}\u{03C1}", 0, 1, None),
-    Among("\u{03B1}\u{03C7}\u{03C1}", 0, 1, None),
-    Among("\u{03BA}\u{03BF}\u{03B9}\u{03BD}\u{03BF}\u{03C7}\u{03C1}", 0, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03BB}\u{03B9}\u{03BC}\u{03C8}", -1, 1, None),
-    Among("\u{03C3}\u{03B2}", -1, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03B2}", 6, 1, None),
-    Among("\u{03B1}\u{03C0}\u{03BB}", -1, 1, None),
-    Among("\u{03B1}\u{03B5}\u{03B9}\u{03BC}\u{03BD}", -1, 1, None),
-];
-
-static A_67: &'static [Among<Context>; 3] = &[
-    Among("\u{03BF}\u{03C5}\u{03BD}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03BF}\u{03C5}\u{03BD}\u{03B5}", 0, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03BF}\u{03C5}\u{03BD}\u{03B5}", 0, 1, None),
-];
-
-static A_68: &'static [Among<Context>; 6] = &[
-    Among("\u{03C1}", -1, 1, None),
-    Among("\u{03C3}\u{03C4}\u{03C1}\u{03B1}\u{03B2}\u{03BF}\u{03BC}\u{03BF}\u{03C5}\u{03C4}\u{03C3}", -1, 1, None),
-    Among("\u{03BA}\u{03B1}\u{03BA}\u{03BF}\u{03BC}\u{03BF}\u{03C5}\u{03C4}\u{03C3}", -1, 1, None),
-    Among("\u{03C3}\u{03C0}\u{03B9}", -1, 1, None),
-    Among("\u{03BD}", -1, 1, None),
-    Among("\u{03B5}\u{03BE}\u{03C9}\u{03BD}", 4, 1, None),
-];
-
-static A_69: &'static [Among<Context>; 3] = &[
-    Among("\u{03BF}\u{03C5}\u{03BC}\u{03B5}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03BF}\u{03C5}\u{03BC}\u{03B5}", 0, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03BF}\u{03C5}\u{03BC}\u{03B5}", 0, 1, None),
-];
-
-static A_70: &'static [Among<Context>; 7] = &[
-    Among("\u{03B1}\u{03C3}\u{03BF}\u{03C5}\u{03C3}", -1, 1, None),
-    Among("\u{03C0}\u{03B1}\u{03C1}\u{03B1}\u{03C3}\u{03BF}\u{03C5}\u{03C3}", 0, 1, None),
-    Among("\u{03B1}\u{03BB}\u{03BB}\u{03BF}\u{03C3}\u{03BF}\u{03C5}\u{03C3}", -1, 1, None),
-    Among("\u{03C6}", -1, 1, None),
-    Among("\u{03C7}", -1, 1, None),
-    Among("\u{03B1}\u{03B6}", -1, 1, None),
-    Among("\u{03C9}\u{03C1}\u{03B9}\u{03BF}\u{03C0}\u{03BB}", -1, 1, None),
-];
-
-static A_71: &'static [Among<Context>; 3] = &[
-    Among("\u{03BC}\u{03B1}\u{03C4}\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03C4}\u{03B1}", -1, 1, None),
-    Among("\u{03BC}\u{03B1}\u{03C4}\u{03C9}\u{03BD}", -1, 1, None),
-];
-
-static A_72: &'static [Among<Context>; 84] = &[
-    Among("\u{03C5}\u{03C3}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C3}", 0, 1, None),
-    Among("\u{03B1}\u{03C3}", -1, 1, None),
-    Among("\u{03B5}\u{03C3}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B5}\u{03C3}", 3, 1, None),
-    Among("\u{03B7}\u{03B4}\u{03B5}\u{03C3}", 3, 1, None),
-    Among("\u{03B7}\u{03C3}", -1, 1, None),
-    Among("\u{03B5}\u{03B9}\u{03C3}", -1, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B5}\u{03B9}\u{03C3}", 7, 1, None),
-    Among("\u{03BF}\u{03C3}", -1, 1, None),
-    Among("\u{03C5}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}", 10, 1, None),
-    Among("\u{03C9}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03C9}", 12, 1, None),
-    Among("\u{03B1}\u{03C9}", 12, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03C9}", 12, 1, None),
-    Among("\u{03B1}", -1, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C5}\u{03BC}\u{03B1}", 16, 1, None),
-    Among("\u{03BF}\u{03C3}\u{03BF}\u{03C5}\u{03BD}\u{03B1}", 16, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C3}\u{03BF}\u{03C5}\u{03BD}\u{03B1}", 18, 1, None),
-    Among("\u{03BF}\u{03BC}\u{03BF}\u{03C5}\u{03BD}\u{03B1}", 16, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BC}\u{03BF}\u{03C5}\u{03BD}\u{03B1}", 20, 1, None),
-    Among("\u{03B5}", -1, 1, None),
-    Among("\u{03B9}\u{03B5}\u{03C3}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03BF}\u{03C3}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C3}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 24, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C5}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 26, 1, None),
-    Among("\u{03B9}\u{03B5}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B1}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B1}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03B1}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B7}\u{03BA}\u{03B1}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03C4}\u{03B5}", 32, 1, None),
-    Among("\u{03B5}\u{03B9}\u{03C4}\u{03B5}", 22, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B5}\u{03B9}\u{03C4}\u{03B5}", 34, 1, None),
-    Among("\u{03B7}", -1, 1, None),
-    Among("\u{03B9}", -1, 1, None),
-    Among("\u{03B1}\u{03C3}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B9}\u{03B5}\u{03C3}\u{03B1}\u{03B9}", 39, 1, None),
-    Among("\u{03B1}\u{03C4}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B5}\u{03C4}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B9}\u{03B5}\u{03C4}\u{03B1}\u{03B9}", 42, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BD}\u{03C4}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C5}\u{03BD}\u{03C4}\u{03B1}\u{03B9}", 44, 1, None),
-    Among("\u{03BF}\u{03BD}\u{03C4}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BC}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B1}\u{03BC}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B9}\u{03B5}\u{03BC}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03BF}\u{03BC}\u{03B1}\u{03B9}", 37, 1, None),
-    Among("\u{03B5}\u{03B9}", 37, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B5}\u{03B9}", 51, 1, None),
-    Among("\u{03B1}\u{03B5}\u{03B9}", 51, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B5}\u{03B9}", 51, 1, None),
-    Among("\u{03BF}\u{03B9}", 37, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BD}", -1, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03BF}\u{03C5}\u{03BD}", 56, 1, None),
-    Among("\u{03BF}\u{03C3}\u{03BF}\u{03C5}\u{03BD}", 56, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C3}\u{03BF}\u{03C5}\u{03BD}", 58, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03BF}\u{03C5}\u{03BD}", 56, 1, None),
-    Among("\u{03BF}\u{03BC}\u{03BF}\u{03C5}\u{03BD}", 56, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BC}\u{03BF}\u{03C5}\u{03BD}", 61, 1, None),
-    Among("\u{03C9}\u{03BD}", -1, 1, None),
-    Among("\u{03B7}\u{03B4}\u{03C9}\u{03BD}", 63, 1, None),
-    Among("\u{03B1}\u{03BD}", -1, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03C3}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03BF}\u{03BD}\u{03C4}\u{03BF}\u{03C5}\u{03C3}\u{03B1}\u{03BD}", 66, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BD}\u{03C4}\u{03BF}\u{03C5}\u{03C3}\u{03B1}\u{03BD}", 67, 1, None),
-    Among("\u{03B7}\u{03C3}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03BF}\u{03C3}\u{03B1}\u{03C3}\u{03C4}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C3}\u{03B1}\u{03C3}\u{03C4}\u{03B1}\u{03BD}", 70, 1, None),
-    Among("\u{03BF}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BC}\u{03B1}\u{03C3}\u{03C4}\u{03B1}\u{03BD}", 72, 1, None),
-    Among("\u{03BF}\u{03C5}\u{03BD}\u{03C4}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C5}\u{03BD}\u{03C4}\u{03B1}\u{03BD}", 74, 1, None),
-    Among("\u{03BF}\u{03BD}\u{03C4}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03BD}\u{03C4}\u{03B1}\u{03BD}", 76, 1, None),
-    Among("\u{03BF}\u{03C4}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B9}\u{03BF}\u{03C4}\u{03B1}\u{03BD}", 78, 1, None),
-    Among("\u{03B1}\u{03B3}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B7}\u{03BA}\u{03B1}\u{03BD}", 65, 1, None),
-    Among("\u{03B7}\u{03B8}\u{03B7}\u{03BA}\u{03B1}\u{03BD}", 81, 1, None),
-    Among("\u{03BF}", -1, 1, None),
-];
-
-static A_73: &'static [Among<Context>; 8] = &[
-    Among("\u{03B5}\u{03C3}\u{03C4}\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03C5}\u{03C4}\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03C9}\u{03C4}\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03BF}\u{03C4}\u{03B5}\u{03C1}", -1, 1, None),
-    Among("\u{03B5}\u{03C3}\u{03C4}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03C5}\u{03C4}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03C9}\u{03C4}\u{03B1}\u{03C4}", -1, 1, None),
-    Among("\u{03BF}\u{03C4}\u{03B1}\u{03C4}", -1, 1, None),
+static A_65: &'static [Among<Context>; 8] = &[
+    Among("εστερ", -1, 1, None),
+    Among("υτερ", -1, 1, None),
+    Among("ωτερ", -1, 1, None),
+    Among("οτερ", -1, 1, None),
+    Among("εστατ", -1, 1, None),
+    Among("υτατ", -1, 1, None),
+    Among("ωτατ", -1, 1, None),
+    Among("οτατ", -1, 1, None),
 ];
 
 static G_v: &'static [u8; 4] = &[81, 65, 16, 1];
 
 static G_v2: &'static [u8; 4] = &[81, 65, 0, 1];
 
-#[derive(Clone)]
-struct Context {
-    S_s: String,
-    b_test1: bool,
-}
-
 fn r_has_min_length(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 110
-    if !((env.current.chars().count() as i32) >= 3){
-        return false;
-    }
-    return true;
+    return (env.current.chars().count() as i32) >= 3
 }
 
 fn r_tolower(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 114
-    // repeat, line 115
     'replab0: loop{
         let v_1 = env.limit - env.cursor;
         'lab1: for _ in 0..1 {
-            // (, line 115
-            // [, line 116
             env.ket = env.cursor;
-            // substring, line 116
             among_var = env.find_among_b(A_0, context);
-            if among_var == 0 {
-                break 'lab1;
-            }
-            // ], line 116
             env.bra = env.cursor;
-            if among_var == 1 {
-                // (, line 117
-                // <-, line 117
-                if !env.slice_from("\u{03B1}") {
-                    return false;
+            match among_var {
+                1 => {
+                    env.slice_from("α");
                 }
-            } else if among_var == 2 {
-                // (, line 118
-                // <-, line 118
-                if !env.slice_from("\u{03B2}") {
-                    return false;
+                2 => {
+                    env.slice_from("β");
                 }
-            } else if among_var == 3 {
-                // (, line 119
-                // <-, line 119
-                if !env.slice_from("\u{03B3}") {
-                    return false;
+                3 => {
+                    env.slice_from("γ");
                 }
-            } else if among_var == 4 {
-                // (, line 120
-                // <-, line 120
-                if !env.slice_from("\u{03B4}") {
-                    return false;
+                4 => {
+                    env.slice_from("δ");
                 }
-            } else if among_var == 5 {
-                // (, line 121
-                // <-, line 121
-                if !env.slice_from("\u{03B5}") {
-                    return false;
+                5 => {
+                    env.slice_from("ε");
                 }
-            } else if among_var == 6 {
-                // (, line 122
-                // <-, line 122
-                if !env.slice_from("\u{03B6}") {
-                    return false;
+                6 => {
+                    env.slice_from("ζ");
                 }
-            } else if among_var == 7 {
-                // (, line 123
-                // <-, line 123
-                if !env.slice_from("\u{03B7}") {
-                    return false;
+                7 => {
+                    env.slice_from("η");
                 }
-            } else if among_var == 8 {
-                // (, line 124
-                // <-, line 124
-                if !env.slice_from("\u{03B8}") {
-                    return false;
+                8 => {
+                    env.slice_from("θ");
                 }
-            } else if among_var == 9 {
-                // (, line 125
-                // <-, line 125
-                if !env.slice_from("\u{03B9}") {
-                    return false;
+                9 => {
+                    env.slice_from("ι");
                 }
-            } else if among_var == 10 {
-                // (, line 126
-                // <-, line 126
-                if !env.slice_from("\u{03BA}") {
-                    return false;
+                10 => {
+                    env.slice_from("κ");
                 }
-            } else if among_var == 11 {
-                // (, line 127
-                // <-, line 127
-                if !env.slice_from("\u{03BB}") {
-                    return false;
+                11 => {
+                    env.slice_from("λ");
                 }
-            } else if among_var == 12 {
-                // (, line 128
-                // <-, line 128
-                if !env.slice_from("\u{03BC}") {
-                    return false;
+                12 => {
+                    env.slice_from("μ");
                 }
-            } else if among_var == 13 {
-                // (, line 129
-                // <-, line 129
-                if !env.slice_from("\u{03BD}") {
-                    return false;
+                13 => {
+                    env.slice_from("ν");
                 }
-            } else if among_var == 14 {
-                // (, line 130
-                // <-, line 130
-                if !env.slice_from("\u{03BE}") {
-                    return false;
+                14 => {
+                    env.slice_from("ξ");
                 }
-            } else if among_var == 15 {
-                // (, line 131
-                // <-, line 131
-                if !env.slice_from("\u{03BF}") {
-                    return false;
+                15 => {
+                    env.slice_from("ο");
                 }
-            } else if among_var == 16 {
-                // (, line 132
-                // <-, line 132
-                if !env.slice_from("\u{03C0}") {
-                    return false;
+                16 => {
+                    env.slice_from("π");
                 }
-            } else if among_var == 17 {
-                // (, line 133
-                // <-, line 133
-                if !env.slice_from("\u{03C1}") {
-                    return false;
+                17 => {
+                    env.slice_from("ρ");
                 }
-            } else if among_var == 18 {
-                // (, line 134
-                // <-, line 134
-                if !env.slice_from("\u{03C3}") {
-                    return false;
+                18 => {
+                    env.slice_from("σ");
                 }
-            } else if among_var == 19 {
-                // (, line 135
-                // <-, line 135
-                if !env.slice_from("\u{03C4}") {
-                    return false;
+                19 => {
+                    env.slice_from("τ");
                 }
-            } else if among_var == 20 {
-                // (, line 136
-                // <-, line 136
-                if !env.slice_from("\u{03C5}") {
-                    return false;
+                20 => {
+                    env.slice_from("υ");
                 }
-            } else if among_var == 21 {
-                // (, line 137
-                // <-, line 137
-                if !env.slice_from("\u{03C6}") {
-                    return false;
+                21 => {
+                    env.slice_from("φ");
                 }
-            } else if among_var == 22 {
-                // (, line 138
-                // <-, line 138
-                if !env.slice_from("\u{03C7}") {
-                    return false;
+                22 => {
+                    env.slice_from("χ");
                 }
-            } else if among_var == 23 {
-                // (, line 139
-                // <-, line 139
-                if !env.slice_from("\u{03C8}") {
-                    return false;
+                23 => {
+                    env.slice_from("ψ");
                 }
-            } else if among_var == 24 {
-                // (, line 140
-                // <-, line 140
-                if !env.slice_from("\u{03C9}") {
-                    return false;
+                24 => {
+                    env.slice_from("ω");
                 }
-            } else if among_var == 25 {
-                // (, line 162
-                // next, line 162
-                if env.cursor <= env.limit_backward {
-                    break 'lab1;
+                25 => {
+                    if env.cursor <= env.limit_backward {
+                        break 'lab1;
+                    }
+                    env.previous_char();
                 }
-                env.previous_char();
+                _ => ()
             }
             continue 'replab0;
         }
         env.cursor = env.limit - v_1;
         break 'replab0;
     }
-    return true;
+    return true
 }
 
-fn r_step1(env: &mut SnowballEnv, context: &mut Context) -> bool {
+fn r_step_1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 167
-    // [, line 168
     env.ket = env.cursor;
-    // substring, line 168
     among_var = env.find_among_b(A_1, context);
     if among_var == 0 {
         return false;
     }
-    // ], line 168
     env.bra = env.cursor;
-    if among_var == 1 {
-        // (, line 169
-        // <-, line 169
-        if !env.slice_from("\u{03C6}\u{03B1}") {
-            return false;
+    match among_var {
+        1 => {
+            env.slice_from("φα");
         }
-    } else if among_var == 2 {
-        // (, line 170
-        // <-, line 170
-        if !env.slice_from("\u{03C3}\u{03BA}\u{03B1}") {
-            return false;
+        2 => {
+            env.slice_from("σκα");
         }
-    } else if among_var == 3 {
-        // (, line 171
-        // <-, line 171
-        if !env.slice_from("\u{03BF}\u{03BB}\u{03BF}") {
-            return false;
+        3 => {
+            env.slice_from("ολο");
         }
-    } else if among_var == 4 {
-        // (, line 172
-        // <-, line 172
-        if !env.slice_from("\u{03C3}\u{03BF}") {
-            return false;
+        4 => {
+            env.slice_from("σο");
         }
-    } else if among_var == 5 {
-        // (, line 173
-        // <-, line 173
-        if !env.slice_from("\u{03C4}\u{03B1}\u{03C4}\u{03BF}") {
-            return false;
+        5 => {
+            env.slice_from("τατο");
         }
-    } else if among_var == 6 {
-        // (, line 174
-        // <-, line 174
-        if !env.slice_from("\u{03BA}\u{03C1}\u{03B5}") {
-            return false;
+        6 => {
+            env.slice_from("κρε");
         }
-    } else if among_var == 7 {
-        // (, line 175
-        // <-, line 175
-        if !env.slice_from("\u{03C0}\u{03B5}\u{03C1}") {
-            return false;
+        7 => {
+            env.slice_from("περ");
         }
-    } else if among_var == 8 {
-        // (, line 176
-        // <-, line 176
-        if !env.slice_from("\u{03C4}\u{03B5}\u{03C1}") {
-            return false;
+        8 => {
+            env.slice_from("τερ");
         }
-    } else if among_var == 9 {
-        // (, line 177
-        // <-, line 177
-        if !env.slice_from("\u{03C6}\u{03C9}") {
-            return false;
+        9 => {
+            env.slice_from("φω");
         }
-    } else if among_var == 10 {
-        // (, line 178
-        // <-, line 178
-        if !env.slice_from("\u{03BA}\u{03B1}\u{03B8}\u{03B5}\u{03C3}\u{03C4}") {
-            return false;
+        10 => {
+            env.slice_from("καθεστ");
         }
-    } else if among_var == 11 {
-        // (, line 179
-        // <-, line 179
-        if !env.slice_from("\u{03B3}\u{03B5}\u{03B3}\u{03BF}\u{03BD}") {
-            return false;
+        11 => {
+            env.slice_from("γεγον");
         }
+        _ => ()
     }
-    // unset test1, line 181
     context.b_test1 = false;
-    return true;
+    return true
 }
 
-fn r_steps1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 184
-    // [, line 185
+fn r_step_s1(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let mut among_var;
     env.ket = env.cursor;
-    // substring, line 185
-    if env.find_among_b(A_4, context) == 0 {
+    if env.find_among_b(A_3, context) == 0 {
         return false;
     }
-    // ], line 185
     env.bra = env.cursor;
-    // (, line 187
-    // delete, line 188
-    if !env.slice_del() {
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    among_var = env.find_among_b(A_2, context);
+    if among_var == 0 {
         return false;
     }
-    // unset test1, line 189
-    context.b_test1 = false;
-    // or, line 193
-    'lab0: loop {
-        let v_1 = env.limit - env.cursor;
-        'lab1: loop {
-            // (, line 190
-            // [, line 190
-            env.ket = env.cursor;
-            // substring, line 190
-            if env.find_among_b(A_2, context) == 0 {
-                break 'lab1;
-            }
-            // ], line 190
-            env.bra = env.cursor;
-            // atlimit, line 190
-            if env.cursor > env.limit_backward {
-                break 'lab1;
-            }
-            // (, line 192
-            // -> s, line 192
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 192
-            if !env.slice_from("\u{03B9}") {
-                return false;
-            }
-            // <+ s, line 192
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        // (, line 194
-        // [, line 194
-        env.ket = env.cursor;
-        // substring, line 194
-        if env.find_among_b(A_3, context) == 0 {
-            return false;
-        }
-        // ], line 194
-        env.bra = env.cursor;
-        // atlimit, line 194
-        if env.cursor > env.limit_backward {
-            return false;
-        }
-        // (, line 198
-        // -> s, line 198
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 198
-        if !env.slice_from("\u{03B9}\u{03B6}") {
-            return false;
-        }
-        // <+ s, line 198
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
+    if env.cursor > env.limit_backward {
+        return false;
     }
-    return true;
+    match among_var {
+        1 => {
+            env.slice_from("ι");
+        }
+        2 => {
+            env.slice_from("ιζ");
+        }
+        _ => ()
+    }
+    return true
 }
 
-fn r_steps2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 204
-    // [, line 205
+fn r_step_s2(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 205
-    if env.find_among_b(A_6, context) == 0 {
-        return false;
-    }
-    // ], line 205
-    env.bra = env.cursor;
-    // (, line 206
-    // delete, line 207
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 208
-    context.b_test1 = false;
-    // [, line 209
-    env.ket = env.cursor;
-    // substring, line 209
     if env.find_among_b(A_5, context) == 0 {
         return false;
     }
-    // ], line 209
     env.bra = env.cursor;
-    // atlimit, line 209
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if env.find_among_b(A_4, context) == 0 {
+        return false;
+    }
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 210
-    // -> s, line 210
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 210
-    if !env.slice_from("\u{03C9}\u{03BD}") {
-        return false;
-    }
-    // <+ s, line 210
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ων");
+    return true
 }
 
-fn r_steps3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 216
-    // [, line 217
+fn r_step_s3(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let mut among_var;
+    'lab0: loop {
+        let v_1 = env.limit - env.cursor;
+        'lab1: loop {
+            env.ket = env.cursor;
+            if !env.eq_s_b(&"ισα") {
+                break 'lab1;
+            }
+            env.bra = env.cursor;
+            if env.cursor > env.limit_backward {
+                break 'lab1;
+            }
+            env.slice_from("ισ");
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        env.ket = env.cursor;
+        break 'lab0;
+    }
+    if env.find_among_b(A_7, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
     env.ket = env.cursor;
-    // substring, line 217
+    env.bra = env.cursor;
+    among_var = env.find_among_b(A_6, context);
+    if among_var == 0 {
+        return false;
+    }
+    if env.cursor > env.limit_backward {
+        return false;
+    }
+    match among_var {
+        1 => {
+            env.slice_from("ι");
+        }
+        2 => {
+            env.slice_from("ισ");
+        }
+        _ => ()
+    }
+    return true
+}
+
+fn r_step_s4(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    env.ket = env.cursor;
     if env.find_among_b(A_9, context) == 0 {
         return false;
     }
-    // ], line 217
     env.bra = env.cursor;
-    // (, line 218
-    // delete, line 219
-    if !env.slice_del() {
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if (env.cursor - 3 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 5 as u8 || ((-2145255424 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
         return false;
     }
-    // unset test1, line 220
-    context.b_test1 = false;
-    // or, line 221
-    'lab0: loop {
-        let v_1 = env.limit - env.cursor;
-        'lab1: loop {
-            // (, line 221
-            // literal, line 221
-            if !env.eq_s_b(&"\u{03B9}\u{03C3}\u{03B1}") {
-                break 'lab1;
-            }
-            // atlimit, line 221
-            if env.cursor > env.limit_backward {
-                break 'lab1;
-            }
-            // <-, line 221
-            if !env.slice_from("\u{03B9}\u{03C3}") {
-                return false;
-            }
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        'lab2: loop {
-            // (, line 222
-            // [, line 222
-            env.ket = env.cursor;
-            // substring, line 222
-            if env.find_among_b(A_7, context) == 0 {
-                break 'lab2;
-            }
-            // ], line 222
-            env.bra = env.cursor;
-            // atlimit, line 222
-            if env.cursor > env.limit_backward {
-                break 'lab2;
-            }
-            // (, line 226
-            // -> s, line 226
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 226
-            if !env.slice_from("\u{03B9}") {
-                return false;
-            }
-            // <+ s, line 226
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        // (, line 228
-        // [, line 228
-        env.ket = env.cursor;
-        // substring, line 228
-        if env.find_among_b(A_8, context) == 0 {
-            return false;
-        }
-        // ], line 228
-        env.bra = env.cursor;
-        // atlimit, line 228
-        if env.cursor > env.limit_backward {
-            return false;
-        }
-        // (, line 231
-        // -> s, line 231
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 231
-        if !env.slice_from("\u{03B9}\u{03C3}") {
-            return false;
-        }
-        // <+ s, line 231
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
+
+    if env.find_among_b(A_8, context) == 0 {
+        return false;
     }
-    return true;
+    if env.cursor > env.limit_backward {
+        return false;
+    }
+    env.slice_from("ι");
+    return true
 }
 
-fn r_steps4(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 237
-    // [, line 238
+fn r_step_s5(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let mut among_var;
     env.ket = env.cursor;
-    // substring, line 238
     if env.find_among_b(A_11, context) == 0 {
         return false;
     }
-    // ], line 238
     env.bra = env.cursor;
-    // (, line 239
-    // delete, line 240
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 241
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 242
     env.ket = env.cursor;
-    // substring, line 242
-    if env.find_among_b(A_10, context) == 0 {
+    env.bra = env.cursor;
+    among_var = env.find_among_b(A_10, context);
+    if among_var == 0 {
         return false;
     }
-    // ], line 242
-    env.bra = env.cursor;
-    // atlimit, line 242
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 246
-    // -> s, line 246
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
+    match among_var {
+        1 => {
+            env.slice_from("ι");
+        }
+        2 => {
+            env.slice_from("ιστ");
+        }
+        _ => ()
     }
-    // <-, line 246
-    if !env.slice_from("\u{03B9}") {
-        return false;
-    }
-    // <+ s, line 246
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    return true
 }
 
-fn r_steps5(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 252
-    // [, line 253
+fn r_step_s6(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let mut among_var;
     env.ket = env.cursor;
-    // substring, line 253
     if env.find_among_b(A_14, context) == 0 {
         return false;
     }
-    // ], line 253
     env.bra = env.cursor;
-    // (, line 255
-    // delete, line 256
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 257
+    env.slice_del();
     context.b_test1 = false;
-    // or, line 261
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 258
-            // [, line 258
             env.ket = env.cursor;
-            // substring, line 258
-            if env.find_among_b(A_12, context) == 0 {
-                break 'lab1;
-            }
-            // ], line 258
             env.bra = env.cursor;
-            // atlimit, line 258
-            if env.cursor > env.limit_backward {
+            if (env.cursor - 3 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8) {
                 break 'lab1;
             }
-            // (, line 260
-            // -> s, line 260
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 260
-            if !env.slice_from("\u{03B9}") {
-                return false;
-            }
-            // <+ s, line 260
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        // (, line 262
-        // [, line 262
-        env.ket = env.cursor;
-        // substring, line 262
-        if env.find_among_b(A_13, context) == 0 {
-            return false;
-        }
-        // ], line 262
-        env.bra = env.cursor;
-        // atlimit, line 262
-        if env.cursor > env.limit_backward {
-            return false;
-        }
-        // (, line 266
-        // -> s, line 266
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 266
-        if !env.slice_from("\u{03B9}\u{03C3}\u{03C4}") {
-            return false;
-        }
-        // <+ s, line 266
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
-    }
-    return true;
-}
 
-fn r_steps6(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    // (, line 272
-    // [, line 273
-    env.ket = env.cursor;
-    // substring, line 273
-    if env.find_among_b(A_18, context) == 0 {
-        return false;
-    }
-    // ], line 273
-    env.bra = env.cursor;
-    // (, line 274
-    // delete, line 275
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 276
-    context.b_test1 = false;
-    // or, line 280
-    'lab0: loop {
-        let v_1 = env.limit - env.cursor;
-        'lab1: loop {
-            // (, line 277
-            // [, line 277
-            env.ket = env.cursor;
-            // substring, line 277
-            if env.find_among_b(A_15, context) == 0 {
+            among_var = env.find_among_b(A_12, context);
+            if among_var == 0 {
                 break 'lab1;
             }
-            // ], line 277
-            env.bra = env.cursor;
-            // atlimit, line 277
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // (, line 279
-            // -> s, line 279
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
+            match among_var {
+                1 => {
+                    env.slice_from("ισμ");
+                }
+                2 => {
+                    env.slice_from("ι");
+                }
+                _ => ()
             }
-            // <-, line 279
-            if !env.slice_from("\u{03B9}\u{03C3}\u{03BC}") {
-                return false;
-            }
-            // <+ s, line 279
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        'lab2: loop {
-            // (, line 281
-            // [, line 281
-            env.ket = env.cursor;
-            // substring, line 281
-            if env.find_among_b(A_16, context) == 0 {
-                break 'lab2;
-            }
-            // ], line 281
-            env.bra = env.cursor;
-            // atlimit, line 281
-            if env.cursor > env.limit_backward {
-                break 'lab2;
-            }
-            // (, line 283
-            // -> s, line 283
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 283
-            if !env.slice_from("\u{03B9}") {
-                return false;
-            }
-            // <+ s, line 283
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        // (, line 285
-        // [, line 285
         env.ket = env.cursor;
-        // substring, line 285
-        among_var = env.find_among_b(A_17, context);
+        if (env.cursor - 9 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 186 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8)) {
+            return false;
+        }
+
+        among_var = env.find_among_b(A_13, context);
         if among_var == 0 {
             return false;
         }
-        // ], line 285
         env.bra = env.cursor;
-        if among_var == 1 {
-            // (, line 286
-            // <-, line 286
-            if !env.slice_from("\u{03B1}\u{03B3}\u{03BD}\u{03C9}\u{03C3}\u{03C4}") {
-                return false;
+        match among_var {
+            1 => {
+                env.slice_from("αγνωστ");
             }
-        } else if among_var == 2 {
-            // (, line 287
-            // <-, line 287
-            if !env.slice_from("\u{03B1}\u{03C4}\u{03BF}\u{03BC}") {
-                return false;
+            2 => {
+                env.slice_from("ατομ");
             }
-        } else if among_var == 3 {
-            // (, line 288
-            // <-, line 288
-            if !env.slice_from("\u{03B3}\u{03BD}\u{03C9}\u{03C3}\u{03C4}") {
-                return false;
+            3 => {
+                env.slice_from("γνωστ");
             }
-        } else if among_var == 4 {
-            // (, line 289
-            // <-, line 289
-            if !env.slice_from("\u{03B5}\u{03B8}\u{03BD}") {
-                return false;
+            4 => {
+                env.slice_from("εθν");
             }
-        } else if among_var == 5 {
-            // (, line 290
-            // <-, line 290
-            if !env.slice_from("\u{03B5}\u{03BA}\u{03BB}\u{03B5}\u{03BA}\u{03C4}") {
-                return false;
+            5 => {
+                env.slice_from("εκλεκτ");
             }
-        } else if among_var == 6 {
-            // (, line 291
-            // <-, line 291
-            if !env.slice_from("\u{03C3}\u{03BA}\u{03B5}\u{03C0}\u{03C4}") {
-                return false;
+            6 => {
+                env.slice_from("σκεπτ");
             }
-        } else if among_var == 7 {
-            // (, line 292
-            // <-, line 292
-            if !env.slice_from("\u{03C4}\u{03BF}\u{03C0}") {
-                return false;
+            7 => {
+                env.slice_from("τοπ");
             }
-        } else if among_var == 8 {
-            // (, line 293
-            // <-, line 293
-            if !env.slice_from("\u{03B1}\u{03BB}\u{03B5}\u{03BE}\u{03B1}\u{03BD}\u{03B4}\u{03C1}") {
-                return false;
+            8 => {
+                env.slice_from("αλεξανδρ");
             }
-        } else if among_var == 9 {
-            // (, line 294
-            // <-, line 294
-            if !env.slice_from("\u{03B2}\u{03C5}\u{03B6}\u{03B1}\u{03BD}\u{03C4}") {
-                return false;
+            9 => {
+                env.slice_from("βυζαντ");
             }
-        } else if among_var == 10 {
-            // (, line 295
-            // <-, line 295
-            if !env.slice_from("\u{03B8}\u{03B5}\u{03B1}\u{03C4}\u{03C1}") {
-                return false;
+            10 => {
+                env.slice_from("θεατρ");
             }
+            _ => ()
         }
         break 'lab0;
     }
-    return true;
+    return true
 }
 
-fn r_steps7(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 301
-    // [, line 302
+fn r_step_s7(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 302
-    if env.find_among_b(A_20, context) == 0 {
+    if (env.cursor - 9 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 177 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 185 as u8)) {
         return false;
     }
-    // ], line 302
+
+    if env.find_among_b(A_16, context) == 0 {
+        return false;
+    }
     env.bra = env.cursor;
-    // (, line 303
-    // delete, line 304
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 305
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 306
     env.ket = env.cursor;
-    // substring, line 306
-    if env.find_among_b(A_19, context) == 0 {
+    env.bra = env.cursor;
+    if (env.cursor - 1 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 135 as u8)) {
         return false;
     }
-    // ], line 306
-    env.bra = env.cursor;
-    // atlimit, line 306
+
+    if env.find_among_b(A_15, context) == 0 {
+        return false;
+    }
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 308
-    // -> s, line 308
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 308
-    if !env.slice_from("\u{03B1}\u{03C1}\u{03B1}\u{03BA}") {
-        return false;
-    }
-    // <+ s, line 308
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("αρακ");
+    return true
 }
 
-fn r_steps8(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 314
-    // [, line 315
+fn r_step_s8(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let mut among_var;
     env.ket = env.cursor;
-    // substring, line 315
+    if env.find_among_b(A_18, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    'lab0: loop {
+        let v_1 = env.limit - env.cursor;
+        'lab1: loop {
+            env.ket = env.cursor;
+            env.bra = env.cursor;
+            among_var = env.find_among_b(A_17, context);
+            if among_var == 0 {
+                break 'lab1;
+            }
+            if env.cursor > env.limit_backward {
+                break 'lab1;
+            }
+            match among_var {
+                1 => {
+                    env.slice_from("ακ");
+                }
+                2 => {
+                    env.slice_from("ιτσ");
+                }
+                _ => ()
+            }
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        env.ket = env.cursor;
+        env.bra = env.cursor;
+        if !env.eq_s_b(&"κορ") {
+            return false;
+        }
+        env.slice_from("ιτσ");
+        break 'lab0;
+    }
+    return true
+}
+
+fn r_step_s9(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    env.ket = env.cursor;
+    if (env.cursor - 7 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 5 as u8 || ((-1610481664 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+        return false;
+    }
+
+    if env.find_among_b(A_21, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    'lab0: loop {
+        let v_1 = env.limit - env.cursor;
+        'lab1: loop {
+            env.ket = env.cursor;
+            env.bra = env.cursor;
+            if env.find_among_b(A_19, context) == 0 {
+                break 'lab1;
+            }
+            if env.cursor > env.limit_backward {
+                break 'lab1;
+            }
+            env.slice_from("ιδ");
+            break 'lab0;
+        }
+        env.cursor = env.limit - v_1;
+        env.ket = env.cursor;
+        env.bra = env.cursor;
+        if (env.cursor - 1 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8)) {
+            return false;
+        }
+
+        if env.find_among_b(A_20, context) == 0 {
+            return false;
+        }
+        env.slice_from("ιδ");
+        break 'lab0;
+    }
+    return true
+}
+
+fn r_step_s10(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    env.ket = env.cursor;
     if env.find_among_b(A_23, context) == 0 {
         return false;
     }
-    // ], line 315
     env.bra = env.cursor;
-    // (, line 316
-    // delete, line 317
-    if !env.slice_del() {
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if env.find_among_b(A_22, context) == 0 {
         return false;
     }
-    // unset test1, line 318
-    context.b_test1 = false;
-    // or, line 325
-    'lab0: loop {
-        let v_1 = env.limit - env.cursor;
-        'lab1: loop {
-            // (, line 319
-            // [, line 319
-            env.ket = env.cursor;
-            // substring, line 319
-            if env.find_among_b(A_21, context) == 0 {
-                break 'lab1;
-            }
-            // ], line 319
-            env.bra = env.cursor;
-            // atlimit, line 319
-            if env.cursor > env.limit_backward {
-                break 'lab1;
-            }
-            // (, line 324
-            // -> s, line 324
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 324
-            if !env.slice_from("\u{03B1}\u{03BA}") {
-                return false;
-            }
-            // <+ s, line 324
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        'lab2: loop {
-            // (, line 326
-            // [, line 326
-            env.ket = env.cursor;
-            // substring, line 326
-            if env.find_among_b(A_22, context) == 0 {
-                break 'lab2;
-            }
-            // ], line 326
-            env.bra = env.cursor;
-            // atlimit, line 326
-            if env.cursor > env.limit_backward {
-                break 'lab2;
-            }
-            // (, line 329
-            // -> s, line 329
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 329
-            if !env.slice_from("\u{03B9}\u{03C4}\u{03C3}") {
-                return false;
-            }
-            // <+ s, line 329
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        // (, line 331
-        // [, line 331
-        env.ket = env.cursor;
-        // literal, line 331
-        if !env.eq_s_b(&"\u{03BA}\u{03BF}\u{03C1}") {
-            return false;
-        }
-        // ], line 331
-        env.bra = env.cursor;
-        // -> s, line 331
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 331
-        if !env.slice_from("\u{03B9}\u{03C4}\u{03C3}") {
-            return false;
-        }
-        // <+ s, line 331
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
+    if env.cursor > env.limit_backward {
+        return false;
     }
-    return true;
+    env.slice_from("ισκ");
+    return true
 }
 
-fn r_steps9(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 336
-    // [, line 337
+fn r_step_2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 337
+    if (env.cursor - 7 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8)) {
+        return false;
+    }
+
+    if env.find_among_b(A_24, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    let v_1 = env.limit - env.cursor;
+    'lab0: loop {
+        if env.find_among_b(A_25, context) == 0 {
+            break 'lab0;
+        }
+        return false;
+    }
+    env.cursor = env.limit - v_1;
+    let c = env.cursor;
+    let (bra, ket) = (env.cursor, env.cursor);
+    env.insert(bra, ket, "αδ");
+    env.cursor = c;
+    return true
+}
+
+fn r_step_2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    env.ket = env.cursor;
+    if (env.cursor - 7 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8)) {
+        return false;
+    }
+
     if env.find_among_b(A_26, context) == 0 {
         return false;
     }
-    // ], line 337
     env.bra = env.cursor;
-    // (, line 338
-    // delete, line 339
-    if !env.slice_del() {
+    env.slice_del();
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if (env.cursor - 3 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 128 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 187 as u8)) {
         return false;
     }
-    // unset test1, line 340
-    context.b_test1 = false;
-    // or, line 343
-    'lab0: loop {
-        let v_1 = env.limit - env.cursor;
-        'lab1: loop {
-            // (, line 341
-            // [, line 341
-            env.ket = env.cursor;
-            // substring, line 341
-            if env.find_among_b(A_24, context) == 0 {
-                break 'lab1;
-            }
-            // ], line 341
-            env.bra = env.cursor;
-            // atlimit, line 341
-            if env.cursor > env.limit_backward {
-                break 'lab1;
-            }
-            // (, line 342
-            // -> s, line 342
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 342
-            if !env.slice_from("\u{03B9}\u{03B4}") {
-                return false;
-            }
-            // <+ s, line 342
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab0;
-        }
-        env.cursor = env.limit - v_1;
-        // (, line 344
-        // [, line 344
-        env.ket = env.cursor;
-        // substring, line 344
-        if env.find_among_b(A_25, context) == 0 {
-            return false;
-        }
-        // ], line 344
-        env.bra = env.cursor;
-        // (, line 345
-        // -> s, line 345
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 345
-        if !env.slice_from("\u{03B9}\u{03B4}") {
-            return false;
-        }
-        // <+ s, line 345
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
-    }
-    return true;
-}
 
-fn r_steps10(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 351
-    // [, line 352
-    env.ket = env.cursor;
-    // substring, line 352
-    if env.find_among_b(A_28, context) == 0 {
-        return false;
-    }
-    // ], line 352
-    env.bra = env.cursor;
-    // (, line 353
-    // delete, line 354
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 355
-    context.b_test1 = false;
-    // [, line 356
-    env.ket = env.cursor;
-    // substring, line 356
     if env.find_among_b(A_27, context) == 0 {
         return false;
     }
-    // ], line 356
-    env.bra = env.cursor;
-    // atlimit, line 356
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    // (, line 358
-    // -> s, line 358
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 358
-    if !env.slice_from("\u{03B9}\u{03C3}\u{03BA}") {
-        return false;
-    }
-    // <+ s, line 358
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("εδ");
+    return true
 }
 
-fn r_step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 364
-    // [, line 365
+fn r_step_2c(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 365
+    if (env.cursor - 9 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8)) {
+        return false;
+    }
+
+    if env.find_among_b(A_28, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    env.ket = env.cursor;
+    env.bra = env.cursor;
     if env.find_among_b(A_29, context) == 0 {
         return false;
     }
-    // ], line 365
-    env.bra = env.cursor;
-    // (, line 366
-    // delete, line 366
-    if !env.slice_del() {
-        return false;
-    }
-    // not, line 368
-    let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // (, line 368
-        // [, line 368
-        env.ket = env.cursor;
-        // substring, line 368
-        if env.find_among_b(A_30, context) == 0 {
-            break 'lab0;
-        }
-        // ], line 368
-        env.bra = env.cursor;
-        return false;
-    }
-    env.cursor = env.limit - v_1;
-    // <+, line 371
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, "\u{03B1}\u{03B4}");
-    env.cursor = c;
-    return true;
+    env.slice_from("ουδ");
+    return true
 }
 
-fn r_step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 374
-    // [, line 375
+fn r_step_2d(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 375
+    if (env.cursor - 5 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8)) {
+        return false;
+    }
+
+    if env.find_among_b(A_30, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
     if env.find_among_b(A_31, context) == 0 {
         return false;
     }
-    // ], line 375
-    env.bra = env.cursor;
-    // (, line 376
-    // delete, line 376
-    if !env.slice_del() {
+    if env.cursor > env.limit_backward {
         return false;
     }
-    // [, line 378
+    env.slice_from("ε");
+    return true
+}
+
+fn r_step_3(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 378
     if env.find_among_b(A_32, context) == 0 {
         return false;
     }
-    // ], line 378
     env.bra = env.cursor;
-    // (, line 379
-    // -> s, line 379
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 379
-    if !env.slice_from("\u{03B5}\u{03B4}") {
-        return false;
-    }
-    // <+ s, line 379
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
-
-fn r_step2c(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 383
-    // [, line 384
-    env.ket = env.cursor;
-    // substring, line 384
-    if env.find_among_b(A_33, context) == 0 {
-        return false;
-    }
-    // ], line 384
-    env.bra = env.cursor;
-    // (, line 385
-    // delete, line 385
-    if !env.slice_del() {
-        return false;
-    }
-    // [, line 387
-    env.ket = env.cursor;
-    // substring, line 387
-    if env.find_among_b(A_34, context) == 0 {
-        return false;
-    }
-    // ], line 387
-    env.bra = env.cursor;
-    // (, line 389
-    // -> s, line 389
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 389
-    if !env.slice_from("\u{03BF}\u{03C5}\u{03B4}") {
-        return false;
-    }
-    // <+ s, line 389
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
-
-fn r_step2d(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 393
-    // [, line 394
-    env.ket = env.cursor;
-    // substring, line 394
-    if env.find_among_b(A_35, context) == 0 {
-        return false;
-    }
-    // ], line 394
-    env.bra = env.cursor;
-    // (, line 395
-    // delete, line 395
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 395
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 397
     env.ket = env.cursor;
-    // substring, line 397
-    if env.find_among_b(A_36, context) == 0 {
-        return false;
-    }
-    // ], line 397
     env.bra = env.cursor;
-    // atlimit, line 397
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    // (, line 398
-    // -> s, line 398
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 398
-    if !env.slice_from("\u{03B5}") {
-        return false;
-    }
-    // <+ s, line 398
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
-
-fn r_step3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 402
-    // [, line 403
-    env.ket = env.cursor;
-    // substring, line 403
-    if env.find_among_b(A_37, context) == 0 {
-        return false;
-    }
-    // ], line 403
-    env.bra = env.cursor;
-    // (, line 404
-    // delete, line 404
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 404
-    context.b_test1 = false;
-    // (, line 406
-    // [, line 406
-    env.ket = env.cursor;
     if !env.in_grouping_b(G_v, 945, 969) {
         return false;
     }
-    // ], line 406
-    env.bra = env.cursor;
-    // -> s, line 406
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 406
-    if !env.slice_from("\u{03B9}") {
-        return false;
-    }
-    // <+ s, line 406
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ι");
+    return true
 }
 
-fn r_step4(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 409
-    // [, line 410
+fn r_step_4(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 410
-    if env.find_among_b(A_38, context) == 0 {
+    if env.find_among_b(A_33, context) == 0 {
         return false;
     }
-    // ], line 410
     env.bra = env.cursor;
-    // (, line 411
-    // delete, line 411
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 411
+    env.slice_del();
     context.b_test1 = false;
-    // or, line 413
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 413
-            // [, line 413
             env.ket = env.cursor;
+            env.bra = env.cursor;
             if !env.in_grouping_b(G_v, 945, 969) {
                 break 'lab1;
             }
-            // ], line 413
-            env.bra = env.cursor;
-            // -> s, line 413
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 413
-            if !env.slice_from("\u{03B9}\u{03BA}") {
-                return false;
-            }
-            // <+ s, line 413
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
+            env.slice_from("ικ");
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // [, line 414
         env.ket = env.cursor;
         break 'lab0;
     }
-    // substring, line 414
-    if env.find_among_b(A_39, context) == 0 {
+    env.bra = env.cursor;
+    if env.find_among_b(A_34, context) == 0 {
         return false;
     }
-    // ], line 414
-    env.bra = env.cursor;
-    // atlimit, line 414
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 419
-    // -> s, line 419
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 419
-    if !env.slice_from("\u{03B9}\u{03BA}") {
-        return false;
-    }
-    // <+ s, line 419
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ικ");
+    return true
 }
 
-fn r_step5a(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 423
-    // do, line 424
+fn r_step_5a(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 424
-        // literal, line 424
-        if !env.eq_s_b(&"\u{03B1}\u{03B3}\u{03B1}\u{03BC}\u{03B5}") {
+        env.ket = env.cursor;
+        if !env.eq_s_b(&"αγαμε") {
             break 'lab0;
         }
-        // atlimit, line 424
+        env.bra = env.cursor;
         if env.cursor > env.limit_backward {
             break 'lab0;
         }
-        // <-, line 424
-        if !env.slice_from("\u{03B1}\u{03B3}\u{03B1}\u{03BC}") {
-            return false;
-        }
+        env.slice_from("αγαμ");
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // do, line 425
     let v_2 = env.limit - env.cursor;
     'lab1: loop {
-        // (, line 425
-        // [, line 426
         env.ket = env.cursor;
-        // substring, line 426
-        if env.find_among_b(A_40, context) == 0 {
+        if (env.cursor - 9 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8) {
             break 'lab1;
         }
-        // ], line 426
-        env.bra = env.cursor;
-        // (, line 427
-        // delete, line 427
-        if !env.slice_del() {
-            return false;
+
+        if env.find_among_b(A_35, context) == 0 {
+            break 'lab1;
         }
-        // unset test1, line 427
+        env.bra = env.cursor;
+        env.slice_del();
         context.b_test1 = false;
         break 'lab1;
     }
     env.cursor = env.limit - v_2;
-    // [, line 430
     env.ket = env.cursor;
-    // literal, line 430
-    if !env.eq_s_b(&"\u{03B1}\u{03BC}\u{03B5}") {
+    if !env.eq_s_b(&"αμε") {
         return false;
     }
-    // ], line 430
     env.bra = env.cursor;
-    // delete, line 431
-    if !env.slice_del() {
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if env.find_among_b(A_36, context) == 0 {
         return false;
     }
-    // unset test1, line 432
-    context.b_test1 = false;
-    // [, line 433
+    if env.cursor > env.limit_backward {
+        return false;
+    }
+    env.slice_from("αμ");
+    return true
+}
+
+fn r_step_5b(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let v_1 = env.limit - env.cursor;
+    'lab0: loop {
+        env.ket = env.cursor;
+        if (env.cursor - 9 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8) {
+            break 'lab0;
+        }
+
+        if env.find_among_b(A_38, context) == 0 {
+            break 'lab0;
+        }
+        env.bra = env.cursor;
+        env.slice_del();
+        context.b_test1 = false;
+        env.ket = env.cursor;
+        env.bra = env.cursor;
+        if (env.cursor - 3 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 129 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8)) {
+            break 'lab0;
+        }
+
+        if env.find_among_b(A_37, context) == 0 {
+            break 'lab0;
+        }
+        if env.cursor > env.limit_backward {
+            break 'lab0;
+        }
+        env.slice_from("αγαν");
+        break 'lab0;
+    }
+    env.cursor = env.limit - v_1;
     env.ket = env.cursor;
-    // substring, line 433
+    if !env.eq_s_b(&"ανε") {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    'lab1: loop {
+        let v_2 = env.limit - env.cursor;
+        'lab2: loop {
+            env.ket = env.cursor;
+            env.bra = env.cursor;
+            if !env.in_grouping_b(G_v2, 945, 969) {
+                break 'lab2;
+            }
+            env.slice_from("αν");
+            break 'lab1;
+        }
+        env.cursor = env.limit - v_2;
+        env.ket = env.cursor;
+        break 'lab1;
+    }
+    env.bra = env.cursor;
+    if env.find_among_b(A_39, context) == 0 {
+        return false;
+    }
+    if env.cursor > env.limit_backward {
+        return false;
+    }
+    env.slice_from("αν");
+    return true
+}
+
+fn r_step_5c(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let v_1 = env.limit - env.cursor;
+    'lab0: loop {
+        env.ket = env.cursor;
+        if !env.eq_s_b(&"ησετε") {
+            break 'lab0;
+        }
+        env.bra = env.cursor;
+        env.slice_del();
+        context.b_test1 = false;
+        break 'lab0;
+    }
+    env.cursor = env.limit - v_1;
+    env.ket = env.cursor;
+    if !env.eq_s_b(&"ετε") {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    'lab1: loop {
+        let v_2 = env.limit - env.cursor;
+        'lab2: loop {
+            env.ket = env.cursor;
+            env.bra = env.cursor;
+            if !env.in_grouping_b(G_v2, 945, 969) {
+                break 'lab2;
+            }
+            env.slice_from("ετ");
+            break 'lab1;
+        }
+        env.cursor = env.limit - v_2;
+        'lab3: loop {
+            env.ket = env.cursor;
+            env.bra = env.cursor;
+            if env.find_among_b(A_40, context) == 0 {
+                break 'lab3;
+            }
+            env.slice_from("ετ");
+            break 'lab1;
+        }
+        env.cursor = env.limit - v_2;
+        env.ket = env.cursor;
+        break 'lab1;
+    }
+    env.bra = env.cursor;
     if env.find_among_b(A_41, context) == 0 {
         return false;
     }
-    // ], line 433
-    env.bra = env.cursor;
-    // atlimit, line 433
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 435
-    // -> s, line 435
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 435
-    if !env.slice_from("\u{03B1}\u{03BC}") {
-        return false;
-    }
-    // <+ s, line 435
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ετ");
+    return true
 }
 
-fn r_step5b(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 439
-    // do, line 440
-    let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // (, line 440
-        // [, line 441
-        env.ket = env.cursor;
-        // substring, line 441
-        if env.find_among_b(A_43, context) == 0 {
-            break 'lab0;
-        }
-        // ], line 441
-        env.bra = env.cursor;
-        // (, line 443
-        // delete, line 444
-        if !env.slice_del() {
-            return false;
-        }
-        // unset test1, line 445
-        context.b_test1 = false;
-        // [, line 446
-        env.ket = env.cursor;
-        // substring, line 446
-        if env.find_among_b(A_42, context) == 0 {
-            break 'lab0;
-        }
-        // ], line 446
-        env.bra = env.cursor;
-        // atlimit, line 446
-        if env.cursor > env.limit_backward {
-            break 'lab0;
-        }
-        // (, line 447
-        // -> s, line 447
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 447
-        if !env.slice_from("\u{03B1}\u{03B3}\u{03B1}\u{03BD}") {
-            return false;
-        }
-        // <+ s, line 447
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
-    }
-    env.cursor = env.limit - v_1;
-    // [, line 452
+fn r_step_5d(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // literal, line 452
-    if !env.eq_s_b(&"\u{03B1}\u{03BD}\u{03B5}") {
+    if (env.cursor - 9 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 131 as u8) {
         return false;
     }
-    // ], line 452
-    env.bra = env.cursor;
-    // delete, line 453
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 454
-    context.b_test1 = false;
-    // or, line 455
-    'lab1: loop {
-        let v_2 = env.limit - env.cursor;
-        'lab2: loop {
-            // (, line 455
-            // [, line 455
-            env.ket = env.cursor;
-            if !env.in_grouping_b(G_v2, 945, 969) {
-                break 'lab2;
-            }
-            // ], line 455
-            env.bra = env.cursor;
-            // -> s, line 455
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 455
-            if !env.slice_from("\u{03B1}\u{03BD}") {
-                return false;
-            }
-            // <+ s, line 455
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab1;
-        }
-        env.cursor = env.limit - v_2;
-        // [, line 456
-        env.ket = env.cursor;
-        break 'lab1;
-    }
-    // substring, line 456
-    if env.find_among_b(A_44, context) == 0 {
-        return false;
-    }
-    // ], line 456
-    env.bra = env.cursor;
-    // atlimit, line 456
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    // (, line 473
-    // -> s, line 473
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 473
-    if !env.slice_from("\u{03B1}\u{03BD}") {
-        return false;
-    }
-    // <+ s, line 473
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
 
-fn r_step5c(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 477
-    // do, line 478
-    let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // (, line 478
-        // [, line 479
-        env.ket = env.cursor;
-        // substring, line 479
-        if env.find_among_b(A_45, context) == 0 {
-            break 'lab0;
-        }
-        // ], line 479
-        env.bra = env.cursor;
-        // (, line 480
-        // delete, line 480
-        if !env.slice_del() {
-            return false;
-        }
-        // unset test1, line 480
-        context.b_test1 = false;
-        break 'lab0;
-    }
-    env.cursor = env.limit - v_1;
-    // [, line 483
-    env.ket = env.cursor;
-    // literal, line 483
-    if !env.eq_s_b(&"\u{03B5}\u{03C4}\u{03B5}") {
+    if env.find_among_b(A_42, context) == 0 {
         return false;
     }
-    // ], line 483
     env.bra = env.cursor;
-    // delete, line 484
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 485
+    env.slice_del();
     context.b_test1 = false;
-    // or, line 486
-    'lab1: loop {
-        let v_2 = env.limit - env.cursor;
-        'lab2: loop {
-            // (, line 486
-            // [, line 486
-            env.ket = env.cursor;
-            if !env.in_grouping_b(G_v2, 945, 969) {
-                break 'lab2;
-            }
-            // ], line 486
-            env.bra = env.cursor;
-            // -> s, line 486
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 486
-            if !env.slice_from("\u{03B5}\u{03C4}") {
-                return false;
-            }
-            // <+ s, line 486
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab1;
-        }
-        env.cursor = env.limit - v_2;
-        'lab3: loop {
-            // (, line 487
-            // [, line 487
-            env.ket = env.cursor;
-            // substring, line 487
-            if env.find_among_b(A_46, context) == 0 {
-                break 'lab3;
-            }
-            // ], line 487
-            env.bra = env.cursor;
-            // (, line 491
-            // -> s, line 491
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 491
-            if !env.slice_from("\u{03B5}\u{03C4}") {
-                return false;
-            }
-            // <+ s, line 491
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab1;
-        }
-        env.cursor = env.limit - v_2;
-        // [, line 493
-        env.ket = env.cursor;
-        break 'lab1;
-    }
-    // substring, line 493
-    if env.find_among_b(A_47, context) == 0 {
-        return false;
-    }
-    // ], line 493
-    env.bra = env.cursor;
-    // atlimit, line 493
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    // (, line 497
-    // -> s, line 497
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 497
-    if !env.slice_from("\u{03B5}\u{03C4}") {
-        return false;
-    }
-    // <+ s, line 497
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
-
-fn r_step5d(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 501
-    // [, line 502
-    env.ket = env.cursor;
-    // substring, line 502
-    if env.find_among_b(A_48, context) == 0 {
-        return false;
-    }
-    // ], line 502
-    env.bra = env.cursor;
-    // (, line 503
-    // delete, line 504
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 505
-    context.b_test1 = false;
-    // or, line 506
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 506
-            // [, line 506
             env.ket = env.cursor;
-            // literal, line 506
-            if !env.eq_s_b(&"\u{03B1}\u{03C1}\u{03C7}") {
+            env.bra = env.cursor;
+            if !env.eq_s_b(&"αρχ") {
                 break 'lab1;
             }
-            // ], line 506
-            env.bra = env.cursor;
-            // atlimit, line 506
             if env.cursor > env.limit_backward {
                 break 'lab1;
             }
-            // -> s, line 506
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 506
-            if !env.slice_from("\u{03BF}\u{03BD}\u{03C4}") {
-                return false;
-            }
-            // <+ s, line 506
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
+            env.slice_from("οντ");
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 507
-        // [, line 507
         env.ket = env.cursor;
-        // literal, line 507
-        if !env.eq_s_b(&"\u{03BA}\u{03C1}\u{03B5}") {
-            return false;
-        }
-        // ], line 507
         env.bra = env.cursor;
-        // -> s, line 507
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
+        if !env.eq_s_b(&"κρε") {
             return false;
         }
-        // <-, line 507
-        if !env.slice_from("\u{03C9}\u{03BD}\u{03C4}") {
-            return false;
-        }
-        // <+ s, line 507
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
+        env.slice_from("ωντ");
         break 'lab0;
     }
-    return true;
+    return true
 }
 
-fn r_step5e(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 512
-    // [, line 513
+fn r_step_5e(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 513
+    if (env.cursor - 11 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8) {
+        return false;
+    }
+
+    if env.find_among_b(A_43, context) == 0 {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if !env.eq_s_b(&"ον") {
+        return false;
+    }
+    if env.cursor > env.limit_backward {
+        return false;
+    }
+    env.slice_from("ομαστ");
+    return true
+}
+
+fn r_step_5f(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let v_1 = env.limit - env.cursor;
+    'lab0: loop {
+        env.ket = env.cursor;
+        if !env.eq_s_b(&"ιεστε") {
+            break 'lab0;
+        }
+        env.bra = env.cursor;
+        env.slice_del();
+        context.b_test1 = false;
+        env.ket = env.cursor;
+        env.bra = env.cursor;
+        if (env.cursor - 1 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 128 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 134 as u8)) {
+            break 'lab0;
+        }
+
+        if env.find_among_b(A_44, context) == 0 {
+            break 'lab0;
+        }
+        if env.cursor > env.limit_backward {
+            break 'lab0;
+        }
+        env.slice_from("ιεστ");
+        break 'lab0;
+    }
+    env.cursor = env.limit - v_1;
+    env.ket = env.cursor;
+    if !env.eq_s_b(&"εστε") {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
+    context.b_test1 = false;
+    env.ket = env.cursor;
+    env.bra = env.cursor;
+    if env.find_among_b(A_45, context) == 0 {
+        return false;
+    }
+    if env.cursor > env.limit_backward {
+        return false;
+    }
+    env.slice_from("ιεστ");
+    return true
+}
+
+fn r_step_5g(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let v_1 = env.limit - env.cursor;
+    'lab0: loop {
+        env.ket = env.cursor;
+        if env.find_among_b(A_46, context) == 0 {
+            break 'lab0;
+        }
+        env.bra = env.cursor;
+        env.slice_del();
+        context.b_test1 = false;
+        break 'lab0;
+    }
+    env.cursor = env.limit - v_1;
+    env.ket = env.cursor;
     if env.find_among_b(A_49, context) == 0 {
         return false;
     }
-    // ], line 513
     env.bra = env.cursor;
-    // (, line 514
-    // delete, line 515
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 516
+    env.slice_del();
     context.b_test1 = false;
-    // (, line 517
-    // [, line 517
-    env.ket = env.cursor;
-    // literal, line 517
-    if !env.eq_s_b(&"\u{03BF}\u{03BD}") {
-        return false;
-    }
-    // ], line 517
-    env.bra = env.cursor;
-    // atlimit, line 517
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    // -> s, line 517
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 517
-    if !env.slice_from("\u{03BF}\u{03BC}\u{03B1}\u{03C3}\u{03C4}") {
-        return false;
-    }
-    // <+ s, line 517
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
-
-fn r_step5f(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 522
-    // do, line 523
-    let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // (, line 523
-        // [, line 524
-        env.ket = env.cursor;
-        // literal, line 524
-        if !env.eq_s_b(&"\u{03B9}\u{03B5}\u{03C3}\u{03C4}\u{03B5}") {
-            break 'lab0;
-        }
-        // ], line 524
-        env.bra = env.cursor;
-        // delete, line 525
-        if !env.slice_del() {
-            return false;
-        }
-        // unset test1, line 526
-        context.b_test1 = false;
-        // [, line 527
-        env.ket = env.cursor;
-        // substring, line 527
-        if env.find_among_b(A_50, context) == 0 {
-            break 'lab0;
-        }
-        // ], line 527
-        env.bra = env.cursor;
-        // atlimit, line 527
-        if env.cursor > env.limit_backward {
-            break 'lab0;
-        }
-        // (, line 528
-        // -> s, line 528
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 528
-        if !env.slice_from("\u{03B9}\u{03B5}\u{03C3}\u{03C4}") {
-            return false;
-        }
-        // <+ s, line 528
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
-        break 'lab0;
-    }
-    env.cursor = env.limit - v_1;
-    // [, line 531
-    env.ket = env.cursor;
-    // literal, line 531
-    if !env.eq_s_b(&"\u{03B5}\u{03C3}\u{03C4}\u{03B5}") {
-        return false;
-    }
-    // ], line 531
-    env.bra = env.cursor;
-    // delete, line 532
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 533
-    context.b_test1 = false;
-    // [, line 534
-    env.ket = env.cursor;
-    // substring, line 534
-    if env.find_among_b(A_51, context) == 0 {
-        return false;
-    }
-    // ], line 534
-    env.bra = env.cursor;
-    // atlimit, line 534
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    // (, line 536
-    // -> s, line 536
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 536
-    if !env.slice_from("\u{03B9}\u{03B5}\u{03C3}\u{03C4}") {
-        return false;
-    }
-    // <+ s, line 536
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
-}
-
-fn r_step5g(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 540
-    // do, line 541
-    let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // (, line 541
-        // [, line 542
-        env.ket = env.cursor;
-        // substring, line 542
-        if env.find_among_b(A_52, context) == 0 {
-            break 'lab0;
-        }
-        // ], line 542
-        env.bra = env.cursor;
-        // (, line 543
-        // delete, line 543
-        if !env.slice_del() {
-            return false;
-        }
-        // unset test1, line 543
-        context.b_test1 = false;
-        break 'lab0;
-    }
-    env.cursor = env.limit - v_1;
-    // [, line 546
-    env.ket = env.cursor;
-    // substring, line 546
-    if env.find_among_b(A_55, context) == 0 {
-        return false;
-    }
-    // ], line 546
-    env.bra = env.cursor;
-    // (, line 547
-    // delete, line 548
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 549
-    context.b_test1 = false;
-    // or, line 552
     'lab1: loop {
         let v_2 = env.limit - env.cursor;
         'lab2: loop {
-            // (, line 550
-            // [, line 550
             env.ket = env.cursor;
-            // substring, line 550
-            if env.find_among_b(A_53, context) == 0 {
+            env.bra = env.cursor;
+            if env.find_among_b(A_47, context) == 0 {
                 break 'lab2;
             }
-            // ], line 550
-            env.bra = env.cursor;
-            // (, line 551
-            // -> s, line 551
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 551
-            if !env.slice_from("\u{03B7}\u{03BA}") {
-                return false;
-            }
-            // <+ s, line 551
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
+            env.slice_from("ηκ");
             break 'lab1;
         }
         env.cursor = env.limit - v_2;
-        // (, line 553
-        // [, line 553
         env.ket = env.cursor;
-        // substring, line 553
-        if env.find_among_b(A_54, context) == 0 {
+        env.bra = env.cursor;
+        if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 184 as u8) {
             return false;
         }
-        // ], line 553
-        env.bra = env.cursor;
-        // atlimit, line 553
+
+        if env.find_among_b(A_48, context) == 0 {
+            return false;
+        }
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 554
-        // -> s, line 554
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 554
-        if !env.slice_from("\u{03B7}\u{03BA}") {
-            return false;
-        }
-        // <+ s, line 554
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
+        env.slice_from("ηκ");
         break 'lab1;
     }
-    return true;
+    return true
 }
 
-fn r_step5h(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 560
-    // [, line 561
+fn r_step_5h(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 561
-    if env.find_among_b(A_58, context) == 0 {
+    if env.find_among_b(A_52, context) == 0 {
         return false;
     }
-    // ], line 561
     env.bra = env.cursor;
-    // (, line 562
-    // delete, line 563
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 564
+    env.slice_del();
     context.b_test1 = false;
-    // or, line 569
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 565
-            // [, line 565
             env.ket = env.cursor;
-            // substring, line 565
-            if env.find_among_b(A_56, context) == 0 {
+            env.bra = env.cursor;
+            if env.find_among_b(A_50, context) == 0 {
                 break 'lab1;
             }
-            // ], line 565
-            env.bra = env.cursor;
-            // (, line 567
-            // -> s, line 567
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 567
-            if !env.slice_from("\u{03BF}\u{03C5}\u{03C3}") {
-                return false;
-            }
-            // <+ s, line 567
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
+            env.slice_from("ουσ");
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 570
-        // [, line 570
         env.ket = env.cursor;
-        // substring, line 570
-        if env.find_among_b(A_57, context) == 0 {
+        env.bra = env.cursor;
+        if env.find_among_b(A_51, context) == 0 {
             return false;
         }
-        // ], line 570
-        env.bra = env.cursor;
-        // atlimit, line 570
         if env.cursor > env.limit_backward {
             return false;
         }
-        // (, line 574
-        // -> s, line 574
-        context.S_s = env.slice_to();
-        if context.S_s.is_empty() {
-            return false;
-        }
-        // <-, line 574
-        if !env.slice_from("\u{03BF}\u{03C5}\u{03C3}") {
-            return false;
-        }
-        // <+ s, line 574
-        let c = env.cursor;
-        let (bra, ket) = (env.cursor, env.cursor);
-        env.insert(bra, ket, &context.S_s);
-        env.cursor = c;
+        env.slice_from("ουσ");
         break 'lab0;
     }
-    return true;
+    return true
 }
 
-fn r_step5i(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 580
-    // [, line 581
+fn r_step_5i(env: &mut SnowballEnv, context: &mut Context) -> bool {
+    let mut among_var;
     env.ket = env.cursor;
-    // substring, line 581
-    if env.find_among_b(A_62, context) == 0 {
+    if env.find_among_b(A_55, context) == 0 {
         return false;
     }
-    // ], line 581
     env.bra = env.cursor;
-    // (, line 582
-    // delete, line 583
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 584
+    env.slice_del();
     context.b_test1 = false;
-    // or, line 585
     'lab0: loop {
         let v_1 = env.limit - env.cursor;
         'lab1: loop {
-            // (, line 585
-            // [, line 585
             env.ket = env.cursor;
-            // literal, line 585
-            if !env.eq_s_b(&"\u{03BA}\u{03BF}\u{03BB}\u{03BB}") {
+            env.bra = env.cursor;
+            if !env.eq_s_b(&"κολλ") {
                 break 'lab1;
             }
-            // ], line 585
-            env.bra = env.cursor;
-            // -> s, line 585
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 585
-            if !env.slice_from("\u{03B1}\u{03B3}") {
-                return false;
-            }
-            // <+ s, line 585
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
+            env.slice_from("αγ");
             break 'lab0;
         }
         env.cursor = env.limit - v_1;
-        // (, line 585
-        // not, line 586
-        let v_2 = env.limit - env.cursor;
         'lab2: loop {
-            // (, line 586
-            // [, line 586
-            env.ket = env.cursor;
-            // substring, line 586
-            if env.find_among_b(A_59, context) == 0 {
+            let v_2 = env.limit - env.cursor;
+            'lab3: loop {
+                env.ket = env.cursor;
+                env.bra = env.cursor;
+                among_var = env.find_among_b(A_53, context);
+                if among_var == 0 {
+                    break 'lab3;
+                }
+                match among_var {
+                    1 => {
+                        env.slice_from("αγ");
+                    }
+                    _ => ()
+                }
                 break 'lab2;
             }
-            // ], line 586
-            env.bra = env.cursor;
-            return false;
-        }
-        env.cursor = env.limit - v_2;
-        // or, line 590
-        'lab3: loop {
-            let v_3 = env.limit - env.cursor;
-            'lab4: loop {
-                // (, line 587
-                // [, line 587
-                env.ket = env.cursor;
-                // substring, line 587
-                if env.find_among_b(A_60, context) == 0 {
-                    break 'lab4;
-                }
-                // ], line 587
-                env.bra = env.cursor;
-                // (, line 589
-                // -> s, line 589
-                context.S_s = env.slice_to();
-                if context.S_s.is_empty() {
-                    return false;
-                }
-                // <-, line 589
-                if !env.slice_from("\u{03B1}\u{03B3}") {
-                    return false;
-                }
-                // <+ s, line 589
-                let c = env.cursor;
-                let (bra, ket) = (env.cursor, env.cursor);
-                env.insert(bra, ket, &context.S_s);
-                env.cursor = c;
-                break 'lab3;
-            }
-            env.cursor = env.limit - v_3;
-            // (, line 591
-            // [, line 591
+            env.cursor = env.limit - v_2;
             env.ket = env.cursor;
-            // substring, line 591
-            if env.find_among_b(A_61, context) == 0 {
+            env.bra = env.cursor;
+            if env.find_among_b(A_54, context) == 0 {
                 return false;
             }
-            // ], line 591
-            env.bra = env.cursor;
-            // atlimit, line 591
             if env.cursor > env.limit_backward {
                 return false;
             }
-            // (, line 597
-            // -> s, line 597
-            context.S_s = env.slice_to();
-            if context.S_s.is_empty() {
-                return false;
-            }
-            // <-, line 597
-            if !env.slice_from("\u{03B1}\u{03B3}") {
-                return false;
-            }
-            // <+ s, line 597
-            let c = env.cursor;
-            let (bra, ket) = (env.cursor, env.cursor);
-            env.insert(bra, ket, &context.S_s);
-            env.cursor = c;
-            break 'lab3;
+            env.slice_from("αγ");
+            break 'lab2;
         }
         break 'lab0;
     }
-    return true;
+    return true
 }
 
-fn r_step5j(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 604
-    // [, line 605
+fn r_step_5j(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 605
-    if env.find_among_b(A_63, context) == 0 {
+    if env.find_among_b(A_56, context) == 0 {
         return false;
     }
-    // ], line 605
     env.bra = env.cursor;
-    // (, line 606
-    // delete, line 606
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 606
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 608
     env.ket = env.cursor;
-    // substring, line 608
-    if env.find_among_b(A_64, context) == 0 {
+    env.bra = env.cursor;
+    if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 189 as u8) {
         return false;
     }
-    // ], line 608
-    env.bra = env.cursor;
-    // atlimit, line 608
+
+    if env.find_among_b(A_57, context) == 0 {
+        return false;
+    }
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 609
-    // -> s, line 609
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 609
-    if !env.slice_from("\u{03B7}\u{03C3}") {
-        return false;
-    }
-    // <+ s, line 609
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ησ");
+    return true
 }
 
-fn r_step5k(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 613
-    // [, line 614
+fn r_step_5k(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 614
-    if env.find_among_b(A_65, context) == 0 {
+    if !env.eq_s_b(&"ηστε") {
         return false;
     }
-    // ], line 614
     env.bra = env.cursor;
-    // (, line 615
-    // delete, line 615
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 615
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 617
     env.ket = env.cursor;
-    // substring, line 617
-    if env.find_among_b(A_66, context) == 0 {
+    env.bra = env.cursor;
+    if env.find_among_b(A_58, context) == 0 {
         return false;
     }
-    // ], line 617
-    env.bra = env.cursor;
-    // atlimit, line 617
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 619
-    // -> s, line 619
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 619
-    if !env.slice_from("\u{03B7}\u{03C3}\u{03C4}") {
-        return false;
-    }
-    // <+ s, line 619
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ηστ");
+    return true
 }
 
-fn r_step5l(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 623
-    // [, line 624
+fn r_step_5l(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 624
-    if env.find_among_b(A_67, context) == 0 {
+    if (env.cursor - 7 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8) {
         return false;
     }
-    // ], line 624
+
+    if env.find_among_b(A_59, context) == 0 {
+        return false;
+    }
     env.bra = env.cursor;
-    // (, line 625
-    // delete, line 625
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 625
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 627
     env.ket = env.cursor;
-    // substring, line 627
-    if env.find_among_b(A_68, context) == 0 {
+    env.bra = env.cursor;
+    if env.find_among_b(A_60, context) == 0 {
         return false;
     }
-    // ], line 627
-    env.bra = env.cursor;
-    // atlimit, line 627
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 628
-    // -> s, line 628
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 628
-    if !env.slice_from("\u{03BF}\u{03C5}\u{03BD}") {
-        return false;
-    }
-    // <+ s, line 628
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ουν");
+    return true
 }
 
-fn r_step5m(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 632
-    // [, line 633
+fn r_step_5m(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 633
-    if env.find_among_b(A_69, context) == 0 {
+    if (env.cursor - 7 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 181 as u8) {
         return false;
     }
-    // ], line 633
+
+    if env.find_among_b(A_61, context) == 0 {
+        return false;
+    }
     env.bra = env.cursor;
-    // (, line 634
-    // delete, line 634
-    if !env.slice_del() {
-        return false;
-    }
-    // unset test1, line 634
+    env.slice_del();
     context.b_test1 = false;
-    // [, line 636
     env.ket = env.cursor;
-    // substring, line 636
-    if env.find_among_b(A_70, context) == 0 {
+    env.bra = env.cursor;
+    if env.find_among_b(A_62, context) == 0 {
         return false;
     }
-    // ], line 636
-    env.bra = env.cursor;
-    // atlimit, line 636
     if env.cursor > env.limit_backward {
         return false;
     }
-    // (, line 638
-    // -> s, line 638
-    context.S_s = env.slice_to();
-    if context.S_s.is_empty() {
-        return false;
-    }
-    // <-, line 638
-    if !env.slice_from("\u{03BF}\u{03C5}\u{03BC}") {
-        return false;
-    }
-    // <+ s, line 638
-    let c = env.cursor;
-    let (bra, ket) = (env.cursor, env.cursor);
-    env.insert(bra, ket, &context.S_s);
-    env.cursor = c;
-    return true;
+    env.slice_from("ουμ");
+    return true
 }
 
-fn r_step6(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 642
-    // do, line 643
+fn r_step_6(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 643
-        // [, line 644
         env.ket = env.cursor;
-        // substring, line 644
-        if env.find_among_b(A_71, context) == 0 {
+        if env.find_among_b(A_63, context) == 0 {
             break 'lab0;
         }
-        // ], line 644
         env.bra = env.cursor;
-        // (, line 645
-        // <-, line 645
-        if !env.slice_from("\u{03BC}\u{03B1}") {
-            return false;
-        }
+        env.slice_from("μα");
         break 'lab0;
     }
     env.cursor = env.limit - v_1;
-    // Boolean test test1, line 648
     if !context.b_test1 {
         return false;
     }
-    // [, line 649
     env.ket = env.cursor;
-    // substring, line 649
-    if env.find_among_b(A_72, context) == 0 {
+    if env.find_among_b(A_64, context) == 0 {
         return false;
     }
-    // ], line 649
     env.bra = env.cursor;
-    // (, line 659
-    // delete, line 659
-    if !env.slice_del() {
-        return false;
-    }
-    return true;
+    env.slice_del();
+    return true
 }
 
-fn r_step7(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 663
-    // [, line 664
+fn r_step_7(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    // substring, line 664
-    if env.find_among_b(A_73, context) == 0 {
+    if (env.cursor - 7 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 129 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 132 as u8)) {
         return false;
     }
-    // ], line 664
+
+    if env.find_among_b(A_65, context) == 0 {
+        return false;
+    }
     env.bra = env.cursor;
-    // (, line 665
-    // delete, line 665
-    if !env.slice_del() {
-        return false;
-    }
-    return true;
+    env.slice_del();
+    return true
 }
 
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        S_s: String::new(),
         b_test1: false,
     };
-    // (, line 670
-    // backwards, line 671
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // (, line 671
-    // do, line 672
     let v_1 = env.limit - env.cursor;
-    'lab0: loop {
-        // call tolower, line 672
-        if !r_tolower(env, context) {
-            break 'lab0;
-        }
-        break 'lab0;
-    }
+    r_tolower(env, context);
     env.cursor = env.limit - v_1;
-    // call has_min_length, line 673
     if !r_has_min_length(env, context) {
         return false;
     }
-    // set test1, line 674
     context.b_test1 = true;
-    // do, line 675
     let v_2 = env.limit - env.cursor;
-    'lab1: loop {
-        // call step1, line 675
-        if !r_step1(env, context) {
-            break 'lab1;
-        }
-        break 'lab1;
-    }
+    r_step_1(env, context);
     env.cursor = env.limit - v_2;
-    // do, line 676
     let v_3 = env.limit - env.cursor;
-    'lab2: loop {
-        // call steps1, line 676
-        if !r_steps1(env, context) {
-            break 'lab2;
-        }
-        break 'lab2;
-    }
+    r_step_s1(env, context);
     env.cursor = env.limit - v_3;
-    // do, line 677
     let v_4 = env.limit - env.cursor;
-    'lab3: loop {
-        // call steps2, line 677
-        if !r_steps2(env, context) {
-            break 'lab3;
-        }
-        break 'lab3;
-    }
+    r_step_s2(env, context);
     env.cursor = env.limit - v_4;
-    // do, line 678
     let v_5 = env.limit - env.cursor;
-    'lab4: loop {
-        // call steps3, line 678
-        if !r_steps3(env, context) {
-            break 'lab4;
-        }
-        break 'lab4;
-    }
+    r_step_s3(env, context);
     env.cursor = env.limit - v_5;
-    // do, line 679
     let v_6 = env.limit - env.cursor;
-    'lab5: loop {
-        // call steps4, line 679
-        if !r_steps4(env, context) {
-            break 'lab5;
-        }
-        break 'lab5;
-    }
+    r_step_s4(env, context);
     env.cursor = env.limit - v_6;
-    // do, line 680
     let v_7 = env.limit - env.cursor;
-    'lab6: loop {
-        // call steps5, line 680
-        if !r_steps5(env, context) {
-            break 'lab6;
-        }
-        break 'lab6;
-    }
+    r_step_s5(env, context);
     env.cursor = env.limit - v_7;
-    // do, line 681
     let v_8 = env.limit - env.cursor;
-    'lab7: loop {
-        // call steps6, line 681
-        if !r_steps6(env, context) {
-            break 'lab7;
-        }
-        break 'lab7;
-    }
+    r_step_s6(env, context);
     env.cursor = env.limit - v_8;
-    // do, line 682
     let v_9 = env.limit - env.cursor;
-    'lab8: loop {
-        // call steps7, line 682
-        if !r_steps7(env, context) {
-            break 'lab8;
-        }
-        break 'lab8;
-    }
+    r_step_s7(env, context);
     env.cursor = env.limit - v_9;
-    // do, line 683
     let v_10 = env.limit - env.cursor;
-    'lab9: loop {
-        // call steps8, line 683
-        if !r_steps8(env, context) {
-            break 'lab9;
-        }
-        break 'lab9;
-    }
+    r_step_s8(env, context);
     env.cursor = env.limit - v_10;
-    // do, line 684
     let v_11 = env.limit - env.cursor;
-    'lab10: loop {
-        // call steps9, line 684
-        if !r_steps9(env, context) {
-            break 'lab10;
-        }
-        break 'lab10;
-    }
+    r_step_s9(env, context);
     env.cursor = env.limit - v_11;
-    // do, line 685
     let v_12 = env.limit - env.cursor;
-    'lab11: loop {
-        // call steps10, line 685
-        if !r_steps10(env, context) {
-            break 'lab11;
-        }
-        break 'lab11;
-    }
+    r_step_s10(env, context);
     env.cursor = env.limit - v_12;
-    // do, line 686
     let v_13 = env.limit - env.cursor;
-    'lab12: loop {
-        // call step2a, line 686
-        if !r_step2a(env, context) {
-            break 'lab12;
-        }
-        break 'lab12;
-    }
+    r_step_2a(env, context);
     env.cursor = env.limit - v_13;
-    // do, line 687
     let v_14 = env.limit - env.cursor;
-    'lab13: loop {
-        // call step2b, line 687
-        if !r_step2b(env, context) {
-            break 'lab13;
-        }
-        break 'lab13;
-    }
+    r_step_2b(env, context);
     env.cursor = env.limit - v_14;
-    // do, line 688
     let v_15 = env.limit - env.cursor;
-    'lab14: loop {
-        // call step2c, line 688
-        if !r_step2c(env, context) {
-            break 'lab14;
-        }
-        break 'lab14;
-    }
+    r_step_2c(env, context);
     env.cursor = env.limit - v_15;
-    // do, line 689
     let v_16 = env.limit - env.cursor;
-    'lab15: loop {
-        // call step2d, line 689
-        if !r_step2d(env, context) {
-            break 'lab15;
-        }
-        break 'lab15;
-    }
+    r_step_2d(env, context);
     env.cursor = env.limit - v_16;
-    // do, line 690
     let v_17 = env.limit - env.cursor;
-    'lab16: loop {
-        // call step3, line 690
-        if !r_step3(env, context) {
-            break 'lab16;
-        }
-        break 'lab16;
-    }
+    r_step_3(env, context);
     env.cursor = env.limit - v_17;
-    // do, line 691
     let v_18 = env.limit - env.cursor;
-    'lab17: loop {
-        // call step4, line 691
-        if !r_step4(env, context) {
-            break 'lab17;
-        }
-        break 'lab17;
-    }
+    r_step_4(env, context);
     env.cursor = env.limit - v_18;
-    // do, line 692
     let v_19 = env.limit - env.cursor;
-    'lab18: loop {
-        // call step5a, line 692
-        if !r_step5a(env, context) {
-            break 'lab18;
-        }
-        break 'lab18;
-    }
+    r_step_5a(env, context);
     env.cursor = env.limit - v_19;
-    // do, line 693
     let v_20 = env.limit - env.cursor;
-    'lab19: loop {
-        // call step5b, line 693
-        if !r_step5b(env, context) {
-            break 'lab19;
-        }
-        break 'lab19;
-    }
+    r_step_5b(env, context);
     env.cursor = env.limit - v_20;
-    // do, line 694
     let v_21 = env.limit - env.cursor;
-    'lab20: loop {
-        // call step5c, line 694
-        if !r_step5c(env, context) {
-            break 'lab20;
-        }
-        break 'lab20;
-    }
+    r_step_5c(env, context);
     env.cursor = env.limit - v_21;
-    // do, line 695
     let v_22 = env.limit - env.cursor;
-    'lab21: loop {
-        // call step5d, line 695
-        if !r_step5d(env, context) {
-            break 'lab21;
-        }
-        break 'lab21;
-    }
+    r_step_5d(env, context);
     env.cursor = env.limit - v_22;
-    // do, line 696
     let v_23 = env.limit - env.cursor;
-    'lab22: loop {
-        // call step5e, line 696
-        if !r_step5e(env, context) {
-            break 'lab22;
-        }
-        break 'lab22;
-    }
+    r_step_5e(env, context);
     env.cursor = env.limit - v_23;
-    // do, line 697
     let v_24 = env.limit - env.cursor;
-    'lab23: loop {
-        // call step5f, line 697
-        if !r_step5f(env, context) {
-            break 'lab23;
-        }
-        break 'lab23;
-    }
+    r_step_5f(env, context);
     env.cursor = env.limit - v_24;
-    // do, line 698
     let v_25 = env.limit - env.cursor;
-    'lab24: loop {
-        // call step5g, line 698
-        if !r_step5g(env, context) {
-            break 'lab24;
-        }
-        break 'lab24;
-    }
+    r_step_5g(env, context);
     env.cursor = env.limit - v_25;
-    // do, line 699
     let v_26 = env.limit - env.cursor;
-    'lab25: loop {
-        // call step5h, line 699
-        if !r_step5h(env, context) {
-            break 'lab25;
-        }
-        break 'lab25;
-    }
+    r_step_5h(env, context);
     env.cursor = env.limit - v_26;
-    // do, line 700
     let v_27 = env.limit - env.cursor;
-    'lab26: loop {
-        // call step5j, line 700
-        if !r_step5j(env, context) {
-            break 'lab26;
-        }
-        break 'lab26;
-    }
+    r_step_5j(env, context);
     env.cursor = env.limit - v_27;
-    // do, line 701
     let v_28 = env.limit - env.cursor;
-    'lab27: loop {
-        // call step5i, line 701
-        if !r_step5i(env, context) {
-            break 'lab27;
-        }
-        break 'lab27;
-    }
+    r_step_5i(env, context);
     env.cursor = env.limit - v_28;
-    // do, line 702
     let v_29 = env.limit - env.cursor;
-    'lab28: loop {
-        // call step5k, line 702
-        if !r_step5k(env, context) {
-            break 'lab28;
-        }
-        break 'lab28;
-    }
+    r_step_5k(env, context);
     env.cursor = env.limit - v_29;
-    // do, line 703
     let v_30 = env.limit - env.cursor;
-    'lab29: loop {
-        // call step5l, line 703
-        if !r_step5l(env, context) {
-            break 'lab29;
-        }
-        break 'lab29;
-    }
+    r_step_5l(env, context);
     env.cursor = env.limit - v_30;
-    // do, line 704
     let v_31 = env.limit - env.cursor;
-    'lab30: loop {
-        // call step5m, line 704
-        if !r_step5m(env, context) {
-            break 'lab30;
-        }
-        break 'lab30;
-    }
+    r_step_5m(env, context);
     env.cursor = env.limit - v_31;
-    // do, line 705
     let v_32 = env.limit - env.cursor;
-    'lab31: loop {
-        // call step6, line 705
-        if !r_step6(env, context) {
-            break 'lab31;
-        }
-        break 'lab31;
-    }
+    r_step_6(env, context);
     env.cursor = env.limit - v_32;
-    // do, line 706
     let v_33 = env.limit - env.cursor;
-    'lab32: loop {
-        // call step7, line 706
-        if !r_step7(env, context) {
-            break 'lab32;
-        }
-        break 'lab32;
-    }
+    r_step_7(env, context);
     env.cursor = env.limit - v_33;
     env.cursor = env.limit_backward;
-    return true;
+    return true
 }

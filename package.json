@@ -1,34 +1,79 @@
 {
   "name": "multilingual-stemmer",
-  "version": "1.0.2",
-  "description": "A nodejs implementation of some popular snowball stemming algorithms",
-  "author": "Vladislav Tupikin <MrRefactoring@yandex.ru>",
+  "version": "2.0.0",
+  "description": "Word stemming for 33 languages (English, Arabic, Russian, French, German, Spanish, Turkish and more) via Snowball algorithms compiled to WebAssembly. TypeScript-first · Node.js · Browser · Zero dependencies.",
+  "author": "Vladislav Tupikin <vladislav.tupikin@icloud.com>",
   "license": "MIT",
-  "types": "dist/index.d.ts",
-  "main": "dist/index.js",
+  "type": "module",
+  "packageManager": "pnpm@11.0.9",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "node": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "browser": {
+        "import": "./dist/index.browser.js",
+        "types": "./dist/index.d.ts"
+      },
+      "default": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "compile": "wasm-pack build ./rust-stemmers --out-dir ../dist --release --target nodejs --out-name index",
-    "prepublishOnly": "npm run compile && node prepare.js && npm run optimize",
-    "optimize": "wasm-opt ./dist/index_bg.wasm -o ./dist/index_bg.wasm",
-    "test": "node test/index.js"
+    "compile:wasm": "pnpm exec wasm-pack build ./rust-stemmers --out-dir ../dist/browser --release --target web --out-name index",
+    "compile:ts": "tsc",
+    "compile": "pnpm run compile:wasm && tsx prepare.ts && pnpm run compile:ts",
+    "prepublishOnly": "pnpm run compile && pnpm run optimize",
+    "optimize": "pnpm exec wasm-opt ./dist/browser/index_bg.wasm -o ./dist/browser/index_bg.wasm",
+    "test": "vitest run",
+    "demo": "npx serve . -l 4000"
   },
   "keywords": [
-    "multilingual",
     "stemmer",
-    "stemmers",
     "stemming",
-    "porter",
+    "word-stemming",
+    "nlp",
+    "natural-language-processing",
+    "text-analysis",
+    "text-processing",
+    "search-indexing",
     "snowball",
-    "webasembly"
+    "linguistic",
+    "morphology",
+    "webassembly",
+    "wasm",
+    "typescript",
+    "browser",
+    "esm",
+    "multilingual",
+    "arabic",
+    "english",
+    "russian",
+    "french",
+    "german",
+    "spanish",
+    "portuguese",
+    "turkish"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MrRefactoring/multilingual-stemmer.git"
   },
   "devDependencies": {
-    "wasm-opt": "^1.0.3"
+    "@types/node": "^22.19.18",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.5",
+    "wasm-opt": "^1.4.0",
+    "wasm-pack": "^0.14.0"
   }
 }

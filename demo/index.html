@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multilingual Stemmer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0d1117;
+      --surface:   #161b22;
+      --surface2:  #21262d;
+      --border:    #30363d;
+      --text:      #c9d1d9;
+      --dim:       #6e7681;
+      --green:     #3fb950;
+      --green-bg:  rgba(63, 185, 80, 0.12);
+      --red:       #f85149;
+      --red-bg:    rgba(248, 81, 73, 0.12);
+      --blue:      #58a6ff;
+      --mono: 'SFMono-Regular', 'Cascadia Code', 'Fira Code', 'Menlo', monospace;
+      --ui:   -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    body {
+      font-family: var(--ui);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 1.5rem 2rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ──────────────────────────── */
+    header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 { font-size: 1.1rem; font-weight: 600; color: #fff; }
+    header p  { font-size: 0.78rem; color: var(--dim); }
+
+    /* ── Toolbar ─────────────────────────── */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    select {
+      font-family: var(--ui);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      cursor: pointer;
+      outline: none;
+    }
+    select:focus   { border-color: var(--blue); }
+    select:disabled{ opacity: .45; cursor: not-allowed; }
+
+    .badge {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      color: var(--dim);
+    }
+    .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--dim);
+      transition: background .3s;
+    }
+    .dot.ready { background: var(--green); }
+
+    /* ── Split panes ─────────────────────── */
+    .panes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--border);
+      gap: 1px;
+    }
+
+    .pane { background: var(--surface); display: flex; flex-direction: column; }
+
+    .pane-head {
+      font-family: var(--ui);
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--dim);
+      padding: 0.45rem 1rem;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+    }
+
+    textarea {
+      font-family: var(--mono);
+      font-size: 0.875rem;
+      line-height: 1.75;
+      background: transparent;
+      border: none;
+      color: var(--text);
+      padding: 0.8rem 1rem;
+      resize: none;
+      outline: none;
+      height: 148px;
+      width: 100%;
+      caret-color: var(--blue);
+    }
+    textarea::placeholder { color: var(--dim); }
+    textarea:disabled     { opacity: .4; }
+
+    .pane-body {
+      font-family: var(--mono);
+      font-size: 0.875rem;
+      line-height: 1.75;
+      padding: 0.8rem 1rem;
+      height: 148px;
+      overflow-y: auto;
+      word-break: break-word;
+    }
+
+    mark.r {
+      background: var(--red-bg);
+      color: var(--red);
+      border-radius: 3px;
+      padding: 0 2px;
+      font-style: normal;
+    }
+    mark.g {
+      background: var(--green-bg);
+      color: var(--green);
+      border-radius: 3px;
+      padding: 0 2px;
+      font-style: normal;
+    }
+
+    /* ── Diff table ──────────────────────── */
+    .diff-card {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+
+    .diff-head {
+      display: grid;
+      grid-template-columns: 1fr 20px 1fr 1fr;
+      gap: 0.5rem;
+      padding: 0.45rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--dim);
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      font-family: var(--ui);
+    }
+
+    #rows { font-family: var(--mono); font-size: 0.875rem; }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 20px 1fr 1fr;
+      gap: 0.5rem;
+      padding: 0.32rem 1rem;
+      border-bottom: 1px solid rgba(48,54,61,.55);
+      align-items: baseline;
+      border-left: 2px solid transparent;
+      transition: background .1s;
+    }
+    .row:last-child { border-bottom: none; }
+    .row.changed    { border-left-color: var(--red); }
+    .row.same       { opacity: .45; }
+
+    .row .orig { }
+    .row .arr  { color: var(--dim); text-align: center; }
+    .row .stem.changed { color: var(--green); }
+    .row .sfx  { color: var(--red); font-size: .8rem; }
+
+    .strike { text-decoration: line-through; color: var(--red); }
+
+    .empty {
+      padding: 2rem;
+      text-align: center;
+      color: var(--dim);
+      font-family: var(--ui);
+      font-size: .875rem;
+    }
+
+    /* ── Stats bar ───────────────────────── */
+    .stats {
+      display: flex;
+      gap: 1.25rem;
+      padding: 0.45rem 1rem;
+      font-size: 0.75rem;
+      color: var(--dim);
+      font-family: var(--ui);
+      border-top: 1px solid var(--border);
+    }
+    .stats b { color: var(--text); font-weight: 600; }
+
+    @media (max-width: 600px) {
+      .panes          { grid-template-columns: 1fr; }
+      .diff-head,
+      .row            { grid-template-columns: 1fr 20px 1fr; }
+      .diff-head > :last-child,
+      .row .sfx       { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Multilingual Stemmer</h1>
+  <p>Snowball 3.0.1 · WebAssembly</p>
+</header>
+
+<div class="toolbar">
+  <select id="lang" disabled><option>Loading…</option></select>
+  <div class="badge">
+    <div class="dot" id="dot"></div>
+    <span id="status">Initialising…</span>
+  </div>
+</div>
+
+<div class="panes">
+  <div class="pane">
+    <div class="pane-head">Input</div>
+    <textarea id="input" disabled placeholder="Type or paste text here…"></textarea>
+  </div>
+  <div class="pane">
+    <div class="pane-head">Stemmed</div>
+    <div class="pane-body" id="stemmed"></div>
+  </div>
+</div>
+
+<div class="diff-card">
+  <div class="diff-head">
+    <span>Original</span>
+    <span></span>
+    <span>Stemmed</span>
+    <span>Suffix removed</span>
+  </div>
+  <div id="rows"><div class="empty">Start typing to see the word-by-word diff</div></div>
+  <div class="stats" id="stats" hidden></div>
+</div>
+
+<script type="module">
+  import { createStemmer } from '../dist/index.browser.js';
+
+  const LANGS = [
+    ['Arabic','ar'],['Armenian','hy'],['Basque','eu'],
+    ['Catalan','ca'],['Czech','cs'],['Danish','da'],
+    ['Dutch','nl'],['English','en'],['Esperanto','eo'],
+    ['Estonian','et'],['Finnish','fi'],['French','fr'],
+    ['German','de'],['Greek','el'],['Hindi','hi'],
+    ['Hungarian','hu'],['Indonesian','id'],['Irish','ga'],
+    ['Italian','it'],['Lithuanian','lt'],['Nepali','ne'],
+    ['Norwegian','no'],['Persian','fa'],['Polish','pl'],
+    ['Portuguese','pt'],['Romanian','ro'],['Russian','ru'],
+    ['Serbian','sr'],['Spanish','es'],['Swedish','sv'],
+    ['Tamil','ta'],['Turkish','tr'],['Yiddish','yi'],
+  ];
+
+  const $  = id => document.getElementById(id);
+
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  const langEl    = $('lang');
+  const inputEl   = $('input');
+  const stemmedEl = $('stemmed');
+  const rowsEl    = $('rows');
+  const statsEl   = $('stats');
+  const dotEl     = $('dot');
+  const statusEl  = $('status');
+
+  // WASM initializes automatically on import — no need to call init()
+  langEl.innerHTML = LANGS.map(([label, iso]) =>
+    `<option value="${iso}"${iso === 'en' ? ' selected' : ''}>${label}</option>`
+  ).join('');
+  langEl.disabled  = false;
+  inputEl.disabled = false;
+  dotEl.classList.add('ready');
+  statusEl.textContent = 'Ready';
+
+  // ── Stemmer cache ────────────────────────────────────────────────────────────
+  const cache = new Map();
+  const stemmer = iso => {
+    if (!cache.has(iso)) cache.set(iso, createStemmer(iso));
+    return cache.get(iso);
+  };
+
+  // ── Tokenise: preserve spaces + punctuation ──────────────────────────────────
+  const tokenize = text => text.match(/[\p{L}\p{M}'-]+|[^\p{L}\p{M}'-]+/gu) ?? [];
+  const isWord   = t => /\p{L}/u.test(t);
+
+  // Best-effort suffix diff (stemming removes suffixes most of the time)
+  function trySuffix(orig, stem) {
+    const ol = orig.toLowerCase(), sl = stem.toLowerCase();
+    if (ol === sl) return { kept: orig, suffix: '' };
+    if (ol.startsWith(sl)) return { kept: orig.slice(0, sl.length), suffix: orig.slice(sl.length) };
+    return { kept: orig, suffix: '' }; // non-suffix change – show as-is
+  }
+
+  // ── Render ───────────────────────────────────────────────────────────────────
+  function render() {
+    const text = inputEl.value;
+    const iso  = langEl.value;
+    const s    = stemmer(iso);
+
+    if (!text.trim()) {
+      stemmedEl.innerHTML = '';
+      rowsEl.innerHTML    = '<div class="empty">Start typing to see the word-by-word diff</div>';
+      statsEl.hidden      = true;
+      return;
+    }
+
+    const tokens = tokenize(text);
+
+    let inputHTML   = '';
+    let stemmedHTML = '';
+    let rowsHTML    = '';
+    let total = 0, changed = 0;
+
+    for (const tok of tokens) {
+      if (!isWord(tok)) {
+        inputHTML   += esc(tok);
+        stemmedHTML += esc(tok);
+        continue;
+      }
+
+      total++;
+      const st = s(tok);
+      const diff = st !== tok;
+      if (diff) changed++;
+
+      if (diff) {
+        inputHTML   += `<mark class="r">${esc(tok)}</mark>`;
+        stemmedHTML += `<mark class="g">${esc(st)}</mark>`;
+      } else {
+        inputHTML   += esc(tok);
+        stemmedHTML += esc(st);
+      }
+
+      const { kept, suffix } = trySuffix(tok, st);
+
+      const origCell = diff && suffix
+        ? `${esc(kept)}<span class="strike">${esc(suffix)}</span>`
+        : esc(tok);
+
+      const sfxCell = suffix
+        ? `<span class="sfx">-${esc(suffix)}</span>`
+        : `<span style="color:var(--dim)">—</span>`;
+
+      rowsHTML += `
+        <div class="row ${diff ? 'changed' : 'same'}">
+          <span class="orig">${origCell}</span>
+          <span class="arr">→</span>
+          <span class="stem ${diff ? 'changed' : ''}">${esc(st)}</span>
+          ${sfxCell}
+        </div>`;
+    }
+
+    // Update input pane with highlights (overlay – we show it in stemmed pane)
+    stemmedEl.innerHTML = stemmedHTML;
+
+    rowsEl.innerHTML = rowsHTML || '<div class="empty">No words found</div>';
+
+    statsEl.hidden    = false;
+    statsEl.innerHTML =
+      `<b>${total}</b> words &nbsp;·&nbsp; ` +
+      `<b>${changed}</b> stemmed &nbsp;·&nbsp; ` +
+      `<b>${total - changed}</b> unchanged`;
+  }
+
+  const SAMPLES = {
+    ar: 'يجري الأطفال بسرعة في الحدائق والشوارع كل يوم ويلعبون بفرح',
+    hy: 'Երեխաները արագ վազում են այգիներով և փողոցներով ամեն օր',
+    eu: 'Haurrak azkar ibiltzen dira lorategietan eta kaleetan egunero jolasean',
+    ca: 'Els nens corren ràpidament pels jardins i els carrers cada dia jugant',
+    cs: 'Děti rychle běhají po zahradách a ulicích každý den a hrají si',
+    da: 'Børnene løber hurtigt gennem haver og gader hver dag og leger',
+    nl: 'De kinderen rennen snel door de tuinen en straten elke dag spelend',
+    en: 'The quick brown foxes are running swiftly over the beautiful mountains',
+    eo: 'La infanoj rapide kuras tra ĝardenoj kaj stratoj ĉiutage ludante',
+    et: 'Lapsed jooksevad kiiresti läbi aedade ja tänavate iga päev mängides',
+    fi: 'Lapset juoksevat nopeasti puutarhojen ja katujen läpi joka päivä leikkien',
+    fr: 'Les enfants courent rapidement dans les jardins et les rues chaque jour',
+    de: 'Die Kinder laufen schnell durch die Gärten und Straßen jeden Tag spielend',
+    el: 'Τα παιδιά τρέχουν γρήγορα μέσα από τους κήπους και τους δρόμους κάθε μέρα',
+    hi: 'बच्चे बगीचों और सड़कों पर तेजी से दौड़ते हैं और हर रोज खेलते हैं',
+    hu: 'A gyerekek gyorsan futnak a kerteken és az utcákon keresztül minden nap játszanak',
+    id: 'Anak-anak berlari dengan cepat melalui taman dan jalanan setiap hari bermain',
+    ga: 'Ritheann na páistí go tapa trí na gairdíní agus na sráideanna gach lá ag súgradh',
+    it: 'I bambini corrono velocemente attraverso i giardini e le strade ogni giorno giocando',
+    lt: 'Vaikai greitai bėga per sodus ir gatves kiekvieną dieną žaisdami',
+    ne: 'बच्चाहरू बगैँचा र सडकहरूमा तिब्र गतिमा दौडिन्छन् र हरेक दिन खेल्छन्',
+    no: 'Barna løper raskt gjennom hagene og gatene hver dag og leker',
+    fa: 'کودکان هر روز با سرعت در باغ‌ها و خیابان‌ها می‌دوند و بازی می‌کنند',
+    pl: 'Dzieci szybko biegają przez ogrody i ulice każdego dnia bawiąc się',
+    pt: 'As crianças correm rapidamente pelos jardins e pelas ruas todos os dias brincando',
+    ro: 'Copiii aleargă rapid prin grădini și pe străzi în fiecare zi jucându-se',
+    ru: 'Дети быстро бегут через сады и улицы каждый день играя и веселясь',
+    sr: 'Деца брзо трче кроз вртове и улице сваки дан и играју се',
+    es: 'Los niños corren rápidamente por los jardines y las calles cada día jugando',
+    sv: 'Barnen springer snabbt genom trädgårdarna och gatorna varje dag och leker',
+    ta: 'குழந்தைகள் தோட்டங்கள் மற்றும் தெருக்களில் தினமும் வேகமாக ஓடுகிறார்கள் விளையாடுகிறார்கள்',
+    tr: 'Çocuklar her gün bahçelerde ve sokaklarda hızlı koşuyor ve oynuyor',
+    yi: 'די קינדער לויפן שנעל דורך די גערטנער און גאסן יעדן טאג און שפילן זיך',
+  };
+
+  inputEl.addEventListener('input', render);
+  langEl.addEventListener('change', () => {
+    inputEl.value = SAMPLES[langEl.value] ?? '';
+    render();
+  });
+
+  inputEl.value = SAMPLES['en'];
+  render();
+</script>
+
+</body>
+</html>

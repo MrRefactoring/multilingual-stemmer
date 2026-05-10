@@ -1,563 +1,400 @@
-//! This file was generated automatically by the Snowball to Rust compiler
-//! http://snowballstem.org/
+//! Generated from russian.sbl by Snowball 3.0.0 - https://snowballstem.org/
 
-#![allow(non_upper_case_globals)]
 #![allow(non_snake_case)]
-#![allow(unused_variables)]
+#![allow(non_upper_case_globals)]
 #![allow(unused_mut)]
-use snowball::SnowballEnv;
-use snowball::Among;
+#![allow(unused_parens)]
+#![allow(unused_variables)]
+use crate::snowball::SnowballEnv;
+use crate::snowball::Among;
+
+#[derive(Clone)]
+struct Context {
+    i_p2: i32,
+    i_pV: i32,
+}
 
 static A_0: &'static [Among<Context>; 9] = &[
-    Among("\u{0432}\u{0448}\u{0438}\u{0441}\u{044C}", -1, 1, None),
-    Among("\u{044B}\u{0432}\u{0448}\u{0438}\u{0441}\u{044C}", 0, 2, None),
-    Among("\u{0438}\u{0432}\u{0448}\u{0438}\u{0441}\u{044C}", 0, 2, None),
-    Among("\u{0432}", -1, 1, None),
-    Among("\u{044B}\u{0432}", 3, 2, None),
-    Among("\u{0438}\u{0432}", 3, 2, None),
-    Among("\u{0432}\u{0448}\u{0438}", -1, 1, None),
-    Among("\u{044B}\u{0432}\u{0448}\u{0438}", 6, 2, None),
-    Among("\u{0438}\u{0432}\u{0448}\u{0438}", 6, 2, None),
+    Among("вшись", -1, 1, None),
+    Among("ывшись", 0, 2, None),
+    Among("ившись", 0, 2, None),
+    Among("в", -1, 1, None),
+    Among("ыв", 3, 2, None),
+    Among("ив", 3, 2, None),
+    Among("вши", -1, 1, None),
+    Among("ывши", 6, 2, None),
+    Among("ивши", 6, 2, None),
 ];
 
 static A_1: &'static [Among<Context>; 26] = &[
-    Among("\u{0435}\u{043C}\u{0443}", -1, 1, None),
-    Among("\u{043E}\u{043C}\u{0443}", -1, 1, None),
-    Among("\u{044B}\u{0445}", -1, 1, None),
-    Among("\u{0438}\u{0445}", -1, 1, None),
-    Among("\u{0443}\u{044E}", -1, 1, None),
-    Among("\u{044E}\u{044E}", -1, 1, None),
-    Among("\u{0435}\u{044E}", -1, 1, None),
-    Among("\u{043E}\u{044E}", -1, 1, None),
-    Among("\u{044F}\u{044F}", -1, 1, None),
-    Among("\u{0430}\u{044F}", -1, 1, None),
-    Among("\u{044B}\u{0435}", -1, 1, None),
-    Among("\u{0435}\u{0435}", -1, 1, None),
-    Among("\u{0438}\u{0435}", -1, 1, None),
-    Among("\u{043E}\u{0435}", -1, 1, None),
-    Among("\u{044B}\u{043C}\u{0438}", -1, 1, None),
-    Among("\u{0438}\u{043C}\u{0438}", -1, 1, None),
-    Among("\u{044B}\u{0439}", -1, 1, None),
-    Among("\u{0435}\u{0439}", -1, 1, None),
-    Among("\u{0438}\u{0439}", -1, 1, None),
-    Among("\u{043E}\u{0439}", -1, 1, None),
-    Among("\u{044B}\u{043C}", -1, 1, None),
-    Among("\u{0435}\u{043C}", -1, 1, None),
-    Among("\u{0438}\u{043C}", -1, 1, None),
-    Among("\u{043E}\u{043C}", -1, 1, None),
-    Among("\u{0435}\u{0433}\u{043E}", -1, 1, None),
-    Among("\u{043E}\u{0433}\u{043E}", -1, 1, None),
+    Among("ему", -1, 1, None),
+    Among("ому", -1, 1, None),
+    Among("ых", -1, 1, None),
+    Among("их", -1, 1, None),
+    Among("ую", -1, 1, None),
+    Among("юю", -1, 1, None),
+    Among("ею", -1, 1, None),
+    Among("ою", -1, 1, None),
+    Among("яя", -1, 1, None),
+    Among("ая", -1, 1, None),
+    Among("ые", -1, 1, None),
+    Among("ее", -1, 1, None),
+    Among("ие", -1, 1, None),
+    Among("ое", -1, 1, None),
+    Among("ыми", -1, 1, None),
+    Among("ими", -1, 1, None),
+    Among("ый", -1, 1, None),
+    Among("ей", -1, 1, None),
+    Among("ий", -1, 1, None),
+    Among("ой", -1, 1, None),
+    Among("ым", -1, 1, None),
+    Among("ем", -1, 1, None),
+    Among("им", -1, 1, None),
+    Among("ом", -1, 1, None),
+    Among("его", -1, 1, None),
+    Among("ого", -1, 1, None),
 ];
 
 static A_2: &'static [Among<Context>; 8] = &[
-    Among("\u{0432}\u{0448}", -1, 1, None),
-    Among("\u{044B}\u{0432}\u{0448}", 0, 2, None),
-    Among("\u{0438}\u{0432}\u{0448}", 0, 2, None),
-    Among("\u{0449}", -1, 1, None),
-    Among("\u{044E}\u{0449}", 3, 1, None),
-    Among("\u{0443}\u{044E}\u{0449}", 4, 2, None),
-    Among("\u{0435}\u{043C}", -1, 1, None),
-    Among("\u{043D}\u{043D}", -1, 1, None),
+    Among("вш", -1, 1, None),
+    Among("ывш", 0, 2, None),
+    Among("ивш", 0, 2, None),
+    Among("щ", -1, 1, None),
+    Among("ющ", 3, 1, None),
+    Among("ующ", 4, 2, None),
+    Among("ем", -1, 1, None),
+    Among("нн", -1, 1, None),
 ];
 
 static A_3: &'static [Among<Context>; 2] = &[
-    Among("\u{0441}\u{044C}", -1, 1, None),
-    Among("\u{0441}\u{044F}", -1, 1, None),
+    Among("сь", -1, 1, None),
+    Among("ся", -1, 1, None),
 ];
 
 static A_4: &'static [Among<Context>; 46] = &[
-    Among("\u{044B}\u{0442}", -1, 2, None),
-    Among("\u{044E}\u{0442}", -1, 1, None),
-    Among("\u{0443}\u{044E}\u{0442}", 1, 2, None),
-    Among("\u{044F}\u{0442}", -1, 2, None),
-    Among("\u{0435}\u{0442}", -1, 1, None),
-    Among("\u{0443}\u{0435}\u{0442}", 4, 2, None),
-    Among("\u{0438}\u{0442}", -1, 2, None),
-    Among("\u{043D}\u{044B}", -1, 1, None),
-    Among("\u{0435}\u{043D}\u{044B}", 7, 2, None),
-    Among("\u{0442}\u{044C}", -1, 1, None),
-    Among("\u{044B}\u{0442}\u{044C}", 9, 2, None),
-    Among("\u{0438}\u{0442}\u{044C}", 9, 2, None),
-    Among("\u{0435}\u{0448}\u{044C}", -1, 1, None),
-    Among("\u{0438}\u{0448}\u{044C}", -1, 2, None),
-    Among("\u{044E}", -1, 2, None),
-    Among("\u{0443}\u{044E}", 14, 2, None),
-    Among("\u{043B}\u{0430}", -1, 1, None),
-    Among("\u{044B}\u{043B}\u{0430}", 16, 2, None),
-    Among("\u{0438}\u{043B}\u{0430}", 16, 2, None),
-    Among("\u{043D}\u{0430}", -1, 1, None),
-    Among("\u{0435}\u{043D}\u{0430}", 19, 2, None),
-    Among("\u{0435}\u{0442}\u{0435}", -1, 1, None),
-    Among("\u{0438}\u{0442}\u{0435}", -1, 2, None),
-    Among("\u{0439}\u{0442}\u{0435}", -1, 1, None),
-    Among("\u{0443}\u{0439}\u{0442}\u{0435}", 23, 2, None),
-    Among("\u{0435}\u{0439}\u{0442}\u{0435}", 23, 2, None),
-    Among("\u{043B}\u{0438}", -1, 1, None),
-    Among("\u{044B}\u{043B}\u{0438}", 26, 2, None),
-    Among("\u{0438}\u{043B}\u{0438}", 26, 2, None),
-    Among("\u{0439}", -1, 1, None),
-    Among("\u{0443}\u{0439}", 29, 2, None),
-    Among("\u{0435}\u{0439}", 29, 2, None),
-    Among("\u{043B}", -1, 1, None),
-    Among("\u{044B}\u{043B}", 32, 2, None),
-    Among("\u{0438}\u{043B}", 32, 2, None),
-    Among("\u{044B}\u{043C}", -1, 2, None),
-    Among("\u{0435}\u{043C}", -1, 1, None),
-    Among("\u{0438}\u{043C}", -1, 2, None),
-    Among("\u{043D}", -1, 1, None),
-    Among("\u{0435}\u{043D}", 38, 2, None),
-    Among("\u{043B}\u{043E}", -1, 1, None),
-    Among("\u{044B}\u{043B}\u{043E}", 40, 2, None),
-    Among("\u{0438}\u{043B}\u{043E}", 40, 2, None),
-    Among("\u{043D}\u{043E}", -1, 1, None),
-    Among("\u{0435}\u{043D}\u{043E}", 43, 2, None),
-    Among("\u{043D}\u{043D}\u{043E}", 43, 1, None),
+    Among("ыт", -1, 2, None),
+    Among("ют", -1, 1, None),
+    Among("уют", 1, 2, None),
+    Among("ят", -1, 2, None),
+    Among("ет", -1, 1, None),
+    Among("ует", 4, 2, None),
+    Among("ит", -1, 2, None),
+    Among("ны", -1, 1, None),
+    Among("ены", 7, 2, None),
+    Among("ть", -1, 1, None),
+    Among("ыть", 9, 2, None),
+    Among("ить", 9, 2, None),
+    Among("ешь", -1, 1, None),
+    Among("ишь", -1, 2, None),
+    Among("ю", -1, 2, None),
+    Among("ую", 14, 2, None),
+    Among("ла", -1, 1, None),
+    Among("ыла", 16, 2, None),
+    Among("ила", 16, 2, None),
+    Among("на", -1, 1, None),
+    Among("ена", 19, 2, None),
+    Among("ете", -1, 1, None),
+    Among("ите", -1, 2, None),
+    Among("йте", -1, 1, None),
+    Among("уйте", 23, 2, None),
+    Among("ейте", 23, 2, None),
+    Among("ли", -1, 1, None),
+    Among("ыли", 26, 2, None),
+    Among("или", 26, 2, None),
+    Among("й", -1, 1, None),
+    Among("уй", 29, 2, None),
+    Among("ей", 29, 2, None),
+    Among("л", -1, 1, None),
+    Among("ыл", 32, 2, None),
+    Among("ил", 32, 2, None),
+    Among("ым", -1, 2, None),
+    Among("ем", -1, 1, None),
+    Among("им", -1, 2, None),
+    Among("н", -1, 1, None),
+    Among("ен", 38, 2, None),
+    Among("ло", -1, 1, None),
+    Among("ыло", 40, 2, None),
+    Among("ило", 40, 2, None),
+    Among("но", -1, 1, None),
+    Among("ено", 43, 2, None),
+    Among("нно", 43, 1, None),
 ];
 
 static A_5: &'static [Among<Context>; 36] = &[
-    Among("\u{0443}", -1, 1, None),
-    Among("\u{044F}\u{0445}", -1, 1, None),
-    Among("\u{0438}\u{044F}\u{0445}", 1, 1, None),
-    Among("\u{0430}\u{0445}", -1, 1, None),
-    Among("\u{044B}", -1, 1, None),
-    Among("\u{044C}", -1, 1, None),
-    Among("\u{044E}", -1, 1, None),
-    Among("\u{044C}\u{044E}", 6, 1, None),
-    Among("\u{0438}\u{044E}", 6, 1, None),
-    Among("\u{044F}", -1, 1, None),
-    Among("\u{044C}\u{044F}", 9, 1, None),
-    Among("\u{0438}\u{044F}", 9, 1, None),
-    Among("\u{0430}", -1, 1, None),
-    Among("\u{0435}\u{0432}", -1, 1, None),
-    Among("\u{043E}\u{0432}", -1, 1, None),
-    Among("\u{0435}", -1, 1, None),
-    Among("\u{044C}\u{0435}", 15, 1, None),
-    Among("\u{0438}\u{0435}", 15, 1, None),
-    Among("\u{0438}", -1, 1, None),
-    Among("\u{0435}\u{0438}", 18, 1, None),
-    Among("\u{0438}\u{0438}", 18, 1, None),
-    Among("\u{044F}\u{043C}\u{0438}", 18, 1, None),
-    Among("\u{0438}\u{044F}\u{043C}\u{0438}", 21, 1, None),
-    Among("\u{0430}\u{043C}\u{0438}", 18, 1, None),
-    Among("\u{0439}", -1, 1, None),
-    Among("\u{0435}\u{0439}", 24, 1, None),
-    Among("\u{0438}\u{0435}\u{0439}", 25, 1, None),
-    Among("\u{0438}\u{0439}", 24, 1, None),
-    Among("\u{043E}\u{0439}", 24, 1, None),
-    Among("\u{044F}\u{043C}", -1, 1, None),
-    Among("\u{0438}\u{044F}\u{043C}", 29, 1, None),
-    Among("\u{0430}\u{043C}", -1, 1, None),
-    Among("\u{0435}\u{043C}", -1, 1, None),
-    Among("\u{0438}\u{0435}\u{043C}", 32, 1, None),
-    Among("\u{043E}\u{043C}", -1, 1, None),
-    Among("\u{043E}", -1, 1, None),
+    Among("у", -1, 1, None),
+    Among("ях", -1, 1, None),
+    Among("иях", 1, 1, None),
+    Among("ах", -1, 1, None),
+    Among("ы", -1, 1, None),
+    Among("ь", -1, 1, None),
+    Among("ю", -1, 1, None),
+    Among("ью", 6, 1, None),
+    Among("ию", 6, 1, None),
+    Among("я", -1, 1, None),
+    Among("ья", 9, 1, None),
+    Among("ия", 9, 1, None),
+    Among("а", -1, 1, None),
+    Among("ев", -1, 1, None),
+    Among("ов", -1, 1, None),
+    Among("е", -1, 1, None),
+    Among("ье", 15, 1, None),
+    Among("ие", 15, 1, None),
+    Among("и", -1, 1, None),
+    Among("еи", 18, 1, None),
+    Among("ии", 18, 1, None),
+    Among("ями", 18, 1, None),
+    Among("иями", 21, 1, None),
+    Among("ами", 18, 1, None),
+    Among("й", -1, 1, None),
+    Among("ей", 24, 1, None),
+    Among("ией", 25, 1, None),
+    Among("ий", 24, 1, None),
+    Among("ой", 24, 1, None),
+    Among("ям", -1, 1, None),
+    Among("иям", 29, 1, None),
+    Among("ам", -1, 1, None),
+    Among("ем", -1, 1, None),
+    Among("ием", 32, 1, None),
+    Among("ом", -1, 1, None),
+    Among("о", -1, 1, None),
 ];
 
 static A_6: &'static [Among<Context>; 2] = &[
-    Among("\u{043E}\u{0441}\u{0442}", -1, 1, None),
-    Among("\u{043E}\u{0441}\u{0442}\u{044C}", -1, 1, None),
+    Among("ост", -1, 1, None),
+    Among("ость", -1, 1, None),
 ];
 
 static A_7: &'static [Among<Context>; 4] = &[
-    Among("\u{0435}\u{0439}\u{0448}", -1, 1, None),
-    Among("\u{044C}", -1, 3, None),
-    Among("\u{0435}\u{0439}\u{0448}\u{0435}", -1, 1, None),
-    Among("\u{043D}", -1, 2, None),
+    Among("ейш", -1, 1, None),
+    Among("ь", -1, 3, None),
+    Among("ейше", -1, 1, None),
+    Among("н", -1, 2, None),
 ];
 
 static G_v: &'static [u8; 4] = &[33, 65, 8, 232];
 
-#[derive(Clone)]
-struct Context {
-    i_p2: usize,
-    i_pV: usize,
-}
-
 fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    // (, line 57
     context.i_pV = env.limit;
     context.i_p2 = env.limit;
-    // do, line 61
     let v_1 = env.cursor;
     'lab0: loop {
-        // (, line 61
-        // gopast, line 62
-        'golab1: loop {
-            'lab2: loop {
-                if !env.in_grouping(G_v, 1072, 1103) {
-                    break 'lab2;
-                }
-                break 'golab1;
-            }
-            if env.cursor >= env.limit {
-                break 'lab0;
-            }
-            env.next_char();
+        if !env.go_out_grouping(G_v, 1072, 1103) {
+            break 'lab0;
         }
-        // setmark pV, line 62
+        env.next_char();
         context.i_pV = env.cursor;
-        // gopast, line 62
-        'golab3: loop {
-            'lab4: loop {
-                if !env.out_grouping(G_v, 1072, 1103) {
-                    break 'lab4;
-                }
-                break 'golab3;
-            }
-            if env.cursor >= env.limit {
-                break 'lab0;
-            }
-            env.next_char();
+        if !env.go_in_grouping(G_v, 1072, 1103) {
+            break 'lab0;
         }
-        // gopast, line 63
-        'golab5: loop {
-            'lab6: loop {
-                if !env.in_grouping(G_v, 1072, 1103) {
-                    break 'lab6;
-                }
-                break 'golab5;
-            }
-            if env.cursor >= env.limit {
-                break 'lab0;
-            }
-            env.next_char();
+        env.next_char();
+        if !env.go_out_grouping(G_v, 1072, 1103) {
+            break 'lab0;
         }
-        // gopast, line 63
-        'golab7: loop {
-            'lab8: loop {
-                if !env.out_grouping(G_v, 1072, 1103) {
-                    break 'lab8;
-                }
-                break 'golab7;
-            }
-            if env.cursor >= env.limit {
-                break 'lab0;
-            }
-            env.next_char();
+        env.next_char();
+        if !env.go_in_grouping(G_v, 1072, 1103) {
+            break 'lab0;
         }
-        // setmark p2, line 63
+        env.next_char();
         context.i_p2 = env.cursor;
         break 'lab0;
     }
     env.cursor = v_1;
-    return true;
+    return true
 }
 
 fn r_R2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    if !(context.i_p2 <= env.cursor){
-        return false;
-    }
-    return true;
+    return context.i_p2 <= env.cursor
 }
 
 fn r_perfective_gerund(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 71
-    // [, line 72
     env.ket = env.cursor;
-    // substring, line 72
     among_var = env.find_among_b(A_0, context);
     if among_var == 0 {
         return false;
     }
-    // ], line 72
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 76
-        // or, line 76
-        'lab0: loop {
-            let v_1 = env.limit - env.cursor;
-            'lab1: loop {
-                // literal, line 76
-                if !env.eq_s_b(&"\u{0430}") {
-                    break 'lab1;
+    match among_var {
+        1 => {
+            'lab0: loop {
+                'lab1: loop {
+                    if !env.eq_s_b(&"а") {
+                        break 'lab1;
+                    }
+                    break 'lab0;
+                }
+                if !env.eq_s_b(&"я") {
+                    return false;
                 }
                 break 'lab0;
             }
-            env.cursor = env.limit - v_1;
-            // literal, line 76
-            if !env.eq_s_b(&"\u{044F}") {
-                return false;
-            }
-            break 'lab0;
+            env.slice_del();
         }
-        // delete, line 76
-        if !env.slice_del() {
-            return false;
+        2 => {
+            env.slice_del();
         }
-    } else if among_var == 2 {
-        // (, line 83
-        // delete, line 83
-        if !env.slice_del() {
-            return false;
-        }
+        _ => ()
     }
-    return true;
+    return true
 }
 
 fn r_adjective(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    // (, line 87
-    // [, line 88
     env.ket = env.cursor;
-    // substring, line 88
-    among_var = env.find_among_b(A_1, context);
-    if among_var == 0 {
+    if env.find_among_b(A_1, context) == 0 {
         return false;
     }
-    // ], line 88
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 97
-        // delete, line 97
-        if !env.slice_del() {
-            return false;
-        }
-    }
-    return true;
+    env.slice_del();
+    return true
 }
 
 fn r_adjectival(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 101
-    // call adjective, line 102
     if !r_adjective(env, context) {
         return false;
     }
-    // try, line 109
     let v_1 = env.limit - env.cursor;
     'lab0: loop {
-        // (, line 109
-        // [, line 110
         env.ket = env.cursor;
-        // substring, line 110
         among_var = env.find_among_b(A_2, context);
         if among_var == 0 {
             env.cursor = env.limit - v_1;
             break 'lab0;
         }
-        // ], line 110
         env.bra = env.cursor;
-        if among_var == 0 {
-            env.cursor = env.limit - v_1;
-            break 'lab0;
-        } else if among_var == 1 {
-            // (, line 115
-            // or, line 115
-            'lab1: loop {
-                let v_2 = env.limit - env.cursor;
-                'lab2: loop {
-                    // literal, line 115
-                    if !env.eq_s_b(&"\u{0430}") {
-                        break 'lab2;
+        match among_var {
+            1 => {
+                'lab1: loop {
+                    'lab2: loop {
+                        if !env.eq_s_b(&"а") {
+                            break 'lab2;
+                        }
+                        break 'lab1;
+                    }
+                    if !env.eq_s_b(&"я") {
+                        env.cursor = env.limit - v_1;
+                        break 'lab0;
                     }
                     break 'lab1;
                 }
-                env.cursor = env.limit - v_2;
-                // literal, line 115
-                if !env.eq_s_b(&"\u{044F}") {
-                    env.cursor = env.limit - v_1;
-                    break 'lab0;
-                }
-                break 'lab1;
+                env.slice_del();
             }
-            // delete, line 115
-            if !env.slice_del() {
-                return false;
+            2 => {
+                env.slice_del();
             }
-        } else if among_var == 2 {
-            // (, line 122
-            // delete, line 122
-            if !env.slice_del() {
-                return false;
-            }
+            _ => ()
         }
         break 'lab0;
     }
-    return true;
+    return true
 }
 
 fn r_reflexive(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    // (, line 128
-    // [, line 129
     env.ket = env.cursor;
-    // substring, line 129
-    among_var = env.find_among_b(A_3, context);
-    if among_var == 0 {
+    if (env.cursor - 3 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 140 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 143 as u8)) {
         return false;
     }
-    // ], line 129
+
+    if env.find_among_b(A_3, context) == 0 {
+        return false;
+    }
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 132
-        // delete, line 132
-        if !env.slice_del() {
-            return false;
-        }
-    }
-    return true;
+    env.slice_del();
+    return true
 }
 
 fn r_verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 136
-    // [, line 137
     env.ket = env.cursor;
-    // substring, line 137
     among_var = env.find_among_b(A_4, context);
     if among_var == 0 {
         return false;
     }
-    // ], line 137
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 143
-        // or, line 143
-        'lab0: loop {
-            let v_1 = env.limit - env.cursor;
-            'lab1: loop {
-                // literal, line 143
-                if !env.eq_s_b(&"\u{0430}") {
-                    break 'lab1;
+    match among_var {
+        1 => {
+            'lab0: loop {
+                'lab1: loop {
+                    if !env.eq_s_b(&"а") {
+                        break 'lab1;
+                    }
+                    break 'lab0;
+                }
+                if !env.eq_s_b(&"я") {
+                    return false;
                 }
                 break 'lab0;
             }
-            env.cursor = env.limit - v_1;
-            // literal, line 143
-            if !env.eq_s_b(&"\u{044F}") {
-                return false;
-            }
-            break 'lab0;
+            env.slice_del();
         }
-        // delete, line 143
-        if !env.slice_del() {
-            return false;
+        2 => {
+            env.slice_del();
         }
-    } else if among_var == 2 {
-        // (, line 151
-        // delete, line 151
-        if !env.slice_del() {
-            return false;
-        }
+        _ => ()
     }
-    return true;
+    return true
 }
 
 fn r_noun(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    // (, line 159
-    // [, line 160
     env.ket = env.cursor;
-    // substring, line 160
-    among_var = env.find_among_b(A_5, context);
-    if among_var == 0 {
+    if env.find_among_b(A_5, context) == 0 {
         return false;
     }
-    // ], line 160
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 167
-        // delete, line 167
-        if !env.slice_del() {
-            return false;
-        }
-    }
-    return true;
+    env.slice_del();
+    return true
 }
 
 fn r_derivational(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    // (, line 175
-    // [, line 176
     env.ket = env.cursor;
-    // substring, line 176
-    among_var = env.find_among_b(A_6, context);
-    if among_var == 0 {
+    if (env.cursor - 5 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 130 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 140 as u8)) {
         return false;
     }
-    // ], line 176
+
+    if env.find_among_b(A_6, context) == 0 {
+        return false;
+    }
     env.bra = env.cursor;
-    // call R2, line 176
     if !r_R2(env, context) {
         return false;
     }
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 179
-        // delete, line 179
-        if !env.slice_del() {
-            return false;
-        }
-    }
-    return true;
+    env.slice_del();
+    return true
 }
 
 fn r_tidy_up(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    // (, line 183
-    // [, line 184
     env.ket = env.cursor;
-    // substring, line 184
     among_var = env.find_among_b(A_7, context);
     if among_var == 0 {
         return false;
     }
-    // ], line 184
     env.bra = env.cursor;
-    if among_var == 0 {
-        return false;
-    } else if among_var == 1 {
-        // (, line 188
-        // delete, line 188
-        if !env.slice_del() {
-            return false;
+    match among_var {
+        1 => {
+            env.slice_del();
+            env.ket = env.cursor;
+            if !env.eq_s_b(&"н") {
+                return false;
+            }
+            env.bra = env.cursor;
+            if !env.eq_s_b(&"н") {
+                return false;
+            }
+            env.slice_del();
         }
-        // [, line 189
-        env.ket = env.cursor;
-        // literal, line 189
-        if !env.eq_s_b(&"\u{043D}") {
-            return false;
+        2 => {
+            if !env.eq_s_b(&"н") {
+                return false;
+            }
+            env.slice_del();
         }
-        // ], line 189
-        env.bra = env.cursor;
-        // literal, line 189
-        if !env.eq_s_b(&"\u{043D}") {
-            return false;
+        3 => {
+            env.slice_del();
         }
-        // delete, line 189
-        if !env.slice_del() {
-            return false;
-        }
-    } else if among_var == 2 {
-        // (, line 192
-        // literal, line 192
-        if !env.eq_s_b(&"\u{043D}") {
-            return false;
-        }
-        // delete, line 192
-        if !env.slice_del() {
-            return false;
-        }
-    } else if among_var == 3 {
-        // (, line 194
-        // delete, line 194
-        if !env.slice_del() {
-            return false;
-        }
+        _ => ()
     }
-    return true;
+    return true
 }
 
 pub fn stem(env: &mut SnowballEnv) -> bool {
@@ -565,127 +402,108 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
         i_p2: 0,
         i_pV: 0,
     };
-    // (, line 199
-    // do, line 201
     let v_1 = env.cursor;
     'lab0: loop {
-        // call mark_regions, line 201
-        if !r_mark_regions(env, context) {
-            break 'lab0;
+        'replab1: loop{
+            let v_2 = env.cursor;
+            'lab2: for _ in 0..1 {
+                'golab3: loop {
+                    let v_3 = env.cursor;
+                    'lab4: loop {
+                        env.bra = env.cursor;
+                        if !env.eq_s(&"ё") {
+                            break 'lab4;
+                        }
+                        env.ket = env.cursor;
+                        env.cursor = v_3;
+                        break 'golab3;
+                    }
+                    env.cursor = v_3;
+                    if env.cursor >= env.limit {
+                        break 'lab2;
+                    }
+                    env.next_char();
+                }
+                env.slice_from("е");
+                continue 'replab1;
+            }
+            env.cursor = v_2;
+            break 'replab1;
         }
         break 'lab0;
     }
     env.cursor = v_1;
-    // backwards, line 202
+    r_mark_regions(env, context);
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    // setlimit, line 202
-    let v_2 = env.limit - env.cursor;
-    // tomark, line 202
     if env.cursor < context.i_pV {
         return false;
     }
-    env.cursor = context.i_pV;
-    let v_3 = env.limit_backward;
-    env.limit_backward = env.cursor;
-    env.cursor = env.limit - v_2;
-    // (, line 202
-    // do, line 203
-    let v_4 = env.limit - env.cursor;
-    'lab1: loop {
-        // (, line 203
-        // or, line 204
-        'lab2: loop {
-            let v_5 = env.limit - env.cursor;
-            'lab3: loop {
-                // call perfective_gerund, line 204
-                if !r_perfective_gerund(env, context) {
-                    break 'lab3;
-                }
-                break 'lab2;
-            }
-            env.cursor = env.limit - v_5;
-            // (, line 205
-            // try, line 205
+    let v_4 = env.limit_backward;
+    env.limit_backward = context.i_pV;
+    let v_5 = env.limit - env.cursor;
+    'lab5: loop {
+        'lab6: loop {
             let v_6 = env.limit - env.cursor;
-            'lab4: loop {
-                // call reflexive, line 205
+            'lab7: loop {
+                if !r_perfective_gerund(env, context) {
+                    break 'lab7;
+                }
+                break 'lab6;
+            }
+            env.cursor = env.limit - v_6;
+            let v_7 = env.limit - env.cursor;
+            'lab8: loop {
                 if !r_reflexive(env, context) {
-                    env.cursor = env.limit - v_6;
-                    break 'lab4;
+                    env.cursor = env.limit - v_7;
+                    break 'lab8;
                 }
-                break 'lab4;
+                break 'lab8;
             }
-            // or, line 206
-            'lab5: loop {
-                let v_7 = env.limit - env.cursor;
-                'lab6: loop {
-                    // call adjectival, line 206
+            'lab9: loop {
+                let v_8 = env.limit - env.cursor;
+                'lab10: loop {
                     if !r_adjectival(env, context) {
-                        break 'lab6;
+                        break 'lab10;
                     }
-                    break 'lab5;
+                    break 'lab9;
                 }
-                env.cursor = env.limit - v_7;
-                'lab7: loop {
-                    // call verb, line 206
+                env.cursor = env.limit - v_8;
+                'lab11: loop {
                     if !r_verb(env, context) {
-                        break 'lab7;
+                        break 'lab11;
                     }
+                    break 'lab9;
+                }
+                env.cursor = env.limit - v_8;
+                if !r_noun(env, context) {
                     break 'lab5;
                 }
-                env.cursor = env.limit - v_7;
-                // call noun, line 206
-                if !r_noun(env, context) {
-                    break 'lab1;
-                }
-                break 'lab5;
+                break 'lab9;
             }
-            break 'lab2;
+            break 'lab6;
         }
-        break 'lab1;
+        break 'lab5;
     }
-    env.cursor = env.limit - v_4;
-    // try, line 209
-    let v_8 = env.limit - env.cursor;
-    'lab8: loop {
-        // (, line 209
-        // [, line 209
-        env.ket = env.cursor;
-        // literal, line 209
-        if !env.eq_s_b(&"\u{0438}") {
-            env.cursor = env.limit - v_8;
-            break 'lab8;
-        }
-        // ], line 209
-        env.bra = env.cursor;
-        // delete, line 209
-        if !env.slice_del() {
-            return false;
-        }
-        break 'lab8;
-    }
-    // do, line 212
+    env.cursor = env.limit - v_5;
     let v_9 = env.limit - env.cursor;
-    'lab9: loop {
-        // call derivational, line 212
-        if !r_derivational(env, context) {
-            break 'lab9;
+    'lab12: loop {
+        env.ket = env.cursor;
+        if !env.eq_s_b(&"и") {
+            env.cursor = env.limit - v_9;
+            break 'lab12;
         }
-        break 'lab9;
+        env.bra = env.cursor;
+        env.slice_del();
+        break 'lab12;
     }
-    env.cursor = env.limit - v_9;
-    // do, line 213
     let v_10 = env.limit - env.cursor;
-    'lab10: loop {
-        // call tidy_up, line 213
-        if !r_tidy_up(env, context) {
-            break 'lab10;
-        }
-        break 'lab10;
-    }
+    r_derivational(env, context);
     env.cursor = env.limit - v_10;
-    env.limit_backward = v_3;
+    let v_11 = env.limit - env.cursor;
+    r_tidy_up(env, context);
+    env.cursor = env.limit - v_11;
+    env.limit_backward = v_4;
     env.cursor = env.limit_backward;
-    return true;
+    return true
 }

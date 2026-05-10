@@ -1,4 +1,6 @@
-/dist/
-/node_modules/
+.idea/
+dist/
+node_modules/
+graphify-out
 
-package-lock.json
+.DS_Store
