@@ -6,15 +6,9 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -58,26 +52,4 @@ jobs:
             dist/browser/index_bg.wasm \
             multilingual-stemmer-*.tgz
 
-      - name: Assemble Pages site
-        run: |
-          mkdir -p _site/demo _site/dist
-          cp -r demo/. _site/demo/
-          cp -r dist/. _site/dist/
-          printf '<meta http-equiv="refresh" content="0;url=demo/">' > _site/index.html
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-  deploy-pages:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    permissions:
-      pages: write
-      id-token: write
-    steps:
-      - id: deploy
-        uses: actions/deploy-pages@v4
