@@ -33,7 +33,7 @@ jobs:
             ~/.cargo/registry
             ~/.cargo/git
             rust-stemmers/target
-          key: ${{ runner.os }}-cargo-${{ hashFiles('rust-stemmers/Cargo.lock') }}
+          key: ${{ runner.os }}-cargo-${{ hashFiles('rust-stemmers/Cargo.toml') }}
 
       - uses: pnpm/action-setup@v4
 
