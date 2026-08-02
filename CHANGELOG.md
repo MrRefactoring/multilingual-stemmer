@@ -7,6 +7,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [Unreleased]
+
+### Added
+- **Sesotho** (`st`) stemmer — new in [Snowball 3.1.0](https://snowballstem.org/), brings the total to 34 languages
+- Test corpus `voc_st.txt` / `res_st.txt` from [snowball-data](https://github.com/snowballstem/snowball-data)
+
+### Changed
+- All stemmers regenerated from **Snowball 3.1.1** (were Snowball 3.0.0)
+- Stemming results change for words containing apostrophes and elisions in `Danish`,
+  `Estonian`, `Finnish`, `German`, `Italian`, `Lithuanian`, `Norwegian` and `Polish`
+- `English` — `skis` stems to `ski` again (regression introduced upstream in Snowball 3.0.0)
+- `Danish` — undoubling restricted to consonant pairs that actually occur in Danish
+- `Finnish` — illative fallback now removes `-n` when the vowel before `-han`/`-hen`/`-hin`/`-hon`/`-hän`/`-hön`
+  does not match; illative form `-hun` removed
+- `Lithuanian` — `-er-` is no longer removed before regular suffixes
+- Test corpora for `Danish`, `Estonian`, `Finnish`, `French`, `German` and `Norwegian` synced with snowball-data
+- Dev dependencies updated: `pnpm 11.19.0`, `@types/node 22.20.1`, `tsx 4.23.2`, `vitest 4.1.10`, `wasm-pack 0.15.0`
+
+### Fixed
+- Node.js entry no longer logs `using deprecated parameters for the initialization function` —
+  the WASM binary is passed to `init()` as `{ module_or_path }`
+
+### Note
+- `Sesotho` is inserted alphabetically into the `Languages` enum, so the numeric values of
+  `Spanish` through `Yiddish` shift by one. Code using `Languages.X` or ISO codes is unaffected;
+  hardcoded numeric values are not.
+
+---
+
 ## [2.0.0] — 2026-05-10
 
 ### Added
