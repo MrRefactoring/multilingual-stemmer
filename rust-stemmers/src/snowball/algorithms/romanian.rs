@@ -1,4 +1,4 @@
-//! Generated from romanian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from romanian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -496,16 +496,8 @@ fn r_postlude(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return true
 }
 
-fn r_RV(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_pV <= env.cursor
-}
-
 fn r_R1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return context.i_p1 <= env.cursor
-}
-
-fn r_R2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p2 <= env.cursor
 }
 
 fn r_step_0(env: &mut SnowballEnv, context: &mut Context) -> bool {
@@ -614,7 +606,7 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if !r_R2(env, context) {
+    if context.i_p2 > env.cursor {
         return false;
     }
     match among_var {
@@ -683,7 +675,7 @@ fn r_vowel_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if !r_RV(env, context) {
+    if context.i_pV > env.cursor {
         return false;
     }
     env.slice_del();

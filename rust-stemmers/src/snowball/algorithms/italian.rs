@@ -1,4 +1,4 @@
-//! Generated from italian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from italian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -267,10 +267,7 @@ fn r_elisions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.ket = env.cursor;
-    'lab0: loop {
-        if env.cursor < env.limit {
-            break 'lab0;
-        }
+    if env.cursor >= env.limit {
         return false;
     }
     env.slice_del();
@@ -509,10 +506,6 @@ fn r_RV(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return context.i_pV <= env.cursor
 }
 
-fn r_R1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p1 <= env.cursor
-}
-
 fn r_R2(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return context.i_p2 <= env.cursor
 }
@@ -612,7 +605,7 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             env.slice_del();
         }
         7 => {
-            if !r_R1(env, context) {
+            if context.i_p1 > env.cursor {
                 return false;
             }
             env.slice_del();

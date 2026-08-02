@@ -1,4 +1,4 @@
-//! Generated from indonesian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from indonesian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -98,10 +98,10 @@ fn r_remove_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             'lab0: loop {
                 let v_1 = env.limit - env.cursor;
                 'lab1: loop {
-                    if context.i_prefix == 3{
+                    if context.i_prefix == 3 {
                         break 'lab1;
                     }
-                    if context.i_prefix == 2{
+                    if context.i_prefix == 2 {
                         break 'lab1;
                     }
                     if !env.eq_s_b(&"k") {
@@ -111,14 +111,14 @@ fn r_remove_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                     break 'lab0;
                 }
                 env.cursor = env.limit - v_1;
-                if context.i_prefix == 1{
+                if context.i_prefix == 1 {
                     return false;
                 }
                 break 'lab0;
             }
         }
         2 => {
-            if context.i_prefix > 2{
+            if context.i_prefix > 2 {
                 return false;
             }
             'lab2: loop {
@@ -355,7 +355,7 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
         break 'lab0;
     }
     env.cursor = v_1;
-    if context.i_measure <= 2{
+    if context.i_measure <= 2 {
         return false;
     }
     context.i_prefix = 0;
@@ -364,14 +364,14 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
     let v_3 = env.limit - env.cursor;
     r_remove_particle(env, context);
     env.cursor = env.limit - v_3;
-    if context.i_measure <= 2{
+    if context.i_measure <= 2 {
         return false;
     }
     let v_4 = env.limit - env.cursor;
     r_remove_possessive_pronoun(env, context);
     env.cursor = env.limit - v_4;
     env.cursor = env.limit_backward;
-    if context.i_measure <= 2{
+    if context.i_measure <= 2 {
         return false;
     }
     'lab3: loop {
@@ -384,7 +384,7 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
             let v_7 = env.cursor;
             'lab5: loop {
                 let v_8 = env.cursor;
-                if context.i_measure <= 2{
+                if context.i_measure <= 2 {
                     break 'lab5;
                 }
                 env.limit_backward = env.cursor;
@@ -394,7 +394,7 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
                 }
                 env.cursor = env.limit_backward;
                 env.cursor = v_8;
-                if context.i_measure <= 2{
+                if context.i_measure <= 2 {
                     break 'lab5;
                 }
                 if !r_remove_second_order_prefix(env, context) {
@@ -412,7 +412,7 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
         env.cursor = v_9;
         let v_10 = env.cursor;
         'lab6: loop {
-            if context.i_measure <= 2{
+            if context.i_measure <= 2 {
                 break 'lab6;
             }
             env.limit_backward = env.cursor;

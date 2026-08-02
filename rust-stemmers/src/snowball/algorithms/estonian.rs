@@ -1,4 +1,4 @@
-//! Generated from estonian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from estonian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -414,7 +414,7 @@ static A_10: &'static [Among<Context>; 290] = &[
 
 static G_V1: &'static [u8; 20] = &[17, 65, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 48, 8];
 
-static G_RV: &'static [u8; 3] = &[17, 65, 16];
+static G_RV: &'static [u8; 10] = &[1, 0, 0, 0, 0, 0, 0, 68, 4, 65];
 
 static G_KI: &'static [u8; 36] = &[117, 66, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 0, 0, 0, 16];
 
@@ -422,14 +422,37 @@ static G_GI: &'static [u8; 20] = &[21, 123, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
 fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     context.i_p1 = env.limit;
-    if !env.go_out_grouping(G_V1, 97, 252) {
-        return false;
+    'lab0: loop {
+        let v_1 = env.cursor;
+        'lab1: loop {
+            if !env.hop(2) {
+                break 'lab1;
+            }
+            'golab2: loop {
+                'lab3: loop {
+                    if !env.eq_s(&"'") {
+                        break 'lab3;
+                    }
+                    break 'golab2;
+                }
+                if env.cursor >= env.limit {
+                    break 'lab1;
+                }
+                env.next_char();
+            }
+            break 'lab0;
+        }
+        env.cursor = v_1;
+        if !env.go_out_grouping(G_V1, 97, 252) {
+            return false;
+        }
+        env.next_char();
+        if !env.go_in_grouping(G_V1, 97, 252) {
+            return false;
+        }
+        env.next_char();
+        break 'lab0;
     }
-    env.next_char();
-    if !env.go_in_grouping(G_V1, 97, 252) {
-        return false;
-    }
-    env.next_char();
     context.i_p1 = env.cursor;
     return true
 }
@@ -542,7 +565,7 @@ fn r_i_plural(env: &mut SnowballEnv, context: &mut Context) -> bool {
     }
     env.bra = env.cursor;
     env.limit_backward = v_1;
-    if !env.in_grouping_b(G_RV, 97, 117) {
+    if !env.in_grouping_b(G_RV, 39, 117) {
         return false;
     }
     env.slice_del();
@@ -608,7 +631,7 @@ fn r_case_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         1 => {
             'lab0: loop {
                 'lab1: loop {
-                    if !env.in_grouping_b(G_RV, 97, 117) {
+                    if !env.in_grouping_b(G_RV, 39, 117) {
                         break 'lab1;
                     }
                     break 'lab0;
@@ -699,7 +722,7 @@ fn r_plural_three_first_cases(env: &mut SnowballEnv, context: &mut Context) -> b
         4 => {
             'lab3: loop {
                 'lab4: loop {
-                    if !env.in_grouping_b(G_RV, 97, 117) {
+                    if !env.in_grouping_b(G_RV, 39, 117) {
                         break 'lab4;
                     }
                     break 'lab3;
@@ -743,7 +766,7 @@ fn r_undouble_kpt(env: &mut SnowballEnv, context: &mut Context) -> bool {
     if !env.in_grouping_b(G_V1, 97, 252) {
         return false;
     }
-    if context.i_p1 > env.cursor{
+    if context.i_p1 > env.cursor {
         return false;
     }
     env.ket = env.cursor;
@@ -793,7 +816,7 @@ fn r_degrees(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.limit_backward = v_1;
     match among_var {
         1 => {
-            if !env.in_grouping_b(G_RV, 97, 117) {
+            if !env.in_grouping_b(G_RV, 39, 117) {
                 return false;
             }
             env.slice_del();
@@ -939,6 +962,12 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
     let v_6 = env.limit - env.cursor;
     r_undouble_kpt(env, context);
     env.cursor = env.limit - v_6;
+    env.ket = env.cursor;
+    if !env.eq_s_b(&"'") {
+        return false;
+    }
+    env.bra = env.cursor;
+    env.slice_del();
     env.cursor = env.limit_backward;
     return true
 }

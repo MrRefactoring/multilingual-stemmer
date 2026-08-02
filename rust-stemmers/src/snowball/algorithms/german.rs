@@ -1,4 +1,4 @@
-//! Generated from german.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from german.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -76,6 +76,12 @@ static A_6: &'static [Among<Context>; 8] = &[
     Among("ik", -1, 2, None),
     Among("heit", -1, 3, None),
     Among("keit", -1, 4, None),
+];
+
+static A_7: &'static [Among<Context>; 3] = &[
+    Among("'", -1, 1, None),
+    Among("'sch", -1, 1, None),
+    Among("'s", -1, 1, None),
 ];
 
 static G_v: &'static [u8; 20] = &[17, 65, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 32, 8];
@@ -193,7 +199,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.next_char();
     context.i_p1 = env.cursor;
     'lab0: loop {
-        if context.i_p1 >= i_x{
+        if context.i_p1 >= i_x {
             break 'lab0;
         }
         context.i_p1 = i_x;
@@ -476,6 +482,24 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         break 'lab5;
     }
     env.cursor = env.limit - v_6;
+    let v_10 = env.limit - env.cursor;
+    'lab13: loop {
+        env.ket = env.cursor;
+        if env.find_among_b(A_7, context) == 0 {
+            break 'lab13;
+        }
+        env.bra = env.cursor;
+        if env.cursor <= env.limit_backward {
+            break 'lab13;
+        }
+        env.previous_char();
+        if env.cursor <= env.limit_backward {
+            break 'lab13;
+        }
+        env.slice_del();
+        break 'lab13;
+    }
+    env.cursor = env.limit - v_10;
     return true
 }
 

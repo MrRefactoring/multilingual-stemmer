@@ -12,8 +12,9 @@ export const buildIsoMap = (langs: Record<string, number>): IsoMap => ({
   it: langs['Italian'],   lt: langs['Lithuanian'], ne: langs['Nepali'],
   no: langs['Norwegian'], fa: langs['Persian'],    pl: langs['Polish'],
   pt: langs['Portuguese'],ro: langs['Romanian'],   ru: langs['Russian'],
-  sr: langs['Serbian'],   es: langs['Spanish'],    sv: langs['Swedish'],
-  ta: langs['Tamil'],     tr: langs['Turkish'],    yi: langs['Yiddish'],
+  sr: langs['Serbian'],   st: langs['Sesotho'],    es: langs['Spanish'],
+  sv: langs['Swedish'],   ta: langs['Tamil'],      tr: langs['Turkish'],
+  yi: langs['Yiddish'],
 }) as IsoMap;
 
 export const buildResolver = (isoMap: IsoMap) =>

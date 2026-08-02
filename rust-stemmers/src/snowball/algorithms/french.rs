@@ -1,4 +1,4 @@
-//! Generated from french.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from french.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -225,10 +225,7 @@ fn r_elisions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.ket = env.cursor;
-    'lab2: loop {
-        if env.cursor < env.limit {
-            break 'lab2;
-        }
+    if env.cursor >= env.limit {
         return false;
     }
     env.slice_del();

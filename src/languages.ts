@@ -31,6 +31,7 @@ export const portuguese  = s(Languages.Portuguese);
 export const romanian    = s(Languages.Romanian);
 export const russian     = s(Languages.Russian);
 export const serbian     = s(Languages.Serbian);
+export const sesotho     = s(Languages.Sesotho);
 export const spanish     = s(Languages.Spanish);
 export const swedish     = s(Languages.Swedish);
 export const tamil       = s(Languages.Tamil);

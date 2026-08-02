@@ -1,4 +1,4 @@
-//! Generated from lithuanian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from lithuanian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -426,7 +426,7 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
                 env.cursor = v_2;
                 break 'lab1;
             }
-            if (env.current.chars().count() as i32) <= 6{
+            if (env.current.chars().count() as i32) <= 6 {
                 env.cursor = v_2;
                 break 'lab1;
             }

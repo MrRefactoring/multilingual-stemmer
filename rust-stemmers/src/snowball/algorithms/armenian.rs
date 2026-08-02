@@ -1,4 +1,4 @@
-//! Generated from armenian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from armenian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -248,10 +248,6 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return true
 }
 
-fn r_R2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p2 <= env.cursor
-}
-
 fn r_adjective(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
     if env.find_among_b(A_0, context) == 0 {
@@ -288,7 +284,7 @@ fn r_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if !r_R2(env, context) {
+    if context.i_p2 > env.cursor {
         return false;
     }
     env.slice_del();

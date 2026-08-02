@@ -1,4 +1,4 @@
-//! Generated from turkish.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from turkish.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -586,10 +586,6 @@ fn r_mark_ylA(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return r_mark_suffix_with_optional_y_consonant(env, context);
 }
 
-fn r_mark_ki(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return env.eq_s_b(&"ki");
-}
-
 fn r_mark_ncA(env: &mut SnowballEnv, context: &mut Context) -> bool {
     if !r_check_vowel_harmony(env, context) {
         return false;
@@ -990,7 +986,7 @@ fn r_stem_nominal_verb_suffixes(env: &mut SnowballEnv, context: &mut Context) ->
 
 fn r_stem_suffix_chain_before_ki(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    if !r_mark_ki(env, context) {
+    if !env.eq_s_b(&"ki") {
         return false;
     }
     'lab0: loop {
@@ -1764,10 +1760,7 @@ fn r_is_reserved_word(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         break 'lab0;
     }
-    if env.cursor > env.limit_backward {
-        return false;
-    }
-    return true
+    return env.cursor <= env.limit_backward
 }
 
 fn r_remove_proper_noun_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {

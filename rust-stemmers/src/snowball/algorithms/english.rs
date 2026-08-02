@@ -1,4 +1,4 @@
-//! Generated from english.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from english.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -547,10 +547,7 @@ fn r_Step_1c(env: &mut SnowballEnv, context: &mut Context) -> bool {
     if !env.out_grouping_b(G_v, 97, 121) {
         return false;
     }
-    'lab2: loop {
-        if env.cursor > env.limit_backward {
-            break 'lab2;
-        }
+    if env.cursor <= env.limit_backward {
         return false;
     }
     env.slice_from("i");

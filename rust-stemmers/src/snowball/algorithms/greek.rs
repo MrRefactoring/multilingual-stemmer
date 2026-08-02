@@ -1,4 +1,4 @@
-//! Generated from greek.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from greek.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -1120,10 +1120,6 @@ static A_65: &'static [Among<Context>; 8] = &[
 static G_v: &'static [u8; 4] = &[81, 65, 16, 1];
 
 static G_v2: &'static [u8; 4] = &[81, 65, 0, 1];
-
-fn r_has_min_length(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return (env.current.chars().count() as i32) >= 3
-}
 
 fn r_tolower(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
@@ -2339,7 +2335,7 @@ pub fn stem(env: &mut SnowballEnv) -> bool {
     let v_1 = env.limit - env.cursor;
     r_tolower(env, context);
     env.cursor = env.limit - v_1;
-    if !r_has_min_length(env, context) {
+    if (env.current.chars().count() as i32) < 3 {
         return false;
     }
     context.b_test1 = true;

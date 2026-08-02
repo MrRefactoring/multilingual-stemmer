@@ -37,7 +37,7 @@ pnpm run prepublishOnly
 pnpm test
 ```
 
-Tests run against all 33 supported languages using vocabulary/result pairs from [snowball-data](https://github.com/snowballstem/snowball-data).
+Tests run against all 34 supported languages using vocabulary/result pairs from [snowball-data](https://github.com/snowballstem/snowball-data).
 
 ## Adding a new language
 

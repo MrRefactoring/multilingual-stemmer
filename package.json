@@ -1,7 +1,7 @@
 {
   "name": "multilingual-stemmer",
   "version": "2.0.0",
-  "description": "Word stemming for 33 languages (English, Arabic, Russian, French, German, Spanish, Turkish and more) via Snowball algorithms compiled to WebAssembly. TypeScript-first · Node.js · Browser · Zero dependencies.",
+  "description": "Word stemming for 34 languages (English, Arabic, Russian, French, German, Spanish, Turkish and more) via Snowball algorithms compiled to WebAssembly. TypeScript-first · Node.js · Browser · Zero dependencies.",
   "author": "Vladislav Tupikin <vladislav.tupikin@icloud.com>",
   "license": "MIT",
   "type": "module",

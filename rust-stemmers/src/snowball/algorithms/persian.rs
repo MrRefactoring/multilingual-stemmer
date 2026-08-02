@@ -1,4 +1,4 @@
-//! Generated from persian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from persian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -334,10 +334,7 @@ fn r_Stem_Noun_or_Adjective(env: &mut SnowballEnv, context: &mut Context) -> boo
                 env.slice_del();
             }
             2 => {
-                'lab2: loop {
-                    if env.cursor > env.limit_backward {
-                        break 'lab2;
-                    }
+                if env.cursor <= env.limit_backward {
                     env.limit_backward = v_2;
                     return false;
                 }
@@ -395,20 +392,14 @@ fn r_Stem_Verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
                 context.b_remove_verb_person_endings = true;
             }
             4 => {
-                'lab2: loop {
-                    if env.cursor > env.limit_backward {
-                        break 'lab2;
-                    }
+                if env.cursor <= env.limit_backward {
                     return false;
                 }
                 env.slice_from("\u{062F}");
                 context.b_remove_verb_person_endings = true;
             }
             5 => {
-                'lab3: loop {
-                    if env.cursor > env.limit_backward {
-                        break 'lab3;
-                    }
+                if env.cursor <= env.limit_backward {
                     return false;
                 }
                 env.slice_from("\u{062A}");

@@ -26,6 +26,7 @@ pub mod portuguese;
 pub mod romanian;
 pub mod russian;
 pub mod serbian;
+pub mod sesotho;
 pub mod spanish;
 pub mod swedish;
 pub mod tamil;

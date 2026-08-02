@@ -29,3 +29,13 @@ The "Arabic Wordlist for Spellchecking" is licensed under the GPLv3+:
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 #-------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+The file voc_st.txt is based on the sesotho vocabulary list in the snowball-data
+repository: https://github.com/snowballstem/snowball-data.
+Their file was derived from a dump of the Sesotho wikipedia dated 2026-04-01,
+filtered to remove non-Sesotho words, junk words and wikipedia macro code.
+
+Wikipedia content is licensed under CC BY-SA 3.0:
+https://creativecommons.org/licenses/by-sa/3.0/

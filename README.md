@@ -2,13 +2,13 @@
 
 <h1>multilingual-stemmer</h1>
 
-<p>Word stemming for <strong>33 languages</strong> — <a href="https://snowballstem.org/">Snowball 3.0.1</a> compiled to WebAssembly.<br>Node.js · Browser · TypeScript · Zero dependencies.</p>
+<p>Word stemming for <strong>34 languages</strong> — <a href="https://snowballstem.org/">Snowball 3.1.1</a> compiled to WebAssembly.<br>Node.js · Browser · TypeScript · Zero dependencies.</p>
 
 <p>
   <a href="https://www.npmjs.com/package/multilingual-stemmer"><img src="https://img.shields.io/npm/v/multilingual-stemmer?style=flat-square" alt="npm" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/npm/l/multilingual-stemmer?style=flat-square" alt="license" /></a>
   <img src="https://img.shields.io/badge/node-%3E%3D22-brightgreen?style=flat-square" alt="node" />
-  <a href="#supported-languages"><img src="https://img.shields.io/badge/languages-33-blue?style=flat-square" alt="languages" /></a>
+  <a href="#supported-languages"><img src="https://img.shields.io/badge/languages-34-blue?style=flat-square" alt="languages" /></a>
 </p>
 
 <p>
@@ -29,7 +29,7 @@ german('laufenden');    // → 'lauf'
 
 <div align="center">
 
-| ⚡ Zero config | 🌐 33 languages | 📦 WASM — no native addons | 🔷 TypeScript-first | 🖥 Node + Browser |
+| ⚡ Zero config | 🌐 34 languages | 📦 WASM — no native addons | 🔷 TypeScript-first | 🖥 Node + Browser |
 |:-:|:-:|:-:|:-:|:-:|
 
 </div>
@@ -164,6 +164,7 @@ const stemFn: (word: string) => string = createStemmer(code);
 ![Romanian](https://img.shields.io/badge/Romanian-ro-4a5568?style=flat-square)
 ![Russian](https://img.shields.io/badge/Russian-ru-4a5568?style=flat-square)
 ![Serbian](https://img.shields.io/badge/Serbian-sr-4a5568?style=flat-square)
+![Sesotho](https://img.shields.io/badge/Sesotho-st-4a5568?style=flat-square)
 ![Spanish](https://img.shields.io/badge/Spanish-es-4a5568?style=flat-square)
 ![Swedish](https://img.shields.io/badge/Swedish-sv-4a5568?style=flat-square)
 ![Tamil](https://img.shields.io/badge/Tamil-ta-4a5568?style=flat-square)
@@ -190,4 +191,4 @@ no build step, no external calls.
 MIT — see [LICENSE](LICENSE).
 
 > Based on [rust-stemmers](https://github.com/CurrySoftware/rust-stemmers) by CurrySoftware (MIT)
-> and [Snowball 3.0.1](https://snowballstem.org/) (BSD-3-Clause).
+> and [Snowball 3.1.1](https://snowballstem.org/) (BSD-3-Clause).

@@ -1,4 +1,4 @@
-//! Generated from russian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from russian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -202,10 +202,6 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return true
 }
 
-fn r_R2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p2 <= env.cursor
-}
-
 fn r_perfective_gerund(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
     env.ket = env.cursor;
@@ -355,7 +351,7 @@ fn r_derivational(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if !r_R2(env, context) {
+    if context.i_p2 > env.cursor {
         return false;
     }
     env.slice_del();

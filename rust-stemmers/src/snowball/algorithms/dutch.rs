@@ -1,4 +1,4 @@
-//! Generated from dutch.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from dutch.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -1180,10 +1180,7 @@ fn r_Lose_prefix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         env.cursor = v_4;
         break 'replab4;
     }
-    'lab8: loop {
-        if env.cursor < env.limit {
-            break 'lab8;
-        }
+    if env.cursor >= env.limit {
         return false;
     }
     env.cursor = v_2;
@@ -1200,15 +1197,15 @@ fn r_Lose_prefix(env: &mut SnowballEnv, context: &mut Context) -> bool {
     context.b_GE_removed = true;
     env.slice_del();
     let v_5 = env.cursor;
-    'lab9: loop {
+    'lab8: loop {
         env.bra = env.cursor;
         if (env.cursor + 1 >= env.limit || (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 171 as u8 && env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 175 as u8)) {
-            break 'lab9;
+            break 'lab8;
         }
 
         among_var = env.find_among(A_10, context);
         if among_var == 0 {
-            break 'lab9;
+            break 'lab8;
         }
         env.ket = env.cursor;
         match among_var {
@@ -1220,7 +1217,7 @@ fn r_Lose_prefix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             }
             _ => ()
         }
-        break 'lab9;
+        break 'lab8;
     }
     env.cursor = v_5;
     return true
@@ -1295,25 +1292,22 @@ fn r_Lose_infix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         env.cursor = v_4;
         break 'replab6;
     }
-    'lab10: loop {
-        if env.cursor < env.limit {
-            break 'lab10;
-        }
+    if env.cursor >= env.limit {
         return false;
     }
     env.cursor = v_2;
     context.b_GE_removed = true;
     env.slice_del();
     let v_5 = env.cursor;
-    'lab11: loop {
+    'lab10: loop {
         env.bra = env.cursor;
         if (env.cursor + 1 >= env.limit || (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 171 as u8 && env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 175 as u8)) {
-            break 'lab11;
+            break 'lab10;
         }
 
         among_var = env.find_among(A_11, context);
         if among_var == 0 {
-            break 'lab11;
+            break 'lab10;
         }
         env.ket = env.cursor;
         match among_var {
@@ -1325,7 +1319,7 @@ fn r_Lose_infix(env: &mut SnowballEnv, context: &mut Context) -> bool {
             }
             _ => ()
         }
-        break 'lab11;
+        break 'lab10;
     }
     env.cursor = v_5;
     return true

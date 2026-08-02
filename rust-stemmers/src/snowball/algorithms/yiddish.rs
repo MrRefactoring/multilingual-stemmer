@@ -1,4 +1,4 @@
-//! Generated from yiddish.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from yiddish.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -470,7 +470,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     }
     context.i_p1 = env.cursor;
     'lab15: loop {
-        if context.i_p1 >= i_x{
+        if context.i_p1 >= i_x {
             break 'lab15;
         }
         context.i_p1 = i_x;
@@ -481,10 +481,6 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_R1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return context.i_p1 <= env.cursor
-}
-
-fn r_R1plus3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p1 <= (env.cursor + 6)
 }
 
 fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
@@ -737,7 +733,7 @@ fn r_standard_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
                         }
                         let v_5 = env.limit - env.cursor;
                         'lab8: loop {
-                            if !r_R1plus3(env, context) {
+                            if context.i_p1 > (env.cursor + 6) {
                                 env.cursor = env.limit - v_5;
                                 break 'lab8;
                             }

@@ -1,4 +1,4 @@
-//! Generated from tamil.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from tamil.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -430,7 +430,7 @@ fn r_remove_question_prefixes(env: &mut SnowballEnv, context: &mut Context) -> b
 
 fn r_fix_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
     let mut among_var;
-    if (env.current.chars().count() as i32) <= 3{
+    if (env.current.chars().count() as i32) <= 3 {
         return false;
     }
     env.limit_backward = env.cursor;
@@ -771,7 +771,7 @@ fn r_remove_vetrumai_urupukal(env: &mut SnowballEnv, context: &mut Context) -> b
                     env.slice_from("\u{0BCD}");
                 }
                 4 => {
-                    if (env.current.chars().count() as i32) < 7{
+                    if (env.current.chars().count() as i32) < 7 {
                         break 'lab1;
                     }
                     env.slice_from("\u{0BCD}");

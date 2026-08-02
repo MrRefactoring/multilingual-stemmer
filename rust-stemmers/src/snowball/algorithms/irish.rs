@@ -1,4 +1,4 @@
-//! Generated from irish.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from irish.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -181,10 +181,6 @@ fn r_initial_morph(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return true
 }
 
-fn r_RV(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_pV <= env.cursor
-}
-
 fn r_R1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return context.i_p1 <= env.cursor
 }
@@ -268,7 +264,7 @@ fn r_verb_sfx(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.bra = env.cursor;
     match among_var {
         1 => {
-            if !r_RV(env, context) {
+            if context.i_pV > env.cursor {
                 return false;
             }
             env.slice_del();

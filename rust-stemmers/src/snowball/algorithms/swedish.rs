@@ -1,4 +1,4 @@
-//! Generated from swedish.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from swedish.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -121,7 +121,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.next_char();
     context.i_p1 = env.cursor;
     'lab0: loop {
-        if context.i_p1 >= i_x{
+        if context.i_p1 >= i_x {
             break 'lab0;
         }
         context.i_p1 = i_x;
@@ -138,21 +138,18 @@ fn r_et_condition(env: &mut SnowballEnv, context: &mut Context) -> bool {
     if !env.in_grouping_b(G_v, 97, 246) {
         return false;
     }
-    'lab0: loop {
-        if env.cursor > env.limit_backward {
-            break 'lab0;
-        }
+    if env.cursor <= env.limit_backward {
         return false;
     }
     env.cursor = env.limit - v_1;
     let v_2 = env.limit - env.cursor;
-    'lab1: loop {
+    'lab0: loop {
         if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1059076 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-            break 'lab1;
+            break 'lab0;
         }
 
         if env.find_among_b(A_0, context) == 0 {
-            break 'lab1;
+            break 'lab0;
         }
         return false;
     }

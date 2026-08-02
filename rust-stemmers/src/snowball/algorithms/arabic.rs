@@ -1,4 +1,4 @@
-//! Generated from arabic.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from arabic.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -559,7 +559,7 @@ fn r_Checks1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) <= 4{
+            if (env.current.chars().count() as i32) <= 4 {
                 return false;
             }
             context.b_is_noun = true;
@@ -567,7 +567,7 @@ fn r_Checks1(env: &mut SnowballEnv, context: &mut Context) -> bool {
             context.b_is_defined = true;
         }
         2 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             context.b_is_noun = true;
@@ -593,25 +593,25 @@ fn r_Prefix_Step1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_from("\u{0623}");
         }
         2 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_from("\u{0622}");
         }
         3 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_from("\u{0627}");
         }
         4 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_from("\u{0625}");
@@ -631,7 +631,7 @@ fn r_Prefix_Step2(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.ket = env.cursor;
-    if (env.current.chars().count() as i32) <= 3{
+    if (env.current.chars().count() as i32) <= 3 {
         return false;
     }
     'lab0: loop {
@@ -658,13 +658,13 @@ fn r_Prefix_Step3a_Noun(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) <= 5{
+            if (env.current.chars().count() as i32) <= 5 {
                 return false;
             }
             env.slice_del();
         }
         2 => {
-            if (env.current.chars().count() as i32) <= 4{
+            if (env.current.chars().count() as i32) <= 4 {
                 return false;
             }
             env.slice_del();
@@ -688,19 +688,19 @@ fn r_Prefix_Step3b_Noun(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_del();
         }
         2 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_from("\u{0628}");
         }
         3 => {
-            if (env.current.chars().count() as i32) <= 3{
+            if (env.current.chars().count() as i32) <= 3 {
                 return false;
             }
             env.slice_from("\u{0643}");
@@ -720,25 +720,25 @@ fn r_Prefix_Step3_Verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) <= 4{
+            if (env.current.chars().count() as i32) <= 4 {
                 return false;
             }
             env.slice_from("\u{064A}");
         }
         2 => {
-            if (env.current.chars().count() as i32) <= 4{
+            if (env.current.chars().count() as i32) <= 4 {
                 return false;
             }
             env.slice_from("\u{062A}");
         }
         3 => {
-            if (env.current.chars().count() as i32) <= 4{
+            if (env.current.chars().count() as i32) <= 4 {
                 return false;
             }
             env.slice_from("\u{0646}");
         }
         4 => {
-            if (env.current.chars().count() as i32) <= 4{
+            if (env.current.chars().count() as i32) <= 4 {
                 return false;
             }
             env.slice_from("\u{0623}");
@@ -758,7 +758,7 @@ fn r_Prefix_Step4_Verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.ket = env.cursor;
-    if (env.current.chars().count() as i32) <= 4{
+    if (env.current.chars().count() as i32) <= 4 {
         return false;
     }
     context.b_is_verb = true;
@@ -777,19 +777,19 @@ fn r_Suffix_Noun_Step1a(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.bra = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) < 4{
+            if (env.current.chars().count() as i32) < 4 {
                 return false;
             }
             env.slice_del();
         }
         2 => {
-            if (env.current.chars().count() as i32) < 5{
+            if (env.current.chars().count() as i32) < 5 {
                 return false;
             }
             env.slice_del();
         }
         3 => {
-            if (env.current.chars().count() as i32) < 6{
+            if (env.current.chars().count() as i32) < 6 {
                 return false;
             }
             env.slice_del();
@@ -805,7 +805,7 @@ fn r_Suffix_Noun_Step1b(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) <= 5{
+    if (env.current.chars().count() as i32) <= 5 {
         return false;
     }
     env.slice_del();
@@ -818,7 +818,7 @@ fn r_Suffix_Noun_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) <= 4{
+    if (env.current.chars().count() as i32) <= 4 {
         return false;
     }
     env.slice_del();
@@ -831,7 +831,7 @@ fn r_Suffix_Noun_Step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 5{
+    if (env.current.chars().count() as i32) < 5 {
         return false;
     }
     env.slice_del();
@@ -844,7 +844,7 @@ fn r_Suffix_Noun_Step2c1(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 4{
+    if (env.current.chars().count() as i32) < 4 {
         return false;
     }
     env.slice_del();
@@ -857,7 +857,7 @@ fn r_Suffix_Noun_Step2c2(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 4{
+    if (env.current.chars().count() as i32) < 4 {
         return false;
     }
     env.slice_del();
@@ -870,7 +870,7 @@ fn r_Suffix_Noun_Step3(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 3{
+    if (env.current.chars().count() as i32) < 3 {
         return false;
     }
     env.slice_del();
@@ -887,19 +887,19 @@ fn r_Suffix_Verb_Step1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.bra = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) < 4{
+            if (env.current.chars().count() as i32) < 4 {
                 return false;
             }
             env.slice_del();
         }
         2 => {
-            if (env.current.chars().count() as i32) < 5{
+            if (env.current.chars().count() as i32) < 5 {
                 return false;
             }
             env.slice_del();
         }
         3 => {
-            if (env.current.chars().count() as i32) < 6{
+            if (env.current.chars().count() as i32) < 6 {
                 return false;
             }
             env.slice_del();
@@ -919,25 +919,25 @@ fn r_Suffix_Verb_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.bra = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) < 4{
+            if (env.current.chars().count() as i32) < 4 {
                 return false;
             }
             env.slice_del();
         }
         2 => {
-            if (env.current.chars().count() as i32) < 5{
+            if (env.current.chars().count() as i32) < 5 {
                 return false;
             }
             env.slice_del();
         }
         3 => {
-            if (env.current.chars().count() as i32) <= 5{
+            if (env.current.chars().count() as i32) <= 5 {
                 return false;
             }
             env.slice_del();
         }
         4 => {
-            if (env.current.chars().count() as i32) < 6{
+            if (env.current.chars().count() as i32) < 6 {
                 return false;
             }
             env.slice_del();
@@ -957,7 +957,7 @@ fn r_Suffix_Verb_Step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 5{
+    if (env.current.chars().count() as i32) < 5 {
         return false;
     }
     env.slice_del();
@@ -978,13 +978,13 @@ fn r_Suffix_Verb_Step2c(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.bra = env.cursor;
     match among_var {
         1 => {
-            if (env.current.chars().count() as i32) < 4{
+            if (env.current.chars().count() as i32) < 4 {
                 return false;
             }
             env.slice_del();
         }
         2 => {
-            if (env.current.chars().count() as i32) < 6{
+            if (env.current.chars().count() as i32) < 6 {
                 return false;
             }
             env.slice_del();

@@ -1,4 +1,4 @@
-//! Generated from serbian.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from serbian.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -2513,7 +2513,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         env.next_char();
         context.i_p1 = env.cursor;
-        if context.i_p1 >= 2{
+        if context.i_p1 >= 2 {
             break 'lab1;
         }
         if !env.go_in_grouping(G_v, 97, 117) {
@@ -2540,7 +2540,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         'lab5: loop {
             'lab6: loop {
-                if env.cursor < 2{
+                if env.cursor < 2 {
                     break 'lab6;
                 }
                 break 'lab5;
@@ -2551,7 +2551,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
             env.next_char();
             break 'lab5;
         }
-        if (context.i_p1 - env.cursor) <= 1{
+        if (context.i_p1 - env.cursor) <= 1 {
             break 'lab2;
         }
         context.i_p1 = env.cursor;
@@ -3534,7 +3534,7 @@ fn r_Step_3(env: &mut SnowballEnv, context: &mut Context) -> bool {
     if !r_R1(env, context) {
         return false;
     }
-    env.slice_from("");
+    env.slice_del();
     return true
 }
 

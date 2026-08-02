@@ -41,6 +41,7 @@ describe('Stemming algorithms', () => {
   testLanguage('ro',  Languages.Romanian);
   testLanguage('ru',  Languages.Russian);
   testLanguage('sr',  Languages.Serbian);
+  testLanguage('st',  Languages.Sesotho);
   testLanguage('es',  Languages.Spanish);
   testLanguage('sv',  Languages.Swedish);
   testLanguage('ta',  Languages.Tamil);

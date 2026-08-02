@@ -1,4 +1,4 @@
-//! Generated from czech.sbl by Snowball 3.0.0 - https://snowballstem.org/
+//! Generated from czech.sbl by Snowball 3.1.1 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -172,7 +172,7 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
         env.next_char();
         context.i_p1 = env.cursor;
         'lab3: loop {
-            if context.i_p1 >= i_x{
+            if context.i_p1 >= i_x {
                 break 'lab3;
             }
             context.i_p1 = i_x;
@@ -182,10 +182,6 @@ fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
     }
     env.cursor = v_2;
     return true
-}
-
-fn r_R1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p1 <= env.cursor
 }
 
 fn r_palatalise_e(env: &mut SnowballEnv, context: &mut Context) -> bool {
@@ -254,7 +250,7 @@ fn r_possessive_suffix(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if !r_R1(env, context) {
+    if context.i_p1 > env.cursor {
         return false;
     }
     match among_var {
