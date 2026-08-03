@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.1.1] — 2026-08-03
+
+### Fixed
+- **The published npm package was missing `dist/browser/`** — the WASM binary and its glue code —
+  which made every import fail with `ERR_MODULE_NOT_FOUND`. `wasm-pack` writes a `.gitignore`
+  containing `*` into its output directory and npm honours nested `.gitignore` files when packing,
+  so the whole directory was silently dropped from the tarball. `prepare.ts` now removes that file
+  along with the other `wasm-pack` leftovers. Affects **2.0.0** and **2.1.0**, both unusable
+
+---
+
 ## [2.1.0] — 2026-08-03
 
 ### Added
