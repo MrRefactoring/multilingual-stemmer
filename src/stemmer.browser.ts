@@ -1,8 +1,8 @@
 import { Stemmer, Languages } from './wasm.browser.js';
-import { buildIsoMap, buildResolver } from './iso-map.js';
+import { buildLanguageMap, buildResolver } from './language-map.js';
 import type { Language, StemmerInstance } from './interfaces/index.js';
 
-const resolveLanguage = buildResolver(buildIsoMap(Languages));
+const resolveLanguage = buildResolver(buildLanguageMap(Languages));
 const cache = new Map<number, StemmerInstance>();
 
 export { Languages };

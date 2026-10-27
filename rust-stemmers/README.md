@@ -1,42 +1,16 @@
-# Rust Stemmers
+# Rust-ядро multilingual-stemmer
 
-This crate implements some stemmer algorithms found in the [snowball project](http://snowballstem.org/) which are compiled to rust using the rust-backend of the [snowball compiler](https://github.com/snowballstem/snowball).
+Локальная адаптация [rust-stemmers](https://github.com/CurrySoftware/rust-stemmers) с WebAssembly-биндингами. Содержит 36 алгоритмов из Snowball 3.2.0: 35 языков и Early Modern English.
 
-# Supported Algorithms
-
--   Arabic
--   Danish
--   Dutch
--   English
--   French
--   German
--   Greek
--   Hungarian
--   Italian
--   Portuguese
--   Romanian
--   Russian
--   Spanish
--   Swedish
--   Tamil
--   Turkish
-
-
-# Usage
+`src/lib.rs` экспортирует `Languages` и `Stemmer` через `wasm-bindgen`. Алгоритмы в `src/snowball/algorithms/` генерируются официальным компилятором Snowball; `src/snowball/` содержит его Rust-runtime.
 
 ```rust
-extern crate rust_stemmers;
-use rust_stemmers::{Algorithm, Stemmer};
+use rust_stemmers::{Languages, Stemmer};
 
-// Create a stemmer for the english language
-let en_stemmer = Stemmer::create(Algorithm::English);
-
-// Stemm the word "fruitlessly"
-// Please be aware that all algorithms expect their input to only contain lowercase characters.
-assert_eq!(en_stemmer.stem("fruitlessly"), "fruitless");
+let stemmer = Stemmer::new(Languages::Ukrainian);
+assert_eq!(stemmer.stem("акварельний"), "акварел");
 ```
 
-# Related Projects
+Алгоритмы ожидают слова в нижнем регистре. Числовые значения `Languages` не входят в контракт API.
 
--   The [stemmer](https://github.com/lise-henry/stemmer-rs) crate provides bindings to the C Snowball implementation.
-
+Источники, сборка и порядок обновления описаны в [CONTRIBUTING.md](../CONTRIBUTING.md). Публичный Node.js / Browser API — в [README.md](../README.md). Уведомления о лицензиях — в [THIRD_PARTY_NOTICES](../THIRD_PARTY_NOTICES).

@@ -11,13 +11,13 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - uses: dtolnay/rust-toolchain@stable
         with:
           targets: wasm32-unknown-unknown
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@v6
         with:
           path: |
             ~/.cargo/registry
@@ -25,16 +25,17 @@ jobs:
             rust-stemmers/target
           key: ${{ runner.os }}-cargo-${{ hashFiles('rust-stemmers/Cargo.toml') }}
 
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
           registry-url: https://registry.npmjs.org
 
       - run: pnpm install
       - run: pnpm run compile
+      - run: pnpm test
 
       - name: Publish to npm
         run: pnpm publish --no-git-checks

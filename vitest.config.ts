@@ -4,6 +4,6 @@ export default defineConfig({
   test: {
     include: ['test/**/*.test.ts'],
     pool: 'forks',
-    singleFork: true,
+    maxWorkers: 1,
   },
 });

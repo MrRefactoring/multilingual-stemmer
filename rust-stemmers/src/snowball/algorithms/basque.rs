@@ -1,4 +1,4 @@
-//! Generated from basque.sbl by Snowball 3.1.1 - https://snowballstem.org/
+//! Generated from basque.sbl by Snowball 3.2.0 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -10,9 +10,6 @@ use crate::snowball::Among;
 
 #[derive(Clone)]
 struct Context {
-    i_p2: i32,
-    i_p1: i32,
-    i_pV: i32,
 }
 
 static A_0: &'static [Among<Context>; 109] = &[
@@ -449,244 +446,216 @@ static A_2: &'static [Among<Context>; 19] = &[
 
 static G_v: &'static [u8; 3] = &[17, 65, 16];
 
-fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    context.i_pV = env.limit;
-    context.i_p1 = env.limit;
-    context.i_p2 = env.limit;
-    let v_1 = env.cursor;
-    'lab0: loop {
-        'lab1: loop {
-            let v_2 = env.cursor;
-            'lab2: loop {
-                if !env.in_grouping(G_v, 97, 117) {
-                    break 'lab2;
-                }
-                'lab3: loop {
-                    let v_3 = env.cursor;
-                    'lab4: loop {
-                        if !env.out_grouping(G_v, 97, 117) {
-                            break 'lab4;
-                        }
-                        if !env.go_out_grouping(G_v, 97, 117) {
-                            break 'lab4;
-                        }
-                        env.next_char();
-                        break 'lab3;
-                    }
-                    env.cursor = v_3;
-                    if !env.in_grouping(G_v, 97, 117) {
-                        break 'lab2;
-                    }
-                    if !env.go_in_grouping(G_v, 97, 117) {
-                        break 'lab2;
-                    }
-                    env.next_char();
-                    break 'lab3;
-                }
-                break 'lab1;
-            }
-            env.cursor = v_2;
-            if !env.out_grouping(G_v, 97, 117) {
-                break 'lab0;
-            }
-            'lab5: loop {
-                let v_4 = env.cursor;
-                'lab6: loop {
-                    if !env.out_grouping(G_v, 97, 117) {
-                        break 'lab6;
-                    }
-                    if !env.go_out_grouping(G_v, 97, 117) {
-                        break 'lab6;
-                    }
-                    env.next_char();
-                    break 'lab5;
-                }
-                env.cursor = v_4;
-                if !env.in_grouping(G_v, 97, 117) {
-                    break 'lab0;
-                }
-                if env.cursor >= env.limit {
-                    break 'lab0;
-                }
-                env.next_char();
-                break 'lab5;
-            }
-            break 'lab1;
-        }
-        context.i_pV = env.cursor;
-        break 'lab0;
-    }
-    env.cursor = v_1;
-    let v_5 = env.cursor;
-    'lab7: loop {
-        if !env.go_out_grouping(G_v, 97, 117) {
-            break 'lab7;
-        }
-        env.next_char();
-        if !env.go_in_grouping(G_v, 97, 117) {
-            break 'lab7;
-        }
-        env.next_char();
-        context.i_p1 = env.cursor;
-        if !env.go_out_grouping(G_v, 97, 117) {
-            break 'lab7;
-        }
-        env.next_char();
-        if !env.go_in_grouping(G_v, 97, 117) {
-            break 'lab7;
-        }
-        env.next_char();
-        context.i_p2 = env.cursor;
-        break 'lab7;
-    }
-    env.cursor = v_5;
-    return true
-}
-
-fn r_RV(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_pV <= env.cursor
-}
-
-fn r_R2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p2 <= env.cursor
-}
-
-fn r_aditzak(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((70566434 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    among_var = env.find_among_b(A_0, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            if !r_RV(env, context) {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if !r_R2(env, context) {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_izenak(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((71162402 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    among_var = env.find_among_b(A_1, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            if !r_RV(env, context) {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if !r_R2(env, context) {
-                return false;
-            }
-            env.slice_del();
-        }
-        3 => {
-            env.slice_from("jok");
-        }
-        4 => {
-            if context.i_p1 > env.cursor {
-                return false;
-            }
-            env.slice_del();
-        }
-        5 => {
-            env.slice_from("tra");
-        }
-        6 => {
-            env.slice_from("minutu");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_adjetiboak(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((35362 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    among_var = env.find_among_b(A_2, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            if !r_RV(env, context) {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            env.slice_from("z");
-        }
-        _ => ()
-    }
-    return true
-}
-
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        i_p2: 0,
-        i_p1: 0,
-        i_pV: 0,
     };
-    r_mark_regions(env, context);
+    let mut among_var;
+    let mut i_p2 : i32;
+    let mut i_p1 : i32;
+    let mut i_pV : i32;
+    'lab0: loop {
+        i_pV = env.limit;
+        i_p1 = env.limit;
+        i_p2 = env.limit;
+        let v_1 = env.cursor;
+        'lab1: loop {
+            'lab2: loop {
+                let v_2 = env.cursor;
+                'lab3: loop {
+                    if !env.in_grouping(G_v, 97, 117) {
+                        break 'lab3;
+                    }
+                    'lab4: loop {
+                        let v_3 = env.cursor;
+                        'lab5: loop {
+                            if !env.out_grouping(G_v, 97, 117) {
+                                break 'lab5;
+                            }
+                            if !env.go_out_grouping(G_v, 97, 117) {
+                                break 'lab5;
+                            }
+                            env.next_char();
+                            break 'lab4;
+                        }
+                        env.cursor = v_3;
+                        if !env.in_grouping(G_v, 97, 117) {
+                            break 'lab3;
+                        }
+                        if !env.go_in_grouping(G_v, 97, 117) {
+                            break 'lab3;
+                        }
+                        env.next_char();
+                        break 'lab4;
+                    }
+                    break 'lab2;
+                }
+                env.cursor = v_2;
+                if !env.out_grouping(G_v, 97, 117) {
+                    break 'lab1;
+                }
+                'lab6: loop {
+                    let v_4 = env.cursor;
+                    'lab7: loop {
+                        if !env.out_grouping(G_v, 97, 117) {
+                            break 'lab7;
+                        }
+                        if !env.go_out_grouping(G_v, 97, 117) {
+                            break 'lab7;
+                        }
+                        env.next_char();
+                        break 'lab6;
+                    }
+                    env.cursor = v_4;
+                    if !env.in_grouping(G_v, 97, 117) {
+                        break 'lab1;
+                    }
+                    if env.cursor >= env.limit {
+                        break 'lab1;
+                    }
+                    env.next_char();
+                    break 'lab6;
+                }
+                break 'lab2;
+            }
+            i_pV = env.cursor;
+            break 'lab1;
+        }
+        env.cursor = v_1;
+        let v_5 = env.cursor;
+        'lab8: loop {
+            if !env.go_out_grouping(G_v, 97, 117) {
+                break 'lab8;
+            }
+            env.next_char();
+            if !env.go_in_grouping(G_v, 97, 117) {
+                break 'lab8;
+            }
+            env.next_char();
+            i_p1 = env.cursor;
+            if !env.go_out_grouping(G_v, 97, 117) {
+                break 'lab8;
+            }
+            env.next_char();
+            if !env.go_in_grouping(G_v, 97, 117) {
+                break 'lab8;
+            }
+            env.next_char();
+            i_p2 = env.cursor;
+            break 'lab8;
+        }
+        env.cursor = v_5;
+        break 'lab0;
+    }
     env.limit_backward = env.cursor;
     env.cursor = env.limit;
-    'replab0: loop{
-        let v_1 = env.limit - env.cursor;
-        'lab1: for _ in 0..1 {
-            if !r_aditzak(env, context) {
-                break 'lab1;
+    'replab9: loop{
+        let v_6 = env.limit - env.cursor;
+        'lab10: for _ in 0..1 {
+            env.ket = env.cursor;
+            if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((70566434 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                break 'lab10;
             }
-            continue 'replab0;
-        }
-        env.cursor = env.limit - v_1;
-        break 'replab0;
-    }
-    'replab2: loop{
-        let v_2 = env.limit - env.cursor;
-        'lab3: for _ in 0..1 {
-            if !r_izenak(env, context) {
-                break 'lab3;
+
+            among_var = env.find_among_b(A_0, context);
+            if among_var == 0 {
+                break 'lab10;
             }
-            continue 'replab2;
+            env.bra = env.cursor;
+            match among_var {
+                1 => {
+                    if i_pV > env.cursor {
+                        break 'lab10;
+                    }
+                    env.slice_del();
+                }
+                2 => {
+                    if i_p2 > env.cursor {
+                        break 'lab10;
+                    }
+                    env.slice_del();
+                }
+                _ => ()
+            }
+            continue 'replab9;
         }
-        env.cursor = env.limit - v_2;
-        break 'replab2;
+        env.cursor = env.limit - v_6;
+        break 'replab9;
     }
-    let v_3 = env.limit - env.cursor;
-    r_adjetiboak(env, context);
-    env.cursor = env.limit - v_3;
+    'replab11: loop{
+        let v_7 = env.limit - env.cursor;
+        'lab12: for _ in 0..1 {
+            env.ket = env.cursor;
+            if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((71162402 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                break 'lab12;
+            }
+
+            among_var = env.find_among_b(A_1, context);
+            if among_var == 0 {
+                break 'lab12;
+            }
+            env.bra = env.cursor;
+            match among_var {
+                1 => {
+                    if i_pV > env.cursor {
+                        break 'lab12;
+                    }
+                    env.slice_del();
+                }
+                2 => {
+                    if i_p2 > env.cursor {
+                        break 'lab12;
+                    }
+                    env.slice_del();
+                }
+                3 => {
+                    env.slice_from("jok");
+                }
+                4 => {
+                    if i_p1 > env.cursor {
+                        break 'lab12;
+                    }
+                    env.slice_del();
+                }
+                5 => {
+                    env.slice_from("tra");
+                }
+                6 => {
+                    env.slice_from("minutu");
+                }
+                _ => ()
+            }
+            continue 'replab11;
+        }
+        env.cursor = env.limit - v_7;
+        break 'replab11;
+    }
+    let v_8 = env.limit - env.cursor;
+    'lab13: loop {
+        env.ket = env.cursor;
+        if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((35362 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+            break 'lab13;
+        }
+
+        among_var = env.find_among_b(A_2, context);
+        if among_var == 0 {
+            break 'lab13;
+        }
+        env.bra = env.cursor;
+        match among_var {
+            1 => {
+                if i_pV > env.cursor {
+                    break 'lab13;
+                }
+                env.slice_del();
+            }
+            2 => {
+                env.slice_from("z");
+            }
+            _ => ()
+        }
+        break 'lab13;
+    }
+    env.cursor = env.limit - v_8;
     env.cursor = env.limit_backward;
     return true
 }

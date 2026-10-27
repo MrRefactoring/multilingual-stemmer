@@ -3,9 +3,10 @@ import { Languages, stem } from '../dist/index.js';
 import { loadVoc, loadRes } from './utils/loadData.js';
 
 const testLanguage = (langCode: string, language: number) => {
-  test(String(language), () => {
+  test(langCode, () => {
     const voc = loadVoc(langCode);
     const res = loadRes(langCode);
+    expect(res).toHaveLength(voc.length);
     voc.forEach((word, i) => {
       expect(stem(language, word), `"${word}"`).toBe(res[i]);
     });
@@ -20,6 +21,7 @@ describe('Stemming algorithms', () => {
   testLanguage('cs',  Languages.Czech);
   testLanguage('da',  Languages.Danish);
   testLanguage('nl',  Languages.Dutch);
+  testLanguage('earlymodernenglish', Languages.EarlyModernEnglish);
   testLanguage('en',  Languages.English);
   testLanguage('eo',  Languages.Esperanto);
   testLanguage('et',  Languages.Estonian);
@@ -46,5 +48,6 @@ describe('Stemming algorithms', () => {
   testLanguage('sv',  Languages.Swedish);
   testLanguage('ta',  Languages.Tamil);
   testLanguage('tr',  Languages.Turkish);
+  testLanguage('uk',  Languages.Ukrainian);
   testLanguage('yi',  Languages.Yiddish);
 });

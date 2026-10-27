@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest';
-import { Languages, createStemmer, stem, english } from '../dist/index.js';
+import { Languages, createStemmer, stem, english, earlyModernEnglish, ukrainian } from '../dist/index.js';
 
 describe('createStemmer', () => {
   test('returns a function', () => {
@@ -28,7 +28,7 @@ describe('createStemmer', () => {
   });
 
   test('throws on unknown ISO code', () => {
-    expect(() => createStemmer('xx' as 'en')).toThrow('Unknown ISO language code');
+    expect(() => createStemmer('xx' as 'en')).toThrow('Unknown language identifier');
   });
 });
 
@@ -49,5 +49,52 @@ describe('stem', () => {
 describe('language functions', () => {
   test('english()', () => {
     expect(english('fruitlessly')).toBe('fruitless');
+  });
+});
+
+describe.each([
+  { name: 'Ukrainian', identifier: 'uk' as const, variant: 'Ukrainian', named: ukrainian, word: 'акварельний', expected: 'акварел' },
+  { name: 'Early Modern English', identifier: 'earlymodernenglish' as const, variant: 'EarlyModernEnglish', named: earlyModernEnglish, word: 'bringeth', expected: 'bring' },
+])('$name API', ({ identifier, variant, named, word, expected }) => {
+  test('named export', () => {
+    expect(named(word)).toBe(expected);
+  });
+
+  test('factory with string identifier', () => {
+    expect(createStemmer(identifier)(word)).toBe(expected);
+  });
+
+  test('factory with enum', () => {
+    expect(createStemmer(Languages[variant])(word)).toBe(expected);
+  });
+
+  test('stem with string identifier', () => {
+    expect(stem(identifier, word)).toBe(expected);
+  });
+
+  test('stem with enum', () => {
+    expect(stem(Languages[variant], word)).toBe(expected);
+  });
+
+  test('empty input', () => {
+    expect(named('')).toBe('');
+  });
+});
+
+describe('Snowball 3.2.0 regressions', () => {
+  test.each([
+    ["o'erflowing", 'overflow'],
+    ['goſpel', 'gospel'],
+    ['runneth', 'run'],
+  ])('Early Modern English: %s', (word, expected) => {
+    expect(earlyModernEnglish(word)).toBe(expected);
+  });
+
+  test('modern English handles historical forms independently', () => {
+    expect(english('bringeth')).toBe('bringeth');
+  });
+
+  test('French colloquial elision', () => {
+    expect(stem('fr', "z'amis")).toBe('amis');
   });
 });

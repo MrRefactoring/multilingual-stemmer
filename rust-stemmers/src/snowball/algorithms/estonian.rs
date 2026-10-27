@@ -1,4 +1,4 @@
-//! Generated from estonian.sbl by Snowball 3.1.1 - https://snowballstem.org/
+//! Generated from estonian.sbl by Snowball 3.2.0 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -10,7 +10,6 @@ use crate::snowball::Among;
 
 #[derive(Clone)]
 struct Context {
-    i_p1: i32,
 }
 
 static A_0: &'static [Among<Context>; 2] = &[
@@ -420,548 +419,504 @@ static G_KI: &'static [u8; 36] = &[117, 66, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
 static G_GI: &'static [u8; 20] = &[21, 123, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 48, 8];
 
-fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    context.i_p1 = env.limit;
-    'lab0: loop {
-        let v_1 = env.cursor;
-        'lab1: loop {
-            if !env.hop(2) {
-                break 'lab1;
-            }
-            'golab2: loop {
-                'lab3: loop {
-                    if !env.eq_s(&"'") {
-                        break 'lab3;
-                    }
-                    break 'golab2;
-                }
-                if env.cursor >= env.limit {
-                    break 'lab1;
-                }
-                env.next_char();
-            }
-            break 'lab0;
-        }
-        env.cursor = v_1;
-        if !env.go_out_grouping(G_V1, 97, 252) {
-            return false;
-        }
-        env.next_char();
-        if !env.go_in_grouping(G_V1, 97, 252) {
-            return false;
-        }
-        env.next_char();
-        break 'lab0;
-    }
-    context.i_p1 = env.cursor;
-    return true
-}
-
-fn r_emphasis(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 105 as u8) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    among_var = env.find_among_b(A_0, context);
-    if among_var == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    let v_2 = env.limit - env.cursor;
-    if !env.hop_back(4) {
-        return false;
-    }
-    env.cursor = env.limit - v_2;
-    match among_var {
-        1 => {
-            let v_3 = env.limit - env.cursor;
-            if !env.in_grouping_b(G_GI, 97, 252) {
-                return false;
-            }
-            env.cursor = env.limit - v_3;
-            let v_4 = env.limit - env.cursor;
-            'lab0: loop {
-                if !r_LONGV(env, context) {
-                    break 'lab0;
-                }
-                return false;
-            }
-            env.cursor = env.limit - v_4;
-            env.slice_del();
-        }
-        2 => {
-            if !env.in_grouping_b(G_KI, 98, 382) {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((540726 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    among_var = env.find_among_b(A_1, context);
-    if among_var == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    match among_var {
-        1 => {
-            env.slice_del();
-        }
-        2 => {
-            env.slice_from("a");
-        }
-        3 => {
-            if !env.in_grouping_b(G_V1, 97, 252) {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
 fn r_LONGV(env: &mut SnowballEnv, context: &mut Context) -> bool {
     return env.find_among_b(A_2, context) != 0;
 }
 
-fn r_i_plural(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if !env.eq_s_b(&"i") {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    if !env.in_grouping_b(G_RV, 39, 117) {
-        return false;
-    }
-    env.slice_del();
-    return true
-}
-
-fn r_special_noun_endings(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor - 3 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1049120 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    among_var = env.find_among_b(A_3, context);
-    if among_var == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    match among_var {
-        1 => {
-            env.slice_from("lase");
-        }
-        2 => {
-            env.slice_from("mise");
-        }
-        3 => {
-            env.slice_from("lise");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_case_ending(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1576994 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    among_var = env.find_among_b(A_4, context);
-    if among_var == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    match among_var {
-        1 => {
-            'lab0: loop {
-                'lab1: loop {
-                    if !env.in_grouping_b(G_RV, 39, 117) {
-                        break 'lab1;
-                    }
-                    break 'lab0;
-                }
-                if !r_LONGV(env, context) {
-                    return false;
-                }
-                break 'lab0;
-            }
-        }
-        2 => {
-            let v_2 = env.limit - env.cursor;
-            if !env.hop_back(4) {
-                return false;
-            }
-            env.cursor = env.limit - v_2;
-        }
-        _ => ()
-    }
-    env.slice_del();
-    return true
-}
-
-fn r_plural_three_first_cases(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 100 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 101 as u8)) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    among_var = env.find_among_b(A_6, context);
-    if among_var == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    match among_var {
-        1 => {
-            env.slice_from("iku");
-        }
-        2 => {
-            let v_2 = env.limit - env.cursor;
-            'lab0: loop {
-                if !r_LONGV(env, context) {
-                    break 'lab0;
-                }
-                return false;
-            }
-            env.cursor = env.limit - v_2;
-            env.slice_del();
-        }
-        3 => {
-            'lab1: loop {
-                let v_3 = env.limit - env.cursor;
-                'lab2: loop {
-                    let v_4 = env.limit - env.cursor;
-                    if !env.hop_back(4) {
-                        break 'lab2;
-                    }
-                    env.cursor = env.limit - v_4;
-                    if (env.cursor <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 115 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 116 as u8)) {among_var = 2;}
-                    else {
-                        among_var = env.find_among_b(A_5, context);
-                    }
-                    match among_var {
-                        1 => {
-                            env.slice_from("e");
-                        }
-                        2 => {
-                            env.slice_del();
-                        }
-                        _ => ()
-                    }
-                    break 'lab1;
-                }
-                env.cursor = env.limit - v_3;
-                env.slice_from("t");
-                break 'lab1;
-            }
-        }
-        4 => {
-            'lab3: loop {
-                'lab4: loop {
-                    if !env.in_grouping_b(G_RV, 39, 117) {
-                        break 'lab4;
-                    }
-                    break 'lab3;
-                }
-                if !r_LONGV(env, context) {
-                    return false;
-                }
-                break 'lab3;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_nu(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor - 1 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 97 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 117 as u8)) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    if env.find_among_b(A_7, context) == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    env.slice_del();
-    return true
-}
-
-fn r_undouble_kpt(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if !env.in_grouping_b(G_V1, 97, 252) {
-        return false;
-    }
-    if context.i_p1 > env.cursor {
-        return false;
-    }
-    env.ket = env.cursor;
-    if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1116160 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    among_var = env.find_among_b(A_8, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            env.slice_from("k");
-        }
-        2 => {
-            env.slice_from("p");
-        }
-        3 => {
-            env.slice_from("t");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_degrees(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    if env.cursor < context.i_p1 {
-        return false;
-    }
-    let v_1 = env.limit_backward;
-    env.limit_backward = context.i_p1;
-    env.ket = env.cursor;
-    if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((8706 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        env.limit_backward = v_1;
-        return false;
-    }
-
-    among_var = env.find_among_b(A_9, context);
-    if among_var == 0 {
-        env.limit_backward = v_1;
-        return false;
-    }
-    env.bra = env.cursor;
-    env.limit_backward = v_1;
-    match among_var {
-        1 => {
-            if !env.in_grouping_b(G_RV, 39, 117) {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_substantive(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let v_1 = env.limit - env.cursor;
-    r_special_noun_endings(env, context);
-    env.cursor = env.limit - v_1;
-    let v_2 = env.limit - env.cursor;
-    r_case_ending(env, context);
-    env.cursor = env.limit - v_2;
-    let v_3 = env.limit - env.cursor;
-    r_plural_three_first_cases(env, context);
-    env.cursor = env.limit - v_3;
-    let v_4 = env.limit - env.cursor;
-    r_degrees(env, context);
-    env.cursor = env.limit - v_4;
-    let v_5 = env.limit - env.cursor;
-    r_i_plural(env, context);
-    env.cursor = env.limit - v_5;
-    let v_6 = env.limit - env.cursor;
-    r_nu(env, context);
-    env.cursor = env.limit - v_6;
-    return true
-}
-
-fn r_verb_exceptions(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.bra = env.cursor;
-    among_var = env.find_among(A_10, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    if env.cursor < env.limit {
-        return false;
-    }
-    match among_var {
-        1 => {
-            env.slice_from("joo");
-        }
-        2 => {
-            env.slice_from("saa");
-        }
-        3 => {
-            env.slice_from("viima");
-        }
-        4 => {
-            env.slice_from("keesi");
-        }
-        5 => {
-            env.slice_from("löö");
-        }
-        6 => {
-            env.slice_from("lõi");
-        }
-        7 => {
-            env.slice_from("loo");
-        }
-        8 => {
-            env.slice_from("käisi");
-        }
-        9 => {
-            env.slice_from("söö");
-        }
-        10 => {
-            env.slice_from("too");
-        }
-        11 => {
-            env.slice_from("võisi");
-        }
-        12 => {
-            env.slice_from("jääma");
-        }
-        13 => {
-            env.slice_from("müüsi");
-        }
-        14 => {
-            env.slice_from("luge");
-        }
-        15 => {
-            env.slice_from("põde");
-        }
-        16 => {
-            env.slice_from("ladu");
-        }
-        17 => {
-            env.slice_from("tegi");
-        }
-        18 => {
-            env.slice_from("nägi");
-        }
-        _ => ()
-    }
-    return true
-}
-
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        i_p1: 0,
     };
+    let mut among_var;
+    let mut i_p1 : i32;
     let v_1 = env.cursor;
     'lab0: loop {
-        if !r_verb_exceptions(env, context) {
+        env.bra = env.cursor;
+        among_var = env.find_among(A_10, context);
+        if among_var == 0 {
             break 'lab0;
+        }
+        env.ket = env.cursor;
+        if env.cursor < env.limit {
+            break 'lab0;
+        }
+        match among_var {
+            1 => {
+                env.slice_from("joo");
+            }
+            2 => {
+                env.slice_from("saa");
+            }
+            3 => {
+                env.slice_from("viima");
+            }
+            4 => {
+                env.slice_from("keesi");
+            }
+            5 => {
+                env.slice_from("löö");
+            }
+            6 => {
+                env.slice_from("lõi");
+            }
+            7 => {
+                env.slice_from("loo");
+            }
+            8 => {
+                env.slice_from("käisi");
+            }
+            9 => {
+                env.slice_from("söö");
+            }
+            10 => {
+                env.slice_from("too");
+            }
+            11 => {
+                env.slice_from("võisi");
+            }
+            12 => {
+                env.slice_from("jääma");
+            }
+            13 => {
+                env.slice_from("müüsi");
+            }
+            14 => {
+                env.slice_from("luge");
+            }
+            15 => {
+                env.slice_from("põde");
+            }
+            16 => {
+                env.slice_from("ladu");
+            }
+            17 => {
+                env.slice_from("tegi");
+            }
+            18 => {
+                env.slice_from("nägi");
+            }
+            _ => ()
         }
         return false;
     }
     env.cursor = v_1;
     let v_2 = env.cursor;
-    r_mark_regions(env, context);
-    env.cursor = v_2;
-    env.limit_backward = env.cursor;
-    env.cursor = env.limit;
-    let v_3 = env.limit - env.cursor;
-    r_emphasis(env, context);
-    env.cursor = env.limit - v_3;
-    let v_4 = env.limit - env.cursor;
     'lab1: loop {
+        i_p1 = env.limit;
         'lab2: loop {
-            let v_5 = env.limit - env.cursor;
+            let v_3 = env.cursor;
             'lab3: loop {
-                if !r_verb(env, context) {
+                if !env.hop(2) {
                     break 'lab3;
+                }
+                'golab4: loop {
+                    'lab5: loop {
+                        if !env.eq_s(&"'") {
+                            break 'lab5;
+                        }
+                        break 'golab4;
+                    }
+                    if env.cursor >= env.limit {
+                        break 'lab3;
+                    }
+                    env.next_char();
                 }
                 break 'lab2;
             }
-            env.cursor = env.limit - v_5;
-            r_substantive(env, context);
+            env.cursor = v_3;
+            if !env.go_out_grouping(G_V1, 97, 252) {
+                break 'lab1;
+            }
+            env.next_char();
+            if !env.go_in_grouping(G_V1, 97, 252) {
+                break 'lab1;
+            }
+            env.next_char();
             break 'lab2;
         }
+        i_p1 = env.cursor;
         break 'lab1;
     }
+    env.cursor = v_2;
+    env.limit_backward = env.cursor;
+    env.cursor = env.limit;
+    let v_4 = env.limit - env.cursor;
+    'lab6: loop {
+        if env.cursor < i_p1 {
+            break 'lab6;
+        }
+        let v_5 = env.limit_backward;
+        env.limit_backward = i_p1;
+        env.ket = env.cursor;
+        if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 105 as u8) {
+            env.limit_backward = v_5;
+            break 'lab6;
+        }
+
+        among_var = env.find_among_b(A_0, context);
+        if among_var == 0 {
+            env.limit_backward = v_5;
+            break 'lab6;
+        }
+        env.bra = env.cursor;
+        env.limit_backward = v_5;
+        let v_6 = env.limit - env.cursor;
+        if !env.hop_back(4) {
+            break 'lab6;
+        }
+        env.cursor = env.limit - v_6;
+        match among_var {
+            1 => {
+                let v_7 = env.limit - env.cursor;
+                if !env.in_grouping_b(G_GI, 97, 252) {
+                    break 'lab6;
+                }
+                env.cursor = env.limit - v_7;
+                let v_8 = env.limit - env.cursor;
+                'lab7: loop {
+                    if !r_LONGV(env, context) {
+                        break 'lab7;
+                    }
+                    break 'lab6;
+                }
+                env.cursor = env.limit - v_8;
+                env.slice_del();
+            }
+            2 => {
+                if !env.in_grouping_b(G_KI, 98, 382) {
+                    break 'lab6;
+                }
+                env.slice_del();
+            }
+            _ => ()
+        }
+        break 'lab6;
+    }
     env.cursor = env.limit - v_4;
-    let v_6 = env.limit - env.cursor;
-    r_undouble_kpt(env, context);
-    env.cursor = env.limit - v_6;
+    let v_9 = env.limit - env.cursor;
+    'lab8: loop {
+        'lab9: loop {
+            let v_10 = env.limit - env.cursor;
+            'lab10: loop {
+                if env.cursor < i_p1 {
+                    break 'lab10;
+                }
+                let v_11 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((540726 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                    env.limit_backward = v_11;
+                    break 'lab10;
+                }
+
+                among_var = env.find_among_b(A_1, context);
+                if among_var == 0 {
+                    env.limit_backward = v_11;
+                    break 'lab10;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_11;
+                match among_var {
+                    1 => {
+                        env.slice_del();
+                    }
+                    2 => {
+                        env.slice_from("a");
+                    }
+                    3 => {
+                        if !env.in_grouping_b(G_V1, 97, 252) {
+                            break 'lab10;
+                        }
+                        env.slice_del();
+                    }
+                    _ => ()
+                }
+                break 'lab9;
+            }
+            env.cursor = env.limit - v_10;
+            let v_12 = env.limit - env.cursor;
+            'lab11: loop {
+                if env.cursor < i_p1 {
+                    break 'lab11;
+                }
+                let v_13 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if (env.cursor - 3 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1049120 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                    env.limit_backward = v_13;
+                    break 'lab11;
+                }
+
+                among_var = env.find_among_b(A_3, context);
+                if among_var == 0 {
+                    env.limit_backward = v_13;
+                    break 'lab11;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_13;
+                match among_var {
+                    1 => {
+                        env.slice_from("lase");
+                    }
+                    2 => {
+                        env.slice_from("mise");
+                    }
+                    3 => {
+                        env.slice_from("lise");
+                    }
+                    _ => ()
+                }
+                break 'lab11;
+            }
+            env.cursor = env.limit - v_12;
+            let v_14 = env.limit - env.cursor;
+            'lab12: loop {
+                if env.cursor < i_p1 {
+                    break 'lab12;
+                }
+                let v_15 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1576994 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                    env.limit_backward = v_15;
+                    break 'lab12;
+                }
+
+                among_var = env.find_among_b(A_4, context);
+                if among_var == 0 {
+                    env.limit_backward = v_15;
+                    break 'lab12;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_15;
+                match among_var {
+                    1 => {
+                        'lab13: loop {
+                            'lab14: loop {
+                                if !env.in_grouping_b(G_RV, 39, 117) {
+                                    break 'lab14;
+                                }
+                                break 'lab13;
+                            }
+                            if !r_LONGV(env, context) {
+                                break 'lab12;
+                            }
+                            break 'lab13;
+                        }
+                    }
+                    2 => {
+                        let v_16 = env.limit - env.cursor;
+                        if !env.hop_back(4) {
+                            break 'lab12;
+                        }
+                        env.cursor = env.limit - v_16;
+                    }
+                    _ => ()
+                }
+                env.slice_del();
+                break 'lab12;
+            }
+            env.cursor = env.limit - v_14;
+            let v_17 = env.limit - env.cursor;
+            'lab15: loop {
+                if env.cursor < i_p1 {
+                    break 'lab15;
+                }
+                let v_18 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if (env.cursor <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 100 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 101 as u8)) {
+                    env.limit_backward = v_18;
+                    break 'lab15;
+                }
+
+                among_var = env.find_among_b(A_6, context);
+                if among_var == 0 {
+                    env.limit_backward = v_18;
+                    break 'lab15;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_18;
+                match among_var {
+                    1 => {
+                        env.slice_from("iku");
+                    }
+                    2 => {
+                        let v_19 = env.limit - env.cursor;
+                        'lab16: loop {
+                            if !r_LONGV(env, context) {
+                                break 'lab16;
+                            }
+                            break 'lab15;
+                        }
+                        env.cursor = env.limit - v_19;
+                        env.slice_del();
+                    }
+                    3 => {
+                        'lab17: loop {
+                            let v_20 = env.limit - env.cursor;
+                            'lab18: loop {
+                                let v_21 = env.limit - env.cursor;
+                                if !env.hop_back(4) {
+                                    break 'lab18;
+                                }
+                                env.cursor = env.limit - v_21;
+                                if (env.cursor <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 115 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 116 as u8)) {among_var = 2;}
+                                else {
+                                    among_var = env.find_among_b(A_5, context);
+                                }
+                                match among_var {
+                                    1 => {
+                                        env.slice_from("e");
+                                    }
+                                    2 => {
+                                        env.slice_del();
+                                    }
+                                    _ => ()
+                                }
+                                break 'lab17;
+                            }
+                            env.cursor = env.limit - v_20;
+                            env.slice_from("t");
+                            break 'lab17;
+                        }
+                    }
+                    4 => {
+                        'lab19: loop {
+                            'lab20: loop {
+                                if !env.in_grouping_b(G_RV, 39, 117) {
+                                    break 'lab20;
+                                }
+                                break 'lab19;
+                            }
+                            if !r_LONGV(env, context) {
+                                break 'lab15;
+                            }
+                            break 'lab19;
+                        }
+                        env.slice_del();
+                    }
+                    _ => ()
+                }
+                break 'lab15;
+            }
+            env.cursor = env.limit - v_17;
+            let v_22 = env.limit - env.cursor;
+            'lab21: loop {
+                if env.cursor < i_p1 {
+                    break 'lab21;
+                }
+                let v_23 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((8706 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                    env.limit_backward = v_23;
+                    break 'lab21;
+                }
+
+                among_var = env.find_among_b(A_9, context);
+                if among_var == 0 {
+                    env.limit_backward = v_23;
+                    break 'lab21;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_23;
+                match among_var {
+                    1 => {
+                        if !env.in_grouping_b(G_RV, 39, 117) {
+                            break 'lab21;
+                        }
+                        env.slice_del();
+                    }
+                    2 => {
+                        env.slice_del();
+                    }
+                    _ => ()
+                }
+                break 'lab21;
+            }
+            env.cursor = env.limit - v_22;
+            let v_24 = env.limit - env.cursor;
+            'lab22: loop {
+                if env.cursor < i_p1 {
+                    break 'lab22;
+                }
+                let v_25 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if !env.eq_s_b(&"i") {
+                    env.limit_backward = v_25;
+                    break 'lab22;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_25;
+                if !env.in_grouping_b(G_RV, 39, 117) {
+                    break 'lab22;
+                }
+                env.slice_del();
+                break 'lab22;
+            }
+            env.cursor = env.limit - v_24;
+            let v_26 = env.limit - env.cursor;
+            'lab23: loop {
+                if env.cursor < i_p1 {
+                    break 'lab23;
+                }
+                let v_27 = env.limit_backward;
+                env.limit_backward = i_p1;
+                env.ket = env.cursor;
+                if (env.cursor - 1 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 97 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 117 as u8)) {
+                    env.limit_backward = v_27;
+                    break 'lab23;
+                }
+
+                if env.find_among_b(A_7, context) == 0 {
+                    env.limit_backward = v_27;
+                    break 'lab23;
+                }
+                env.bra = env.cursor;
+                env.limit_backward = v_27;
+                env.slice_del();
+                break 'lab23;
+            }
+            env.cursor = env.limit - v_26;
+            break 'lab9;
+        }
+        break 'lab8;
+    }
+    env.cursor = env.limit - v_9;
+    let v_28 = env.limit - env.cursor;
+    'lab24: loop {
+        if !env.in_grouping_b(G_V1, 97, 252) {
+            break 'lab24;
+        }
+        if i_p1 > env.cursor {
+            break 'lab24;
+        }
+        env.ket = env.cursor;
+        if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((1116160 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+            break 'lab24;
+        }
+
+        among_var = env.find_among_b(A_8, context);
+        if among_var == 0 {
+            break 'lab24;
+        }
+        env.bra = env.cursor;
+        match among_var {
+            1 => {
+                env.slice_from("k");
+            }
+            2 => {
+                env.slice_from("p");
+            }
+            3 => {
+                env.slice_from("t");
+            }
+            _ => ()
+        }
+        break 'lab24;
+    }
+    env.cursor = env.limit - v_28;
     env.ket = env.cursor;
     if !env.eq_s_b(&"'") {
         return false;

@@ -1,4 +1,4 @@
-//! Generated from serbian.sbl by Snowball 3.1.1 - https://snowballstem.org/
+//! Generated from serbian.sbl by Snowball 3.2.0 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -10,8 +10,6 @@ use crate::snowball::Among;
 
 #[derive(Clone)]
 struct Context {
-    i_p1: i32,
-    b_no_diacritics: bool,
 }
 
 static A_0: &'static [Among<Context>; 30] = &[
@@ -2255,1321 +2253,1293 @@ static G_ca: &'static [u8; 36] = &[119, 95, 23, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 
 static G_rg: &'static [u8; 1] = &[1];
 
-fn r_cyr_to_lat(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    let v_1 = env.cursor;
-    'lab0: loop {
-        'replab1: loop{
-            let v_2 = env.cursor;
-            'lab2: for _ in 0..1 {
-                'golab3: loop {
-                    let v_3 = env.cursor;
-                    'lab4: loop {
-                        env.bra = env.cursor;
-                        among_var = env.find_among(A_0, context);
-                        if among_var == 0 {
-                            break 'lab4;
-                        }
-                        env.ket = env.cursor;
-                        match among_var {
-                            1 => {
-                                env.slice_from("a");
-                            }
-                            2 => {
-                                env.slice_from("b");
-                            }
-                            3 => {
-                                env.slice_from("v");
-                            }
-                            4 => {
-                                env.slice_from("g");
-                            }
-                            5 => {
-                                env.slice_from("d");
-                            }
-                            6 => {
-                                env.slice_from("đ");
-                            }
-                            7 => {
-                                env.slice_from("e");
-                            }
-                            8 => {
-                                env.slice_from("ž");
-                            }
-                            9 => {
-                                env.slice_from("z");
-                            }
-                            10 => {
-                                env.slice_from("i");
-                            }
-                            11 => {
-                                env.slice_from("j");
-                            }
-                            12 => {
-                                env.slice_from("k");
-                            }
-                            13 => {
-                                env.slice_from("l");
-                            }
-                            14 => {
-                                env.slice_from("lj");
-                            }
-                            15 => {
-                                env.slice_from("m");
-                            }
-                            16 => {
-                                env.slice_from("n");
-                            }
-                            17 => {
-                                env.slice_from("nj");
-                            }
-                            18 => {
-                                env.slice_from("o");
-                            }
-                            19 => {
-                                env.slice_from("p");
-                            }
-                            20 => {
-                                env.slice_from("r");
-                            }
-                            21 => {
-                                env.slice_from("s");
-                            }
-                            22 => {
-                                env.slice_from("t");
-                            }
-                            23 => {
-                                env.slice_from("ć");
-                            }
-                            24 => {
-                                env.slice_from("u");
-                            }
-                            25 => {
-                                env.slice_from("f");
-                            }
-                            26 => {
-                                env.slice_from("h");
-                            }
-                            27 => {
-                                env.slice_from("c");
-                            }
-                            28 => {
-                                env.slice_from("č");
-                            }
-                            29 => {
-                                env.slice_from("dž");
-                            }
-                            30 => {
-                                env.slice_from("š");
-                            }
-                            _ => ()
-                        }
-                        env.cursor = v_3;
-                        break 'golab3;
-                    }
-                    env.cursor = v_3;
-                    if env.cursor >= env.limit {
-                        break 'lab2;
-                    }
-                    env.next_char();
-                }
-                continue 'replab1;
-            }
-            env.cursor = v_2;
-            break 'replab1;
-        }
-        break 'lab0;
-    }
-    env.cursor = v_1;
-    return true
-}
-
-fn r_prelude(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let v_1 = env.cursor;
-    'lab0: loop {
-        'replab1: loop{
-            let v_2 = env.cursor;
-            'lab2: for _ in 0..1 {
-                'golab3: loop {
-                    let v_3 = env.cursor;
-                    'lab4: loop {
-                        if !env.in_grouping(G_ca, 98, 382) {
-                            break 'lab4;
-                        }
-                        env.bra = env.cursor;
-                        if !env.eq_s(&"ije") {
-                            break 'lab4;
-                        }
-                        env.ket = env.cursor;
-                        if !env.in_grouping(G_ca, 98, 382) {
-                            break 'lab4;
-                        }
-                        env.slice_from("e");
-                        env.cursor = v_3;
-                        break 'golab3;
-                    }
-                    env.cursor = v_3;
-                    if env.cursor >= env.limit {
-                        break 'lab2;
-                    }
-                    env.next_char();
-                }
-                continue 'replab1;
-            }
-            env.cursor = v_2;
-            break 'replab1;
-        }
-        break 'lab0;
-    }
-    env.cursor = v_1;
-    let v_4 = env.cursor;
-    'lab5: loop {
-        'replab6: loop{
-            let v_5 = env.cursor;
-            'lab7: for _ in 0..1 {
-                'golab8: loop {
-                    let v_6 = env.cursor;
-                    'lab9: loop {
-                        if !env.in_grouping(G_ca, 98, 382) {
-                            break 'lab9;
-                        }
-                        env.bra = env.cursor;
-                        if !env.eq_s(&"je") {
-                            break 'lab9;
-                        }
-                        env.ket = env.cursor;
-                        if !env.in_grouping(G_ca, 98, 382) {
-                            break 'lab9;
-                        }
-                        env.slice_from("e");
-                        env.cursor = v_6;
-                        break 'golab8;
-                    }
-                    env.cursor = v_6;
-                    if env.cursor >= env.limit {
-                        break 'lab7;
-                    }
-                    env.next_char();
-                }
-                continue 'replab6;
-            }
-            env.cursor = v_5;
-            break 'replab6;
-        }
-        break 'lab5;
-    }
-    env.cursor = v_4;
-    let v_7 = env.cursor;
-    'lab10: loop {
-        'replab11: loop{
-            let v_8 = env.cursor;
-            'lab12: for _ in 0..1 {
-                'golab13: loop {
-                    let v_9 = env.cursor;
-                    'lab14: loop {
-                        env.bra = env.cursor;
-                        if !env.eq_s(&"dj") {
-                            break 'lab14;
-                        }
-                        env.ket = env.cursor;
-                        env.slice_from("đ");
-                        env.cursor = v_9;
-                        break 'golab13;
-                    }
-                    env.cursor = v_9;
-                    if env.cursor >= env.limit {
-                        break 'lab12;
-                    }
-                    env.next_char();
-                }
-                continue 'replab11;
-            }
-            env.cursor = v_8;
-            break 'replab11;
-        }
-        break 'lab10;
-    }
-    env.cursor = v_7;
-    return true
-}
-
-fn r_mark_regions(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    context.b_no_diacritics = true;
-    let v_1 = env.cursor;
-    'lab0: loop {
-        if !env.go_out_grouping(G_sa, 263, 382) {
-            break 'lab0;
-        }
-        env.next_char();
-        context.b_no_diacritics = false;
-        break 'lab0;
-    }
-    env.cursor = v_1;
-    context.i_p1 = env.limit;
-    let v_2 = env.cursor;
-    'lab1: loop {
-        if !env.go_out_grouping(G_v, 97, 117) {
-            break 'lab1;
-        }
-        env.next_char();
-        context.i_p1 = env.cursor;
-        if context.i_p1 >= 2 {
-            break 'lab1;
-        }
-        if !env.go_in_grouping(G_v, 97, 117) {
-            break 'lab1;
-        }
-        env.next_char();
-        context.i_p1 = env.cursor;
-        break 'lab1;
-    }
-    env.cursor = v_2;
-    let v_3 = env.cursor;
-    'lab2: loop {
-        'golab3: loop {
-            'lab4: loop {
-                if !env.eq_s(&"r") {
-                    break 'lab4;
-                }
-                break 'golab3;
-            }
-            if env.cursor >= env.limit {
-                break 'lab2;
-            }
-            env.next_char();
-        }
-        'lab5: loop {
-            'lab6: loop {
-                if env.cursor < 2 {
-                    break 'lab6;
-                }
-                break 'lab5;
-            }
-            if !env.go_in_grouping(G_rg, 114, 114) {
-                break 'lab2;
-            }
-            env.next_char();
-            break 'lab5;
-        }
-        if (context.i_p1 - env.cursor) <= 1 {
-            break 'lab2;
-        }
-        context.i_p1 = env.cursor;
-        break 'lab2;
-    }
-    env.cursor = v_3;
-    return true
-}
-
-fn r_R1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    return context.i_p1 <= env.cursor
-}
-
-fn r_Step_1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    if (env.cursor - 2 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((3435050 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    among_var = env.find_among_b(A_1, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            env.slice_from("loga");
-        }
-        2 => {
-            env.slice_from("peh");
-        }
-        3 => {
-            env.slice_from("vojka");
-        }
-        4 => {
-            env.slice_from("bojka");
-        }
-        5 => {
-            env.slice_from("jak");
-        }
-        6 => {
-            env.slice_from("čajni");
-        }
-        7 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("cajni");
-        }
-        8 => {
-            env.slice_from("erni");
-        }
-        9 => {
-            env.slice_from("larni");
-        }
-        10 => {
-            env.slice_from("esni");
-        }
-        11 => {
-            env.slice_from("anjca");
-        }
-        12 => {
-            env.slice_from("ajca");
-        }
-        13 => {
-            env.slice_from("ljca");
-        }
-        14 => {
-            env.slice_from("ejca");
-        }
-        15 => {
-            env.slice_from("ojca");
-        }
-        16 => {
-            env.slice_from("ajka");
-        }
-        17 => {
-            env.slice_from("ojka");
-        }
-        18 => {
-            env.slice_from("šca");
-        }
-        19 => {
-            env.slice_from("ing");
-        }
-        20 => {
-            env.slice_from("tvenik");
-        }
-        21 => {
-            env.slice_from("tetika");
-        }
-        22 => {
-            env.slice_from("nstva");
-        }
-        23 => {
-            env.slice_from("nik");
-        }
-        24 => {
-            env.slice_from("tik");
-        }
-        25 => {
-            env.slice_from("zik");
-        }
-        26 => {
-            env.slice_from("snik");
-        }
-        27 => {
-            env.slice_from("kusi");
-        }
-        28 => {
-            env.slice_from("kusni");
-        }
-        29 => {
-            env.slice_from("kustva");
-        }
-        30 => {
-            env.slice_from("dušni");
-        }
-        31 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("dusni");
-        }
-        32 => {
-            env.slice_from("antni");
-        }
-        33 => {
-            env.slice_from("bilni");
-        }
-        34 => {
-            env.slice_from("tilni");
-        }
-        35 => {
-            env.slice_from("avilni");
-        }
-        36 => {
-            env.slice_from("silni");
-        }
-        37 => {
-            env.slice_from("gilni");
-        }
-        38 => {
-            env.slice_from("rilni");
-        }
-        39 => {
-            env.slice_from("nilni");
-        }
-        40 => {
-            env.slice_from("alni");
-        }
-        41 => {
-            env.slice_from("ozni");
-        }
-        42 => {
-            env.slice_from("ravi");
-        }
-        43 => {
-            env.slice_from("stavni");
-        }
-        44 => {
-            env.slice_from("pravni");
-        }
-        45 => {
-            env.slice_from("tivni");
-        }
-        46 => {
-            env.slice_from("sivni");
-        }
-        47 => {
-            env.slice_from("atni");
-        }
-        48 => {
-            env.slice_from("enta");
-        }
-        49 => {
-            env.slice_from("tetni");
-        }
-        50 => {
-            env.slice_from("pletni");
-        }
-        51 => {
-            env.slice_from("šavi");
-        }
-        52 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("savi");
-        }
-        53 => {
-            env.slice_from("anta");
-        }
-        54 => {
-            env.slice_from("ačka");
-        }
-        55 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("acka");
-        }
-        56 => {
-            env.slice_from("uška");
-        }
-        57 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("uska");
-        }
-        58 => {
-            env.slice_from("atka");
-        }
-        59 => {
-            env.slice_from("etka");
-        }
-        60 => {
-            env.slice_from("itka");
-        }
-        61 => {
-            env.slice_from("otka");
-        }
-        62 => {
-            env.slice_from("utka");
-        }
-        63 => {
-            env.slice_from("eskna");
-        }
-        64 => {
-            env.slice_from("tični");
-        }
-        65 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ticni");
-        }
-        66 => {
-            env.slice_from("ojska");
-        }
-        67 => {
-            env.slice_from("esma");
-        }
-        68 => {
-            env.slice_from("metra");
-        }
-        69 => {
-            env.slice_from("centra");
-        }
-        70 => {
-            env.slice_from("istra");
-        }
-        71 => {
-            env.slice_from("osti");
-        }
-        72 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("osti");
-        }
-        73 => {
-            env.slice_from("dba");
-        }
-        74 => {
-            env.slice_from("čka");
-        }
-        75 => {
-            env.slice_from("mca");
-        }
-        76 => {
-            env.slice_from("nca");
-        }
-        77 => {
-            env.slice_from("voljni");
-        }
-        78 => {
-            env.slice_from("anki");
-        }
-        79 => {
-            env.slice_from("vca");
-        }
-        80 => {
-            env.slice_from("sca");
-        }
-        81 => {
-            env.slice_from("rca");
-        }
-        82 => {
-            env.slice_from("alca");
-        }
-        83 => {
-            env.slice_from("elca");
-        }
-        84 => {
-            env.slice_from("olca");
-        }
-        85 => {
-            env.slice_from("njca");
-        }
-        86 => {
-            env.slice_from("ekta");
-        }
-        87 => {
-            env.slice_from("izma");
-        }
-        88 => {
-            env.slice_from("jebi");
-        }
-        89 => {
-            env.slice_from("baci");
-        }
-        90 => {
-            env.slice_from("ašni");
-        }
-        91 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("asni");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Step_2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    among_var = env.find_among_b(A_2, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    if !r_R1(env, context) {
-        return false;
-    }
-    match among_var {
-        1 => {
-            env.slice_from("sk");
-        }
-        2 => {
-            env.slice_from("šk");
-        }
-        3 => {
-            env.slice_from("stv");
-        }
-        4 => {
-            env.slice_from("štv");
-        }
-        5 => {
-            env.slice_from("tanij");
-        }
-        6 => {
-            env.slice_from("manij");
-        }
-        7 => {
-            env.slice_from("panij");
-        }
-        8 => {
-            env.slice_from("ranij");
-        }
-        9 => {
-            env.slice_from("ganij");
-        }
-        10 => {
-            env.slice_from("an");
-        }
-        11 => {
-            env.slice_from("in");
-        }
-        12 => {
-            env.slice_from("on");
-        }
-        13 => {
-            env.slice_from("n");
-        }
-        14 => {
-            env.slice_from("ać");
-        }
-        15 => {
-            env.slice_from("eć");
-        }
-        16 => {
-            env.slice_from("uć");
-        }
-        17 => {
-            env.slice_from("ugov");
-        }
-        18 => {
-            env.slice_from("ug");
-        }
-        19 => {
-            env.slice_from("log");
-        }
-        20 => {
-            env.slice_from("g");
-        }
-        21 => {
-            env.slice_from("rari");
-        }
-        22 => {
-            env.slice_from("oti");
-        }
-        23 => {
-            env.slice_from("si");
-        }
-        24 => {
-            env.slice_from("li");
-        }
-        25 => {
-            env.slice_from("uj");
-        }
-        26 => {
-            env.slice_from("caj");
-        }
-        27 => {
-            env.slice_from("čaj");
-        }
-        28 => {
-            env.slice_from("ćaj");
-        }
-        29 => {
-            env.slice_from("đaj");
-        }
-        30 => {
-            env.slice_from("laj");
-        }
-        31 => {
-            env.slice_from("raj");
-        }
-        32 => {
-            env.slice_from("bij");
-        }
-        33 => {
-            env.slice_from("cij");
-        }
-        34 => {
-            env.slice_from("dij");
-        }
-        35 => {
-            env.slice_from("lij");
-        }
-        36 => {
-            env.slice_from("nij");
-        }
-        37 => {
-            env.slice_from("mij");
-        }
-        38 => {
-            env.slice_from("žij");
-        }
-        39 => {
-            env.slice_from("gij");
-        }
-        40 => {
-            env.slice_from("fij");
-        }
-        41 => {
-            env.slice_from("pij");
-        }
-        42 => {
-            env.slice_from("rij");
-        }
-        43 => {
-            env.slice_from("sij");
-        }
-        44 => {
-            env.slice_from("tij");
-        }
-        45 => {
-            env.slice_from("zij");
-        }
-        46 => {
-            env.slice_from("nal");
-        }
-        47 => {
-            env.slice_from("ijal");
-        }
-        48 => {
-            env.slice_from("ozil");
-        }
-        49 => {
-            env.slice_from("olov");
-        }
-        50 => {
-            env.slice_from("ol");
-        }
-        51 => {
-            env.slice_from("lem");
-        }
-        52 => {
-            env.slice_from("ram");
-        }
-        53 => {
-            env.slice_from("ar");
-        }
-        54 => {
-            env.slice_from("dr");
-        }
-        55 => {
-            env.slice_from("er");
-        }
-        56 => {
-            env.slice_from("or");
-        }
-        57 => {
-            env.slice_from("es");
-        }
-        58 => {
-            env.slice_from("is");
-        }
-        59 => {
-            env.slice_from("taš");
-        }
-        60 => {
-            env.slice_from("naš");
-        }
-        61 => {
-            env.slice_from("jaš");
-        }
-        62 => {
-            env.slice_from("kaš");
-        }
-        63 => {
-            env.slice_from("baš");
-        }
-        64 => {
-            env.slice_from("gaš");
-        }
-        65 => {
-            env.slice_from("vaš");
-        }
-        66 => {
-            env.slice_from("eš");
-        }
-        67 => {
-            env.slice_from("iš");
-        }
-        68 => {
-            env.slice_from("ikat");
-        }
-        69 => {
-            env.slice_from("lat");
-        }
-        70 => {
-            env.slice_from("et");
-        }
-        71 => {
-            env.slice_from("est");
-        }
-        72 => {
-            env.slice_from("ist");
-        }
-        73 => {
-            env.slice_from("kst");
-        }
-        74 => {
-            env.slice_from("ost");
-        }
-        75 => {
-            env.slice_from("išt");
-        }
-        76 => {
-            env.slice_from("ova");
-        }
-        77 => {
-            env.slice_from("av");
-        }
-        78 => {
-            env.slice_from("ev");
-        }
-        79 => {
-            env.slice_from("iv");
-        }
-        80 => {
-            env.slice_from("ov");
-        }
-        81 => {
-            env.slice_from("mov");
-        }
-        82 => {
-            env.slice_from("lov");
-        }
-        83 => {
-            env.slice_from("el");
-        }
-        84 => {
-            env.slice_from("anj");
-        }
-        85 => {
-            env.slice_from("enj");
-        }
-        86 => {
-            env.slice_from("šnj");
-        }
-        87 => {
-            env.slice_from("en");
-        }
-        88 => {
-            env.slice_from("šn");
-        }
-        89 => {
-            env.slice_from("čin");
-        }
-        90 => {
-            env.slice_from("roši");
-        }
-        91 => {
-            env.slice_from("oš");
-        }
-        92 => {
-            env.slice_from("evit");
-        }
-        93 => {
-            env.slice_from("ovit");
-        }
-        94 => {
-            env.slice_from("ast");
-        }
-        95 => {
-            env.slice_from("k");
-        }
-        96 => {
-            env.slice_from("eva");
-        }
-        97 => {
-            env.slice_from("ava");
-        }
-        98 => {
-            env.slice_from("iva");
-        }
-        99 => {
-            env.slice_from("uva");
-        }
-        100 => {
-            env.slice_from("ir");
-        }
-        101 => {
-            env.slice_from("ač");
-        }
-        102 => {
-            env.slice_from("ača");
-        }
-        103 => {
-            env.slice_from("ni");
-        }
-        104 => {
-            env.slice_from("a");
-        }
-        105 => {
-            env.slice_from("ur");
-        }
-        106 => {
-            env.slice_from("astaj");
-        }
-        107 => {
-            env.slice_from("istaj");
-        }
-        108 => {
-            env.slice_from("ostaj");
-        }
-        109 => {
-            env.slice_from("aj");
-        }
-        110 => {
-            env.slice_from("asta");
-        }
-        111 => {
-            env.slice_from("ista");
-        }
-        112 => {
-            env.slice_from("osta");
-        }
-        113 => {
-            env.slice_from("ta");
-        }
-        114 => {
-            env.slice_from("inj");
-        }
-        115 => {
-            env.slice_from("as");
-        }
-        116 => {
-            env.slice_from("i");
-        }
-        117 => {
-            env.slice_from("luč");
-        }
-        118 => {
-            env.slice_from("jeti");
-        }
-        119 => {
-            env.slice_from("e");
-        }
-        120 => {
-            env.slice_from("at");
-        }
-        121 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("luc");
-        }
-        122 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("snj");
-        }
-        123 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("os");
-        }
-        124 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ac");
-        }
-        125 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ec");
-        }
-        126 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("uc");
-        }
-        127 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("rosi");
-        }
-        128 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("aca");
-        }
-        129 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("jas");
-        }
-        130 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("tas");
-        }
-        131 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("gas");
-        }
-        132 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("nas");
-        }
-        133 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("kas");
-        }
-        134 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("vas");
-        }
-        135 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("bas");
-        }
-        136 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("as");
-        }
-        137 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("cin");
-        }
-        138 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("astaj");
-        }
-        139 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("istaj");
-        }
-        140 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ostaj");
-        }
-        141 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("asta");
-        }
-        142 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ista");
-        }
-        143 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("osta");
-        }
-        144 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ava");
-        }
-        145 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("eva");
-        }
-        146 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("iva");
-        }
-        147 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("uva");
-        }
-        148 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ova");
-        }
-        149 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("jeti");
-        }
-        150 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("inj");
-        }
-        151 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ist");
-        }
-        152 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("es");
-        }
-        153 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("et");
-        }
-        154 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("is");
-        }
-        155 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ir");
-        }
-        156 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ur");
-        }
-        157 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("uj");
-        }
-        158 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ni");
-        }
-        159 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("sn");
-        }
-        160 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("ta");
-        }
-        161 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("a");
-        }
-        162 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("i");
-        }
-        163 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("e");
-        }
-        164 => {
-            if !context.b_no_diacritics {
-                return false;
-            }
-            env.slice_from("n");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Step_3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.ket = env.cursor;
-    if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((3188642 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    if env.find_among_b(A_3, context) == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    if !r_R1(env, context) {
-        return false;
-    }
-    env.slice_del();
-    return true
-}
-
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        i_p1: 0,
-        b_no_diacritics: false,
     };
-    r_cyr_to_lat(env, context);
-    r_prelude(env, context);
-    r_mark_regions(env, context);
-    env.limit_backward = env.cursor;
-    env.cursor = env.limit;
-    let v_1 = env.limit - env.cursor;
-    r_Step_1(env, context);
-    env.cursor = env.limit - v_1;
-    let v_2 = env.limit - env.cursor;
+    let mut among_var;
+    let mut i_p1 : i32;
+    let mut b_no_diacritics : bool;
     'lab0: loop {
+        let v_1 = env.cursor;
         'lab1: loop {
-            let v_3 = env.limit - env.cursor;
-            'lab2: loop {
-                if !r_Step_2(env, context) {
-                    break 'lab2;
+            'replab2: loop{
+                let v_2 = env.cursor;
+                'lab3: for _ in 0..1 {
+                    'golab4: loop {
+                        let v_3 = env.cursor;
+                        'lab5: loop {
+                            env.bra = env.cursor;
+                            among_var = env.find_among(A_0, context);
+                            if among_var == 0 {
+                                break 'lab5;
+                            }
+                            env.ket = env.cursor;
+                            match among_var {
+                                1 => {
+                                    env.slice_from("a");
+                                }
+                                2 => {
+                                    env.slice_from("b");
+                                }
+                                3 => {
+                                    env.slice_from("v");
+                                }
+                                4 => {
+                                    env.slice_from("g");
+                                }
+                                5 => {
+                                    env.slice_from("d");
+                                }
+                                6 => {
+                                    env.slice_from("đ");
+                                }
+                                7 => {
+                                    env.slice_from("e");
+                                }
+                                8 => {
+                                    env.slice_from("ž");
+                                }
+                                9 => {
+                                    env.slice_from("z");
+                                }
+                                10 => {
+                                    env.slice_from("i");
+                                }
+                                11 => {
+                                    env.slice_from("j");
+                                }
+                                12 => {
+                                    env.slice_from("k");
+                                }
+                                13 => {
+                                    env.slice_from("l");
+                                }
+                                14 => {
+                                    env.slice_from("lj");
+                                }
+                                15 => {
+                                    env.slice_from("m");
+                                }
+                                16 => {
+                                    env.slice_from("n");
+                                }
+                                17 => {
+                                    env.slice_from("nj");
+                                }
+                                18 => {
+                                    env.slice_from("o");
+                                }
+                                19 => {
+                                    env.slice_from("p");
+                                }
+                                20 => {
+                                    env.slice_from("r");
+                                }
+                                21 => {
+                                    env.slice_from("s");
+                                }
+                                22 => {
+                                    env.slice_from("t");
+                                }
+                                23 => {
+                                    env.slice_from("ć");
+                                }
+                                24 => {
+                                    env.slice_from("u");
+                                }
+                                25 => {
+                                    env.slice_from("f");
+                                }
+                                26 => {
+                                    env.slice_from("h");
+                                }
+                                27 => {
+                                    env.slice_from("c");
+                                }
+                                28 => {
+                                    env.slice_from("č");
+                                }
+                                29 => {
+                                    env.slice_from("dž");
+                                }
+                                30 => {
+                                    env.slice_from("š");
+                                }
+                                _ => ()
+                            }
+                            env.cursor = v_3;
+                            break 'golab4;
+                        }
+                        env.cursor = v_3;
+                        if env.cursor >= env.limit {
+                            break 'lab3;
+                        }
+                        env.next_char();
+                    }
+                    continue 'replab2;
                 }
-                break 'lab1;
-            }
-            env.cursor = env.limit - v_3;
-            if !r_Step_3(env, context) {
-                break 'lab0;
+                env.cursor = v_2;
+                break 'replab2;
             }
             break 'lab1;
         }
+        env.cursor = v_1;
         break 'lab0;
     }
-    env.cursor = env.limit - v_2;
+    'lab6: loop {
+        let v_4 = env.cursor;
+        'lab7: loop {
+            'replab8: loop{
+                let v_5 = env.cursor;
+                'lab9: for _ in 0..1 {
+                    'golab10: loop {
+                        let v_6 = env.cursor;
+                        'lab11: loop {
+                            if !env.in_grouping(G_ca, 98, 382) {
+                                break 'lab11;
+                            }
+                            env.bra = env.cursor;
+                            if !env.eq_s(&"ije") {
+                                break 'lab11;
+                            }
+                            env.ket = env.cursor;
+                            if !env.in_grouping(G_ca, 98, 382) {
+                                break 'lab11;
+                            }
+                            env.slice_from("e");
+                            env.cursor = v_6;
+                            break 'golab10;
+                        }
+                        env.cursor = v_6;
+                        if env.cursor >= env.limit {
+                            break 'lab9;
+                        }
+                        env.next_char();
+                    }
+                    continue 'replab8;
+                }
+                env.cursor = v_5;
+                break 'replab8;
+            }
+            break 'lab7;
+        }
+        env.cursor = v_4;
+        let v_7 = env.cursor;
+        'lab12: loop {
+            'replab13: loop{
+                let v_8 = env.cursor;
+                'lab14: for _ in 0..1 {
+                    'golab15: loop {
+                        let v_9 = env.cursor;
+                        'lab16: loop {
+                            if !env.in_grouping(G_ca, 98, 382) {
+                                break 'lab16;
+                            }
+                            env.bra = env.cursor;
+                            if !env.eq_s(&"je") {
+                                break 'lab16;
+                            }
+                            env.ket = env.cursor;
+                            if !env.in_grouping(G_ca, 98, 382) {
+                                break 'lab16;
+                            }
+                            env.slice_from("e");
+                            env.cursor = v_9;
+                            break 'golab15;
+                        }
+                        env.cursor = v_9;
+                        if env.cursor >= env.limit {
+                            break 'lab14;
+                        }
+                        env.next_char();
+                    }
+                    continue 'replab13;
+                }
+                env.cursor = v_8;
+                break 'replab13;
+            }
+            break 'lab12;
+        }
+        env.cursor = v_7;
+        let v_10 = env.cursor;
+        'lab17: loop {
+            'replab18: loop{
+                let v_11 = env.cursor;
+                'lab19: for _ in 0..1 {
+                    'golab20: loop {
+                        let v_12 = env.cursor;
+                        'lab21: loop {
+                            env.bra = env.cursor;
+                            if !env.eq_s(&"dj") {
+                                break 'lab21;
+                            }
+                            env.ket = env.cursor;
+                            env.slice_from("đ");
+                            env.cursor = v_12;
+                            break 'golab20;
+                        }
+                        env.cursor = v_12;
+                        if env.cursor >= env.limit {
+                            break 'lab19;
+                        }
+                        env.next_char();
+                    }
+                    continue 'replab18;
+                }
+                env.cursor = v_11;
+                break 'replab18;
+            }
+            break 'lab17;
+        }
+        env.cursor = v_10;
+        break 'lab6;
+    }
+    'lab22: loop {
+        b_no_diacritics = true;
+        let v_13 = env.cursor;
+        'lab23: loop {
+            if !env.go_out_grouping(G_sa, 263, 382) {
+                break 'lab23;
+            }
+            env.next_char();
+            b_no_diacritics = false;
+            break 'lab23;
+        }
+        env.cursor = v_13;
+        i_p1 = env.limit;
+        let v_14 = env.cursor;
+        'lab24: loop {
+            if !env.go_out_grouping(G_v, 97, 117) {
+                break 'lab24;
+            }
+            env.next_char();
+            i_p1 = env.cursor;
+            if i_p1 > 1 {
+                break 'lab24;
+            }
+            if !env.go_in_grouping(G_v, 97, 117) {
+                break 'lab24;
+            }
+            env.next_char();
+            i_p1 = env.cursor;
+            break 'lab24;
+        }
+        env.cursor = v_14;
+        let v_15 = env.cursor;
+        'lab25: loop {
+            'golab26: loop {
+                'lab27: loop {
+                    if !env.eq_s(&"r") {
+                        break 'lab27;
+                    }
+                    break 'golab26;
+                }
+                if env.cursor >= env.limit {
+                    break 'lab25;
+                }
+                env.next_char();
+            }
+            'lab28: loop {
+                'lab29: loop {
+                    if env.cursor < 2 {
+                        break 'lab29;
+                    }
+                    break 'lab28;
+                }
+                if !env.go_in_grouping(G_rg, 114, 114) {
+                    break 'lab25;
+                }
+                env.next_char();
+                break 'lab28;
+            }
+            if (i_p1 - env.cursor) < 2 {
+                break 'lab25;
+            }
+            i_p1 = env.cursor;
+            break 'lab25;
+        }
+        env.cursor = v_15;
+        break 'lab22;
+    }
+    env.limit_backward = env.cursor;
+    env.cursor = env.limit;
+    let v_16 = env.limit - env.cursor;
+    'lab30: loop {
+        env.ket = env.cursor;
+        if (env.cursor - 2 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((3435050 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+            break 'lab30;
+        }
+
+        among_var = env.find_among_b(A_1, context);
+        if among_var == 0 {
+            break 'lab30;
+        }
+        env.bra = env.cursor;
+        match among_var {
+            1 => {
+                env.slice_from("loga");
+            }
+            2 => {
+                env.slice_from("peh");
+            }
+            3 => {
+                env.slice_from("vojka");
+            }
+            4 => {
+                env.slice_from("bojka");
+            }
+            5 => {
+                env.slice_from("jak");
+            }
+            6 => {
+                env.slice_from("čajni");
+            }
+            7 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("cajni");
+            }
+            8 => {
+                env.slice_from("erni");
+            }
+            9 => {
+                env.slice_from("larni");
+            }
+            10 => {
+                env.slice_from("esni");
+            }
+            11 => {
+                env.slice_from("anjca");
+            }
+            12 => {
+                env.slice_from("ajca");
+            }
+            13 => {
+                env.slice_from("ljca");
+            }
+            14 => {
+                env.slice_from("ejca");
+            }
+            15 => {
+                env.slice_from("ojca");
+            }
+            16 => {
+                env.slice_from("ajka");
+            }
+            17 => {
+                env.slice_from("ojka");
+            }
+            18 => {
+                env.slice_from("šca");
+            }
+            19 => {
+                env.slice_from("ing");
+            }
+            20 => {
+                env.slice_from("tvenik");
+            }
+            21 => {
+                env.slice_from("tetika");
+            }
+            22 => {
+                env.slice_from("nstva");
+            }
+            23 => {
+                env.slice_from("nik");
+            }
+            24 => {
+                env.slice_from("tik");
+            }
+            25 => {
+                env.slice_from("zik");
+            }
+            26 => {
+                env.slice_from("snik");
+            }
+            27 => {
+                env.slice_from("kusi");
+            }
+            28 => {
+                env.slice_from("kusni");
+            }
+            29 => {
+                env.slice_from("kustva");
+            }
+            30 => {
+                env.slice_from("dušni");
+            }
+            31 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("dusni");
+            }
+            32 => {
+                env.slice_from("antni");
+            }
+            33 => {
+                env.slice_from("bilni");
+            }
+            34 => {
+                env.slice_from("tilni");
+            }
+            35 => {
+                env.slice_from("avilni");
+            }
+            36 => {
+                env.slice_from("silni");
+            }
+            37 => {
+                env.slice_from("gilni");
+            }
+            38 => {
+                env.slice_from("rilni");
+            }
+            39 => {
+                env.slice_from("nilni");
+            }
+            40 => {
+                env.slice_from("alni");
+            }
+            41 => {
+                env.slice_from("ozni");
+            }
+            42 => {
+                env.slice_from("ravi");
+            }
+            43 => {
+                env.slice_from("stavni");
+            }
+            44 => {
+                env.slice_from("pravni");
+            }
+            45 => {
+                env.slice_from("tivni");
+            }
+            46 => {
+                env.slice_from("sivni");
+            }
+            47 => {
+                env.slice_from("atni");
+            }
+            48 => {
+                env.slice_from("enta");
+            }
+            49 => {
+                env.slice_from("tetni");
+            }
+            50 => {
+                env.slice_from("pletni");
+            }
+            51 => {
+                env.slice_from("šavi");
+            }
+            52 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("savi");
+            }
+            53 => {
+                env.slice_from("anta");
+            }
+            54 => {
+                env.slice_from("ačka");
+            }
+            55 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("acka");
+            }
+            56 => {
+                env.slice_from("uška");
+            }
+            57 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("uska");
+            }
+            58 => {
+                env.slice_from("atka");
+            }
+            59 => {
+                env.slice_from("etka");
+            }
+            60 => {
+                env.slice_from("itka");
+            }
+            61 => {
+                env.slice_from("otka");
+            }
+            62 => {
+                env.slice_from("utka");
+            }
+            63 => {
+                env.slice_from("eskna");
+            }
+            64 => {
+                env.slice_from("tični");
+            }
+            65 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("ticni");
+            }
+            66 => {
+                env.slice_from("ojska");
+            }
+            67 => {
+                env.slice_from("esma");
+            }
+            68 => {
+                env.slice_from("metra");
+            }
+            69 => {
+                env.slice_from("centra");
+            }
+            70 => {
+                env.slice_from("istra");
+            }
+            71 => {
+                env.slice_from("osti");
+            }
+            72 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("osti");
+            }
+            73 => {
+                env.slice_from("dba");
+            }
+            74 => {
+                env.slice_from("čka");
+            }
+            75 => {
+                env.slice_from("mca");
+            }
+            76 => {
+                env.slice_from("nca");
+            }
+            77 => {
+                env.slice_from("voljni");
+            }
+            78 => {
+                env.slice_from("anki");
+            }
+            79 => {
+                env.slice_from("vca");
+            }
+            80 => {
+                env.slice_from("sca");
+            }
+            81 => {
+                env.slice_from("rca");
+            }
+            82 => {
+                env.slice_from("alca");
+            }
+            83 => {
+                env.slice_from("elca");
+            }
+            84 => {
+                env.slice_from("olca");
+            }
+            85 => {
+                env.slice_from("njca");
+            }
+            86 => {
+                env.slice_from("ekta");
+            }
+            87 => {
+                env.slice_from("izma");
+            }
+            88 => {
+                env.slice_from("jebi");
+            }
+            89 => {
+                env.slice_from("baci");
+            }
+            90 => {
+                env.slice_from("ašni");
+            }
+            91 => {
+                if !b_no_diacritics {
+                    break 'lab30;
+                }
+                env.slice_from("asni");
+            }
+            _ => ()
+        }
+        break 'lab30;
+    }
+    env.cursor = env.limit - v_16;
+    let v_17 = env.limit - env.cursor;
+    'lab31: loop {
+        'lab32: loop {
+            let v_18 = env.limit - env.cursor;
+            'lab33: loop {
+                env.ket = env.cursor;
+                among_var = env.find_among_b(A_2, context);
+                if among_var == 0 {
+                    break 'lab33;
+                }
+                env.bra = env.cursor;
+                if i_p1 > env.cursor {
+                    break 'lab33;
+                }
+                match among_var {
+                    1 => {
+                        env.slice_from("sk");
+                    }
+                    2 => {
+                        env.slice_from("šk");
+                    }
+                    3 => {
+                        env.slice_from("stv");
+                    }
+                    4 => {
+                        env.slice_from("štv");
+                    }
+                    5 => {
+                        env.slice_from("tanij");
+                    }
+                    6 => {
+                        env.slice_from("manij");
+                    }
+                    7 => {
+                        env.slice_from("panij");
+                    }
+                    8 => {
+                        env.slice_from("ranij");
+                    }
+                    9 => {
+                        env.slice_from("ganij");
+                    }
+                    10 => {
+                        env.slice_from("an");
+                    }
+                    11 => {
+                        env.slice_from("in");
+                    }
+                    12 => {
+                        env.slice_from("on");
+                    }
+                    13 => {
+                        env.slice_from("n");
+                    }
+                    14 => {
+                        env.slice_from("ać");
+                    }
+                    15 => {
+                        env.slice_from("eć");
+                    }
+                    16 => {
+                        env.slice_from("uć");
+                    }
+                    17 => {
+                        env.slice_from("ugov");
+                    }
+                    18 => {
+                        env.slice_from("ug");
+                    }
+                    19 => {
+                        env.slice_from("log");
+                    }
+                    20 => {
+                        env.slice_from("g");
+                    }
+                    21 => {
+                        env.slice_from("rari");
+                    }
+                    22 => {
+                        env.slice_from("oti");
+                    }
+                    23 => {
+                        env.slice_from("si");
+                    }
+                    24 => {
+                        env.slice_from("li");
+                    }
+                    25 => {
+                        env.slice_from("uj");
+                    }
+                    26 => {
+                        env.slice_from("caj");
+                    }
+                    27 => {
+                        env.slice_from("čaj");
+                    }
+                    28 => {
+                        env.slice_from("ćaj");
+                    }
+                    29 => {
+                        env.slice_from("đaj");
+                    }
+                    30 => {
+                        env.slice_from("laj");
+                    }
+                    31 => {
+                        env.slice_from("raj");
+                    }
+                    32 => {
+                        env.slice_from("bij");
+                    }
+                    33 => {
+                        env.slice_from("cij");
+                    }
+                    34 => {
+                        env.slice_from("dij");
+                    }
+                    35 => {
+                        env.slice_from("lij");
+                    }
+                    36 => {
+                        env.slice_from("nij");
+                    }
+                    37 => {
+                        env.slice_from("mij");
+                    }
+                    38 => {
+                        env.slice_from("žij");
+                    }
+                    39 => {
+                        env.slice_from("gij");
+                    }
+                    40 => {
+                        env.slice_from("fij");
+                    }
+                    41 => {
+                        env.slice_from("pij");
+                    }
+                    42 => {
+                        env.slice_from("rij");
+                    }
+                    43 => {
+                        env.slice_from("sij");
+                    }
+                    44 => {
+                        env.slice_from("tij");
+                    }
+                    45 => {
+                        env.slice_from("zij");
+                    }
+                    46 => {
+                        env.slice_from("nal");
+                    }
+                    47 => {
+                        env.slice_from("ijal");
+                    }
+                    48 => {
+                        env.slice_from("ozil");
+                    }
+                    49 => {
+                        env.slice_from("olov");
+                    }
+                    50 => {
+                        env.slice_from("ol");
+                    }
+                    51 => {
+                        env.slice_from("lem");
+                    }
+                    52 => {
+                        env.slice_from("ram");
+                    }
+                    53 => {
+                        env.slice_from("ar");
+                    }
+                    54 => {
+                        env.slice_from("dr");
+                    }
+                    55 => {
+                        env.slice_from("er");
+                    }
+                    56 => {
+                        env.slice_from("or");
+                    }
+                    57 => {
+                        env.slice_from("es");
+                    }
+                    58 => {
+                        env.slice_from("is");
+                    }
+                    59 => {
+                        env.slice_from("taš");
+                    }
+                    60 => {
+                        env.slice_from("naš");
+                    }
+                    61 => {
+                        env.slice_from("jaš");
+                    }
+                    62 => {
+                        env.slice_from("kaš");
+                    }
+                    63 => {
+                        env.slice_from("baš");
+                    }
+                    64 => {
+                        env.slice_from("gaš");
+                    }
+                    65 => {
+                        env.slice_from("vaš");
+                    }
+                    66 => {
+                        env.slice_from("eš");
+                    }
+                    67 => {
+                        env.slice_from("iš");
+                    }
+                    68 => {
+                        env.slice_from("ikat");
+                    }
+                    69 => {
+                        env.slice_from("lat");
+                    }
+                    70 => {
+                        env.slice_from("et");
+                    }
+                    71 => {
+                        env.slice_from("est");
+                    }
+                    72 => {
+                        env.slice_from("ist");
+                    }
+                    73 => {
+                        env.slice_from("kst");
+                    }
+                    74 => {
+                        env.slice_from("ost");
+                    }
+                    75 => {
+                        env.slice_from("išt");
+                    }
+                    76 => {
+                        env.slice_from("ova");
+                    }
+                    77 => {
+                        env.slice_from("av");
+                    }
+                    78 => {
+                        env.slice_from("ev");
+                    }
+                    79 => {
+                        env.slice_from("iv");
+                    }
+                    80 => {
+                        env.slice_from("ov");
+                    }
+                    81 => {
+                        env.slice_from("mov");
+                    }
+                    82 => {
+                        env.slice_from("lov");
+                    }
+                    83 => {
+                        env.slice_from("el");
+                    }
+                    84 => {
+                        env.slice_from("anj");
+                    }
+                    85 => {
+                        env.slice_from("enj");
+                    }
+                    86 => {
+                        env.slice_from("šnj");
+                    }
+                    87 => {
+                        env.slice_from("en");
+                    }
+                    88 => {
+                        env.slice_from("šn");
+                    }
+                    89 => {
+                        env.slice_from("čin");
+                    }
+                    90 => {
+                        env.slice_from("roši");
+                    }
+                    91 => {
+                        env.slice_from("oš");
+                    }
+                    92 => {
+                        env.slice_from("evit");
+                    }
+                    93 => {
+                        env.slice_from("ovit");
+                    }
+                    94 => {
+                        env.slice_from("ast");
+                    }
+                    95 => {
+                        env.slice_from("k");
+                    }
+                    96 => {
+                        env.slice_from("eva");
+                    }
+                    97 => {
+                        env.slice_from("ava");
+                    }
+                    98 => {
+                        env.slice_from("iva");
+                    }
+                    99 => {
+                        env.slice_from("uva");
+                    }
+                    100 => {
+                        env.slice_from("ir");
+                    }
+                    101 => {
+                        env.slice_from("ač");
+                    }
+                    102 => {
+                        env.slice_from("ača");
+                    }
+                    103 => {
+                        env.slice_from("ni");
+                    }
+                    104 => {
+                        env.slice_from("a");
+                    }
+                    105 => {
+                        env.slice_from("ur");
+                    }
+                    106 => {
+                        env.slice_from("astaj");
+                    }
+                    107 => {
+                        env.slice_from("istaj");
+                    }
+                    108 => {
+                        env.slice_from("ostaj");
+                    }
+                    109 => {
+                        env.slice_from("aj");
+                    }
+                    110 => {
+                        env.slice_from("asta");
+                    }
+                    111 => {
+                        env.slice_from("ista");
+                    }
+                    112 => {
+                        env.slice_from("osta");
+                    }
+                    113 => {
+                        env.slice_from("ta");
+                    }
+                    114 => {
+                        env.slice_from("inj");
+                    }
+                    115 => {
+                        env.slice_from("as");
+                    }
+                    116 => {
+                        env.slice_from("i");
+                    }
+                    117 => {
+                        env.slice_from("luč");
+                    }
+                    118 => {
+                        env.slice_from("jeti");
+                    }
+                    119 => {
+                        env.slice_from("e");
+                    }
+                    120 => {
+                        env.slice_from("at");
+                    }
+                    121 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("luc");
+                    }
+                    122 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("snj");
+                    }
+                    123 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("os");
+                    }
+                    124 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ac");
+                    }
+                    125 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ec");
+                    }
+                    126 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("uc");
+                    }
+                    127 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("rosi");
+                    }
+                    128 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("aca");
+                    }
+                    129 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("jas");
+                    }
+                    130 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("tas");
+                    }
+                    131 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("gas");
+                    }
+                    132 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("nas");
+                    }
+                    133 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("kas");
+                    }
+                    134 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("vas");
+                    }
+                    135 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("bas");
+                    }
+                    136 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("as");
+                    }
+                    137 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("cin");
+                    }
+                    138 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("astaj");
+                    }
+                    139 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("istaj");
+                    }
+                    140 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ostaj");
+                    }
+                    141 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("asta");
+                    }
+                    142 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ista");
+                    }
+                    143 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("osta");
+                    }
+                    144 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ava");
+                    }
+                    145 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("eva");
+                    }
+                    146 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("iva");
+                    }
+                    147 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("uva");
+                    }
+                    148 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ova");
+                    }
+                    149 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("jeti");
+                    }
+                    150 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("inj");
+                    }
+                    151 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ist");
+                    }
+                    152 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("es");
+                    }
+                    153 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("et");
+                    }
+                    154 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("is");
+                    }
+                    155 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ir");
+                    }
+                    156 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ur");
+                    }
+                    157 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("uj");
+                    }
+                    158 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ni");
+                    }
+                    159 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("sn");
+                    }
+                    160 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("ta");
+                    }
+                    161 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("a");
+                    }
+                    162 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("i");
+                    }
+                    163 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("e");
+                    }
+                    164 => {
+                        if !b_no_diacritics {
+                            break 'lab33;
+                        }
+                        env.slice_from("n");
+                    }
+                    _ => ()
+                }
+                break 'lab32;
+            }
+            env.cursor = env.limit - v_18;
+            env.ket = env.cursor;
+            if (env.cursor <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 3 as u8 || ((3188642 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                break 'lab31;
+            }
+
+            if env.find_among_b(A_3, context) == 0 {
+                break 'lab31;
+            }
+            env.bra = env.cursor;
+            if i_p1 > env.cursor {
+                break 'lab31;
+            }
+            env.slice_del();
+            break 'lab32;
+        }
+        break 'lab31;
+    }
+    env.cursor = env.limit - v_17;
     env.cursor = env.limit_backward;
     return true
 }

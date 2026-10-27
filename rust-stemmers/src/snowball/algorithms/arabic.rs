@@ -1,4 +1,4 @@
-//! Generated from arabic.sbl by Snowball 3.1.1 - https://snowballstem.org/
+//! Generated from arabic.sbl by Snowball 3.2.0 - https://snowballstem.org/
 
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
@@ -10,31 +10,28 @@ use crate::snowball::Among;
 
 #[derive(Clone)]
 struct Context {
-    b_is_defined: bool,
-    b_is_verb: bool,
-    b_is_noun: bool,
 }
 
 static A_0: &'static [Among<Context>; 144] = &[
-    Among("\u{0640}", -1, 1, None),
-    Among("\u{064B}", -1, 1, None),
-    Among("\u{064C}", -1, 1, None),
-    Among("\u{064D}", -1, 1, None),
-    Among("\u{064E}", -1, 1, None),
-    Among("\u{064F}", -1, 1, None),
-    Among("\u{0650}", -1, 1, None),
-    Among("\u{0651}", -1, 1, None),
-    Among("\u{0652}", -1, 1, None),
-    Among("\u{0660}", -1, 2, None),
-    Among("\u{0661}", -1, 3, None),
-    Among("\u{0662}", -1, 4, None),
-    Among("\u{0663}", -1, 5, None),
-    Among("\u{0664}", -1, 6, None),
-    Among("\u{0665}", -1, 7, None),
-    Among("\u{0666}", -1, 8, None),
-    Among("\u{0667}", -1, 9, None),
-    Among("\u{0668}", -1, 10, None),
-    Among("\u{0669}", -1, 11, None),
+    Among("\u{640}", -1, 1, None),
+    Among("\u{64B}", -1, 1, None),
+    Among("\u{64C}", -1, 1, None),
+    Among("\u{64D}", -1, 1, None),
+    Among("\u{64E}", -1, 1, None),
+    Among("\u{64F}", -1, 1, None),
+    Among("\u{650}", -1, 1, None),
+    Among("\u{651}", -1, 1, None),
+    Among("\u{652}", -1, 1, None),
+    Among("\u{660}", -1, 2, None),
+    Among("\u{661}", -1, 3, None),
+    Among("\u{662}", -1, 4, None),
+    Among("\u{663}", -1, 5, None),
+    Among("\u{664}", -1, 6, None),
+    Among("\u{665}", -1, 7, None),
+    Among("\u{666}", -1, 8, None),
+    Among("\u{667}", -1, 9, None),
+    Among("\u{668}", -1, 10, None),
+    Among("\u{669}", -1, 11, None),
     Among("\u{FE80}", -1, 12, None),
     Among("\u{FE81}", -1, 16, None),
     Among("\u{FE82}", -1, 16, None),
@@ -163,654 +160,125 @@ static A_0: &'static [Among<Context>; 144] = &[
 ];
 
 static A_1: &'static [Among<Context>; 5] = &[
-    Among("\u{0622}", -1, 1, None),
-    Among("\u{0623}", -1, 1, None),
-    Among("\u{0624}", -1, 1, None),
-    Among("\u{0625}", -1, 1, None),
-    Among("\u{0626}", -1, 1, None),
+    Among("\u{622}", -1, 1, None),
+    Among("\u{623}", -1, 1, None),
+    Among("\u{624}", -1, 1, None),
+    Among("\u{625}", -1, 1, None),
+    Among("\u{626}", -1, 1, None),
 ];
 
 static A_2: &'static [Among<Context>; 5] = &[
-    Among("\u{0622}", -1, 1, None),
-    Among("\u{0623}", -1, 1, None),
-    Among("\u{0624}", -1, 2, None),
-    Among("\u{0625}", -1, 1, None),
-    Among("\u{0626}", -1, 3, None),
+    Among("\u{622}", -1, 1, None),
+    Among("\u{623}", -1, 1, None),
+    Among("\u{624}", -1, 2, None),
+    Among("\u{625}", -1, 1, None),
+    Among("\u{626}", -1, 3, None),
 ];
 
 static A_3: &'static [Among<Context>; 4] = &[
-    Among("\u{0627}\u{0644}", -1, 2, None),
-    Among("\u{0628}\u{0627}\u{0644}", -1, 1, None),
-    Among("\u{0643}\u{0627}\u{0644}", -1, 1, None),
-    Among("\u{0644}\u{0644}", -1, 2, None),
+    Among("\u{627}\u{644}", -1, 2, None),
+    Among("\u{628}\u{627}\u{644}", -1, 1, None),
+    Among("\u{643}\u{627}\u{644}", -1, 1, None),
+    Among("\u{644}\u{644}", -1, 2, None),
 ];
 
 static A_4: &'static [Among<Context>; 5] = &[
-    Among("\u{0623}\u{0622}", -1, 2, None),
-    Among("\u{0623}\u{0623}", -1, 1, None),
-    Among("\u{0623}\u{0624}", -1, 1, None),
-    Among("\u{0623}\u{0625}", -1, 4, None),
-    Among("\u{0623}\u{0627}", -1, 3, None),
+    Among("\u{623}\u{622}", -1, 2, None),
+    Among("\u{623}\u{623}", -1, 1, None),
+    Among("\u{623}\u{624}", -1, 1, None),
+    Among("\u{623}\u{625}", -1, 4, None),
+    Among("\u{623}\u{627}", -1, 3, None),
 ];
 
 static A_5: &'static [Among<Context>; 2] = &[
-    Among("\u{0641}", -1, 1, None),
-    Among("\u{0648}", -1, 1, None),
+    Among("\u{641}", -1, 1, None),
+    Among("\u{648}", -1, 1, None),
 ];
 
 static A_6: &'static [Among<Context>; 4] = &[
-    Among("\u{0627}\u{0644}", -1, 2, None),
-    Among("\u{0628}\u{0627}\u{0644}", -1, 1, None),
-    Among("\u{0643}\u{0627}\u{0644}", -1, 1, None),
-    Among("\u{0644}\u{0644}", -1, 2, None),
+    Among("\u{627}\u{644}", -1, 2, None),
+    Among("\u{628}\u{627}\u{644}", -1, 1, None),
+    Among("\u{643}\u{627}\u{644}", -1, 1, None),
+    Among("\u{644}\u{644}", -1, 2, None),
 ];
 
 static A_7: &'static [Among<Context>; 4] = &[
-    Among("\u{0628}", -1, 1, None),
-    Among("\u{0628}\u{0627}", 0, -1, None),
-    Among("\u{0628}\u{0628}", 0, 2, None),
-    Among("\u{0643}\u{0643}", -1, 3, None),
+    Among("\u{628}", -1, 1, None),
+    Among("\u{628}\u{627}", 0, -1, None),
+    Among("\u{628}\u{628}", 0, 2, None),
+    Among("\u{643}\u{643}", -1, 3, None),
 ];
 
 static A_8: &'static [Among<Context>; 4] = &[
-    Among("\u{0633}\u{0623}", -1, 4, None),
-    Among("\u{0633}\u{062A}", -1, 2, None),
-    Among("\u{0633}\u{0646}", -1, 3, None),
-    Among("\u{0633}\u{064A}", -1, 1, None),
+    Among("\u{633}\u{623}", -1, 4, None),
+    Among("\u{633}\u{62A}", -1, 2, None),
+    Among("\u{633}\u{646}", -1, 3, None),
+    Among("\u{633}\u{64A}", -1, 1, None),
 ];
 
 static A_9: &'static [Among<Context>; 3] = &[
-    Among("\u{062A}\u{0633}\u{062A}", -1, 1, None),
-    Among("\u{0646}\u{0633}\u{062A}", -1, 1, None),
-    Among("\u{064A}\u{0633}\u{062A}", -1, 1, None),
+    Among("\u{62A}\u{633}\u{62A}", -1, 1, None),
+    Among("\u{646}\u{633}\u{62A}", -1, 1, None),
+    Among("\u{64A}\u{633}\u{62A}", -1, 1, None),
 ];
 
 static A_10: &'static [Among<Context>; 10] = &[
-    Among("\u{0643}", -1, 1, None),
-    Among("\u{0643}\u{0645}", -1, 2, None),
-    Among("\u{0647}\u{0645}", -1, 2, None),
-    Among("\u{0647}\u{0646}", -1, 2, None),
-    Among("\u{0647}", -1, 1, None),
-    Among("\u{064A}", -1, 1, None),
-    Among("\u{0643}\u{0645}\u{0627}", -1, 3, None),
-    Among("\u{0647}\u{0645}\u{0627}", -1, 3, None),
-    Among("\u{0646}\u{0627}", -1, 2, None),
-    Among("\u{0647}\u{0627}", -1, 2, None),
+    Among("\u{643}", -1, 1, None),
+    Among("\u{643}\u{645}", -1, 2, None),
+    Among("\u{647}\u{645}", -1, 2, None),
+    Among("\u{647}\u{646}", -1, 2, None),
+    Among("\u{647}", -1, 1, None),
+    Among("\u{64A}", -1, 1, None),
+    Among("\u{643}\u{645}\u{627}", -1, 3, None),
+    Among("\u{647}\u{645}\u{627}", -1, 3, None),
+    Among("\u{646}\u{627}", -1, 2, None),
+    Among("\u{647}\u{627}", -1, 2, None),
 ];
 
 static A_11: &'static [Among<Context>; 3] = &[
-    Among("\u{0648}", -1, 1, None),
-    Among("\u{064A}", -1, 1, None),
-    Among("\u{0627}", -1, 1, None),
+    Among("\u{648}", -1, 1, None),
+    Among("\u{64A}", -1, 1, None),
+    Among("\u{627}", -1, 1, None),
 ];
 
 static A_12: &'static [Among<Context>; 12] = &[
-    Among("\u{0643}", -1, 1, None),
-    Among("\u{0643}\u{0645}", -1, 2, None),
-    Among("\u{0647}\u{0645}", -1, 2, None),
-    Among("\u{0643}\u{0646}", -1, 2, None),
-    Among("\u{0647}\u{0646}", -1, 2, None),
-    Among("\u{0647}", -1, 1, None),
-    Among("\u{0643}\u{0645}\u{0648}", -1, 3, None),
-    Among("\u{0646}\u{064A}", -1, 2, None),
-    Among("\u{0643}\u{0645}\u{0627}", -1, 3, None),
-    Among("\u{0647}\u{0645}\u{0627}", -1, 3, None),
-    Among("\u{0646}\u{0627}", -1, 2, None),
-    Among("\u{0647}\u{0627}", -1, 2, None),
+    Among("\u{643}", -1, 1, None),
+    Among("\u{643}\u{645}", -1, 2, None),
+    Among("\u{647}\u{645}", -1, 2, None),
+    Among("\u{643}\u{646}", -1, 2, None),
+    Among("\u{647}\u{646}", -1, 2, None),
+    Among("\u{647}", -1, 1, None),
+    Among("\u{643}\u{645}\u{648}", -1, 3, None),
+    Among("\u{646}\u{64A}", -1, 2, None),
+    Among("\u{643}\u{645}\u{627}", -1, 3, None),
+    Among("\u{647}\u{645}\u{627}", -1, 3, None),
+    Among("\u{646}\u{627}", -1, 2, None),
+    Among("\u{647}\u{627}", -1, 2, None),
 ];
 
 static A_13: &'static [Among<Context>; 11] = &[
-    Among("\u{0646}", -1, 1, None),
-    Among("\u{0648}\u{0646}", 0, 3, None),
-    Among("\u{064A}\u{0646}", 0, 3, None),
-    Among("\u{0627}\u{0646}", 0, 3, None),
-    Among("\u{062A}\u{0646}", 0, 2, None),
-    Among("\u{064A}", -1, 1, None),
-    Among("\u{0627}", -1, 1, None),
-    Among("\u{062A}\u{0645}\u{0627}", 6, 4, None),
-    Among("\u{0646}\u{0627}", 6, 2, None),
-    Among("\u{062A}\u{0627}", 6, 2, None),
-    Among("\u{062A}", -1, 1, None),
+    Among("\u{646}", -1, 1, None),
+    Among("\u{648}\u{646}", 0, 3, None),
+    Among("\u{64A}\u{646}", 0, 3, None),
+    Among("\u{627}\u{646}", 0, 3, None),
+    Among("\u{62A}\u{646}", 0, 2, None),
+    Among("\u{64A}", -1, 1, None),
+    Among("\u{627}", -1, 1, None),
+    Among("\u{62A}\u{645}\u{627}", 6, 3, None),
+    Among("\u{646}\u{627}", 6, 2, None),
+    Among("\u{62A}\u{627}", 6, 2, None),
+    Among("\u{62A}", -1, 1, None),
 ];
 
 static A_14: &'static [Among<Context>; 2] = &[
-    Among("\u{062A}\u{0645}", -1, 1, None),
-    Among("\u{0648}\u{0627}", -1, 1, None),
+    Among("\u{62A}\u{645}", -1, 1, None),
+    Among("\u{648}\u{627}", -1, 1, None),
 ];
 
 static A_15: &'static [Among<Context>; 2] = &[
-    Among("\u{0648}", -1, 1, None),
-    Among("\u{062A}\u{0645}\u{0648}", 0, 2, None),
+    Among("\u{648}", -1, 1, None),
+    Among("\u{62A}\u{645}\u{648}", 0, 2, None),
 ];
-
-fn r_Normalize_pre(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    let v_1 = env.cursor;
-    'lab0: loop {
-        'replab1: loop{
-            let v_2 = env.cursor;
-            'lab2: for _ in 0..1 {
-                'lab3: loop {
-                    let v_3 = env.cursor;
-                    'lab4: loop {
-                        env.bra = env.cursor;
-                        among_var = env.find_among(A_0, context);
-                        if among_var == 0 {
-                            break 'lab4;
-                        }
-                        env.ket = env.cursor;
-                        match among_var {
-                            1 => {
-                                env.slice_del();
-                            }
-                            2 => {
-                                env.slice_from("0");
-                            }
-                            3 => {
-                                env.slice_from("1");
-                            }
-                            4 => {
-                                env.slice_from("2");
-                            }
-                            5 => {
-                                env.slice_from("3");
-                            }
-                            6 => {
-                                env.slice_from("4");
-                            }
-                            7 => {
-                                env.slice_from("5");
-                            }
-                            8 => {
-                                env.slice_from("6");
-                            }
-                            9 => {
-                                env.slice_from("7");
-                            }
-                            10 => {
-                                env.slice_from("8");
-                            }
-                            11 => {
-                                env.slice_from("9");
-                            }
-                            12 => {
-                                env.slice_from("\u{0621}");
-                            }
-                            13 => {
-                                env.slice_from("\u{0623}");
-                            }
-                            14 => {
-                                env.slice_from("\u{0625}");
-                            }
-                            15 => {
-                                env.slice_from("\u{0626}");
-                            }
-                            16 => {
-                                env.slice_from("\u{0622}");
-                            }
-                            17 => {
-                                env.slice_from("\u{0624}");
-                            }
-                            18 => {
-                                env.slice_from("\u{0627}");
-                            }
-                            19 => {
-                                env.slice_from("\u{0628}");
-                            }
-                            20 => {
-                                env.slice_from("\u{0629}");
-                            }
-                            21 => {
-                                env.slice_from("\u{062A}");
-                            }
-                            22 => {
-                                env.slice_from("\u{062B}");
-                            }
-                            23 => {
-                                env.slice_from("\u{062C}");
-                            }
-                            24 => {
-                                env.slice_from("\u{062D}");
-                            }
-                            25 => {
-                                env.slice_from("\u{062E}");
-                            }
-                            26 => {
-                                env.slice_from("\u{062F}");
-                            }
-                            27 => {
-                                env.slice_from("\u{0630}");
-                            }
-                            28 => {
-                                env.slice_from("\u{0631}");
-                            }
-                            29 => {
-                                env.slice_from("\u{0632}");
-                            }
-                            30 => {
-                                env.slice_from("\u{0633}");
-                            }
-                            31 => {
-                                env.slice_from("\u{0634}");
-                            }
-                            32 => {
-                                env.slice_from("\u{0635}");
-                            }
-                            33 => {
-                                env.slice_from("\u{0636}");
-                            }
-                            34 => {
-                                env.slice_from("\u{0637}");
-                            }
-                            35 => {
-                                env.slice_from("\u{0638}");
-                            }
-                            36 => {
-                                env.slice_from("\u{0639}");
-                            }
-                            37 => {
-                                env.slice_from("\u{063A}");
-                            }
-                            38 => {
-                                env.slice_from("\u{0641}");
-                            }
-                            39 => {
-                                env.slice_from("\u{0642}");
-                            }
-                            40 => {
-                                env.slice_from("\u{0643}");
-                            }
-                            41 => {
-                                env.slice_from("\u{0644}");
-                            }
-                            42 => {
-                                env.slice_from("\u{0645}");
-                            }
-                            43 => {
-                                env.slice_from("\u{0646}");
-                            }
-                            44 => {
-                                env.slice_from("\u{0647}");
-                            }
-                            45 => {
-                                env.slice_from("\u{0648}");
-                            }
-                            46 => {
-                                env.slice_from("\u{0649}");
-                            }
-                            47 => {
-                                env.slice_from("\u{064A}");
-                            }
-                            48 => {
-                                env.slice_from("\u{0644}\u{0627}");
-                            }
-                            49 => {
-                                env.slice_from("\u{0644}\u{0623}");
-                            }
-                            50 => {
-                                env.slice_from("\u{0644}\u{0625}");
-                            }
-                            51 => {
-                                env.slice_from("\u{0644}\u{0622}");
-                            }
-                            _ => ()
-                        }
-                        break 'lab3;
-                    }
-                    env.cursor = v_3;
-                    if env.cursor >= env.limit {
-                        break 'lab2;
-                    }
-                    env.next_char();
-                    break 'lab3;
-                }
-                continue 'replab1;
-            }
-            env.cursor = v_2;
-            break 'replab1;
-        }
-        break 'lab0;
-    }
-    env.cursor = v_1;
-    return true
-}
-
-fn r_Normalize_post(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    let v_1 = env.cursor;
-    'lab0: loop {
-        env.limit_backward = env.cursor;
-        env.cursor = env.limit;
-        env.ket = env.cursor;
-        if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 5 as u8 || ((124 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-            break 'lab0;
-        }
-
-        if env.find_among_b(A_1, context) == 0 {
-            break 'lab0;
-        }
-        env.bra = env.cursor;
-        env.slice_from("\u{0621}");
-        env.cursor = env.limit_backward;
-        break 'lab0;
-    }
-    env.cursor = v_1;
-    let v_2 = env.cursor;
-    'lab1: loop {
-        'replab2: loop{
-            let v_3 = env.cursor;
-            'lab3: for _ in 0..1 {
-                'lab4: loop {
-                    let v_4 = env.cursor;
-                    'lab5: loop {
-                        env.bra = env.cursor;
-                        if (env.cursor + 1 >= env.limit || env.current.as_bytes()[(env.cursor + 1) as usize] as u8 >> 5 != 5 as u8 || ((124 as i32 >> (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 & 0x1f)) & 1) == 0) {
-                            break 'lab5;
-                        }
-
-                        among_var = env.find_among(A_2, context);
-                        if among_var == 0 {
-                            break 'lab5;
-                        }
-                        env.ket = env.cursor;
-                        match among_var {
-                            1 => {
-                                env.slice_from("\u{0627}");
-                            }
-                            2 => {
-                                env.slice_from("\u{0648}");
-                            }
-                            3 => {
-                                env.slice_from("\u{064A}");
-                            }
-                            _ => ()
-                        }
-                        break 'lab4;
-                    }
-                    env.cursor = v_4;
-                    if env.cursor >= env.limit {
-                        break 'lab3;
-                    }
-                    env.next_char();
-                    break 'lab4;
-                }
-                continue 'replab2;
-            }
-            env.cursor = v_3;
-            break 'replab2;
-        }
-        break 'lab1;
-    }
-    env.cursor = v_2;
-    return true
-}
-
-fn r_Checks1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.bra = env.cursor;
-    if (env.cursor + 3 >= env.limit || (env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 132 as u8 && env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 167 as u8)) {
-        return false;
-    }
-
-    among_var = env.find_among(A_3, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) <= 4 {
-                return false;
-            }
-            context.b_is_noun = true;
-            context.b_is_verb = false;
-            context.b_is_defined = true;
-        }
-        2 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            context.b_is_noun = true;
-            context.b_is_verb = false;
-            context.b_is_defined = true;
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Prefix_Step1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.bra = env.cursor;
-    if (env.cursor + 3 >= env.limit || env.current.as_bytes()[(env.cursor + 3) as usize] as u8 >> 5 != 5 as u8 || ((188 as i32 >> (env.current.as_bytes()[(env.cursor + 3) as usize] as u8 & 0x1f)) & 1) == 0) {
-        return false;
-    }
-
-    among_var = env.find_among(A_4, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_from("\u{0623}");
-        }
-        2 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_from("\u{0622}");
-        }
-        3 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_from("\u{0627}");
-        }
-        4 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_from("\u{0625}");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Prefix_Step2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.bra = env.cursor;
-    if (env.cursor + 1 >= env.limit || (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 129 as u8 && env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 136 as u8)) {
-        return false;
-    }
-
-    if env.find_among(A_5, context) == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    if (env.current.chars().count() as i32) <= 3 {
-        return false;
-    }
-    'lab0: loop {
-        if !env.eq_s(&"\u{0627}") {
-            break 'lab0;
-        }
-        return false;
-    }
-    env.slice_del();
-    return true
-}
-
-fn r_Prefix_Step3a_Noun(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.bra = env.cursor;
-    if (env.cursor + 3 >= env.limit || (env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 132 as u8 && env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 167 as u8)) {
-        return false;
-    }
-
-    among_var = env.find_among(A_6, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) <= 5 {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if (env.current.chars().count() as i32) <= 4 {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Prefix_Step3b_Noun(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.bra = env.cursor;
-    if (env.cursor + 1 >= env.limit || (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 168 as u8 && env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 131 as u8)) {
-        return false;
-    }
-
-    among_var = env.find_among(A_7, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_from("\u{0628}");
-        }
-        3 => {
-            if (env.current.chars().count() as i32) <= 3 {
-                return false;
-            }
-            env.slice_from("\u{0643}");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Prefix_Step3_Verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.bra = env.cursor;
-    among_var = env.find_among(A_8, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) <= 4 {
-                return false;
-            }
-            env.slice_from("\u{064A}");
-        }
-        2 => {
-            if (env.current.chars().count() as i32) <= 4 {
-                return false;
-            }
-            env.slice_from("\u{062A}");
-        }
-        3 => {
-            if (env.current.chars().count() as i32) <= 4 {
-                return false;
-            }
-            env.slice_from("\u{0646}");
-        }
-        4 => {
-            if (env.current.chars().count() as i32) <= 4 {
-                return false;
-            }
-            env.slice_from("\u{0623}");
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Prefix_Step4_Verb(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.bra = env.cursor;
-    if (env.cursor + 5 >= env.limit || env.current.as_bytes()[(env.cursor + 5) as usize] as u8 != 170 as u8) {
-        return false;
-    }
-
-    if env.find_among(A_9, context) == 0 {
-        return false;
-    }
-    env.ket = env.cursor;
-    if (env.current.chars().count() as i32) <= 4 {
-        return false;
-    }
-    context.b_is_verb = true;
-    context.b_is_noun = false;
-    env.slice_from("\u{0627}\u{0633}\u{062A}");
-    return true
-}
-
-fn r_Suffix_Noun_Step1a(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    among_var = env.find_among_b(A_10, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) < 4 {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if (env.current.chars().count() as i32) < 5 {
-                return false;
-            }
-            env.slice_del();
-        }
-        3 => {
-            if (env.current.chars().count() as i32) < 6 {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Suffix_Noun_Step1b(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.ket = env.cursor;
-    if !env.eq_s_b(&"\u{0646}") {
-        return false;
-    }
-    env.bra = env.cursor;
-    if (env.current.chars().count() as i32) <= 5 {
-        return false;
-    }
-    env.slice_del();
-    return true
-}
 
 fn r_Suffix_Noun_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
@@ -818,7 +286,7 @@ fn r_Suffix_Noun_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.bra = env.cursor;
-    if (env.current.chars().count() as i32) <= 4 {
+    if (env.current.chars().count() as i32) < 5 {
         return false;
     }
     env.slice_del();
@@ -827,7 +295,7 @@ fn r_Suffix_Noun_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_Suffix_Noun_Step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    if !env.eq_s_b(&"\u{0627}\u{062A}") {
+    if !env.eq_s_b(&"\u{627}\u{62A}") {
         return false;
     }
     env.bra = env.cursor;
@@ -840,7 +308,7 @@ fn r_Suffix_Noun_Step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
 
 fn r_Suffix_Noun_Step2c1(env: &mut SnowballEnv, context: &mut Context) -> bool {
     env.ket = env.cursor;
-    if !env.eq_s_b(&"\u{062A}") {
+    if !env.eq_s_b(&"\u{62A}") {
         return false;
     }
     env.bra = env.cursor;
@@ -848,64 +316,6 @@ fn r_Suffix_Noun_Step2c1(env: &mut SnowballEnv, context: &mut Context) -> bool {
         return false;
     }
     env.slice_del();
-    return true
-}
-
-fn r_Suffix_Noun_Step2c2(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.ket = env.cursor;
-    if !env.eq_s_b(&"\u{0629}") {
-        return false;
-    }
-    env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 4 {
-        return false;
-    }
-    env.slice_del();
-    return true
-}
-
-fn r_Suffix_Noun_Step3(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.ket = env.cursor;
-    if !env.eq_s_b(&"\u{064A}") {
-        return false;
-    }
-    env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 3 {
-        return false;
-    }
-    env.slice_del();
-    return true
-}
-
-fn r_Suffix_Verb_Step1(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    among_var = env.find_among_b(A_12, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) < 4 {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if (env.current.chars().count() as i32) < 5 {
-                return false;
-            }
-            env.slice_del();
-        }
-        3 => {
-            if (env.current.chars().count() as i32) < 6 {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
     return true
 }
 
@@ -931,12 +341,6 @@ fn r_Suffix_Verb_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
             env.slice_del();
         }
         3 => {
-            if (env.current.chars().count() as i32) <= 5 {
-                return false;
-            }
-            env.slice_del();
-        }
-        4 => {
             if (env.current.chars().count() as i32) < 6 {
                 return false;
             }
@@ -944,319 +348,805 @@ fn r_Suffix_Verb_Step2a(env: &mut SnowballEnv, context: &mut Context) -> bool {
         }
         _ => ()
     }
-    return true
-}
-
-fn r_Suffix_Verb_Step2b(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.ket = env.cursor;
-    if (env.cursor - 3 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 133 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 167 as u8)) {
-        return false;
-    }
-
-    if env.find_among_b(A_14, context) == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    if (env.current.chars().count() as i32) < 5 {
-        return false;
-    }
-    env.slice_del();
-    return true
-}
-
-fn r_Suffix_Verb_Step2c(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    let mut among_var;
-    env.ket = env.cursor;
-    if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 136 as u8) {
-        return false;
-    }
-
-    among_var = env.find_among_b(A_15, context);
-    if among_var == 0 {
-        return false;
-    }
-    env.bra = env.cursor;
-    match among_var {
-        1 => {
-            if (env.current.chars().count() as i32) < 4 {
-                return false;
-            }
-            env.slice_del();
-        }
-        2 => {
-            if (env.current.chars().count() as i32) < 6 {
-                return false;
-            }
-            env.slice_del();
-        }
-        _ => ()
-    }
-    return true
-}
-
-fn r_Suffix_All_alef_maqsura(env: &mut SnowballEnv, context: &mut Context) -> bool {
-    env.ket = env.cursor;
-    if !env.eq_s_b(&"\u{0649}") {
-        return false;
-    }
-    env.bra = env.cursor;
-    env.slice_from("\u{064A}");
     return true
 }
 
 pub fn stem(env: &mut SnowballEnv) -> bool {
     let mut context = &mut Context {
-        b_is_defined: false,
-        b_is_verb: false,
-        b_is_noun: false,
     };
-    context.b_is_noun = true;
-    context.b_is_verb = true;
-    context.b_is_defined = false;
+    let mut among_var;
+    let mut b_is_defined : bool;
+    let mut b_is_verb : bool;
+    let mut b_is_noun : bool;
+    b_is_noun = true;
+    b_is_verb = true;
+    b_is_defined = false;
     let v_1 = env.cursor;
-    r_Checks1(env, context);
-    env.cursor = v_1;
-    r_Normalize_pre(env, context);
-    env.limit_backward = env.cursor;
-    env.cursor = env.limit;
-    let v_2 = env.limit - env.cursor;
     'lab0: loop {
-        'lab1: loop {
-            let v_3 = env.limit - env.cursor;
-            'lab2: loop {
-                if !context.b_is_verb {
-                    break 'lab2;
+        env.bra = env.cursor;
+        if (env.cursor + 3 >= env.limit || (env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 132 as u8 && env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 167 as u8)) {
+            break 'lab0;
+        }
+
+        among_var = env.find_among(A_3, context);
+        if among_var == 0 {
+            break 'lab0;
+        }
+        env.ket = env.cursor;
+        match among_var {
+            1 => {
+                if (env.current.chars().count() as i32) < 5 {
+                    break 'lab0;
                 }
-                'lab3: loop {
-                    let v_4 = env.limit - env.cursor;
-                    'lab4: loop {
-                        let mut v_5 = 1;
-                        'replab5: loop{
-                            let v_6 = env.limit - env.cursor;
-                            'lab6: for _ in 0..1 {
-                                if !r_Suffix_Verb_Step1(env, context) {
-                                    break 'lab6;
-                                }
-                                v_5 -= 1;
-                                continue 'replab5;
-                            }
-                            env.cursor = env.limit - v_6;
-                            break 'replab5;
-                        }
-                        if v_5 > 0 {
-                            break 'lab4;
-                        }
-                        'lab7: loop {
-                            let v_7 = env.limit - env.cursor;
-                            'lab8: loop {
-                                if !r_Suffix_Verb_Step2a(env, context) {
-                                    break 'lab8;
-                                }
-                                break 'lab7;
-                            }
-                            env.cursor = env.limit - v_7;
-                            'lab9: loop {
-                                if !r_Suffix_Verb_Step2c(env, context) {
-                                    break 'lab9;
-                                }
-                                break 'lab7;
-                            }
-                            env.cursor = env.limit - v_7;
-                            if env.cursor <= env.limit_backward {
-                                break 'lab4;
-                            }
-                            env.previous_char();
-                            break 'lab7;
-                        }
-                        break 'lab3;
-                    }
-                    env.cursor = env.limit - v_4;
-                    'lab10: loop {
-                        if !r_Suffix_Verb_Step2b(env, context) {
-                            break 'lab10;
-                        }
-                        break 'lab3;
-                    }
-                    env.cursor = env.limit - v_4;
-                    if !r_Suffix_Verb_Step2a(env, context) {
-                        break 'lab2;
-                    }
-                    break 'lab3;
-                }
-                break 'lab1;
+                b_is_noun = true;
+                b_is_verb = false;
+                b_is_defined = true;
             }
-            env.cursor = env.limit - v_3;
-            'lab11: loop {
-                if !context.b_is_noun {
-                    break 'lab11;
+            2 => {
+                if (env.current.chars().count() as i32) < 4 {
+                    break 'lab0;
                 }
-                let v_8 = env.limit - env.cursor;
-                'lab12: loop {
-                    'lab13: loop {
-                        let v_9 = env.limit - env.cursor;
-                        'lab14: loop {
-                            if !r_Suffix_Noun_Step2c2(env, context) {
-                                break 'lab14;
-                            }
-                            break 'lab13;
-                        }
-                        env.cursor = env.limit - v_9;
-                        'lab15: loop {
-                            if context.b_is_defined {
-                                break 'lab15;
-                            }
-                            if !r_Suffix_Noun_Step1a(env, context) {
-                                break 'lab15;
-                            }
-                            'lab16: loop {
-                                let v_10 = env.limit - env.cursor;
-                                'lab17: loop {
-                                    if !r_Suffix_Noun_Step2a(env, context) {
-                                        break 'lab17;
-                                    }
-                                    break 'lab16;
-                                }
-                                env.cursor = env.limit - v_10;
-                                'lab18: loop {
-                                    if !r_Suffix_Noun_Step2b(env, context) {
-                                        break 'lab18;
-                                    }
-                                    break 'lab16;
-                                }
-                                env.cursor = env.limit - v_10;
-                                'lab19: loop {
-                                    if !r_Suffix_Noun_Step2c1(env, context) {
-                                        break 'lab19;
-                                    }
-                                    break 'lab16;
-                                }
-                                env.cursor = env.limit - v_10;
-                                if env.cursor <= env.limit_backward {
-                                    break 'lab15;
-                                }
-                                env.previous_char();
-                                break 'lab16;
-                            }
-                            break 'lab13;
-                        }
-                        env.cursor = env.limit - v_9;
-                        'lab20: loop {
-                            if !r_Suffix_Noun_Step1b(env, context) {
-                                break 'lab20;
-                            }
-                            'lab21: loop {
-                                let v_11 = env.limit - env.cursor;
-                                'lab22: loop {
-                                    if !r_Suffix_Noun_Step2a(env, context) {
-                                        break 'lab22;
-                                    }
-                                    break 'lab21;
-                                }
-                                env.cursor = env.limit - v_11;
-                                'lab23: loop {
-                                    if !r_Suffix_Noun_Step2b(env, context) {
-                                        break 'lab23;
-                                    }
-                                    break 'lab21;
-                                }
-                                env.cursor = env.limit - v_11;
-                                if !r_Suffix_Noun_Step2c1(env, context) {
-                                    break 'lab20;
-                                }
-                                break 'lab21;
-                            }
-                            break 'lab13;
-                        }
-                        env.cursor = env.limit - v_9;
-                        'lab24: loop {
-                            if context.b_is_defined {
-                                break 'lab24;
-                            }
-                            if !r_Suffix_Noun_Step2a(env, context) {
-                                break 'lab24;
-                            }
-                            break 'lab13;
-                        }
-                        env.cursor = env.limit - v_9;
-                        if !r_Suffix_Noun_Step2b(env, context) {
-                            env.cursor = env.limit - v_8;
-                            break 'lab12;
-                        }
-                        break 'lab13;
-                    }
-                    break 'lab12;
-                }
-                if !r_Suffix_Noun_Step3(env, context) {
-                    break 'lab11;
-                }
-                break 'lab1;
+                b_is_noun = true;
+                b_is_verb = false;
+                b_is_defined = true;
             }
-            env.cursor = env.limit - v_3;
-            if !r_Suffix_All_alef_maqsura(env, context) {
-                break 'lab0;
-            }
-            break 'lab1;
+            _ => ()
         }
         break 'lab0;
     }
-    env.cursor = env.limit - v_2;
-    env.cursor = env.limit_backward;
-    let v_12 = env.cursor;
-    'lab25: loop {
-        let v_13 = env.cursor;
-        'lab26: loop {
-            if !r_Prefix_Step1(env, context) {
-                env.cursor = v_13;
-                break 'lab26;
+    env.cursor = v_1;
+    'lab1: loop {
+        let v_2 = env.cursor;
+        'lab2: loop {
+            'replab3: loop{
+                let v_3 = env.cursor;
+                'lab4: for _ in 0..1 {
+                    'lab5: loop {
+                        let v_4 = env.cursor;
+                        'lab6: loop {
+                            env.bra = env.cursor;
+                            among_var = env.find_among(A_0, context);
+                            if among_var == 0 {
+                                break 'lab6;
+                            }
+                            env.ket = env.cursor;
+                            match among_var {
+                                1 => {
+                                    env.slice_del();
+                                }
+                                2 => {
+                                    env.slice_from("0");
+                                }
+                                3 => {
+                                    env.slice_from("1");
+                                }
+                                4 => {
+                                    env.slice_from("2");
+                                }
+                                5 => {
+                                    env.slice_from("3");
+                                }
+                                6 => {
+                                    env.slice_from("4");
+                                }
+                                7 => {
+                                    env.slice_from("5");
+                                }
+                                8 => {
+                                    env.slice_from("6");
+                                }
+                                9 => {
+                                    env.slice_from("7");
+                                }
+                                10 => {
+                                    env.slice_from("8");
+                                }
+                                11 => {
+                                    env.slice_from("9");
+                                }
+                                12 => {
+                                    env.slice_from("\u{621}");
+                                }
+                                13 => {
+                                    env.slice_from("\u{623}");
+                                }
+                                14 => {
+                                    env.slice_from("\u{625}");
+                                }
+                                15 => {
+                                    env.slice_from("\u{626}");
+                                }
+                                16 => {
+                                    env.slice_from("\u{622}");
+                                }
+                                17 => {
+                                    env.slice_from("\u{624}");
+                                }
+                                18 => {
+                                    env.slice_from("\u{627}");
+                                }
+                                19 => {
+                                    env.slice_from("\u{628}");
+                                }
+                                20 => {
+                                    env.slice_from("\u{629}");
+                                }
+                                21 => {
+                                    env.slice_from("\u{62A}");
+                                }
+                                22 => {
+                                    env.slice_from("\u{62B}");
+                                }
+                                23 => {
+                                    env.slice_from("\u{62C}");
+                                }
+                                24 => {
+                                    env.slice_from("\u{62D}");
+                                }
+                                25 => {
+                                    env.slice_from("\u{62E}");
+                                }
+                                26 => {
+                                    env.slice_from("\u{62F}");
+                                }
+                                27 => {
+                                    env.slice_from("\u{630}");
+                                }
+                                28 => {
+                                    env.slice_from("\u{631}");
+                                }
+                                29 => {
+                                    env.slice_from("\u{632}");
+                                }
+                                30 => {
+                                    env.slice_from("\u{633}");
+                                }
+                                31 => {
+                                    env.slice_from("\u{634}");
+                                }
+                                32 => {
+                                    env.slice_from("\u{635}");
+                                }
+                                33 => {
+                                    env.slice_from("\u{636}");
+                                }
+                                34 => {
+                                    env.slice_from("\u{637}");
+                                }
+                                35 => {
+                                    env.slice_from("\u{638}");
+                                }
+                                36 => {
+                                    env.slice_from("\u{639}");
+                                }
+                                37 => {
+                                    env.slice_from("\u{63A}");
+                                }
+                                38 => {
+                                    env.slice_from("\u{641}");
+                                }
+                                39 => {
+                                    env.slice_from("\u{642}");
+                                }
+                                40 => {
+                                    env.slice_from("\u{643}");
+                                }
+                                41 => {
+                                    env.slice_from("\u{644}");
+                                }
+                                42 => {
+                                    env.slice_from("\u{645}");
+                                }
+                                43 => {
+                                    env.slice_from("\u{646}");
+                                }
+                                44 => {
+                                    env.slice_from("\u{647}");
+                                }
+                                45 => {
+                                    env.slice_from("\u{648}");
+                                }
+                                46 => {
+                                    env.slice_from("\u{649}");
+                                }
+                                47 => {
+                                    env.slice_from("\u{64A}");
+                                }
+                                48 => {
+                                    env.slice_from("\u{644}\u{627}");
+                                }
+                                49 => {
+                                    env.slice_from("\u{644}\u{623}");
+                                }
+                                50 => {
+                                    env.slice_from("\u{644}\u{625}");
+                                }
+                                51 => {
+                                    env.slice_from("\u{644}\u{622}");
+                                }
+                                _ => ()
+                            }
+                            break 'lab5;
+                        }
+                        env.cursor = v_4;
+                        if env.cursor >= env.limit {
+                            break 'lab4;
+                        }
+                        env.next_char();
+                        break 'lab5;
+                    }
+                    continue 'replab3;
+                }
+                env.cursor = v_3;
+                break 'replab3;
             }
-            break 'lab26;
+            break 'lab2;
         }
-        let v_14 = env.cursor;
-        'lab27: loop {
-            if !r_Prefix_Step2(env, context) {
-                env.cursor = v_14;
-                break 'lab27;
-            }
-            break 'lab27;
-        }
-        'lab28: loop {
-            let v_15 = env.cursor;
-            'lab29: loop {
-                if !r_Prefix_Step3a_Noun(env, context) {
-                    break 'lab29;
-                }
-                break 'lab28;
-            }
-            env.cursor = v_15;
-            'lab30: loop {
-                if !context.b_is_noun {
-                    break 'lab30;
-                }
-                if !r_Prefix_Step3b_Noun(env, context) {
-                    break 'lab30;
-                }
-                break 'lab28;
-            }
-            env.cursor = v_15;
-            if !context.b_is_verb {
-                break 'lab25;
-            }
-            let v_16 = env.cursor;
-            'lab31: loop {
-                if !r_Prefix_Step3_Verb(env, context) {
-                    env.cursor = v_16;
-                    break 'lab31;
-                }
-                break 'lab31;
-            }
-            if !r_Prefix_Step4_Verb(env, context) {
-                break 'lab25;
-            }
-            break 'lab28;
-        }
-        break 'lab25;
+        env.cursor = v_2;
+        break 'lab1;
     }
-    env.cursor = v_12;
-    r_Normalize_post(env, context);
+    env.limit_backward = env.cursor;
+    env.cursor = env.limit;
+    let v_5 = env.limit - env.cursor;
+    'lab7: loop {
+        'lab8: loop {
+            let v_6 = env.limit - env.cursor;
+            'lab9: loop {
+                if !b_is_verb {
+                    break 'lab9;
+                }
+                'lab10: loop {
+                    let v_7 = env.limit - env.cursor;
+                    'lab11: loop {
+                        let mut v_8 = 1;
+                        'replab12: loop{
+                            let v_9 = env.limit - env.cursor;
+                            'lab13: for _ in 0..1 {
+                                env.ket = env.cursor;
+                                among_var = env.find_among_b(A_12, context);
+                                if among_var == 0 {
+                                    break 'lab13;
+                                }
+                                env.bra = env.cursor;
+                                match among_var {
+                                    1 => {
+                                        if (env.current.chars().count() as i32) < 4 {
+                                            break 'lab13;
+                                        }
+                                        env.slice_del();
+                                    }
+                                    2 => {
+                                        if (env.current.chars().count() as i32) < 5 {
+                                            break 'lab13;
+                                        }
+                                        env.slice_del();
+                                    }
+                                    3 => {
+                                        if (env.current.chars().count() as i32) < 6 {
+                                            break 'lab13;
+                                        }
+                                        env.slice_del();
+                                    }
+                                    _ => ()
+                                }
+                                v_8 -= 1;
+                                continue 'replab12;
+                            }
+                            env.cursor = env.limit - v_9;
+                            break 'replab12;
+                        }
+                        if v_8 > 0 {
+                            break 'lab11;
+                        }
+                        'lab14: loop {
+                            let v_10 = env.limit - env.cursor;
+                            'lab15: loop {
+                                if !r_Suffix_Verb_Step2a(env, context) {
+                                    break 'lab15;
+                                }
+                                break 'lab14;
+                            }
+                            env.cursor = env.limit - v_10;
+                            'lab16: loop {
+                                env.ket = env.cursor;
+                                if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 136 as u8) {
+                                    break 'lab16;
+                                }
+
+                                among_var = env.find_among_b(A_15, context);
+                                if among_var == 0 {
+                                    break 'lab16;
+                                }
+                                env.bra = env.cursor;
+                                match among_var {
+                                    1 => {
+                                        if (env.current.chars().count() as i32) < 4 {
+                                            break 'lab16;
+                                        }
+                                        env.slice_del();
+                                    }
+                                    2 => {
+                                        if (env.current.chars().count() as i32) < 6 {
+                                            break 'lab16;
+                                        }
+                                        env.slice_del();
+                                    }
+                                    _ => ()
+                                }
+                                break 'lab14;
+                            }
+                            env.cursor = env.limit - v_10;
+                            if env.cursor <= env.limit_backward {
+                                break 'lab11;
+                            }
+                            env.previous_char();
+                            break 'lab14;
+                        }
+                        break 'lab10;
+                    }
+                    env.cursor = env.limit - v_7;
+                    'lab17: loop {
+                        env.ket = env.cursor;
+                        if (env.cursor - 3 <= env.limit_backward || (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 133 as u8 && env.current.as_bytes()[(env.cursor - 1) as usize] as u8 != 167 as u8)) {
+                            break 'lab17;
+                        }
+
+                        if env.find_among_b(A_14, context) == 0 {
+                            break 'lab17;
+                        }
+                        env.bra = env.cursor;
+                        if (env.current.chars().count() as i32) < 5 {
+                            break 'lab17;
+                        }
+                        env.slice_del();
+                        break 'lab10;
+                    }
+                    env.cursor = env.limit - v_7;
+                    if !r_Suffix_Verb_Step2a(env, context) {
+                        break 'lab9;
+                    }
+                    break 'lab10;
+                }
+                break 'lab8;
+            }
+            env.cursor = env.limit - v_6;
+            'lab18: loop {
+                if !b_is_noun {
+                    break 'lab18;
+                }
+                let v_11 = env.limit - env.cursor;
+                'lab19: loop {
+                    'lab20: loop {
+                        let v_12 = env.limit - env.cursor;
+                        'lab21: loop {
+                            env.ket = env.cursor;
+                            if !env.eq_s_b(&"\u{629}") {
+                                break 'lab21;
+                            }
+                            env.bra = env.cursor;
+                            if (env.current.chars().count() as i32) < 4 {
+                                break 'lab21;
+                            }
+                            env.slice_del();
+                            break 'lab20;
+                        }
+                        env.cursor = env.limit - v_12;
+                        'lab22: loop {
+                            if b_is_defined {
+                                break 'lab22;
+                            }
+                            env.ket = env.cursor;
+                            among_var = env.find_among_b(A_10, context);
+                            if among_var == 0 {
+                                break 'lab22;
+                            }
+                            env.bra = env.cursor;
+                            match among_var {
+                                1 => {
+                                    if (env.current.chars().count() as i32) < 4 {
+                                        break 'lab22;
+                                    }
+                                    env.slice_del();
+                                }
+                                2 => {
+                                    if (env.current.chars().count() as i32) < 5 {
+                                        break 'lab22;
+                                    }
+                                    env.slice_del();
+                                }
+                                3 => {
+                                    if (env.current.chars().count() as i32) < 6 {
+                                        break 'lab22;
+                                    }
+                                    env.slice_del();
+                                }
+                                _ => ()
+                            }
+                            'lab23: loop {
+                                let v_13 = env.limit - env.cursor;
+                                'lab24: loop {
+                                    if !r_Suffix_Noun_Step2a(env, context) {
+                                        break 'lab24;
+                                    }
+                                    break 'lab23;
+                                }
+                                env.cursor = env.limit - v_13;
+                                'lab25: loop {
+                                    if !r_Suffix_Noun_Step2b(env, context) {
+                                        break 'lab25;
+                                    }
+                                    break 'lab23;
+                                }
+                                env.cursor = env.limit - v_13;
+                                'lab26: loop {
+                                    if !r_Suffix_Noun_Step2c1(env, context) {
+                                        break 'lab26;
+                                    }
+                                    break 'lab23;
+                                }
+                                env.cursor = env.limit - v_13;
+                                if env.cursor <= env.limit_backward {
+                                    break 'lab22;
+                                }
+                                env.previous_char();
+                                break 'lab23;
+                            }
+                            break 'lab20;
+                        }
+                        env.cursor = env.limit - v_12;
+                        'lab27: loop {
+                            env.ket = env.cursor;
+                            if !env.eq_s_b(&"\u{646}") {
+                                break 'lab27;
+                            }
+                            env.bra = env.cursor;
+                            if (env.current.chars().count() as i32) < 6 {
+                                break 'lab27;
+                            }
+                            env.slice_del();
+                            'lab28: loop {
+                                let v_14 = env.limit - env.cursor;
+                                'lab29: loop {
+                                    if !r_Suffix_Noun_Step2a(env, context) {
+                                        break 'lab29;
+                                    }
+                                    break 'lab28;
+                                }
+                                env.cursor = env.limit - v_14;
+                                'lab30: loop {
+                                    if !r_Suffix_Noun_Step2b(env, context) {
+                                        break 'lab30;
+                                    }
+                                    break 'lab28;
+                                }
+                                env.cursor = env.limit - v_14;
+                                if !r_Suffix_Noun_Step2c1(env, context) {
+                                    break 'lab27;
+                                }
+                                break 'lab28;
+                            }
+                            break 'lab20;
+                        }
+                        env.cursor = env.limit - v_12;
+                        'lab31: loop {
+                            if b_is_defined {
+                                break 'lab31;
+                            }
+                            if !r_Suffix_Noun_Step2a(env, context) {
+                                break 'lab31;
+                            }
+                            break 'lab20;
+                        }
+                        env.cursor = env.limit - v_12;
+                        if !r_Suffix_Noun_Step2b(env, context) {
+                            env.cursor = env.limit - v_11;
+                            break 'lab19;
+                        }
+                        break 'lab20;
+                    }
+                    break 'lab19;
+                }
+                env.ket = env.cursor;
+                if !env.eq_s_b(&"\u{64A}") {
+                    break 'lab18;
+                }
+                env.bra = env.cursor;
+                if (env.current.chars().count() as i32) < 3 {
+                    break 'lab18;
+                }
+                env.slice_del();
+                break 'lab8;
+            }
+            env.cursor = env.limit - v_6;
+            env.ket = env.cursor;
+            if !env.eq_s_b(&"\u{649}") {
+                break 'lab7;
+            }
+            env.bra = env.cursor;
+            env.slice_from("\u{64A}");
+            break 'lab8;
+        }
+        break 'lab7;
+    }
+    env.cursor = env.limit - v_5;
+    env.cursor = env.limit_backward;
+    let v_15 = env.cursor;
+    'lab32: loop {
+        let v_16 = env.cursor;
+        'lab33: loop {
+            env.bra = env.cursor;
+            if (env.cursor + 3 >= env.limit || env.current.as_bytes()[(env.cursor + 3) as usize] as u8 >> 5 != 5 as u8 || ((188 as i32 >> (env.current.as_bytes()[(env.cursor + 3) as usize] as u8 & 0x1f)) & 1) == 0) {
+                env.cursor = v_16;
+                break 'lab33;
+            }
+
+            among_var = env.find_among(A_4, context);
+            if among_var == 0 {
+                env.cursor = v_16;
+                break 'lab33;
+            }
+            env.ket = env.cursor;
+            match among_var {
+                1 => {
+                    if (env.current.chars().count() as i32) < 4 {
+                        env.cursor = v_16;
+                        break 'lab33;
+                    }
+                    env.slice_from("\u{623}");
+                }
+                2 => {
+                    if (env.current.chars().count() as i32) < 4 {
+                        env.cursor = v_16;
+                        break 'lab33;
+                    }
+                    env.slice_from("\u{622}");
+                }
+                3 => {
+                    if (env.current.chars().count() as i32) < 4 {
+                        env.cursor = v_16;
+                        break 'lab33;
+                    }
+                    env.slice_from("\u{627}");
+                }
+                4 => {
+                    if (env.current.chars().count() as i32) < 4 {
+                        env.cursor = v_16;
+                        break 'lab33;
+                    }
+                    env.slice_from("\u{625}");
+                }
+                _ => ()
+            }
+            break 'lab33;
+        }
+        let v_17 = env.cursor;
+        'lab34: loop {
+            env.bra = env.cursor;
+            if (env.cursor + 1 >= env.limit || (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 129 as u8 && env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 136 as u8)) {
+                env.cursor = v_17;
+                break 'lab34;
+            }
+
+            if env.find_among(A_5, context) == 0 {
+                env.cursor = v_17;
+                break 'lab34;
+            }
+            env.ket = env.cursor;
+            if (env.current.chars().count() as i32) < 4 {
+                env.cursor = v_17;
+                break 'lab34;
+            }
+            'lab35: loop {
+                if !env.eq_s(&"\u{627}") {
+                    break 'lab35;
+                }
+                env.cursor = v_17;
+                break 'lab34;
+            }
+            env.slice_del();
+            break 'lab34;
+        }
+        'lab36: loop {
+            let v_18 = env.cursor;
+            'lab37: loop {
+                env.bra = env.cursor;
+                if (env.cursor + 3 >= env.limit || (env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 132 as u8 && env.current.as_bytes()[(env.cursor + 3) as usize] as u8 != 167 as u8)) {
+                    break 'lab37;
+                }
+
+                among_var = env.find_among(A_6, context);
+                if among_var == 0 {
+                    break 'lab37;
+                }
+                env.ket = env.cursor;
+                match among_var {
+                    1 => {
+                        if (env.current.chars().count() as i32) < 6 {
+                            break 'lab37;
+                        }
+                        env.slice_del();
+                    }
+                    2 => {
+                        if (env.current.chars().count() as i32) < 5 {
+                            break 'lab37;
+                        }
+                        env.slice_del();
+                    }
+                    _ => ()
+                }
+                break 'lab36;
+            }
+            env.cursor = v_18;
+            'lab38: loop {
+                if !b_is_noun {
+                    break 'lab38;
+                }
+                env.bra = env.cursor;
+                if (env.cursor + 1 >= env.limit || (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 168 as u8 && env.current.as_bytes()[(env.cursor + 1) as usize] as u8 != 131 as u8)) {
+                    break 'lab38;
+                }
+
+                among_var = env.find_among(A_7, context);
+                if among_var == 0 {
+                    break 'lab38;
+                }
+                env.ket = env.cursor;
+                match among_var {
+                    1 => {
+                        if (env.current.chars().count() as i32) < 4 {
+                            break 'lab38;
+                        }
+                        env.slice_del();
+                    }
+                    2 => {
+                        if (env.current.chars().count() as i32) < 4 {
+                            break 'lab38;
+                        }
+                        env.slice_from("\u{628}");
+                    }
+                    3 => {
+                        if (env.current.chars().count() as i32) < 4 {
+                            break 'lab38;
+                        }
+                        env.slice_from("\u{643}");
+                    }
+                    _ => ()
+                }
+                break 'lab36;
+            }
+            env.cursor = v_18;
+            if !b_is_verb {
+                break 'lab32;
+            }
+            let v_19 = env.cursor;
+            'lab39: loop {
+                env.bra = env.cursor;
+                among_var = env.find_among(A_8, context);
+                if among_var == 0 {
+                    env.cursor = v_19;
+                    break 'lab39;
+                }
+                env.ket = env.cursor;
+                match among_var {
+                    1 => {
+                        if (env.current.chars().count() as i32) < 5 {
+                            env.cursor = v_19;
+                            break 'lab39;
+                        }
+                        env.slice_from("\u{64A}");
+                    }
+                    2 => {
+                        if (env.current.chars().count() as i32) < 5 {
+                            env.cursor = v_19;
+                            break 'lab39;
+                        }
+                        env.slice_from("\u{62A}");
+                    }
+                    3 => {
+                        if (env.current.chars().count() as i32) < 5 {
+                            env.cursor = v_19;
+                            break 'lab39;
+                        }
+                        env.slice_from("\u{646}");
+                    }
+                    4 => {
+                        if (env.current.chars().count() as i32) < 5 {
+                            env.cursor = v_19;
+                            break 'lab39;
+                        }
+                        env.slice_from("\u{623}");
+                    }
+                    _ => ()
+                }
+                break 'lab39;
+            }
+            env.bra = env.cursor;
+            if (env.cursor + 5 >= env.limit || env.current.as_bytes()[(env.cursor + 5) as usize] as u8 != 170 as u8) {
+                break 'lab32;
+            }
+
+            if env.find_among(A_9, context) == 0 {
+                break 'lab32;
+            }
+            env.ket = env.cursor;
+            if (env.current.chars().count() as i32) < 5 {
+                break 'lab32;
+            }
+            b_is_verb = true;
+            b_is_noun = false;
+            env.slice_from("\u{627}\u{633}\u{62A}");
+            break 'lab36;
+        }
+        break 'lab32;
+    }
+    env.cursor = v_15;
+    'lab40: loop {
+        let v_20 = env.cursor;
+        'lab41: loop {
+            env.limit_backward = env.cursor;
+            env.cursor = env.limit;
+            env.ket = env.cursor;
+            if (env.cursor - 1 <= env.limit_backward || env.current.as_bytes()[(env.cursor - 1) as usize] as u8 >> 5 != 5 as u8 || ((124 as i32 >> (env.current.as_bytes()[(env.cursor - 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                break 'lab41;
+            }
+
+            if env.find_among_b(A_1, context) == 0 {
+                break 'lab41;
+            }
+            env.bra = env.cursor;
+            env.slice_from("\u{621}");
+            env.cursor = env.limit_backward;
+            break 'lab41;
+        }
+        env.cursor = v_20;
+        let v_21 = env.cursor;
+        'lab42: loop {
+            'replab43: loop{
+                let v_22 = env.cursor;
+                'lab44: for _ in 0..1 {
+                    'lab45: loop {
+                        let v_23 = env.cursor;
+                        'lab46: loop {
+                            env.bra = env.cursor;
+                            if (env.cursor + 1 >= env.limit || env.current.as_bytes()[(env.cursor + 1) as usize] as u8 >> 5 != 5 as u8 || ((124 as i32 >> (env.current.as_bytes()[(env.cursor + 1) as usize] as u8 & 0x1f)) & 1) == 0) {
+                                break 'lab46;
+                            }
+
+                            among_var = env.find_among(A_2, context);
+                            if among_var == 0 {
+                                break 'lab46;
+                            }
+                            env.ket = env.cursor;
+                            match among_var {
+                                1 => {
+                                    env.slice_from("\u{627}");
+                                }
+                                2 => {
+                                    env.slice_from("\u{648}");
+                                }
+                                3 => {
+                                    env.slice_from("\u{64A}");
+                                }
+                                _ => ()
+                            }
+                            break 'lab45;
+                        }
+                        env.cursor = v_23;
+                        if env.cursor >= env.limit {
+                            break 'lab44;
+                        }
+                        env.next_char();
+                        break 'lab45;
+                    }
+                    continue 'replab43;
+                }
+                env.cursor = v_22;
+                break 'replab43;
+            }
+            break 'lab42;
+        }
+        env.cursor = v_21;
+        break 'lab40;
+    }
     return true
 }

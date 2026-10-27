@@ -14,6 +14,7 @@ pub enum Languages {
     Czech,
     Danish,
     Dutch,
+    EarlyModernEnglish,
     English,
     Esperanto,
     Estonian,
@@ -40,6 +41,7 @@ pub enum Languages {
     Swedish,
     Tamil,
     Turkish,
+    Ukrainian,
     Yiddish,
 }
 
@@ -60,6 +62,7 @@ impl Stemmer {
             Languages::Czech => Stemmer { stemmer: algorithms::czech::stem },
             Languages::Danish => Stemmer { stemmer: algorithms::danish::stem },
             Languages::Dutch => Stemmer { stemmer: algorithms::dutch::stem },
+            Languages::EarlyModernEnglish => Stemmer { stemmer: algorithms::earlymodernenglish::stem },
             Languages::English => Stemmer { stemmer: algorithms::english::stem },
             Languages::Esperanto => Stemmer { stemmer: algorithms::esperanto::stem },
             Languages::Estonian => Stemmer { stemmer: algorithms::estonian::stem },
@@ -86,6 +89,7 @@ impl Stemmer {
             Languages::Swedish => Stemmer { stemmer: algorithms::swedish::stem },
             Languages::Tamil => Stemmer { stemmer: algorithms::tamil::stem },
             Languages::Turkish => Stemmer { stemmer: algorithms::turkish::stem },
+            Languages::Ukrainian => Stemmer { stemmer: algorithms::ukrainian::stem },
             Languages::Yiddish => Stemmer { stemmer: algorithms::yiddish::stem },
         }
     }

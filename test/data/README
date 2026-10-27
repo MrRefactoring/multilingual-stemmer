@@ -1,41 +1,47 @@
-The file voc_ar.txt is based on the arabic vocabulary list in the snowball-data
-repository: https://github.com/snowballstem/snowball-data.
-Their file was produced from the "Arabic Wordlist for Spellchecking"
-version 1.6, downloaded from: https://sourceforge.net/projects/arabic-wordlist/
+# Происхождение тестовых корпусов
 
-The commands used to create voc.txt.gz were ("sort -u" used because there's one
-duplicate word in the list):
+35 пар (кроме арабского корпуса) `voc_<identifier>.txt` / `res_<identifier>.txt` скопированы без изменения содержимого (после распаковки `.gz`, где требуется) из https://github.com/snowballstem/snowball-data/tree/019921c3a41c2b70063ee3feb215a00c8e594597 .
 
-unzip -p Arabic-Wordlist-1.6.zip Arabic-Wordlist-1.6/arabic-wordlist-1.6.txt|sort -u > voc.txt
-gzip -9 voc.txt
+Commit: 019921c3a41c2b70063ee3feb215a00c8e594597 (2026-10-16).
+Алгоритмы: Snowball 3.2.0 (2026-10-17).
 
-The "Arabic Wordlist for Spellchecking" is licensed under the GPLv3+:
+Общие условия находятся в `COPYING`; специальные условия и происхождение отдельных корпусов — в `COPYING_<identifier>`. Файл `LICENSE` содержит GPLv3 для арабского корпуса. Корпуса используются только в тестах и не включаются в npm-пакет.
 
-#-------------------------------------------------------------------------------
-# This file is part of Arabic Wordlist for Spellchecking
-# 
-# Copyright (c) 2013 Mohammed Attia
-# 
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-# 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>
-#-------------------------------------------------------------------------------
+Соответствие файлов каталогам upstream:
 
---------------------------------------------------------------------------------
-
-The file voc_st.txt is based on the sesotho vocabulary list in the snowball-data
-repository: https://github.com/snowballstem/snowball-data.
-Their file was derived from a dump of the Sesotho wikipedia dated 2026-04-01,
-filtered to remove non-Sesotho words, junk words and wikipedia macro code.
-
-Wikipedia content is licensed under CC BY-SA 3.0:
-https://creativecommons.org/licenses/by-sa/3.0/
+- `ar`: сохранённый корпус из выпуска 2.1.1, 91 962 слова; весь результат проверен официальной C-реализацией Snowball 3.2.0. Происхождение и GPLv3+: `COPYING_ar`, `LICENSE`. Полный upstream-корпус содержит более 9 млн строк и в репозиторий не копируется.
+- `hy`: `armenian/voc.txt`, `armenian/output.txt`, `COPYING_hy`.
+- `eu`: `basque/voc.txt`, `basque/output.txt`, `COPYING_eu`.
+- `ca`: `catalan/voc.txt`, `catalan/output.txt`, `COPYING_ca`.
+- `cs`: `czech/voc.txt`, `czech/output.txt`, `COPYING_cs`.
+- `da`: `danish/voc.txt`, `danish/output.txt`, общие условия `COPYING`.
+- `nl`: `dutch/voc.txt`, `dutch/output.txt`, общие условия `COPYING`.
+- `earlymodernenglish`: `earlymodernenglish/voc.txt`, `earlymodernenglish/output.txt`, `COPYING_earlymodernenglish`.
+- `en`: `english/voc.txt`, `english/output.txt`, общие условия `COPYING`.
+- `eo`: `esperanto/voc.txt`, `esperanto/output.txt`, `COPYING_eo`.
+- `et`: `estonian/voc.txt`, `estonian/output.txt`, `COPYING_et`.
+- `fi`: `finnish/voc.txt`, `finnish/output.txt`, `COPYING_fi`.
+- `fr`: `french/voc.txt`, `french/output.txt`, `COPYING_fr`.
+- `de`: `german/voc.txt`, `german/output.txt`, общие условия `COPYING`.
+- `el`: `greek/voc.txt`, `greek/output.txt`, `COPYING_el`.
+- `hi`: `hindi/voc.txt`, `hindi/output.txt`, `COPYING_hi`.
+- `hu`: `hungarian/voc.txt`, `hungarian/output.txt`, общие условия `COPYING`.
+- `id`: `indonesian/voc.txt`, `indonesian/output.txt`, `COPYING_id`.
+- `ga`: `irish/voc.txt`, `irish/output.txt`, общие условия `COPYING`.
+- `it`: `italian/voc.txt`, `italian/output.txt`, `COPYING_it`.
+- `lt`: `lithuanian/voc.txt`, `lithuanian/output.txt`, `COPYING_lt`.
+- `ne`: `nepali/voc.txt`, `nepali/output.txt`, общие условия `COPYING`.
+- `no`: `norwegian/voc.txt`, `norwegian/output.txt`, общие условия `COPYING`.
+- `fa`: `persian/voc.txt`, `persian/output.txt`, `COPYING_fa`.
+- `pl`: `polish/voc.txt`, `polish/output.txt`, `COPYING_pl`.
+- `pt`: `portuguese/voc.txt`, `portuguese/output.txt`, общие условия `COPYING`.
+- `ro`: `romanian/voc.txt`, `romanian/output.txt`, общие условия `COPYING`.
+- `ru`: `russian/voc.txt`, `russian/output.txt`, общие условия `COPYING`.
+- `sr`: `serbian/voc.txt`, `serbian/output.txt`, `COPYING_sr`.
+- `st`: `sesotho/voc.txt`, `sesotho/output.txt`, `COPYING_st`.
+- `es`: `spanish/voc.txt`, `spanish/output.txt`, общие условия `COPYING`.
+- `sv`: `swedish/voc.txt`, `swedish/output.txt`, общие условия `COPYING`.
+- `ta`: `tamil/voc.txt`, `tamil/output.txt`, `COPYING_ta`.
+- `tr`: `turkish/voc.txt`, `turkish/output.txt`, общие условия `COPYING`.
+- `uk`: `ukrainian/voc.txt`, `ukrainian/output.txt`, `COPYING_uk`.
+- `yi`: `yiddish/voc.txt`, `yiddish/output.txt`, `COPYING_yi`.

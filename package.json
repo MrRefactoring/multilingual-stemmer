@@ -1,11 +1,11 @@
 {
   "name": "multilingual-stemmer",
-  "version": "2.1.1",
-  "description": "Word stemming for 34 languages (English, Arabic, Russian, French, German, Spanish, Turkish and more) via Snowball algorithms compiled to WebAssembly. TypeScript-first · Node.js · Browser · Zero dependencies.",
+  "version": "2.2.0",
+  "description": "Стемминг: 35 языков и Early Modern English, 36 алгоритмов Snowball 3.2.0 в WebAssembly. TypeScript · Node.js · Browser · Без runtime-зависимостей.",
   "author": "Vladislav Tupikin <vladislav.tupikin@icloud.com>",
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@11.19.0",
+  "packageManager": "pnpm@12.15.0",
   "engines": {
     "node": ">=22"
   },
@@ -26,12 +26,14 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "THIRD_PARTY_NOTICES"
   ],
   "scripts": {
+    "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true });\"",
     "compile:wasm": "pnpm exec wasm-pack build ./rust-stemmers --out-dir ../dist/browser --release --target web --out-name index",
     "compile:ts": "tsc",
-    "compile": "pnpm run compile:wasm && tsx prepare.ts && pnpm run compile:ts",
+    "compile": "pnpm run clean && pnpm run compile:wasm && tsx prepare.ts && pnpm run compile:ts",
     "prepublishOnly": "pnpm run compile && pnpm run optimize",
     "optimize": "pnpm exec wasm-opt ./dist/browser/index_bg.wasm -o ./dist/browser/index_bg.wasm",
     "test": "vitest run",
@@ -69,11 +71,11 @@
     "url": "git+https://github.com/MrRefactoring/multilingual-stemmer.git"
   },
   "devDependencies": {
-    "@types/node": "^22.20.1",
-    "tsx": "^4.23.2",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.10",
-    "wasm-opt": "^1.4.0",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5",
+    "wasm-opt": "^2.0.1",
     "wasm-pack": "^0.15.0"
   }
 }
