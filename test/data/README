@@ -1,47 +1,47 @@
-# Происхождение тестовых корпусов
+# Test corpus provenance
 
-35 пар (кроме арабского корпуса) `voc_<identifier>.txt` / `res_<identifier>.txt` скопированы без изменения содержимого (после распаковки `.gz`, где требуется) из https://github.com/snowballstem/snowball-data/tree/019921c3a41c2b70063ee3feb215a00c8e594597 .
+The 35 `voc_<identifier>.txt` / `res_<identifier>.txt` pairs other than Arabic are copied without content changes, after decompressing `.gz` files where needed, from https://github.com/snowballstem/snowball-data/tree/019921c3a41c2b70063ee3feb215a00c8e594597 .
 
 Commit: 019921c3a41c2b70063ee3feb215a00c8e594597 (2026-10-16).
-Алгоритмы: Snowball 3.2.0 (2026-10-17).
+Algorithms: Snowball 3.2.0 (2026-10-17).
 
-Общие условия находятся в `COPYING`; специальные условия и происхождение отдельных корпусов — в `COPYING_<identifier>`. Файл `LICENSE` содержит GPLv3 для арабского корпуса. Корпуса используются только в тестах и не включаются в npm-пакет.
+General terms are in `COPYING`; corpus-specific terms and provenance are in `COPYING_<identifier>`. `LICENSE` contains the GPLv3 text for the Arabic corpus. Corpora are used only in tests and are not included in the npm package.
 
-Соответствие файлов каталогам upstream:
+Local identifiers and upstream directories:
 
-- `ar`: сохранённый корпус из выпуска 2.1.1, 91 962 слова; весь результат проверен официальной C-реализацией Snowball 3.2.0. Происхождение и GPLv3+: `COPYING_ar`, `LICENSE`. Полный upstream-корпус содержит более 9 млн строк и в репозиторий не копируется.
+- `ar`: the retained 91,962-word corpus from release 2.1.1, with every result verified against the official Snowball 3.2.0 C implementation. Provenance and GPLv3+: `COPYING_ar`, `LICENSE`. The full upstream corpus exceeds 9 million lines and is not copied into this repository.
 - `hy`: `armenian/voc.txt`, `armenian/output.txt`, `COPYING_hy`.
 - `eu`: `basque/voc.txt`, `basque/output.txt`, `COPYING_eu`.
 - `ca`: `catalan/voc.txt`, `catalan/output.txt`, `COPYING_ca`.
 - `cs`: `czech/voc.txt`, `czech/output.txt`, `COPYING_cs`.
-- `da`: `danish/voc.txt`, `danish/output.txt`, общие условия `COPYING`.
-- `nl`: `dutch/voc.txt`, `dutch/output.txt`, общие условия `COPYING`.
+- `da`: `danish/voc.txt`, `danish/output.txt`, general terms in `COPYING`.
+- `nl`: `dutch/voc.txt`, `dutch/output.txt`, general terms in `COPYING`.
 - `earlymodernenglish`: `earlymodernenglish/voc.txt`, `earlymodernenglish/output.txt`, `COPYING_earlymodernenglish`.
-- `en`: `english/voc.txt`, `english/output.txt`, общие условия `COPYING`.
+- `en`: `english/voc.txt`, `english/output.txt`, general terms in `COPYING`.
 - `eo`: `esperanto/voc.txt`, `esperanto/output.txt`, `COPYING_eo`.
 - `et`: `estonian/voc.txt`, `estonian/output.txt`, `COPYING_et`.
 - `fi`: `finnish/voc.txt`, `finnish/output.txt`, `COPYING_fi`.
 - `fr`: `french/voc.txt`, `french/output.txt`, `COPYING_fr`.
-- `de`: `german/voc.txt`, `german/output.txt`, общие условия `COPYING`.
+- `de`: `german/voc.txt`, `german/output.txt`, general terms in `COPYING`.
 - `el`: `greek/voc.txt`, `greek/output.txt`, `COPYING_el`.
 - `hi`: `hindi/voc.txt`, `hindi/output.txt`, `COPYING_hi`.
-- `hu`: `hungarian/voc.txt`, `hungarian/output.txt`, общие условия `COPYING`.
+- `hu`: `hungarian/voc.txt`, `hungarian/output.txt`, general terms in `COPYING`.
 - `id`: `indonesian/voc.txt`, `indonesian/output.txt`, `COPYING_id`.
-- `ga`: `irish/voc.txt`, `irish/output.txt`, общие условия `COPYING`.
+- `ga`: `irish/voc.txt`, `irish/output.txt`, general terms in `COPYING`.
 - `it`: `italian/voc.txt`, `italian/output.txt`, `COPYING_it`.
 - `lt`: `lithuanian/voc.txt`, `lithuanian/output.txt`, `COPYING_lt`.
-- `ne`: `nepali/voc.txt`, `nepali/output.txt`, общие условия `COPYING`.
-- `no`: `norwegian/voc.txt`, `norwegian/output.txt`, общие условия `COPYING`.
+- `ne`: `nepali/voc.txt`, `nepali/output.txt`, general terms in `COPYING`.
+- `no`: `norwegian/voc.txt`, `norwegian/output.txt`, general terms in `COPYING`.
 - `fa`: `persian/voc.txt`, `persian/output.txt`, `COPYING_fa`.
 - `pl`: `polish/voc.txt`, `polish/output.txt`, `COPYING_pl`.
-- `pt`: `portuguese/voc.txt`, `portuguese/output.txt`, общие условия `COPYING`.
-- `ro`: `romanian/voc.txt`, `romanian/output.txt`, общие условия `COPYING`.
-- `ru`: `russian/voc.txt`, `russian/output.txt`, общие условия `COPYING`.
+- `pt`: `portuguese/voc.txt`, `portuguese/output.txt`, general terms in `COPYING`.
+- `ro`: `romanian/voc.txt`, `romanian/output.txt`, general terms in `COPYING`.
+- `ru`: `russian/voc.txt`, `russian/output.txt`, general terms in `COPYING`.
 - `sr`: `serbian/voc.txt`, `serbian/output.txt`, `COPYING_sr`.
 - `st`: `sesotho/voc.txt`, `sesotho/output.txt`, `COPYING_st`.
-- `es`: `spanish/voc.txt`, `spanish/output.txt`, общие условия `COPYING`.
-- `sv`: `swedish/voc.txt`, `swedish/output.txt`, общие условия `COPYING`.
+- `es`: `spanish/voc.txt`, `spanish/output.txt`, general terms in `COPYING`.
+- `sv`: `swedish/voc.txt`, `swedish/output.txt`, general terms in `COPYING`.
 - `ta`: `tamil/voc.txt`, `tamil/output.txt`, `COPYING_ta`.
-- `tr`: `turkish/voc.txt`, `turkish/output.txt`, общие условия `COPYING`.
+- `tr`: `turkish/voc.txt`, `turkish/output.txt`, general terms in `COPYING`.
 - `uk`: `ukrainian/voc.txt`, `ukrainian/output.txt`, `COPYING_uk`.
 - `yi`: `yiddish/voc.txt`, `yiddish/output.txt`, `COPYING_yi`.

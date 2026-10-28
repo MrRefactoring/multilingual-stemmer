@@ -1,7 +1,7 @@
 {
   "name": "multilingual-stemmer",
-  "version": "2.2.0",
-  "description": "Стемминг: 35 языков и Early Modern English, 36 алгоритмов Snowball 3.2.0 в WebAssembly. TypeScript · Node.js · Browser · Без runtime-зависимостей.",
+  "version": "2.2.1",
+  "description": "Word stemming for 35 languages and Early Modern English via 36 Snowball 3.2.0 algorithms compiled to WebAssembly. TypeScript · Node.js · Browser · Zero dependencies.",
   "author": "Vladislav Tupikin <vladislav.tupikin@icloud.com>",
   "license": "MIT",
   "type": "module",

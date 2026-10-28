@@ -1,11 +1,11 @@
-Уведомления о сторонних компонентах
-===================================
+Third-Party Notices
+===================
 
 Snowball 3.2.0
 --------------
 https://snowballstem.org/
-Исходники: https://github.com/snowballstem/snowball/tree/6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11
-Лицензия: BSD-3-Clause. Алгоритмы скомпилированы в Rust и WebAssembly.
+Source: https://github.com/snowballstem/snowball/tree/6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11
+License: BSD-3-Clause. Algorithms are compiled to Rust and WebAssembly.
 
 Copyright (c) 2001, Dr Martin Porter
 Copyright (c) 2004,2005, Richard Boulton
@@ -40,7 +40,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 rust-stemmers
 -------------
 https://github.com/CurrySoftware/rust-stemmers
-Локальная адаптация Rust-кода и WebAssembly-обёртка.
+Local adaptation of the Rust code and WebAssembly wrapper.
 
 MIT License
 
@@ -64,7 +64,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-wasm-bindgen и wasm-bindgen-shared 0.2.129
+wasm-bindgen and wasm-bindgen-shared 0.2.129
 ------------------------------------------
 https://github.com/wasm-bindgen/wasm-bindgen
 

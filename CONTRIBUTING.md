@@ -1,17 +1,17 @@
-# Разработка
+# Contributing
 
-## Окружение
+## Prerequisites
 
-Для разработки и сборки требуются Node.js ≥ 24.14, pnpm из поля `packageManager` в `package.json` и Rust с целью WebAssembly. Готовая библиотека поддерживает Node.js ≥ 22.
+Development and builds require Node.js ≥ 24.14, the pnpm version pinned in `package.json`, and Rust with the WebAssembly target. The published library supports Node.js ≥ 22.
 
 ```sh
 rustup target add wasm32-unknown-unknown
 pnpm install --frozen-lockfile
 ```
 
-`wasm-pack` и `wasm-opt` устанавливаются как devDependencies. `wasm-opt` 2 поставляет Binaryen через платформенные optionalDependencies и не запускает install scripts.
+`wasm-pack` and `wasm-opt` are devDependencies. `wasm-opt` 2 provides Binaryen through platform-specific optionalDependencies and does not run install scripts.
 
-## Сборка и проверки
+## Build and test
 
 ```sh
 pnpm run compile
@@ -19,47 +19,47 @@ pnpm run optimize
 pnpm test
 ```
 
-`compile` очищает `dist`, собирает Rust → WASM, запускает `prepare.ts` и компилирует TypeScript. `prepublishOnly` выполняет сборку и оптимизацию перед публикацией. Тесты используют собранный `dist`, поэтому после изменений сначала нужна сборка.
+`compile` clears `dist`, builds Rust → WASM, runs `prepare.ts`, and compiles TypeScript. `prepublishOnly` builds and optimizes the package before publication. Tests use the built `dist`, so rebuild after changing the source.
 
-В тестах сравниваются все 36 алгоритмов с парами слов и результатов из `snowball-data`. Отдельно проверяются функции языков, фабрика, строковые идентификаторы и `Languages.X`.
+The test suite checks all 36 algorithms against vocabulary/result pairs from `snowball-data`. It also tests named language functions, the factory, string identifiers, and `Languages.X` members.
 
-## Источники Snowball 3.2.0
+## Snowball 3.2.0 sources
 
-- Релиз: https://snowballstem.org/dist/snowball-3.2.0.tar.gz
-- SHA-256 архива: `78ec0f192871497b68e11892fd20ef9b26c037c35d1162e65a29cef86111bf67`.
-- Полный снимок исходников: [`6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11`](https://github.com/snowballstem/snowball/tree/6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11).
-- Корпуса: [`019921c3a41c2b70063ee3feb215a00c8e594597`](https://github.com/snowballstem/snowball-data/tree/019921c3a41c2b70063ee3feb215a00c8e594597).
+- Release: https://snowballstem.org/dist/snowball-3.2.0.tar.gz
+- Archive SHA-256: `78ec0f192871497b68e11892fd20ef9b26c037c35d1162e65a29cef86111bf67`.
+- Full source snapshot: [`6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11`](https://github.com/snowballstem/snowball/tree/6389c79f91cd67ed2de3ebdcf84ec8c2d2d23c11).
+- Corpora: [`019921c3a41c2b70063ee3feb215a00c8e594597`](https://github.com/snowballstem/snowball-data/tree/019921c3a41c2b70063ee3feb215a00c8e594597).
 
-Для сборки компилятора используйте полный снимок: в релизном архиве отсутствует `libstemmer/mkalgorithms.pl`. Файлы компилятора и `.sbl` в указанных источниках совпадают.
+Build the compiler from the full snapshot: the release archive omits `libstemmer/mkalgorithms.pl`. The compiler and `.sbl` files in these sources are identical.
 
 ```sh
 make -j4 snowball
 ```
 
-Алгоритмы генерируются этим компилятором; вручную сгенерированные файлы не редактируются, кроме адаптации импортов `use snowball::` → `use crate::snowball::`. Runtime берётся из `rust/src/snowball/` того же снимка.
+Generate algorithms with this compiler. The only manual adjustment to generated files is changing imports from `use snowball::` to `use crate::snowball::`. Use the runtime from `rust/src/snowball/` in the same snapshot.
 
-## Добавление алгоритма
+## Adding an algorithm
 
-1. Возьмите `.sbl` из согласованного стабильного выпуска Snowball и скомпилируйте его:
+1. Take the `.sbl` source from the selected stable Snowball release and compile it:
 
    ```sh
    /path/to/snowball/snowball /path/to/snowball/algorithms/ukrainian.sbl -rust -o rust-stemmers/src/snowball/algorithms/ukrainian
    ```
 
-2. Адаптируйте импорты и зарегистрируйте модуль в `rust-stemmers/src/snowball/algorithms/mod.rs`, вариант `Languages` и ветку `Stemmer::new()` в `rust-stemmers/src/lib.rs`.
-3. Добавьте идентификатор в `src/interfaces/index.ts`, отображение в `src/language-map.ts`, функции в `src/languages.ts` и `src/languages.browser.ts`.
-4. Скопируйте `voc.txt` и `output.txt` согласованного корпуса в `test/data/voc_<identifier>.txt` и `res_<identifier>.txt`, сохранив его уведомления `COPYING`. Для файлов `.gz` сначала выполните распаковку.
-5. Добавьте корпус в `test/languages.test.ts` и проверки публичных способов вызова в `test/stemmer.test.ts`.
-6. Обновите README, changelog, список вариантов и образцы текста в `demo/index.html`.
+2. Adjust the imports and register the module in `rust-stemmers/src/snowball/algorithms/mod.rs`, the `Languages` variant, and the `Stemmer::new()` match arm in `rust-stemmers/src/lib.rs`.
+3. Add the identifier in `src/interfaces/index.ts`, its mapping in `src/language-map.ts`, and named functions in `src/languages.ts` and `src/languages.browser.ts`.
+4. Copy `voc.txt` and `output.txt` from the selected corpus to `test/data/voc_<identifier>.txt` and `res_<identifier>.txt`, preserving its `COPYING` notices. Decompress `.gz` files first where needed.
+5. Add the corpus to `test/languages.test.ts` and public API checks to `test/stemmer.test.ts`.
+6. Update the README, changelog, algorithm list, and text samples in `demo/index.html`.
 
-Для Early Modern English используется идентификатор `earlymodernenglish`; он входит в `Language`, но не в `IsoCode`. Конкретные числовые значения `Languages` не входят в контракт API.
+Early Modern English uses the identifier `earlymodernenglish`. It belongs to `Language`, but not to `IsoCode`. Specific numeric `Languages` values are not part of the API contract.
 
-## Подготовка релиза
+## Preparing a release
 
-Текущий релиз — 2.2.0. Версии в `package.json` и `rust-stemmers/Cargo.toml` должны совпадать.
+The current release is 2.2.1. Versions in `package.json` and `rust-stemmers/Cargo.toml` must match.
 
-Перед выпуском соберите и оптимизируйте WASM, запустите тесты, создайте архив через `pnpm pack` и проверьте его установку в чистом проекте. В архив должны входить `dist/browser/index_bg.wasm`, браузерный JS, TypeScript-декларации, `LICENSE` и `THIRD_PARTY_NOTICES`. Проверьте импорт и новые алгоритмы в Node.js ≥ 22 и браузере.
+Before publication, build and optimize WASM, run tests, create a tarball with `pnpm pack`, and install it in a clean project. The archive must contain `dist/browser/index_bg.wasm`, the browser JavaScript, TypeScript declarations, `LICENSE`, and `THIRD_PARTY_NOTICES`. Check imports and the new algorithms on Node.js ≥ 22 and in a browser.
 
-`prepare.ts` удаляет служебный `.gitignore`, который создаёт `wasm-pack`: иначе npm может исключить весь `dist/browser/` из архива.
+`prepare.ts` removes the generated `.gitignore` from wasm-pack output; otherwise npm may omit the entire `dist/browser/` directory from the archive.
 
-Публикация GitHub Release запускает `.github/workflows/release.yml`, который публикует npm-пакет и прикладывает WASM и архив к релизу. Демо разворачивается отдельным workflow при push в `master`.
+Publishing a GitHub Release triggers `.github/workflows/release.yml`, which publishes the npm package and attaches the WASM binary and tarball to the release. A separate workflow deploys the demo on pushes to `master`.

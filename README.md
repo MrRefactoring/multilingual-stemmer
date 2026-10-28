@@ -2,16 +2,16 @@
 
 <h1>multilingual-stemmer</h1>
 
-<p>Стемминг для <strong>35 языков и Early Modern English</strong>: 36 алгоритмов <a href="https://snowballstem.org/">Snowball 3.2.0</a> в WebAssembly.<br>Node.js · Browser · TypeScript · Без runtime-зависимостей.</p>
+<p>Word stemming for <strong>35 languages and Early Modern English</strong>: 36 <a href="https://snowballstem.org/">Snowball 3.2.0</a> algorithms compiled to WebAssembly.<br>Node.js · Browser · TypeScript · Zero runtime dependencies.</p>
 
 <p>
   <a href="https://www.npmjs.com/package/multilingual-stemmer"><img src="https://img.shields.io/npm/v/multilingual-stemmer?style=flat-square" alt="npm" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/npm/l/multilingual-stemmer?style=flat-square" alt="license" /></a>
   <img src="https://img.shields.io/badge/node-%3E%3D22-brightgreen?style=flat-square" alt="node" />
-  <a href="#поддерживаемые-алгоритмы"><img src="https://img.shields.io/badge/algorithms-36-blue?style=flat-square" alt="algorithms" /></a>
+  <a href="#supported-algorithms"><img src="https://img.shields.io/badge/algorithms-36-blue?style=flat-square" alt="algorithms" /></a>
 </p>
 
-<p><a href="https://mrrefactoring.github.io/multilingual-stemmer/"><strong>Интерактивное демо →</strong></a></p>
+<p><a href="https://mrrefactoring.github.io/multilingual-stemmer/"><strong>Live Demo →</strong></a></p>
 
 </div>
 
@@ -23,21 +23,21 @@ ukrainian('книгами');
 earlyModernEnglish('bringeth');
 ```
 
-Результаты: `run`, `книг`, `bring`.
+Results: `run`, `книг`, `bring`.
 
-## Установка
+## Install
 
 ```sh
 npm install multilingual-stemmer
 ```
 
-Требуется Node.js ≥ 22. Пакет использует ESM.
+Requires Node.js ≥ 22. ESM only.
 
-## Использование
+## Usage
 
-### Функции языков
+### Named language functions
 
-Каждый алгоритм доступен как отдельная функция. Экземпляр WASM-стеммера создаётся при первом вызове и кешируется.
+Each algorithm is available as a named function. Its WASM stemmer instance is created on the first call and cached.
 
 ```ts
 import { english, russian, french } from 'multilingual-stemmer';
@@ -47,11 +47,11 @@ russian('бегущий');
 french('mangeons');
 ```
 
-Результаты: `fruitless`, `бег`, `mange`.
+Results: `fruitless`, `бег`, `mange`.
 
 ### `createStemmer(language)`
 
-Фабрика возвращает функцию для многократной обработки слов.
+The factory returns a reusable function for stemming words with the selected algorithm.
 
 ```ts
 import { createStemmer, Languages } from 'multilingual-stemmer';
@@ -65,7 +65,7 @@ stemHistoricalEnglish('bringeth');
 stemEnglish('running');
 ```
 
-Результаты: `акварел`, `bring`, `run`. Для Early Modern English также доступен `Languages.EarlyModernEnglish`.
+Results: `акварел`, `bring`, `run`. Early Modern English is also available through `Languages.EarlyModernEnglish`.
 
 ### `stem(language, word)`
 
@@ -77,13 +77,13 @@ stem('earlymodernenglish', 'bringeth');
 stem(Languages.Ukrainian, 'акварельний');
 ```
 
-Язык выбирается ISO 639-1 кодом, именем `Languages.X` или идентификатором `earlymodernenglish` для исторического английского. Числовые значения enum — деталь реализации; их стабильность между версиями не гарантируется. Для сохранения настроек используйте строковые идентификаторы.
+Select an algorithm using an ISO 639-1 code, a `Languages.X` member, or the `earlymodernenglish` identifier for historical English. Numeric enum values are implementation details and are not guaranteed to remain stable between versions. Use string identifiers when saving configuration.
 
-Алгоритмы ожидают слова в нижнем регистре. Разбиение текста на слова и нормализацию регистра выполняет вызывающий код.
+Algorithms expect lowercase words. Tokenization and case normalization are the caller’s responsibility.
 
-## Браузер
+## Browser
 
-Браузерная точка входа выбирается условием `browser` в `exports`. WASM загружается при импорте через top-level await, отдельный вызов `init()` не нужен. Сборщик должен поддерживать ESM, top-level await и загрузку файла `.wasm` через `new URL(..., import.meta.url)`.
+The `browser` export condition selects the browser entry point. WASM initializes automatically on import through top-level await; no separate `init()` call is needed. Your bundler must support ESM, top-level await, and `.wasm` assets referenced with `new URL(..., import.meta.url)`.
 
 ```ts
 import { ukrainian, earlyModernEnglish } from 'multilingual-stemmer';
@@ -94,7 +94,7 @@ const historicalResult = earlyModernEnglish('bringeth');
 
 ## TypeScript
 
-Типы входят в пакет. `IsoCode` содержит ISO 639-1 коды 35 языков, а `Language` также принимает `Languages.X` и `earlymodernenglish`.
+Type declarations are included. `IsoCode` contains the ISO 639-1 codes of 35 languages; `Language` also accepts `Languages.X` members and `earlymodernenglish`.
 
 ```ts
 import { createStemmer } from 'multilingual-stemmer';
@@ -105,9 +105,9 @@ const variant: Language = 'earlymodernenglish';
 const stem = createStemmer(variant);
 ```
 
-## Поддерживаемые алгоритмы
+## Supported algorithms
 
-| Язык / вариант | Строковый идентификатор | Функция |
+| Language / variant | String identifier | Function |
 |---|---|---|
 | Arabic | `ar` | `arabic` |
 | Armenian | `hy` | `armenian` |
@@ -146,20 +146,20 @@ const stem = createStemmer(variant);
 | Ukrainian | `uk` | `ukrainian` |
 | Yiddish | `yi` | `yiddish` |
 
-Early Modern English — отдельный исторический вариант английского. Современный английский выбирается через `en`, `Languages.English` или `english`.
+Early Modern English is a separate historical variant. Use `en`, `Languages.English`, or `english` for modern English.
 
-## Изменения при обновлении до 2.2.0
+## Upgrading to 2.2.0
 
-Snowball 3.2.0 удаляет французскую разговорную элизию `z'`. Результаты обработки таких слов изменились. Пересоздайте затронутые французские поисковые индексы, чтобы документы и запросы обрабатывались одной версией алгоритма.
+Snowball 3.2.0 removes the French colloquial elision `z'`, changing the stems of affected words. Rebuild affected French search indexes so documents and queries use the same algorithm version.
 
-Полный список изменений находится в [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](CHANGELOG.md) for the full release history.
 
-## Устройство библиотеки
+## How it works
 
-Исходники алгоритмов Snowball компилируются в Rust, затем через `wasm-pack` — в WebAssembly. TypeScript 7 компилирует обёртку с функциями языков и фабрикой стеммеров для Node.js и браузера. WASM входит в npm-пакет. Для разработки нужна Node.js ≥ 24.14; установка готовой библиотеки требует Node.js ≥ 22.
+Snowball algorithm sources are compiled to Rust and then to WebAssembly with `wasm-pack`. TypeScript 7 compiles the wrapper that provides language functions and the stemmer factory for Node.js and browsers. The npm package includes the WASM binary. Development requires Node.js ≥ 24.14; the published library supports Node.js ≥ 22.
 
-Стемминг приводит формы слова к общей основе для поиска и анализа текста. Основа может не быть словарным словом; это не лемматизация.
+Stemming maps different word forms to a common stem for search and text analysis. The stem is not necessarily a dictionary word; stemming is different from lemmatization.
 
-## Лицензия
+## License
 
-Собственный код — MIT, см. [LICENSE](LICENSE). Библиотека использует [rust-stemmers](https://github.com/CurrySoftware/rust-stemmers) и Snowball 3.2.0. Полные условия и copyright сторонних компонентов включены в [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES), который поставляется с npm-пакетом.
+The project’s own code is licensed under MIT; see [LICENSE](LICENSE). It uses [rust-stemmers](https://github.com/CurrySoftware/rust-stemmers) and Snowball 3.2.0. Full third-party copyright notices and license terms are included in [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES), which ships with the npm package.

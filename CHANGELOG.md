@@ -7,28 +7,40 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [2.2.1] — 2026-10-28
+
+### Fixed
+
+- Restore English public documentation: README, changelog, contribution guide, Rust README, and test corpus provenance.
+- Restore the English npm package description and translate explanatory third-party notices into English.
+
+---
+
 ## [2.2.0] — 2026-10-27
 
-### Добавлено
-- **Ukrainian**: `ukrainian()`, `Languages.Ukrainian`, ISO-код `uk`.
-- **Early Modern English**: `earlyModernEnglish()`, `Languages.EarlyModernEnglish`, строковый идентификатор `earlymodernenglish` для `createStemmer()` и `stem()`.
-- Всего **36 алгоритмов**: 35 языков и исторический вариант английского. Современный английский доступен через `en` / `Languages.English` / `english()`.
-- Официальные корпуса и уведомления об их происхождении для обоих новых алгоритмов.
-- `THIRD_PARTY_NOTICES` с полными условиями сторонних компонентов; файл включён в npm-пакет.
+### Added
 
-### Изменено
-- Все алгоритмы заново сгенерированы компилятором **Snowball 3.2.0**; Rust-runtime синхронизирован с релизным снимком.
-- **French**: удаляется разговорная элизия `z'`. Пересоздайте затронутые французские поисковые индексы, чтобы документы и запросы использовали одну версию алгоритма.
-- 35 корпусов сверены со `snowball-data` на коммите `019921c3a41c2b70063ee3feb215a00c8e594597`. Компактный арабский корпус сохранён и проверен официальной C-реализацией Snowball 3.2.0.
-- README, инструкции разработки и демо обновлены для Snowball 3.2.0 и новых алгоритмов.
-- Release workflow запускает тесты перед публикацией в npm.
-- Сборка очищает `dist`, чтобы в npm-архив не попадали артефакты предыдущих версий.
-- Обновлены зависимости сборки и тестов: pnpm 12.15.0, TypeScript 7.0.2, Vitest 5.0.5, tsx 4.23.15, @types/node 26.6.5, wasm-opt 2.0.1 и wasm-bindgen 0.2.129. wasm-pack 0.15.0 уже является актуальным стабильным выпуском.
-- GitHub Actions обновлены до актуальных major-веток; CI использует Node.js 24. Для локальной разработки требуется Node.js ≥ 24.14 из-за wasm-opt 2; готовая библиотека поддерживает Node.js ≥ 22.
+- **Ukrainian**: `ukrainian()`, `Languages.Ukrainian`, and the `uk` ISO code.
+- **Early Modern English**: `earlyModernEnglish()`, `Languages.EarlyModernEnglish`, and the `earlymodernenglish` string identifier for `createStemmer()` and `stem()`.
+- **36 algorithms** in total: 35 languages and historical English. Modern English remains available through `en`, `Languages.English`, and `english()`.
+- Official corpora and provenance notices for both new algorithms.
+- `THIRD_PARTY_NOTICES` with full third-party license terms, included in the npm package.
 
-### Совместимость
-- Используйте `Languages.X` или строковые идентификаторы. Числовые значения enum — деталь реализации, их стабильность между версиями не гарантируется.
-- `earlymodernenglish` входит в `Language`; `IsoCode` содержит только ISO 639-1 коды.
+### Changed
+
+- Regenerate every algorithm with the **Snowball 3.2.0** compiler and synchronize the Rust runtime with the release snapshot.
+- **French**: remove the colloquial elision `z'`. Rebuild affected French search indexes so documents and queries use the same algorithm version.
+- Verify 35 corpora against `snowball-data` commit `019921c3a41c2b70063ee3feb215a00c8e594597`. Retain the compact Arabic corpus and verify every result against the official Snowball 3.2.0 C implementation.
+- Update the README, contribution guide, and demo for Snowball 3.2.0 and the new algorithms.
+- Run tests in the release workflow before publishing to npm.
+- Clear `dist` before building to keep obsolete artifacts out of the npm tarball.
+- Update build and test dependencies: pnpm 12.15.0, TypeScript 7.0.2, Vitest 5.0.5, tsx 4.23.15, @types/node 26.6.5, wasm-opt 2.0.1, and wasm-bindgen 0.2.129. wasm-pack 0.15.0 was already the current stable release.
+- Update GitHub Actions to current major versions and use Node.js 24 in CI. Local development requires Node.js ≥ 24.14 for wasm-opt 2; the published library supports Node.js ≥ 22.
+
+### Compatibility
+
+- Use `Languages.X` members or string identifiers. Numeric enum values are implementation details and are not guaranteed to remain stable between versions.
+- `earlymodernenglish` belongs to `Language`; `IsoCode` contains only ISO 639-1 codes.
 
 ---
 
